@@ -1,13 +1,15 @@
-Cet exemple d'Implementation Guide (IG) très simplifié sert de base pour le développement de nouveaux guides d'implémentation. La démarche d'élaboration d'un nouvel IG est expliquée dans le [wiki de ce repo](https://github.com/ansforge/IG-modele/wiki). 
-Le README ci-dessous constitue un template à adapter et compléter pour chaque projet.
-
 # Contexte
 
 ## Contexte métier du projet
-[A COMPLETER : doit contenir la description fonctionnelle du projet destinée à un profil non technique]
+Dans le cadre du plan Innovation santé 2030, un nouveau SI va être créé pour recenser les essais cliniques en France. Il s’agit de mettre à disposition du grand public les essais cliniques autorisés et en cours ou à venir afin d’aider au recrutement et à la bonne connaissance des essais cliniques.
+Vous trouverez plus d'information ici https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques
+
 
 ## Contexte technique du projet
-[A COMPLETER : doit expliquer brièvement quelles ressources / profils sont utilisés, exemple implémentation où IG est utilisé]
+L'objectif de ce projet et de définir les spécifications de l’API REST (FHIR) pour interoger la base de données qui recensera les essais cliniques.
+
+Le profil FHIR ciblé sera ([ResearchStudy](https://www.hl7.org/fhir/researchstudy.html)).
+
 
 # CI/CD
 Les workflows associés à ce repository (.github/workflows) permettent : 
@@ -16,16 +18,11 @@ Les workflows associés à ce repository (.github/workflows) permettent :
 * De publier les pages : https://ansforge.github.io/{nom du repo}/ig/{nom de la branche}
 
 # Notes
-Ce repo "IG-modele" a été créé à partir du repo [sample-ig](https://github.com/FHIR/sample-ig) de l'organisation GitHub FHIR.
-
-[A COMPLETER: notes supplémentaires pour le lecteur de la spec]
+Ce repo utilise le template "IG-modele" créé à partir du repo [sample-ig](https://github.com/FHIR/sample-ig) de l'organisation GitHub FHIR.
 Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github.com/fr/issues) pour indiquer vos propositions d'amélioration et de correction.
 
 ## Acronymes
 
 * IG : Implementation Guide
 * FHIR : Fast Healthcare Interoperability Resources
-* FIG : FHIR Implementation Guide
 * HL7 : Health Level Seven
-
-[A COMPLETER : acronymes utilisés dans le cadre de ce projet]
