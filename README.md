@@ -7,7 +7,8 @@ Vous trouverez plus d'information ici https://esante.gouv.fr/espace-presse/mise-
 
 ## Contexte technique du projet
 L'objectif de ce projet et de définir les spécifications de l’API REST (FHIR) pour interoger la base de données qui recensera les essais cliniques.
-LE profil FHIR ciblé sera donc ([ResearchStudy](https://www.hl7.org/fhir/researchstudy.html)).
+
+Le profil FHIR ciblé sera ([ResearchStudy](https://www.hl7.org/fhir/researchstudy.html)).
 
 
 # CI/CD
