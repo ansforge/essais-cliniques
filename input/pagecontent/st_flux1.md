@@ -1,13 +1,3 @@
-
-### Nom du flux 
-
-Description du flux 
-
-
-### Construction du flux
-
-Explication de comment doit être construit le flux
-
 <!-- ## Consultation de l'offre (Extraction) -->
 
 ### Caractéristiques de l'API 
@@ -44,7 +34,7 @@ Explication de comment doit être construit le flux
 <p><strong>Version FHIR</strong></p>
 </td>
 <td width="54%">
-<p>&nbsp;</p>
+<p>5.0.0</p>
 </td>
 </tr>
 <tr>
@@ -91,7 +81,7 @@ Explication de comment doit être construit le flux
 <p><strong>Ressource recherch&eacute;e</strong></p>
 </td>
 <td width="531">
-<p>HealthcareService</p>
+<p>ResearchStudy</p>
 </td>
 </tr>
 <tr>
@@ -99,7 +89,7 @@ Explication de comment doit être construit le flux
 <p><strong>Construction requ&ecirc;te de base</strong></p>
 </td>
 <td width="531">
-<p><code>GET[base]/HealthcareService{?[parameters]{&amp;_format=[mime-type]}}</code></p>
+<p><code>GET[base]/ResearchStudy{?[parameters]{&amp;_format=[mime-type]}}</code></p>
 </td>
 </tr>
 </tbody>
@@ -151,8 +141,8 @@ Plus de précision sur la spécification FHIR :
 
 ### Critères de recherches
 
--   Les critères de recherche, définis au [paragraphe dédié](search_param.html#structuredefinition-ror-healthcareservice), de
-    **StructureDefinition-ror-healthcareservice** applicables à ce cas
+-   Les critères de recherche, définis au [paragraphe dédié](search_param.html#structuredefinition-eclaire-researchstudy), de
+    **StructureDefinition-eclaire_researchstudy** applicables à ce cas
     d'usage sont :
 
 <table>
@@ -167,294 +157,63 @@ Plus de précision sur la spécification FHIR :
 </tr>
 </tbody>
 </table>
-
--   Les critères de recherche, définis au [paragraphe dédié](search_param.html#structuredefinition-ror-organization), de
-    **StructureDefinition-ror-organization** applicables à ce cas
-    d'usage sont :
-
-<table>
-<tbody>
-<tr>
-<td width="230">
-<p>_lastUpdated</p>
-</td>
-<td width="230">
-<p>identifier</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-Ces critères de recherche sont applicables à la ressource
-HealthcareService, grâce au [chainage](https://www.hl7.org/fhir/search.html#chaining). Pour cela utiliser la syntaxe
-suivante : `organization.[NOM CRITERE]`
-
--   Les critères de recherche, définis au [paragraphe dédié](search_param.html#structuredefinition-ror-location), de
-    **StructureDefinition-ror-location** applicables à ce cas d'usage
-    sont :
-
-<table>
-<tbody>
-<tr>
-<td width="230">
-<p>_lastUpdated</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-Ces critères de recherche sont applicables à la ressource
-HealthcareService, grâce au chainage. Pour cela utiliser la syntaxe
-suivante : `location.[NOM CRITERE]`
-
--   Les critères de recherche, définis au [paragraphe dédié](search_param.html#structuredefinition-ror-practioner), de
-    **StructureDefinition-ror-practitioner** applicables à ce cas
-    d'usage sont :
-
-<table>
-<tbody>
-<tr>
-<td width="230">
-<p>_lastUpdated</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-Ces critères de recherche sont applicables à la ressource HealthcareService,
-grâce au [chainage](https://www.hl7.org/fhir/search.html#has). Pour cela utiliser la syntaxe suivante :
-`_has:PractitionerRole:service:_has:PractitionerRole:practitioner:[NOM CRITERE]`
-
--   Les critères de recherche, définis au [paragraphe dédié](search_param.html#structuredefinition-ror-practionerrole), de
-    **StructureDefinition-ror-practitionerrole** applicables à ce cas d'usage sont :
-
-<table>
-<tbody>
-<tr>
-<td width="230">
-<p>_lastUpdated</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-Ces critères de recherche sont applicables à la ressource HealthcareService,
-grâce au [chainage](https://www.hl7.org/fhir/search.html#has). Pour cela utiliser la syntaxe suivante :
-`_has:PractitionerRole:service:[NOM CRITERE]`
-
--   Les critères de recherche, définis au [paragraphe dédié](search_param.html#structuredefinition-ror-task), de
-    **StructureDefinition-ror-task** applicables à ce cas d'usage sont :
-
-<table>
-<tbody>
-<tr>
-<td width="228">
-<p>business-status*</p>
-</td>
-<td width="226">
-<p>_id</p>
-</td>
-<td colspan="2" width="226">
-<p>_lastUpdated*</p>
-</td>
-</tr>
-<tr>
-<td width="228">
-<p>Identifier*</p>
-</td>
-<td width="226">
-<p>authoredOn*</p>
-</td>
-<td width="226">
-<p>&nbsp;</p>
-</td>
-<td width="53">
-<p>&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
-*<i>Critères de recherche qui seront applicables ultérieurement</i>
-
-Ces critères de recherche sont applicables à la ressource HealthcareService, grâce au [chainage inversé](https://www.hl7.org/fhir/search.html#has). Pour cela utiliser la syntaxe suivante : `_has:HealthcareService:focus:[NOM CRITERE]`
-
 
 ### Paramètres et modificateurs de requêtes FHIR
 
 Les paramètres et modificateurs de requêtes décrits au [paragraphe dédié](modifiers.html)
 applicables à ce cas d'usage sont :
 
--   \_revinclude, \_include, :iterate
-
--   \_has, \_count, \_sort
-
--   \_elements
-
--   Tous les préfixes de comparaison
+-   A définir
 
 ### Exemple de requêtes
 
-#### Scénario 1 : Extraction complète
+#### Scénario 1 : Extraction complète des essais cliniques de la base
 
-**Description du scénario :** Un consommateur souhaite mettre à jour toutes les offres de santé sur le périmètre nationale
+**Description du scénario :** Un consommateur souhaite récupér tous les essais cliniques recensés sur le périmètre nationale
 
 **Requête :**
 
 ```
-get[BASE]/HealthcareService?_include:iterate=HealthcareService:organization&_include=HealthcareService:location&_revinclude=PractitionerRole:service&_include=PractitionerRole:practitioner
+get[BASE]/ResearchStudy
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/HealthcareService?
-_include:iterate=HealthcareService:organization #inclus les Organization référencées par Healthcare Service ET les Organization référencées par les Organization
-&_include=HealthcareService:location #inclus les Location référencées par HealthcareService
-&_revinclude=PractitionerRole:service #inclus les PractitionerRole qui référencent le HealthcareService
-&_include=PractitionerRole:practitioner #inclus les Practitioner référencés par PractitionerRole
-```
-#### Scénario 2 : Extraction de l’ensemble des offres de santé d’un établissement
-
-**Description du scénario :** Un consommateur souhaite rechercher l\'offre de santé proposée\ par un établissement dont l'identifiant est = XX
-
-**Requête :**
-
-```
-get[BASE]/HealthcareService?organization:above.identifier=XX_include:iterate=HealthcareService:organization&_include=HealthcareService:location&_revinclude=PractitionerRole:service&_include=PractitionerRole:practitioner
+get[BASE]/ResearchStudy  #recherche sans critère pour récupérer tous les essais cliniques
 ```
 
-**Requête expliquée :**
 
-```sh
-get[BASE]/HealthcareService?organization:above.identifier=XX #critère de recherche de l’établissement
-_include:iterate=HealthcareService:organization #inclus les Organization référencées par Healthcare Service ET les Organization référencées par les Organization
-&_include=HealthcareService:location #inclus les Location référencées par HealthcareService
-&_revinclude=PractitionerRole:service #inclus les PractitionerRole qui référencent le HealthcareService
-&_include=PractitionerRole:practitioner #inclus les Practitioner référencés par PractitionerRole
-
-```
-
-#### Scénario 3 : Extraction d'une offre de santé identifiée
+#### Scénario 2 : Extraction d'un essai clinique identifiée
 
 **Description du scénario :** Un consommateur souhaite
-rechercher une offre de santé\
-à partir de son identifiant = XXX
+rechercher un essais clinique à partir de son identifiant = XXX
 
 **Requête :**
 
 ```
-get[BASE]/HealthcareService?identifier=XXX&_include:iterate=HealthcareService:organization&_include=HealthcareService:location&_revinclude=PractitionerRole:service&_include=PractitionerRole:practitioner 
+get[BASE]/ResaechStudy?identifier=XXX
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/HealthcareService?identifier=XXX #critère de recherche de l’identifiant de l’offre
-_include:iterate=HealthcareService:organization #inclus les Organization référencées par Healthcare Service ET les Organization référencées par les Organization
-&_include=HealthcareService:location #inclus les Location référencées par HealthcareService
-&_revinclude=PractitionerRole:service #inclus les PractitionerRole qui référencent le HealthcareService
-&_include=PractitionerRole:practitioner #inclus les Practitioner référencés par PractitionerRole
+get[BASE]/ResaechStudy?identifier=XXX #critère de recherche de l’identifiant de l'essai
 ```
-#### Scénario 4 : Extraction complète à partir d'une date de mise à jour de l'offre opérationnelle
+#### Scénario 3 : Extraction complète à partir d'une date de mise à jour
 
 **Description du scénario :** Un consommateur souhaite mettre
-à jour toute l\'offre\
+à jour tous les essais
 mise à jour depuis une certaine date \>= (06/11/2022)
 
 **Requête :**
 
 ```
-get[BASE]/HealthcareService?_lastUpdated=ge2022-11-06T15:00&_include:iterate=HealthcareService:organization&_include=HealthcareService:location&_revinclude=PractitionerRole:service&_include=PractitionerRole:practitioner
+get[BASE]/ResarchStudy?_lastUpdated=ge2022-11-06T15:00
 ```
 
 **Requête expliquée :**
 
 ```sh
 get[BASE]/HealthcareService?_lastUpdated=ge2022-11-06T15:00 #critère de recherche de sur la date de mise à jour (ge= greater than)
-&_include:iterate=HealthcareService:organization #inclus les Organization référencées par Healthcare Service ET les Organization référencées par les Organization
-&_include=HealthcareService:location #inclus les Location référencées par HealthcareService
-&_revinclude=PractitionerRole:service #inclus les PractitionerRole qui référencent le HealthcareService
-&_include=PractitionerRole:practitioner #inclus les Practitioner référencés par PractitionerRole
-
-```
-
-#### Scénario 5 : Extraction complète à partir d’une date de mise à jour de l’entité géographique
-
-**Description du scénario :** Un consommateur souhaite mettre à jour toute l\'offre dont l'l’entité géographique est mise à jour depuis une certaine date \>= (06/11/2022)
-
-**Requête :**
-
-```
-get[BASE]/HealthcareService?organization:above._lastUpdated=ge2022-11-06T15:00&organization.type= https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE_R66-CategorieEtablissement|XXX &_include:iterate=HealthcareService:organization&_include=HealthcareService:location&_revinclude=PractitionerRole:service&_include=PractitionerRole:practitioner
-```
-
-**Requête expliquée :**
-
-```sh
-get[BASE]/HealthcareService?organization:above._lastUpdated=ge2022-11-06T15:00 #critère de recherche sur la date de mise à jour (ge= greater than)
-&organization.type= https ://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE_R66-CategorieEtablissement|XXX #critère de recherche sur la categorieEG (nomenclature à compléter)
-&_include :iterate=HealthcareService :organization #inclus les Organization référencées par Healthcare Service ET les Organization référencées par les Organization
-&_include=HealthcareService:location #inclus les Location référencées par HealthcareService
-&_revinclude=PractitionerRole:service #inclus les PractitionerRole qui référencent le HealthcareService
-&_include=PractitionerRole:practitioner #inclus les Practitioner référencés par PractitionerRole
-```
-#### Scénario 6 : Extraction complète à partir d'une date de mise à jour d'un des éléments de l'offre 
-
-**Description du scénario :** Un consommateur souhaite mettre à jour toute l\'offre mise à jour depuis une certaine date \>=(06/11/2022) ou dont l'organisation est mise à jour depuis une certaine date \>= (06/11/2022)
-
-**Requête :**
-
-```
-get[BASE]/HealthcareService?_filter=(_lastUpdated ge 2022-11-06T15:00 or organization:above._lastUpdated ge 2022-11-06T15:00) &_revinclude=Organization:healthcareservice&_include:iterate=HealthcareService:organization&_include=HealthcareService:location&_revinclude=PractitionerRole:service&_include=PractitionerRole:practitioner
-```
-
-**Requête expliquée :**
-
-```sh
-get[BASE]/HealthcareService?_filter=(_lastUpdated ge 2022-11-06T15:00 or organization:above._lastUpdated ge 2022-11-06T15:00) #critère de recherche sur la date de mise à jour 
-&_include:iterate=HealthcareService:organization #inclus les Organization référencées par Healthcare Service ET les Organization référencées par les Organization
-&_include=HealthcareService:location #inclus les Location référencées par HealthcareService
-&_revinclude=PractitionerRole:service #inclus les PractitionerRole qui référencent le HealthcareService
-&_include=PractitionerRole:practitioner #inclus les Practitioner référencés par PractitionerRole
-```
-#### Scénario 7 : Extraction partielle de l’offre sur un périmètre limité  
-
-**Description du scénario :** Un consommateur souhaite mettre à jour toute l\'offre de santé d\'une région source = XX. Comme il n\'utilise qu'un sous-ensemble des informations de l\'offre, il souhaite ne recevoir que ces informations.
-
-**Requête :**
-
-```
-get[BASE]/HealthcareService?_tag= https://mos.esante.gouv.fr/NOS/TRE_R30-RegionOM/FHIR/TRE-R30-RegionOM|XX&_elements=identifier &_include:iterate=HealthcareService:organization&_include=HealthcareService:location&_revinclude=PractitionerRole:service&_include=PractitionerRole:practitioner
-```
-
-**Requête expliquée :**
-
-```sh
-get[BASE]/HealthcareService?_tag= https://mos.esante.gouv.fr/NOS/TRE_R30-RegionOM/FHIR/TRE-R30-RegionOM|XX #critère de recherche sur la région source
-&_elements=identifier #ensemble des informations que le consommateur souhaite recevoir
-&_include:iterate=HealthcareService:organization #inclus les Organization référencées par Healthcare Service ET les Organization référencées par les Organization
-```
-#### Scénario 8 : Extraction d’une offre de santé identifiée et ses éventuelles anomalies associées
-
-<p style="background-color: #ffcccc; border:1px solid grey; padding: 5px; max-width: 790px;">
-Cette partie de la spécification est en cours de construction.
-</p>
-
-**Description du scénario :**Un consommateur souhaite rechercher une offre de santé  à partir de son identifiant = XXX et consulter les anomalies associées si elles existent.
-
-**Requête :**
-
-```
-get[BASE]/HealthcareService?identifier=XXX&_include:iterate=HealthcareService:organization&_include=HealthcareService:location&_revinclude=PractitionerRole:service&_include=PractitionerRole:practitioner&_revinclude=Task:focus
-```
-
-**Requête expliquée :**
-
-```sh
-get[BASE]/HealthcareService?identifier=XXX #critère de recherche de l’identifiant de l’offre
-_include:iterate=HealthcareService:organization #inclus les Organization référencées par Healthcare Service ET les Organization référencées par les Organization
-&_include=HealthcareService:location #inclus les Location référencées par HealthcareService
-&_revinclude=PractitionerRole:service #inclus les PractitionerRole qui référencent le HealthcareService
-&_include=PractitionerRole:practitioner #inclus les Practitioner référencés par PractitionerRole
-&_revinclude=Task:focus #inclus les anomalies qui référencent HealthcareService
 ```
