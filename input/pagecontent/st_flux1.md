@@ -192,13 +192,13 @@ rechercher un essais clinique à partir de son identifiant = XXX
 **Requête :**
 
 ```
-get[BASE]/ResaechStudy?identifier=XXX
+get[BASE]/ResearchStudy?identifier=XXX
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/ResaechStudy?identifier=XXX #critère de recherche de l’identifiant de l'essai
+get[BASE]/ResearchStudy?identifier=XXX #critère de recherche de l’identifiant de l'essai
 ```
 #### Scénario 3 : Extraction complète à partir d'une date de mise à jour
 
@@ -209,11 +209,11 @@ mise à jour depuis une certaine date \>= (06/11/2022)
 **Requête :**
 
 ```
-get[BASE]/ResarchStudy?_lastUpdated=ge2022-11-06T15:00
+get[BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/HealthcareService?_lastUpdated=ge2022-11-06T15:00 #critère de recherche de sur la date de mise à jour (ge= greater than)
+get[BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00 #critère de recherche de sur la date de mise à jour (ge= greater than)
 ```

@@ -9,7 +9,7 @@ Les cas d’usage auxquels cet Implementation Guide souhaite répondre sont :
 -	En tant que consommateur des données essais cliniques, je veux obtenir les données de tous les essais cliniques dont le recrutement est en cours ou à venir qui correspondent à mes critères de recherche**
 -	En tant que consommateur des données essais cliniques, je veux obtenir les données d’un essai clinique à partir de l’un de ses identifiants
 
-Les critères (tous facultatifs ; à voir si au moins un doit être obligatoire ou pas ; dans le cas contraire si aucun critère n’est renseigné alors on récupère tous les essais et on revient dans le premier cas d’usage) sont :
+Les critères sont :
 -	Mots clés
 -	Identifiant
 -	Localisation
@@ -21,7 +21,7 @@ Les critères (tous facultatifs ; à voir si au moins un doit être obligatoire 
 -	Sexe
 
 
-
+----------------------------------------------
 Les principales sections de l'IG  sont :
 * Le contexte de l'IG et les points dont les implémenteurs doivent être familier avant dans s'avoir plus sur l'IG
 * Ce que les Implémenteurs doivent mettre en place

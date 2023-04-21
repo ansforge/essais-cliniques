@@ -60,7 +60,7 @@
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
   9.0pt;mso-bidi-font-size:10.0pt;line-height:115%'>Indique que les ressources
-  qui font référence à <span class=SpellE>HealthcareService</span> doivent être
+  qui font référence à <span class=SpellE>ResearchStudy</span> doivent être
   incluses dans la réponse<o:p></o:p></span></p>
   </td>
  </tr>
@@ -88,7 +88,7 @@
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
   style='font-size:9.0pt;mso-bidi-font-size:10.0pt;line-height:115%'>Indique
-  que les ressources référencées par <span class=SpellE>HealthcareService</span>
+  que les ressources référencées par <span class=SpellE>ResearchStudy</span>
   doivent être incluses dans la réponse<o:p></o:p></span></p>
   </td>
  </tr>
@@ -164,7 +164,7 @@
   <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
   9.0pt;mso-bidi-font-size:10.0pt;line-height:115%'>Permet d’utiliser les
   paramètres de recherche des ressources faisant référence à la ressource
-  Location<o:p></o:p></span></p>
+  ResearchStudy<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:6'>
@@ -201,11 +201,9 @@
   <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
   9.0pt;mso-bidi-font-size:10.0pt;line-height:115%'>Indique le nombre souhaité
   par le consommateur de résultat par page. <o:p></o:p></span></p>
-  <p class=MsoNormal align=left style='text-align:left'><b><u><span
+  <p class=MsoNormal align=left style='text-align:left'><span
   style='font-size:9.0pt;mso-bidi-font-size:10.0pt;line-height:115%;color:#4472C4;
-  mso-themecolor:accent5'>RG_RECH_52&nbsp;:</span></u></b><span
-  style='font-size:9.0pt;mso-bidi-font-size:10.0pt;line-height:115%;color:#4472C4;
-  mso-themecolor:accent5'> Par défaut la recherche retourne 200 résultats
+  mso-themecolor:accent5'> Par défaut la recherche retourne n résultats
   maximum par page. </span><span style='font-size:9.0pt;mso-bidi-font-size:
   10.0pt;line-height:115%'><o:p></o:p></span></p>
   </td>
