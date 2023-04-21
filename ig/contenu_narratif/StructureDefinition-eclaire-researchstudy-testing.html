@@ -1,9 +1,13 @@
+<!-- get modelType -->
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.ECLAIRE\Construction Des Flux - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.ECLAIRE\ECLAIREResearchStudy - Testing - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,9 +22,6 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style-ans.css"/>
-    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
-    <!-- CSS only -->
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -42,17 +43,15 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.1"}
-    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.1"}
+    h3,h4,h5,h6{--heading-prefix:"7.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
-<div id="family-nav">
-    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
-  <div id="ans-nav">
-    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-  </div>
+
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://example.org"><img height="55" alt="Visit the Example website" src="assets/images/SampleLogo.png"/> </a>
+        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">IG de l&#39;API FHIR ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l&#39;Ecosystème)</span>
@@ -93,9 +92,6 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="construction_des_flux.html">Construction des flux</a>
-      </li>
-      <li>
         <a href="st_flux1.html">Extraction de données des essais cliniques</a>
       </li>
       <li>
@@ -111,9 +107,6 @@
   </li>
   <li>
     <a href="artifacts.html">Ressources de conformance</a>
-  </li>
-  <li>
-    <a href="tests.html">Tests</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
@@ -149,15 +142,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Specifications Techniques</b></a></li><li><b>Construction Des Flux</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ECLAIREResearchStudy</b></li>
 
           <span style="float:right;">
 
-            <a href="specifications_techniques.html">&lt;prev</a> | 
+            <a href="StructureDefinition-eclaire-researchstudy-mappings.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="st_flux1.html">next&gt;</a>
+          | <a href="StructureDefinition-eclaire-researchstudy.profile.xml.html">next&gt;</a>
 
           </span>
 
@@ -171,16 +164,8 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<style type="text/css">
-h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
-h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
-h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
-h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
-h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
-<div class="col-12">
+<div style="counter-reset: section 6" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
-  <h2>Construction Des Flux</h2>
   
 
 
@@ -193,26 +178,86 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+<ul class="nav nav-tabs">
 
-    <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#flux-1" id="markdown-toc-flux-1">Flux 1</a></li>
-  <li><a href="#flux-2" id="markdown-toc-flux-2">Flux 2</a></li>
+  <li>
+    <a href="StructureDefinition-eclaire-researchstudy.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-eclaire-researchstudy-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-eclaire-researchstudy-mappings.html">Mappings</a>
+    </li>
+  
+
+
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-eclaire-researchstudy.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-eclaire-researchstudy.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-eclaire-researchstudy.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
 </ul>
 
+
+  <a name="root"> </a>
+  <h2 id="root">Resource Profile: ECLAIREResearchStudy - Testing</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-04-21
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+
+
+  <p><b>No TestScripts are currently available for the  Profile.</b></p>
+
+
+<!-- insert notes if present -->
+
+
+
+
 </div>
-<h3 id="flux-1">Flux 1</h3>
 
-<p>Description du flux avec schémas et liens hypertextes vers le  <a href="st_flux1.html">flux 01</a></p>
-
-<h3 id="flux-2">Flux 2</h3>
-
-<p>Description du flux avec schémas et liens hypertextes vers le  <a href="st_flux2.html">flux 02</a></p>
-
-
-
-</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -220,6 +265,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -238,7 +306,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="specifications_techniques.html">&lt;prev</a>
+                <a href="StructureDefinition-eclaire-researchstudy-mappings.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -246,7 +314,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="st_flux1.html">next&gt;</a>
+                <a href="StructureDefinition-eclaire-researchstudy.profile.xml.html">next&gt;</a>
 
               </td>
             </tr>
@@ -256,14 +324,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 20, 2023 16:41+0000">2023-04-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 21, 2023 12:14+0000">2023-04-21</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: #81BEF7" target="_blank" href="http://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
                 
-
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -284,12 +351,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-
-  <!-- Ajout ANS -->
-  <script src="assets/js/app.js" type="text/javascript"> </script>
-  <script src="assets/js/vendor.js" type="text/javascript"> </script>
-  <!-- Fin ajout ANS -->
-
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
@@ -307,103 +368,6 @@ anchors.add()</script>
 
   <!-- Analytics Below
   ================================================== -->
-
-
-  <!-- AJOUT ANS -->
-
-<footer class="footer footer-principal" role="contentinfo">
-  <div class="footer__region1">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-6 col-lg-4 text-center text-md-left">
-          <div class="logos">        
-            <div class="logo logo--0">
-              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
-                
-                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
-                
-              </a>
-            </div>
-        
-            <div class="logo logo--1">
-              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
-                
-                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-6 col-lg-4 text-center text-md-left">
-          <p class="footer__title">Agence du Numérique en Santé</p>
-          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
-
-          <!-- <div class="m-social">
-            <ul class="m-social__list">        
-              <li class="m-social__item">
-                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
-                  <div class="m-social__icon">
-                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
-                  </div>
-                  <span class="sr-only">linkedin</span>
-                </a>
-              </li>
-              <li class="m-social__item">
-                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
-                  <div class="m-social__icon">
-                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
-                  </div>
-                  <span class="sr-only">twitter</span>
-                </a>
-              </li>
-              <li class="m-social__item">
-                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
-                  <div class="m-social__icon">
-                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
-                  </div>
-                  <span class="sr-only">youtube</span>
-                </a>
-              </li>
-              <li class="m-social__item">
-                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
-                  <div class="m-social__icon">
-                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
-                  </div>
-                  <span class="sr-only">rss</span>
-                </a>
-              </li>
-            </ul>
-          </div> -->
-        </div>
-        
-        <div class="col-6 col-lg-4">
-          <ul class="footer-list">
-            <li class="footer-list__item footer-list__item--hasIcon">
-              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
-                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
-              </li>
-              <!-- <li class="footer-list__item">
-                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
-              </li>
-               -->
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    
-    <!-- <div class="footer__region2">
-      <div class="container">
-        <div class="footer-contentinfo">
-          <ul class="footer-list footer-list--inline">
-
-          </ul>
-        </div>
-      </div>
-    </div> -->
-  </footer>
   </body>
 </html>
 
