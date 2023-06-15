@@ -1,13 +1,12 @@
 
-### Nom du flux 
+### Description
 
 Description du flux 
 
-### Construction du flux
-
-Explication de comment doit être construit le flux
-
-<!-- ## Recherche d'offre sur critères principaux -->
+@startuml firstDiagram
+Alice -> Bob: Hello
+Bob -> Alice: Hi!
+@enduml
 
 ### Caractéristiques de l'API
 
@@ -181,6 +180,21 @@ applicables à ce cas d'usage sont :
 ### Exemple de requêtes
 
 #### Scénario 1 : Recherche sur un critère en saisissant une valeur
+
+**Description du scénario :** Un consommateur cherche les essais cliniques ayant pour statut = XXX
+
+**Requête :**
+
+```
+get[BASE]/ResearchStudy?critere=XXX
+```
+
+**Requête expliquée :**
+
+```sh
+get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
+```
+#### Scénario 2 : Recherche sur un critère en saisissant une valeur
 
 **Description du scénario :** Un consommateur cherche les essais cliniques ayant critere= XXX
 
