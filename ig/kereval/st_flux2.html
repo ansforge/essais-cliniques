@@ -191,8 +191,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#nom-du-flux" id="markdown-toc-nom-du-flux">Nom du flux</a></li>
-  <li><a href="#construction-du-flux" id="markdown-toc-construction-du-flux">Construction du flux</a></li>
+  <li><a href="#description" id="markdown-toc-description">Description</a></li>
   <li><a href="#caractéristiques-de-lapi" id="markdown-toc-caractéristiques-de-lapi">Caractéristiques de l’API</a></li>
   <li><a href="#construction-de-la-requête-de-base" id="markdown-toc-construction-de-la-requête-de-base">Construction de la requête de base</a></li>
   <li><a href="#construction-de-la-réponse-de-base" id="markdown-toc-construction-de-la-réponse-de-base">Construction de la réponse de base</a></li>
@@ -203,15 +202,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 
-<h3 id="nom-du-flux">Nom du flux</h3>
+<h3 id="description">Description</h3>
 
 <p>Description du flux</p>
 
-<h3 id="construction-du-flux">Construction du flux</h3>
-
-<p>Explication de comment doit être construit le flux</p>
-
-  <!-- ## Recherche d'offre sur critères principaux -->
+<p>@startuml firstDiagram
+Alice -&gt; Bob: Hello
+Bob -&gt; Alice: Hi!
+@enduml</p>
 
 <h3 id="caractéristiques-de-lapi">Caractéristiques de l’API</h3>
 
@@ -355,7 +353,7 @@ Plus de précision sur la spécification FHIR :
 <h3 id="critères-de-recherche">Critères de recherche</h3>
 
 <ul>
-  <li><a name="l638">​</a>Les critères de recherche, définis au <a href="search_param.html#structuredefinition-ror-healthcareservice">paragraphe dédié</a>, de
+  <li><a name="l629">​</a>Les critères de recherche, définis au <a href="search_param.html#structuredefinition-ror-healthcareservice">paragraphe dédié</a>, de
 <strong>StructureDefinition-eclaire-researchstudy</strong> applicables à ce cas
 d’usage sont&nbsp;:</li>
 </ul>
@@ -388,6 +386,19 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 <h3 id="exemple-de-requêtes">Exemple de requêtes</h3>
 
 <h4 id="scénario-1-recherche-sur-un-critère-en-saisissant-une-valeur">Scénario 1&nbsp;: Recherche sur un critère en saisissant une valeur</h4>
+
+<p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant pour statut = XXX</p>
+
+<p><strong>Requête :</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere=XXX
+</code></pre></div></div>
+
+<p><strong>Requête expliquée&nbsp;:</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
+</code></pre></div></div>
+<h4 id="scénario-2-recherche-sur-un-critère-en-saisissant-une-valeur">Scénario 2&nbsp;: Recherche sur un critère en saisissant une valeur</h4>
 
 <p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant critere= XXX</p>
 
@@ -448,7 +459,7 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 15, 2023 14:47+0000">2023-06-15</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 15, 2023 14:49+0000">2023-06-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
