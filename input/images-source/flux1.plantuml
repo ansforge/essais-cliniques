@@ -1,0 +1,13 @@
+@startuml
+actor Consommateur
+actor Producteur
+Consommateur -> Producteur: Requete : Extraction compléte des essais cliniques
+Producteur --> Consommateur: Reponse : Ensemble des essais cliniques
+@enduml
+
+@startuml
+actor Consommateur
+actor Producteur
+Consommateur -> Producteur: Requete : Extraction  d'un essai clinique
+Producteur --> Consommateur: Reponse : ResearchStudy + toutes les ressources liées
+@enduml

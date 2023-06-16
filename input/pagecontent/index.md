@@ -30,12 +30,7 @@ Les principales sections de l'IG  sont :
 
 ### Vue globale
 
-@startmindmap
-+[#lightgreen] ResearchStudy
-++[#Orange] Location
-++[#lightblue] Organization
---[#yellow] Group
-@endmindmap
+{%include vueGlobale.svg%}
 
 
 ### Nomenclatures

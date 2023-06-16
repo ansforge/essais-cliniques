@@ -5,19 +5,7 @@ Plusieurs choix sont possibles :
 - Extraction complète à partir d'une date de mise à jour
 - Extraction d'un essais clinique à partir d'un de ses identifiants
 
-@startuml
-actor Consommateur
-actor Producteur
-Consommateur -> Producteur: Requete : Extraction compléte des essais cliniques
-Producteur --> Consommateur: Reponse : Ensemble des essais cliniques
-@enduml
-
-@startuml
-actor Consommateur
-actor Producteur
-Consommateur -> Producteur: Requete : Extraction  d'un essai clinique
-Producteur --> Consommateur: Reponse : Essais cliniques
-@enduml
+{%include flux1.svg%}
 
 ### Caractéristiques de l'API 
 
