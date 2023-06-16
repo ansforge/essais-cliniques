@@ -191,6 +191,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#description" id="markdown-toc-description">Description</a></li>
   <li><a href="#caractéristiques-de-lapi" id="markdown-toc-caractéristiques-de-lapi">Caractéristiques de l’API</a></li>
   <li><a href="#construction-de-la-requête-de-base" id="markdown-toc-construction-de-la-requête-de-base">Construction de la requête de base</a></li>
   <li><a href="#construction-de-la-réponse-de-base" id="markdown-toc-construction-de-la-réponse-de-base">Construction de la réponse de base</a></li>
@@ -200,7 +201,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<!-- ## Consultation de l'offre (Extraction) -->
+<h3 id="description">Description</h3>
+
+<p>Le consommateur réalise une extraction des essais cliniques. 
+Plusieurs choix sont possibles :</p>
+<ul>
+  <li>Extraction complète à partir d’une date de mise à jour</li>
+  <li>Extraction d’un essais clinique à partir d’un de ses identifiants</li>
+</ul>
+
+<p>@startuml
+actor Consommateur
+actor Producteur
+Consommateur -&gt; Producteur: Requete : Extraction compléte des essais cliniques
+Producteur –&gt; Consommateur: Reponse : Ensemble des essais cliniques
+@enduml</p>
+
+<p>@startuml
+actor Consommateur
+actor Producteur
+Consommateur -&gt; Producteur: Requete : Extraction  d’un essai clinique
+Producteur –&gt; Consommateur: Reponse : Essais cliniques
+@enduml</p>
 
 <h3 id="caractéristiques-de-lapi">Caractéristiques de l’API</h3>
 
@@ -474,7 +496,7 @@ mise à jour depuis une certaine date &gt;= (06/11/2022)</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 15, 2023 14:49+0000">2023-06-15</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jun 16, 2023 07:04+0000">2023-06-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

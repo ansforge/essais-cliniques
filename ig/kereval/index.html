@@ -204,7 +204,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-06-15
+            as of 2023-06-16
           
         
       </td>
@@ -228,14 +228,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#contexte" id="markdown-toc-contexte">Contexte</a></li>
+  <li><a href="#cas-dusages" id="markdown-toc-cas-dusages">Cas d’usages</a></li>
+  <li><a href="#vue-globale" id="markdown-toc-vue-globale">Vue globale</a></li>
+  <li><a href="#nomenclatures" id="markdown-toc-nomenclatures">Nomenclatures</a></li>
+</ul>
+
 </div>
 <h3 id="contexte">Contexte</h3>
 
 <p>Dans le cadre du plan Innovation santé 2030, un nouveau SI va être créé pour recenser les essais cliniques en France. Il s’agit de mettre à disposition du grand public les essais cliniques autorisés et en cours ou à venir afin d’aider au recrutement et à la bonne connaissance des essais cliniques.
 Vous trouverez plus d’information ici https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques</p>
 
+<h3 id="cas-dusages">Cas d’usages</h3>
 <p>Les cas d’usage auxquels cet Implementation Guide souhaite répondre sont :</p>
 <ul>
   <li>En tant que consommateur des données essais cliniques, je veux récupérer les données de tous les essais cliniques dont le recrutement est en cours ou à venir</li>
@@ -264,6 +271,17 @@ Vous trouverez plus d’information ici https://esante.gouv.fr/espace-presse/mis
   <li>Ce que les Implémenteurs doivent mettre en place</li>
   <li>Un onglet “télécharger”</li>
 </ul>
+
+<h3 id="vue-globale">Vue globale</h3>
+
+<p>@startmindmap
++[#lightgreen] ResearchStudy
+++[#Orange] Location
+++[#lightblue] Organization
+–[#yellow] Group
+@endmindmap</p>
+
+<h3 id="nomenclatures">Nomenclatures</h3>
 
 
 
@@ -311,7 +329,7 @@ Vous trouverez plus d’information ici https://esante.gouv.fr/espace-presse/mis
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 15, 2023 14:49+0000">2023-06-15</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jun 16, 2023 07:04+0000">2023-06-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

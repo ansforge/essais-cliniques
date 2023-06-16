@@ -204,11 +204,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="description">Description</h3>
 
-<p>Description du flux</p>
+<p>Un consommateur cherche les essais cliniques à partir de critères de recherche.</p>
 
-<p>@startuml firstDiagram
-Alice -&gt; Bob: Hello
-Bob -&gt; Alice: Hi!
+<p>Le consommateur renseigne son (ses) critère(s) de recherche parmi les critères disponibles.</p>
+
+<p>Le SI répond au consommateur les lieux de réalisation de l’offre correspondant aux critères de recherche et les identifiants des offres opérationnelles liée</p>
+
+<p>@startuml
+actor Consommateur
+actor Producteur
+Consommateur -&gt; Producteur: Requete : Recherche Essais cliniques à partir de critères
+Producteur –&gt; Consommateur: Reponse : Essais cliniques correspondant aux critères
 @enduml</p>
 
 <h3 id="caractéristiques-de-lapi">Caractéristiques de l’API</h3>
@@ -353,7 +359,7 @@ Plus de précision sur la spécification FHIR :
 <h3 id="critères-de-recherche">Critères de recherche</h3>
 
 <ul>
-  <li><a name="l629">​</a>Les critères de recherche, définis au <a href="search_param.html#structuredefinition-ror-healthcareservice">paragraphe dédié</a>, de
+  <li><a name="l635">​</a>Les critères de recherche, définis au <a href="search_param.html#structuredefinition-ror-healthcareservice">paragraphe dédié</a>, de
 <strong>StructureDefinition-eclaire-researchstudy</strong> applicables à ce cas
 d’usage sont&nbsp;:</li>
 </ul>
@@ -385,7 +391,7 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 
 <h3 id="exemple-de-requêtes">Exemple de requêtes</h3>
 
-<h4 id="scénario-1-recherche-sur-un-critère-en-saisissant-une-valeur">Scénario 1&nbsp;: Recherche sur un critère en saisissant une valeur</h4>
+<h4 id="scénario-1-recherche-des-essais-cliniques-selon-le-statut">Scénario 1&nbsp;: Recherche des essais cliniques selon le statut</h4>
 
 <p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant pour statut = XXX</p>
 
@@ -398,7 +404,49 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
 </code></pre></div></div>
-<h4 id="scénario-2-recherche-sur-un-critère-en-saisissant-une-valeur">Scénario 2&nbsp;: Recherche sur un critère en saisissant une valeur</h4>
+<h4 id="scénario-2-recherche-des-essais-cliniques-selon-le-type-dessai">Scénario 2&nbsp;: Recherche des essais cliniques selon le type d’essai</h4>
+
+<p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant critere= XXX</p>
+
+<p><strong>Requête :</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere=XXX
+</code></pre></div></div>
+
+<p><strong>Requête expliquée&nbsp;:</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
+</code></pre></div></div>
+
+<h4 id="scénario-3-recherche-des-essais-cliniques-selon-la-pathologie-étudiée-et-lage-des-patients-acceptés">Scénario 3&nbsp;: Recherche des essais cliniques selon la pathologie étudiée et l’age des patients acceptés</h4>
+
+<p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant critere= XXX</p>
+
+<p><strong>Requête :</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere=XXX
+</code></pre></div></div>
+
+<p><strong>Requête expliquée&nbsp;:</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
+</code></pre></div></div>
+
+<h4 id="scénario-4-recherche-des-essais-cliniques-par-mots-clés">Scénario 4&nbsp;: Recherche des essais cliniques par mots clés</h4>
+
+<p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant critere= XXX</p>
+
+<p><strong>Requête :</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere=XXX
+</code></pre></div></div>
+
+<p><strong>Requête expliquée&nbsp;:</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
+</code></pre></div></div>
+
+<h4 id="scénario-5-recherche-des-essais-cliniques-dans-une-zone-géographique">Scénario 5&nbsp;: Recherche des essais cliniques dans une zone géographique</h4>
 
 <p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant critere= XXX</p>
 
@@ -459,7 +507,7 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 15, 2023 14:49+0000">2023-06-15</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jun 16, 2023 07:04+0000">2023-06-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
