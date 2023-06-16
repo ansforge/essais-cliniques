@@ -393,29 +393,44 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 
 <h4 id="scénario-1-recherche-des-essais-cliniques-selon-le-statut">Scénario 1&nbsp;: Recherche des essais cliniques selon le statut</h4>
 
-<p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant pour statut = XXX</p>
+<p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant pour statut = “En cours”</p>
 
 <p><strong>Requête :</strong></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere=XXX
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get [BASE]/ResearchStudy?critere=XXX
 </code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get <span class="o">[</span>BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur le statut</span>
 </code></pre></div></div>
+
+<h4 id="scénario-2-recherche-des-essais-cliniques-selon-le-genre-du-patient">Scénario 2&nbsp;: Recherche des essais cliniques selon le genre du patient</h4>
+
+<p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant pour statut = XXX</p>
+
+<p><strong>Requête :</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get [BASE]/ResearchStudy?critere=XXX
+</code></pre></div></div>
+
+<p><strong>Requête expliquée&nbsp;:</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get <span class="o">[</span>BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
+</code></pre></div></div>
+
 <h4 id="scénario-2-recherche-des-essais-cliniques-selon-le-type-dessai">Scénario 2&nbsp;: Recherche des essais cliniques selon le type d’essai</h4>
 
 <p><strong>Description du scénario&nbsp;:</strong> Un consommateur cherche les essais cliniques ayant critere= XXX</p>
 
 <p><strong>Requête :</strong></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere=XXX
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get [BASE]/ResearchStudy?critere=XXX
 </code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get <span class="o">[</span>BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
 </code></pre></div></div>
 
 <h4 id="scénario-3-recherche-des-essais-cliniques-selon-la-pathologie-étudiée-et-lage-des-patients-acceptés">Scénario 3&nbsp;: Recherche des essais cliniques selon la pathologie étudiée et l’age des patients acceptés</h4>
@@ -424,12 +439,12 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 
 <p><strong>Requête :</strong></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere=XXX
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get [BASE]/ResearchStudy?critere=XXX
 </code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get <span class="o">[</span>BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
 </code></pre></div></div>
 
 <h4 id="scénario-4-recherche-des-essais-cliniques-par-mots-clés">Scénario 4&nbsp;: Recherche des essais cliniques par mots clés</h4>
@@ -438,12 +453,12 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 
 <p><strong>Requête :</strong></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere=XXX
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get [BASE]/ResearchStudy?critere=XXX
 </code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get <span class="o">[</span>BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
 </code></pre></div></div>
 
 <h4 id="scénario-5-recherche-des-essais-cliniques-dans-une-zone-géographique">Scénario 5&nbsp;: Recherche des essais cliniques dans une zone géographique</h4>
@@ -452,12 +467,12 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 
 <p><strong>Requête :</strong></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere=XXX
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get [BASE]/ResearchStudy?critere=XXX
 </code></pre></div></div>
 
 <p><strong>Requête expliquée&nbsp;:</strong></p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get[BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get <span class="o">[</span>BASE]/ResearchStudy?critere<span class="o">=</span>XXX <span class="c">#critère de recherche sur les essais</span>
 </code></pre></div></div>
 
 
@@ -507,7 +522,7 @@ applicables à ce cas d’usage sont&nbsp;:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jun 16, 2023 07:04+0000">2023-06-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jun 16, 2023 16:51+0000">2023-06-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
