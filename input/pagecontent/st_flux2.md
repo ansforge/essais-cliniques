@@ -1,11 +1,18 @@
 
 ### Description
 
-Description du flux 
+Un consommateur cherche les essais cliniques à partir de critères de recherche.
 
-@startuml firstDiagram
-Alice -> Bob: Hello
-Bob -> Alice: Hi!
+Le consommateur renseigne son (ses) critère(s) de recherche parmi les critères disponibles.
+
+Le SI répond au consommateur les lieux de réalisation de l’offre correspondant aux critères de recherche et les identifiants des offres opérationnelles liée 
+
+
+@startuml
+actor Consommateur
+actor Producteur
+Consommateur -> Producteur: Requete : Recherche Essais cliniques à partir de critères
+Producteur --> Consommateur: Reponse : Essais cliniques correspondant aux critères
 @enduml
 
 ### Caractéristiques de l'API
@@ -179,7 +186,7 @@ applicables à ce cas d'usage sont :
 
 ### Exemple de requêtes
 
-#### Scénario 1 : Recherche sur un critère en saisissant une valeur
+#### Scénario 1 : Recherche des essais cliniques selon le statut
 
 **Description du scénario :** Un consommateur cherche les essais cliniques ayant pour statut = XXX
 
@@ -194,7 +201,55 @@ get[BASE]/ResearchStudy?critere=XXX
 ```sh
 get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
 ```
-#### Scénario 2 : Recherche sur un critère en saisissant une valeur
+#### Scénario 2 : Recherche des essais cliniques selon le type d'essai
+
+**Description du scénario :** Un consommateur cherche les essais cliniques ayant critere= XXX
+
+**Requête :**
+
+```
+get[BASE]/ResearchStudy?critere=XXX
+```
+
+**Requête expliquée :**
+
+```sh
+get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
+```
+
+#### Scénario 3 : Recherche des essais cliniques selon la pathologie étudiée et l'age des patients acceptés
+
+**Description du scénario :** Un consommateur cherche les essais cliniques ayant critere= XXX
+
+**Requête :**
+
+```
+get[BASE]/ResearchStudy?critere=XXX
+```
+
+**Requête expliquée :**
+
+```sh
+get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
+```
+
+#### Scénario 4 : Recherche des essais cliniques par mots clés
+
+**Description du scénario :** Un consommateur cherche les essais cliniques ayant critere= XXX
+
+**Requête :**
+
+```
+get[BASE]/ResearchStudy?critere=XXX
+```
+
+**Requête expliquée :**
+
+```sh
+get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
+```
+
+#### Scénario 5 : Recherche des essais cliniques dans une zone géographique
 
 **Description du scénario :** Un consommateur cherche les essais cliniques ayant critere= XXX
 
