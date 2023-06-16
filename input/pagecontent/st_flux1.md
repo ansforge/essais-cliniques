@@ -123,8 +123,7 @@ Producteur --> Consommateur: Reponse : Essais cliniques
 Lien vers la spécification FHIR : <https://www.hl7.org/fhir/bundle.html>
 
 Si la recherche est un succès, le serveur répond :
-
--   Un header avec un code 200 OK HTTP
+-  Un header avec un code 200 OK HTTP
 
 -   Un body contenant une ressource [Bundle](https://www.hl7.org/fhir/bundle.html) dont le type =
     searchset.
@@ -135,11 +134,9 @@ Si la recherche est un succès, le serveur répond :
     le total trouvé dans une balise `total`. Dans le cas où il n'y a
     pas de résultat le service renvoie `total`: 0.
 
-Remarque : la recherche est un succès à partir du moment où la requête
-peut être exécutée. Il peut il y avoir 0 à n correspondances.
+Remarque : la recherche est un succès à partir du moment où la requête peut être exécutée. Il peut il y avoir 0 à n correspondances.
 
-Plus de précision sur la spécification FHIR :
-https://www.hl7.org/fhir/http.html
+Plus de précision sur la spécification FHIR : https://www.hl7.org/fhir/http.html
 
 #### Réponse de base -- Echec
 
@@ -193,13 +190,13 @@ applicables à ce cas d'usage sont :
 **Requête :**
 
 ```
-get[BASE]/ResearchStudy
+Get [BASE]/ResearchStudy
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/ResearchStudy  #recherche sans critère pour récupérer tous les essais cliniques
+Get [BASE]/ResearchStudy  #recherche sans critère pour récupérer tous les essais cliniques
 ```
 
 
@@ -211,13 +208,13 @@ rechercher un essais clinique à partir de son identifiant = XXX
 **Requête :**
 
 ```
-get[BASE]/ResearchStudy?identifier=XXX
+Get [BASE]/ResearchStudy?identifier=XXX
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/ResearchStudy?identifier=XXX #critère de recherche de l’identifiant de l'essai
+Get [BASE]/ResearchStudy?identifier=XXX #critère de recherche de l’identifiant de l'essai
 ```
 #### Scénario 3 : Extraction complète à partir d'une date de mise à jour
 
@@ -228,11 +225,11 @@ mise à jour depuis une certaine date \>= (06/11/2022)
 **Requête :**
 
 ```
-get[BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00
+Get [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00 #critère de recherche de sur la date de mise à jour (ge= greater than)
+Get [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00 #critère de recherche de sur la date de mise à jour (ge= greater than)
 ```

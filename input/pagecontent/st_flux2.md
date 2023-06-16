@@ -188,19 +188,37 @@ applicables à ce cas d'usage sont :
 
 #### Scénario 1 : Recherche des essais cliniques selon le statut
 
-**Description du scénario :** Un consommateur cherche les essais cliniques ayant pour statut = XXX
+**Description du scénario :** Un consommateur cherche les essais cliniques ayant pour statut = "En cours"
 
 **Requête :**
 
 ```
-get[BASE]/ResearchStudy?critere=XXX
+Get [BASE]/ResearchStudy?critere=XXX
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
+Get [BASE]/ResearchStudy?critere=XXX #critère de recherche sur le statut
 ```
+
+#### Scénario 2 : Recherche des essais cliniques selon le genre du patient
+
+**Description du scénario :** Un consommateur cherche les essais cliniques ayant pour statut = XXX
+
+**Requête :**
+
+```
+Get [BASE]/ResearchStudy?critere=XXX
+```
+
+**Requête expliquée :**
+
+```sh
+Get [BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
+```
+
+
 #### Scénario 2 : Recherche des essais cliniques selon le type d'essai
 
 **Description du scénario :** Un consommateur cherche les essais cliniques ayant critere= XXX
@@ -208,13 +226,13 @@ get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
 **Requête :**
 
 ```
-get[BASE]/ResearchStudy?critere=XXX
+Get [BASE]/ResearchStudy?critere=XXX
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
+Get [BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
 ```
 
 #### Scénario 3 : Recherche des essais cliniques selon la pathologie étudiée et l'age des patients acceptés
@@ -224,13 +242,13 @@ get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
 **Requête :**
 
 ```
-get[BASE]/ResearchStudy?critere=XXX
+Get [BASE]/ResearchStudy?critere=XXX
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
+Get [BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
 ```
 
 #### Scénario 4 : Recherche des essais cliniques par mots clés
@@ -240,14 +258,17 @@ get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
 **Requête :**
 
 ```
-get[BASE]/ResearchStudy?critere=XXX
+Get [BASE]/ResearchStudy?critere=XXX
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
+Get [BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
 ```
+
+
+
 
 #### Scénario 5 : Recherche des essais cliniques dans une zone géographique
 
@@ -256,11 +277,11 @@ get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
 **Requête :**
 
 ```
-get[BASE]/ResearchStudy?critere=XXX
+Get [BASE]/ResearchStudy?critere=XXX
 ```
 
 **Requête expliquée :**
 
 ```sh
-get[BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
+Get [BASE]/ResearchStudy?critere=XXX #critère de recherche sur les essais
 ```
