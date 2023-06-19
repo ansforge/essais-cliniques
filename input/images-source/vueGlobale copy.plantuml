@@ -1,47 +1,7 @@
-@startuml vueGlobale
+@startmindmap vueGlobale
++[#lightgreen] ResearchStudy
+++[#Orange] Location
+++[#lightblue] Organization
+--[#yellow] Group
+@endmindmap
 
-'Declaration des éléments
-rectangle EssaiClinique #LightSkyBlue;line:Blue;line.bold;text:Black
-    storage identifiant #LightSkyBlue;line:White;text:Black
-    storage nom #LightSkyBlue;line:White;text:Black
-    storage statut #LightSkyBlue;line:White;text:Black
-
-rectangle Groupe #LightGreen;line:white;text:Black
-
-
-rectangle Site #Violet;line:white;text:Black
-    storage nomSite #Violet;line:white;text:Black
-    storage adresseSite #Violet;line:white;text:Black
-
-
-rectangle OrganismePromoteur #Gold;line:white;text:Black
-    storage NomOrganisme #Gold;line:white;text:Black
-    storage AdresseOrganisme #Gold;line:white;text:Black
-
-'Liens entre éléments
-EssaiClinique -[#LightGreen,dashed,thickness=4]-> Groupe
-EssaiClinique -[#Violet,dashed,thickness=4]-> Site
-EssaiClinique -[#Gold,dashed,thickness=4]-> OrganismePromoteur
-
-EssaiClinique -[#LightSkyBlue,thickness=4] nom
-EssaiClinique -[#LightSkyBlue,thickness=4] statut
-EssaiClinique -[#LightSkyBlue,thickness=4] identifiant
-
-OrganismePromoteur -[#Gold,thickness=4]- NomOrganisme
-OrganismePromoteur -[#Gold,thickness=4]- AdresseOrganisme
-
-Site -[#Violet,thickness=4]- nomSite
-Site -[#Violet,thickness=4]- adresseSite
-
-'Legende
-rectangle Legende {
-    rectangle Profil
-    hexagon extension 
-    storage "FHIR element"
-
-    rectangle Oragnization #Gold;line:white;text:Black
-    rectangle ResearchStudy #LightSkyBlue;line:Blue;line.bold;text:Black
-    rectangle Location #Violet;line:white;text:Black
-    rectangle Group #LightGreen;line:white;text:Black
-}
-@enduml

@@ -1,12 +1,11 @@
 ### Description
 
 Le consommateur réalise une extraction des essais cliniques. 
-Le consommateur peut demander : 
-- Extraction des essais cliniques à partir d'une date de mise à jour
+Plusieurs choix sont possibles : 
+- Extraction complète à partir d'une date de mise à jour
 - Extraction d'un essais clinique à partir d'un de ses identifiants
 
-{%include flux1.1.svg%}
-{%include flux1.2.svg%}
+{%include flux1.svg%}
 
 ### Caractéristiques de l'API 
 
@@ -42,7 +41,7 @@ Le consommateur peut demander :
 <p><strong>Version FHIR</strong></p>
 </td>
 <td width="54%">
-<p>4.0.0</p>
+<p>5.0.0</p>
 </td>
 </tr>
 <tr>
