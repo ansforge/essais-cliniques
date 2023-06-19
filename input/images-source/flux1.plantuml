@@ -1,11 +1,11 @@
-@startuml
+@startuml flux1_1
 actor Consommateur
 actor Producteur
 Consommateur -> Producteur: Requete : Extraction compléte des essais cliniques
 Producteur --> Consommateur: Reponse : Ensemble des essais cliniques
 @enduml
 
-@startuml
+@startuml flux1_2
 actor Consommateur
 actor Producteur
 Consommateur -> Producteur: Requete : Extraction  d'un essai clinique
