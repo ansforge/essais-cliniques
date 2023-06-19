@@ -32,5 +32,4 @@ Les principales sections de l'IG  sont :
 
 {%include vueGlobale.svg%}
 
-
 ### Nomenclatures

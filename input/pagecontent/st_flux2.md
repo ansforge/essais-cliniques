@@ -7,13 +7,7 @@ Le consommateur renseigne son (ses) critère(s) de recherche parmi les critères
 
 Le SI répond au consommateur les lieux de réalisation de l’offre correspondant aux critères de recherche et les identifiants des offres opérationnelles liée 
 
-
-@startuml
-actor Consommateur
-actor Producteur
-Consommateur -> Producteur: Requete : Recherche Essais cliniques à partir de critères
-Producteur --> Consommateur: Reponse : Essais cliniques correspondant aux critères
-@enduml
+{%include flux2.svg%}
 
 ### Caractéristiques de l'API
 
@@ -49,7 +43,7 @@ Producteur --> Consommateur: Reponse : Essais cliniques correspondant aux critè
 <p><strong>Version FHIR</strong></p>
 </td>
 <td width="54%">
-<p>5.0.0</p>
+<p>4.0.0</p>
 </td>
 </tr>
 <tr>
