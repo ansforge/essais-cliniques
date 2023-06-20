@@ -1,12 +1,11 @@
 ### Description
 
-Le consommateur réalise une extraction des essais cliniques. 
-Le consommateur peut demander : 
-- Extraction des essais cliniques à partir d'une date de mise à jour
-- Extraction d'un essais clinique à partir d'un de ses identifiants
+Le consommateur réalise une extraction des essais cliniques à partir de critères de recherche.
 
-{%include flux1_1.svg%}
-{%include flux1_2.svg%}
+Le producteur répond au consommateur les essais cliniques correspondant aux critères de recherche et les ressources liées.
+
+
+<div style="text-inlin:center;">{%include flux1.svg%}</div>
 
 ### Caractéristiques de l'API 
 
@@ -97,7 +96,7 @@ Le consommateur peut demander :
 <p><strong>Construction requ&ecirc;te de base</strong></p>
 </td>
 <td width="531">
-<p><code>GET[base]/ResearchStudy{?[parameters]{&amp;_format=[mime-type]}}</code></p>
+<p><code>GET [base]/ResearchStudy{?[parameters]{&amp;_format=[mime-type]}}</code></p>
 </td>
 </tr>
 </tbody>
@@ -116,7 +115,7 @@ Si la recherche est un succès, le serveur répond :
 
 -   Un body contenant une ressource [Bundle](https://www.hl7.org/fhir/bundle.html) dont le type =
     searchset.
-    Le bundle encapsule 0 à n ressources HealthcareService corespondant
+    Le bundle encapsule 0 à n ressources ResearchStudy corespondant
     aux critères de recherche plus les ressources incluses correspondant
     aux critères de recherche.\
     Le service développé renvoie les 200 premiers résultats et indique
@@ -147,7 +146,7 @@ Plus de précision sur la spécification FHIR :
 ### Critères de recherches
 
 -   Les critères de recherche, définis au [paragraphe dédié](search_param.html#structuredefinition-eclaire-researchstudy), de
-    **StructureDefinition-eclaire_researchstudy** applicables à ce cas
+    **StructureDefinition-eclaire-researchstudy** applicables à ce cas
     d'usage sont :
 
 <table>
@@ -168,57 +167,65 @@ Plus de précision sur la spécification FHIR :
 Les paramètres et modificateurs de requêtes décrits au [paragraphe dédié](modifiers.html)
 applicables à ce cas d'usage sont :
 
--   A définir
+- _include
+- _count, _sort
+- Tous les prefixes de comparaison
 
 ### Exemple de requêtes
 
-#### Scénario 1 : Extraction complète des essais cliniques de la base
+#### Scénario 1 : Extraction complète des essais cliniques
 
-**Description du scénario :** Un consommateur souhaite récupér tous les essais cliniques recensés sur le périmètre nationale
+**Description du scénario :** Un consommateur souhaite récupér tous les essais cliniques recensés sur le périmètre nationale.
 
 **Requête :**
 
 ```
-Get [BASE]/ResearchStudy
+GET [BASE]/ResearchStudy?_include=ResearchStudy:site&_include=ResearchStudy:sponsor&_include=ResearchStudy:enrollment
 ```
 
 **Requête expliquée :**
 
 ```sh
-Get [BASE]/ResearchStudy  #recherche sans critère pour récupérer tous les essais cliniques
+GET [BASE]/ResearchStudy? # Recherche sans critère pour récupérer tous les essais cliniques
+_include=ResearchStudy:site # Inclus les Location référencées par ResearchStudy
+&_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
+&_include=ResearchStudy:enrollment # Inclus les Group référencées par ResearchStudy
 ```
 
+#### Scénario 2 : Extraction des essais cliniques à partir d'une date de mise à jour
 
-#### Scénario 2 : Extraction d'un essai clinique identifiée
-
-**Description du scénario :** Un consommateur souhaite
-rechercher un essais clinique à partir de son identifiant = XXX
+**Description du scénario :** Un consommateur souhaite mettre à jour tous les essais cliniques mis à jour depuis une certaine date \>= (06/11/2022).
 
 **Requête :**
 
 ```
-Get [BASE]/ResearchStudy?identifier=XXX
-```
-
-**Requête expliquée :**
-
-```sh
-Get [BASE]/ResearchStudy?identifier=XXX #critère de recherche de l’identifiant de l'essai
-```
-#### Scénario 3 : Extraction complète à partir d'une date de mise à jour
-
-**Description du scénario :** Un consommateur souhaite mettre
-à jour tous les essais
-mise à jour depuis une certaine date \>= (06/11/2022)
-
-**Requête :**
-
-```
-Get [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00
+GET [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00&_include=ResearchStudy:site&_include=ResearchStudy:sponsor&_include=ResearchStudy:enrollment
 ```
 
 **Requête expliquée :**
 
 ```sh
-Get [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00 #critère de recherche de sur la date de mise à jour (ge= greater than)
+GET [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00 # Critère de recherche de sur la date de mise à jour (ge = greater than)
+_include=ResearchStudy:site # Inclus les Location référencées par ResearchStudy
+&_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
+&_include=ResearchStudy:enrollment # Inclus les Group référencées par ResearchStudy
+```
+
+#### Scénario 3 : Extraction d'un essai clinique à partir de son identifiant
+
+**Description du scénario :** Un consommateur souhaite rechercher un essai clinique à partir de son identifiant = XXX.
+
+**Requête :**
+
+```
+GET [BASE]/ResearchStudy?identifier=XXX&_include=ResearchStudy:site&_include=ResearchStudy:sponsor&_include=ResearchStudy:enrollment
+```
+
+**Requête expliquée :**
+
+```sh
+GET [BASE]/ResearchStudy?identifier=XXX # Critère de recherche de l’identifiant de l'essai
+_include=ResearchStudy:site # Inclus les Location référencées par ResearchStudy
+&_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
+&_include=ResearchStudy:enrollment # Inclus les Group référencés par ResearchStudy
 ```
