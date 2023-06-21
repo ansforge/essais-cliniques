@@ -1,6 +1,6 @@
-@startuml flux2_1
+@startuml flux2
 actor Consommateur
 actor Producteur
-Consommateur -> Producteur: Requete : Recherche Essais cliniques à partir de critères
-Producteur --> Consommateur: Reponse : Essais cliniques correspondant aux critères
+Consommateur -> Producteur: Requête : Critère de recherche
+Producteur --> Consommateur: Réponse : Essais cliniques + ressources liées
 @enduml
