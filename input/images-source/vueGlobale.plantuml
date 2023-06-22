@@ -2,36 +2,21 @@
 
 'Declaration des éléments
 rectangle EssaiClinique #LightSkyBlue;line:Blue;line.bold;text:Black
-    storage identifiant #LightSkyBlue;line:LightSkyBlue;text:Black
-    storage nom #LightSkyBlue;line:LightSkyBlue;text:Black
-    storage statut #LightSkyBlue;line:LightSkyBlue;text:Black
 
 rectangle Groupe #LightGreen;line:white;text:Black
 
 
 rectangle Site #Violet;line:Violet;text:Black
-    storage nomSite #Violet;line:Violet;text:Black
-    storage adresseSite #Violet;line:Violet;text:Black
 
 
 rectangle OrganismePromoteur #Gold;line:Gold;text:Black
-    storage NomOrganisme #Gold;line:Gold;text:Black
-    storage AdresseOrganisme #Gold;line:Gold;text:Black
+
 
 'Liens entre éléments
 EssaiClinique -[#LightGreen,dashed,thickness=4]-> Groupe
 EssaiClinique -[#Violet,dashed,thickness=4]-> Site
 EssaiClinique -[#Gold,dashed,thickness=4]-> OrganismePromoteur
 
-EssaiClinique -[#LightSkyBlue,thickness=4] nom
-EssaiClinique -[#LightSkyBlue,thickness=4] statut
-EssaiClinique -[#LightSkyBlue,thickness=4] identifiant
-
-OrganismePromoteur -[#Gold,thickness=4]- NomOrganisme
-OrganismePromoteur -[#Gold,thickness=4]- AdresseOrganisme
-
-Site -[#Violet,thickness=4]- nomSite
-Site -[#Violet,thickness=4]- adresseSite
 
 'Legende
 rectangle Legende {
