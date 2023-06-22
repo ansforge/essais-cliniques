@@ -1,0 +1,33 @@
+@startuml mappingResearchStudy
+
+map "Site => Location" as Location #back:MistyRose;header:Violet {
+    identifiant =>
+    type => "Person"
+    actual => "True"
+}
+
+map "Groupe => Group" as Group #back:LightGreen;header:LightGreen {
+    identifiant =>
+    type => "Person"
+    actual => "True"
+}
+
+
+map "contact => ContactPoint" as contact #back:AliceBlue;header:LightSkyBlue;line:blue {
+    nom => name
+    telecommunication => telecom
+}
+
+map "EssaisCliniques => ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;line:blue {
+    identifiant => identifier
+    Nom de l'essai => title 
+    Statut de l'essai => status 
+    Sujet concerné => condition
+    Contact *-> contact
+    Résumé de l'essai => description
+    Date début de l'essai => Period.start
+    site *--> Location
+    enrollment *--> Group
+}
+
+@enduml

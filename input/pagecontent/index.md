@@ -30,7 +30,7 @@ Les principales sections de l'IG  sont :
 
 ### Vue globale
 
-{%include vueGlobale.svg%}
+<div style="text-inlin:center;">{%include vueGlobale.svg%}</div>
 
 
 ### Nomenclatures
