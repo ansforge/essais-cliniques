@@ -48,6 +48,7 @@ Critères de recherches applicables à la ressource ResearchStudy.
   style='font-size:8.0pt;line-height:115%;color:white'>Description<o:p></o:p></span></b></p>
   </td>
  </tr>
+ 
  <tr style='mso-yfti-irow:0'>
   <td width="17%" valign=top style='width:17.9%;border:solid #8EAADB 1.0pt;
   border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
@@ -91,6 +92,7 @@ Critères de recherches applicables à la ressource ResearchStudy.
   115%'><o:p></o:p></span></p>
   </td>
  </tr>
+
  <tr style='mso-yfti-irow:1'>
   <td width="17%" valign=top style='width:17.9%;border:solid #8EAADB 1.0pt;
   border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
@@ -128,6 +130,7 @@ Critères de recherches applicables à la ressource ResearchStudy.
   8.0pt;line-height:115%'>Date de dernière mise à jour de la ressource.<o:p></o:p></span></p>
   </td>
  </tr>
+
  <tr style='mso-yfti-irow:2'>
   <td width="17%" valign=top style='width:17.9%;border:solid #8EAADB 1.0pt;
   border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
@@ -141,7 +144,7 @@ Critères de recherches applicables à la ressource ResearchStudy.
   mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
   mso-border-alt:solid #8EAADB .5pt;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
-  style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>Identifier</span><span
+  style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>identifier</span><span
   style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
   </td>
   <td width="8%" valign=top style='width:8.66%;border-top:none;border-left:
@@ -170,49 +173,13 @@ Critères de recherches applicables à la ressource ResearchStudy.
   de l’essai clinique.</span><span style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
   </td>
  </tr>
- <tr style='mso-yfti-irow:3'>
-  <td width="17%" valign=top style='width:17.9%;border:solid #8EAADB 1.0pt;
-  border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
-  8.0pt;line-height:115%'>Critères d'inclusion et exclusion<o:p></o:p></span></p>
-  </td>
-  <td width="17%" valign=top style='width:17.94%;border-top:none;border-left:
-  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
-  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
-  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span class=GramE><span
-  style='font-size:8.0pt;line-height:115%'>eligibility</span></span><span
-  style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
-  </td>
-  <td width="8%" valign=top style='width:8.66%;border-top:none;border-left:
-  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
-  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
-  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
-  8.0pt;line-height:115%'>Oui<o:p></o:p></span></p>
-  </td>
-  <td width="9%" valign=top style='width:9.24%;border-top:none;border-left:
-  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
-  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
-  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
-  8.0pt;line-height:115%'>reference<o:p></o:p></span></p>
-  </td>
-  <td width="46%" valign=top style='width:46.24%;border-top:none;border-left:
-  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
-  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
-  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
-  8.0pt;line-height:115%'>Critères d'inclusion et exclusion<o:p></o:p></span></p>
-  </td>
- </tr>
+
  <tr style='mso-yfti-irow:4'>
   <td width="17%" valign=top style='width:17.9%;border:solid #8EAADB 1.0pt;
   border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
   background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
-  style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>Statut de recrutement</span><span style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
+  style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>Statut</span><span style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
   </td>
   <td width="17%" valign=top style='width:17.94%;border-top:none;border-left:
   none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
@@ -220,7 +187,7 @@ Critères de recherches applicables à la ressource ResearchStudy.
   mso-border-alt:solid #8EAADB .5pt;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
   class=GramE><span style='font-size:8.0pt;line-height:115%;color:black;
-  mso-color-alt:windowtext'>progress-status-state-actual</span></span><span
+  mso-color-alt:windowtext'>status</span></span><span
   style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
   </td>
   <td width="8%" valign=top style='width:8.66%;border-top:none;border-left:
@@ -237,7 +204,7 @@ Critères de recherches applicables à la ressource ResearchStudy.
   mso-border-alt:solid #8EAADB .5pt;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
   class=SpellE><span class=GramE><span style='font-size:8.0pt;line-height:115%;
-  color:black;mso-color-alt:windowtext'>composite</span></span></span><span
+  color:black;mso-color-alt:windowtext'>token</span></span></span><span
   style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
   </td>
   <td width="46%" valign=top style='width:46.24%;border-top:none;border-left:
@@ -245,51 +212,9 @@ Critères de recherches applicables à la ressource ResearchStudy.
   mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
   mso-border-alt:solid #8EAADB .5pt;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
-  style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>Status of study by state and actual</span><span style='font-size:8.0pt;
+  style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>Statut de l'essai clinique.</span><span style='font-size:8.0pt;
   line-height:115%'><o:p></o:p></span></p>
   </td>
  </tr>
- <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
-  <td width="17%" valign=top style='width:17.9%;border:solid #8EAADB 1.0pt;
-  border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
-  8.0pt;line-height:115%'>mots clés<o:p></o:p></span></p>
-  </td>
-  <td width="17%" valign=top style='width:17.94%;border-top:none;border-left:
-  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
-  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
-  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span class=SpellE><span
-  class=GramE><span style='font-size:8.0pt;line-height:115%'>keyword</span></span></span><span
-  style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
-  </td>
-  <td width="8%" valign=top style='width:8.66%;border-top:none;border-left:
-  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
-  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
-  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
-  8.0pt;line-height:115%'>Oui<o:p></o:p></span></p>
-  </td>
-  <td width="9%" valign=top style='width:9.24%;border-top:none;border-left:
-  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
-  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
-  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
-  8.0pt;line-height:115%'>token<o:p></o:p></span></p>
-  </td>
-  <td width="46%" valign=top style='width:46.24%;border-top:none;border-left:
-  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
-  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
-  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
-  8.0pt;line-height:115%'>Used to search for the study<o:p></o:p></span></p>
-  </td>
- </tr>
+
 </table>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal align=left style='text-align:left'>*<span style='font-size:
-9.0pt;mso-bidi-font-size:10.0pt;line-height:115%'>Critères de recherche qui
-seront applicables ultérieurement<o:p></o:p></span></p>
