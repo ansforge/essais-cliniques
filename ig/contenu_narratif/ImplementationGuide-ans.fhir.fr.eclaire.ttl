@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "IG de l'API FHIR ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-22T08:05:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-23T21:06:16+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -323,6 +323,11 @@
            fhir:title [ fhir:v "Recherche des essais cliniques sur critères" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
+       ] [
+         fhir:source [ fhir:v "mapping.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "mapping.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Mapping FHIR" ] ;
+         fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [ fhir:v "search_param.html"^^xsd:anyURI ] ;
          fhir:name [ fhir:v "search_param.html"^^xsd:anyURI ] ;
