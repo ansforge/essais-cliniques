@@ -1,3 +1,3 @@
 ### Mapping FHIR du modèle de données
 
-<div style="text-inlin:center;">{%include mappingResearchStudy.svg%}</div>
+<object data="mappingResearchStudy.svg" type="image/svg+xml"></object>
