@@ -1,0 +1,63 @@
+@startuml mappingResearchStudy
+
+
+map "ContactPoint" as Contact #back:AliceBlue;header:LightSkyBlue;line:blue {
+    Nom => name
+    Télécommunication => telecom
+}
+
+map "Group" as Group #back:TECHNOLOGY;header:LightGreen {
+     => identifier
+    type => "Person"
+    actual => "True"
+    Effectif à recruter => quantity
+    Critères => characteristic
+    Age => characteristic
+    Genre => characteristic
+}
+
+map "Characteristic" as Characteristic #back:TECHNOLOGY;header:LightGreen {
+    code => xx
+    value => xx
+    exclude => "True"/"False"
+}
+
+map "Organization" as Organization #back:BUSINESS;header:Gold {
+     => identifier
+    Nom => name
+    Adresse => address
+    
+}
+
+map "Location" as Location #back:MistyRose;header:Violet {
+     => identifier
+    Nom => name
+    Adresse => address
+}
+
+map "EssaisCliniques => ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;line:blue {
+    Identifiant => identifier
+    Nom de l'essai => title 
+    Statut de l'essai => status 
+    Phase de l'essai => phase
+    Type d'essai => category
+    Sujet concerné => condition
+    Contact => contact
+    Résumé de l'essai => description
+    Date début de l'essai => period.start
+    Lieux => site
+    Participants => enrollment
+    Promoteur => sponsor
+}
+
+
+RS::Lieux *-[#Violet,dashed,thickness=4]-> Location
+RS::Participants *-[#LightGreen,dashed,thickness=4]-> Group 
+RS::Promoteur *-[#Gold,dashed,thickness=4]-> Organization
+RS::Contact -[#lightBlue,thickness=2] Contact
+
+Group::Critères -left[#LightGreen,thickness=2]> Characteristic
+Group::Age -left[#LightGreen,thickness=2]> Characteristic
+Group::Genre -[#LightGreen,thickness=2]> Characteristic
+
+@enduml
