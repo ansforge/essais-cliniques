@@ -11,6 +11,7 @@ Description: "Profil pour le projet ECLAIRE"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "url"
 * identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slicing pour les différents identifiants de l'essai clinique"
 * identifier contains
     idPrimaire 0..1 and
     idSecondaire 0..*
@@ -22,5 +23,5 @@ Description: "Profil pour le projet ECLAIRE"
 * status ^short = "Statut du recrutement / Recruitment Status"
 * condition ^short = "Sujet concerné /  Problem(s) Studied"
 * description ^short = "Résumé de l'essai / Summary Results"
-* enrollment ^short = "Critères d'incli=usion et d'exclusion / Inclusion & exclusion criteria"
-* sponsor ^short = "promoteurs / Sponsor primary and secondary sponsors"
+* enrollment ^short = "Critères d'inclusion et d'exclusion / Inclusion & exclusion criteria"
+* sponsor ^short = "promoteur / primary Sponsor"
