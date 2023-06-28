@@ -3,30 +3,12 @@
 Dans le cadre du plan Innovation santé 2030, un nouveau SI va être créé pour recenser les essais cliniques en France. Il s’agit de mettre à disposition du grand public les essais cliniques autorisés et en cours ou à venir afin d’aider au recrutement et à la bonne connaissance des essais cliniques.
 Vous trouverez plus d'information ici https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques
 
-### Cas d'usages
-Les cas d’usage auxquels cet Implementation Guide souhaite répondre sont :
--	En tant que consommateur des données essais cliniques, je veux récupérer les données de tous les essais cliniques dont le recrutement est en cours ou à venir
--	En tant que consommateur des données essais cliniques, je veux récupérer les données de tous les essais cliniques dont le recrutement est en cours ou à venir qui ont été modifiés depuis une date donnée*
--	En tant que consommateur des données essais cliniques, je veux obtenir les données de tous les essais cliniques dont le recrutement est en cours ou à venir qui correspondent à mes critères de recherche**
--	En tant que consommateur des données essais cliniques, je veux obtenir les données d’un essai clinique à partir de l’un de ses identifiants
+### Les flux
+Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d'études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.
 
-Les critères sont :
--	Mots clés
--	Identifiant
--	Localisation
--	Statut de recrutement
--	Age du participant
--	Volontaire sain accepté
--	Pathologie
--	Type d’étude
--	Sexe
-
-
-----------------------------------------------
-Les principales sections de l'IG  sont :
-* Le contexte de l'IG et les points dont les implémenteurs doivent être familier avant dans s'avoir plus sur l'IG
-* Ce que les Implémenteurs doivent mettre en place
-* Un onglet "télécharger"
+| | Nom des flux métiers  | Description |
+| ----- | ----- | ----- |
+| <a href="st_flux1.html">Flux 1</a> | Extraction de données des essais cliniques | Un consommateur réalise une extraction des essais cliniques, complète ou à partir d'une date de mise à jour. |
 
 ### Vue globale
 
