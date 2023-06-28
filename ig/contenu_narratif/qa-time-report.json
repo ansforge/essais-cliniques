@@ -1,54 +1,59 @@
 {
-  "date" : "Mon, 26 Jun, 2023 12:51:11 +0000",
+  "date" : "Wed, 28 Jun, 2023 07:21:29 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire.json",
-      "size" : 3820,
+      "size" : 3598,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 23,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 37
+          "start" : 29,
+          "length" : 80
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 23,
-          "length" : 10
+          "start" : 29,
+          "length" : 13
         },
         {
           "activity" : "generateNarratives",
-          "start" : 23,
-          "length" : 59
+          "start" : 29,
+          "length" : 85
         },
         {
           "activity" : "validate",
-          "start" : 24,
-          "length" : 786
+          "start" : 31,
+          "length" : 1081
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 25,
-          "length" : 1
+          "start" : 32,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 25,
-          "length" : 93
+          "start" : 32,
+          "length" : 100
         },
         {
           "activity" : "generate2",
-          "start" : 27,
-          "length" : 44
+          "start" : 35,
+          "length" : 114
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 47,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 37,
+          "start" : 48,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 53,
           "length" : 1
         }
       ]
@@ -59,57 +64,62 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 22,
-          "length" : 17
+          "start" : 29,
+          "length" : 24
         },
         {
-          "activity" : "loadDepInfo",
-          "start" : 23,
+          "activity" : "load-configure",
+          "start" : 29,
           "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 23,
-          "length" : 20
+          "start" : 29,
+          "length" : 19
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 23,
-          "length" : 262
+          "start" : 29,
+          "length" : 408
         },
         {
           "activity" : "generateNarratives",
-          "start" : 23,
-          "length" : 303
+          "start" : 29,
+          "length" : 356
         },
         {
           "activity" : "validate",
-          "start" : 23,
-          "length" : 1142
+          "start" : 30,
+          "length" : 1642
         },
         {
-          "activity" : "scanForUsageStats",
-          "start" : 25,
+          "activity" : "checkConformanceResources",
+          "start" : 32,
           "length" : 1
         },
         {
+          "activity" : "scanForUsageStats",
+          "start" : 32,
+          "length" : 3
+        },
+        {
           "activity" : "generate1",
-          "start" : 25,
-          "length" : 315
+          "start" : 33,
+          "length" : 539
         },
         {
           "activity" : "generate2",
-          "start" : 27,
-          "length" : 3461
+          "start" : 35,
+          "length" : 4374
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 37,
-          "length" : 23
+          "start" : 48,
+          "length" : 16
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 41,
+          "start" : 53,
           "length" : 1
         }
       ]
