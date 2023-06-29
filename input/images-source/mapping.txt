@@ -1,63 +1,83 @@
 @startuml mappingResearchStudy
 
+map "ContactDetail" as Contact #back:AliceBlue;header:LightSkyBlue;line:blue {
+    Nom => name : // string [0..1] //
+    Télécommunication => telecom : // ContactPoint [0..*] // 
+    Type => contacType <&plus> : // code [0..1] // \n // ("Public"/"Scientific") // 
+}
 
-map "ContactPoint" as Contact #back:AliceBlue;header:LightSkyBlue;line:blue {
-    Nom => name
-    Télécommunication => telecom
+map "Slice identifier" as slice_identifier #back:AliceBlue;header:LightSkyBlue;line:blue {
+    Identifiant principal => primaryId [0..1]
+    Identifiant secondaire => secondaryId [0..*]
 }
 
 map "Group" as Group #back:TECHNOLOGY;header:LightGreen {
-     => identifier
-    type => "Person"
-    actual => "True"
-    Effectif à recruter => quantity
-    Critères => characteristic
-    Age => characteristic
-    Genre => characteristic
+    Identifiant => identifier : // Identifier [0..*] //
+    Type de groupe => type : // code [1..1] = "Person" //
+    Groupe actif => actual : // boolean [1..1] = "True"//
+    Effectif à recruter => quantity : // unsignedInt [0..1] //
+    Critères => characteristic : // BackboneElement [0..*] //
+    Age => characteristic : // BackboneElement [0..*] //
+    Genre => characteristic : // BackboneElement [0..*] //
 }
 
 map "Characteristic" as Characteristic #back:TECHNOLOGY;header:LightGreen {
-    code => xx
-    value => xx
-    exclude => "True"/"False"
+    type  => code : // CodeableConcept [1..1] //
+    valeur => value[x] : // [1..1] //
+    exclusion => exclude : // boolean [1..1] //
 }
 
 map "Organization" as Organization #back:BUSINESS;header:Gold {
-     => identifier
-    Nom => name
-    Adresse => address
-    
+    Identifiant => identifier : // Identifier [0..*] //
+    Nom => name : // string [0..1] //
+    Adresse => address : // Address [0..*] //
 }
 
 map "Location" as Location #back:MistyRose;header:Violet {
-     => identifier
-    Nom => name
-    Adresse => address
+    Identifiant => identifier : // Identifier [0..*] //
+    Nom => name : // string [0..1] //
+    Adresse => address : // Address [0..1] //
 }
 
-map "EssaisCliniques => ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;line:blue {
-    Identifiant => identifier
-    Nom de l'essai => title 
-    Statut de l'essai => status 
-    Phase de l'essai => phase
-    Type d'essai => category
-    Sujet concerné => condition
-    Contact => contact
-    Résumé de l'essai => description
-    Date début de l'essai => period.start
-    Lieux => site
-    Participants => enrollment
-    Promoteur => sponsor
+map "EssaiClinique : ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;line:blue {
+    Identifiant (Primary and Secondary Identifying Numbers) => identifier <&layers> : // Identifier [0..*] // 
+    Date de révision technique => meta.lastUpdated : // instant [0..1] // 
+    Date de révision fonctionnelle => reviewDate <&plus> : // dateTime [0..1] //
+    Nom de l'essai (Public title) => title : // string [0..1] //
+    Statut de l'essai => 
+    Phase de l'essai (Study type : phase) => phase : // CodeableConcept [0..1] //
+    Type d'essai (Study type : type of study) => category : // CodeableConcept [0..*] //
+    Sujet concerné (Health Condition(s) or Problem(s) Studied) => condition : // CodeableConcept [0..*] (MeDRA) //
+    Précision sur le sujet (Health Condition(s)  or  Problem(s) Studied) => conditionDetails <&plus> : // string [0..1] //
+    Domaine thérapeutique* => therapeuticArea <&plus> : // string [0..1] //
+    Résumé de l'essai => description : // markdown [0..1] //
+    Période prévisionnelle de recrutement => 
+    Contact (Contact for public / scientific queries) => contact : // ContactDetail [0..*] //
+    Participants (Key Inclusion and Exclusion Criteria, Sample size)=> enrollment : // Reference(Group) [0..*] //
+    Lieux (Countries of Recruitment) => site : // Reference(Location) [0..1] //
+    Promoteur principal (Primary sponsor) => sponsor : // Reference(Organization) [0..1] // 
+    Promoteur secondaire (Secondary Sponsor(s)) => secondarySponsor <&plus> : // Reference(Organization) [0..*] // 
 }
 
 
 RS::Lieux *-[#Violet,dashed,thickness=4]-> Location
 RS::Participants *-[#LightGreen,dashed,thickness=4]-> Group 
 RS::Promoteur *-[#Gold,dashed,thickness=4]-> Organization
-RS::Contact -[#lightBlue,thickness=2] Contact
+RS::Identifiant -left[#lightBlue,thickness=2] slice_identifier
+RS::Contact -[#lightBlue,dotted,thickness=6] Contact
+
+Group -[hidden] Organization
 
 Group::Critères -left[#LightGreen,thickness=2]> Characteristic
 Group::Age -left[#LightGreen,thickness=2]> Characteristic
 Group::Genre -[#LightGreen,thickness=2]> Characteristic
+
+
+
+legend top left
+  <&layers> : slice
+  <&plus> : extension
+  * : pas d'équivalence Santé.fr ni WHO
+endlegend
 
 @enduml

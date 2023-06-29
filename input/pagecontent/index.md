@@ -12,7 +12,7 @@ Un flux est un échange entre deux systèmes. Des flux ont été identifiés lor
 
 ### Vue globale
 
-<div style="text-inlin:center;">{%include vueGlobale.svg%}</div>
+<object data="vueGlobale.svg" type="image/svg+xml"></object>
 
 
 ### Nomenclatures
