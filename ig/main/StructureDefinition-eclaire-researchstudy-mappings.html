@@ -59,7 +59,7 @@
   </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l&#39;Ecosystème (ECLAIRE)</span>
+          <p><span style="font-size:12pt;font-weight:bold">ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l&#39;Ecosystème)</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -262,6 +262,8 @@
  <tr><td>ResearchStudy</td><td>ObservationalStudyProtocolVersion; Study;
 StudyProtocolVersion</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>No BRIDG mapping (although there is  DocumentVersion.identifier &gt; StudyProtocolDocumentVersion, this is arguably a different semantic)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (idPrimaire)</td><td>No BRIDG mapping (although there is  DocumentVersion.identifier &gt; StudyProtocolDocumentVersion, this is arguably a different semantic)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (idSecondaire)</td><td>No BRIDG mapping (although there is  DocumentVersion.identifier &gt; StudyProtocolDocumentVersion, this is arguably a different semantic)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;title</td><td>No BRIDG mapping (although there is  StudyProtocolDocumentVersionPublicTitle this is arguably a different semantic: title of a document vs title of a research study)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;protocol</td><td>StudyProtocolDocumentVersionPublicTitle.name</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>CompanionStudyRelationship</td> </tr>
@@ -295,6 +297,20 @@ StudyProtocolVersion</td> </tr>
  <tr><td colspan="3"><b>ECLAIREResearchStudy</b></td></tr>
  <tr><td>ResearchStudy</td><td>OBX</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (idPrimaire)</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>CE/CNE/CWE, CX.5</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>CX.4 / EI-2-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>CX.1 / EI.1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>DR, CX.7 + CX.8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>CX.4 / (CX.4,CX.9,CX.10)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (idSecondaire)</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>CE/CNE/CWE, CX.5</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>CX.4 / EI-2-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>CX.1 / EI.1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>DR, CX.7 + CX.8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>CX.4 / (CX.4,CX.9,CX.10)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;primaryPurposeType</td><td>CE/CNE/CWE</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;phase</td><td>CE/CNE/CWE</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>CE/CNE/CWE</td> </tr>
@@ -321,6 +337,24 @@ StudyProtocolVersion</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>n/a, N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>n/a, II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT], .identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (idPrimaire)</td><td>n/a, II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT], .identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>n/a, Role.code or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>n/a, CD, Role.code or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>n/a, II.root or Role.id.root</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>n/a, II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>n/a, IVL&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;] or URG&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;], Role.effectiveTime or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (idSecondaire)</td><td>n/a, II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT], .identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>n/a, Role.code or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>n/a, CD, Role.code or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>n/a, II.root or Role.id.root</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>n/a, II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>n/a, IVL&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;] or URG&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;], Role.effectiveTime or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;title</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;protocol</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), .outboundRelationship[typeCode=DEFN].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), .inboundRelationship[typeCode=COMP].source[moodCode=EVN]</td> </tr>
@@ -360,6 +394,8 @@ StudyProtocolVersion</td> </tr>
  <tr><td colspan="3"><b>ECLAIREResearchStudy</b></td></tr>
  <tr><td>ResearchStudy</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Organization's Unique Protocol ID; Secondary IDs</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (idPrimaire)</td><td>Organization's Unique Protocol ID; Secondary IDs</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (idSecondaire)</td><td>Organization's Unique Protocol ID; Secondary IDs</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;title</td><td>Brief Title</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;protocol</td><td>Interventions; Arm/Intervention Cross-Reference</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;phase</td><td>Study Phase</td> </tr>
@@ -385,6 +421,8 @@ StudyProtocolVersion</td> </tr>
  <tr><td colspan="3"><b>ECLAIREResearchStudy</b></td></tr>
  <tr><td>ResearchStudy</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (idPrimaire)</td><td>FiveWs.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (idSecondaire)</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;focus</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td>FiveWs.what[x]</td> </tr>
@@ -470,7 +508,7 @@ StudyProtocolVersion</td> </tr>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 30, 2023 10:27+0000">2023-06-30</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 30, 2023 12:07+0000">2023-06-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -3,14 +3,14 @@
   "id" : "ans.fhir.fr.eclaire",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ECLAIRE</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/eclaire/ImplementationGuide/ans.fhir.fr.eclaire</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ECLAIRE</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/eclaire/ImplementationGuide/ans.fhir.fr.eclaire</pre><div><p>Implementation Guide pour définir l'API FHIR pour ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)</p>\n</div></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ImplementationGuide/ans.fhir.fr.eclaire",
   "version" : "0.1.0",
   "name" : "ECLAIRE",
-  "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème (ECLAIRE)",
+  "title" : "ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)",
   "status" : "draft",
-  "date" : "2023-06-30T10:27:30+00:00",
+  "date" : "2023-06-30T12:07:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -19,6 +19,7 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Implementation Guide pour définir l'API FHIR pour ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)",
   "packageId" : "ans.fhir.fr.eclaire",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
@@ -41,6 +42,18 @@
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "1.0.0"
+  },
+  {
+    "id" : "ans_annuaire_fhir_r4",
+    "uri" : "http://fhir.org/packages/ans.annuaire.fhir.r4/ImplementationGuide/ans.annuaire.fhir.r4",
+    "packageId" : "ans.annuaire.fhir.r4",
+    "version" : "0.2.0"
+  },
+  {
+    "id" : "hl7_fhir_fr_core",
+    "uri" : "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core",
+    "packageId" : "hl7.fhir.fr.core",
+    "version" : "1.1.0"
   }],
   "definition" : {
     "extension" : [{
