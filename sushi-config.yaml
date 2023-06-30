@@ -1,9 +1,9 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.[code]
-canonical: http://interop.esante.gouv.fr/ig/fhir/[code] # the last part of canonical and id must be the same
-name: ExampleIG
-title: ANS IG Example
+id: ans.fhir.fr.eclaire
+canonical: https://interop.esante.gouv.fr/ig/fhir/eclaire # the last part of canonical and id must be the same
+name: ECLAIRE
+title: Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème (ECLAIRE)
 publisher:
   name: ANS
   url: https://esante.gouv.fr
@@ -22,31 +22,31 @@ pages:
     index.md:
         title: Accueil
     specifications_techniques.md:
-        construction_des_flux.md:
         st_flux1.md:
-            title: Flux 01
-        st_flux2.md:
-            title: Flux 02
+            title: Extraction de données des essais cliniques
+    mapping.md:
+        title: Mapping FHIR
+    search_param.md:
+        title: Critères de recherche
+    modifiers.md:
+        title: Paramètres et modificateurs de requêtes FHIR
     autres_ressources.md:
         title: Autres Ressources
         securite.md:
             title: Sécurité
         downloads.md:
-            title: Téléchargements et usages
-
-    tests.md:
-        title: Tests      
+            title: Téléchargements et usages   
     about.md:
         title: A propos de ce guide
 
 menu:
     Accueil: index.html
     Description des flux:
-        Construction des flux: construction_des_flux.html
-        Flux 01: st_flux1.html
-        Flux 02: st_flux2.html
+        Extraction de données des essais cliniques: st_flux1.html
+    Mapping FHIR: mapping.html
+    Critères de recherche: search_param.html
+    Paramètres et modificateurs de requêtes FHIR: modifiers.html
     Ressources de conformance: artifacts.html
-    Tests:   tests.html
     Autres ressources:
         Sécurité: securite.html
         Téléchargements et usage: downloads.html
