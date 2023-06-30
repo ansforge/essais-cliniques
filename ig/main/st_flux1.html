@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.EXAMPLE\Flux 01 - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.ECLAIRE\Extraction de données des essais cliniques - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.2"}
-    h3,h4,h5,h6{--heading-prefix:"2.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -55,7 +55,7 @@
   </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">ANS IG Example</span>
+          <p><span style="font-size:12pt;font-weight:bold">Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l&#39;Ecosystème (ECLAIRE)</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -93,21 +93,21 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="construction_des_flux.html">Construction des flux</a>
-      </li>
-      <li>
-        <a href="st_flux1.html">Flux 01</a>
-      </li>
-      <li>
-        <a href="st_flux2.html">Flux 02</a>
+        <a href="st_flux1.html">Extraction de données des essais cliniques</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="artifacts.html">Ressources de conformance</a>
+    <a href="mapping.html">Mapping FHIR</a>
   </li>
   <li>
-    <a href="tests.html">Tests</a>
+    <a href="search_param.html">Critères de recherche</a>
+  </li>
+  <li>
+    <a href="modifiers.html">Paramètres et modificateurs de requêtes FHIR</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformance</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
@@ -143,15 +143,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Specifications Techniques</b></a></li><li><b>Flux 01</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Specifications Techniques</b></a></li><li><b>Extraction de données des essais cliniques</b></li>
 
           <span style="float:right;">
 
-            <a href="construction_des_flux.html">&lt;prev</a> | 
+            <a href="specifications_techniques.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="st_flux2.html">next&gt;</a>
+          | <a href="mapping.html">next&gt;</a>
 
           </span>
 
@@ -174,7 +174,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
-  <h2>Flux 01</h2>
+  <h2>Extraction de données des essais cliniques</h2>
   
 
 
@@ -191,19 +191,229 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#nom-du-flux" id="markdown-toc-nom-du-flux">Nom du flux</a></li>
-  <li><a href="#construction-du-flux" id="markdown-toc-construction-du-flux">Construction du flux</a></li>
+  <li><a href="#description" id="markdown-toc-description">Description</a></li>
+  <li><a href="#caractéristiques-de-lapi" id="markdown-toc-caractéristiques-de-lapi">Caractéristiques de l’API</a></li>
+  <li><a href="#construction-de-la-requête-de-base" id="markdown-toc-construction-de-la-requête-de-base">Construction de la requête de base</a></li>
+  <li><a href="#construction-de-la-réponse-de-base" id="markdown-toc-construction-de-la-réponse-de-base">Construction de la réponse de base</a></li>
+  <li><a href="#critères-de-recherches" id="markdown-toc-critères-de-recherches">Critères de recherches</a></li>
+  <li><a href="#paramètres-et-modificateurs-de-requêtes-fhir" id="markdown-toc-paramètres-et-modificateurs-de-requêtes-fhir">Paramètres et modificateurs de requêtes FHIR</a></li>
+  <li><a href="#exemple-de-requêtes" id="markdown-toc-exemple-de-requêtes">Exemple de requêtes</a></li>
 </ul>
 
 </div>
+<h3 id="description">Description</h3>
 
-<h3 id="nom-du-flux">Nom du flux</h3>
+<p>Le consommateur réalise une extraction des essais cliniques à partir de critères de recherche.</p>
 
-<p>Description du flux</p>
+<p>Le SI répond au consommateur les essais cliniques correspondant aux critères de recherche et les ressources liées.</p>
 
-<h3 id="construction-du-flux">Construction du flux</h3>
+<div style="text-inlin:center;"><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="250px" preserveAspectRatio="none" style="width:406px;height:250px;background:#FFFFFF;" version="1.1" viewBox="0 0 406 250" width="406px" zoomAndPan="magnify"><defs><filter height="300%" id="fo9xm0akvju3c" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="61" x2="61" y1="88.2969" y2="166.5625" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="373" x2="373" y1="88.2969" y2="166.5625" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="5" y="84.9951">Consommateur</text><ellipse cx="61.5" cy="15" fill="#FEFECE" filter="url(#fo9xm0akvju3c)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;" /><path d="M61.5,23 L61.5,50 M48.5,31 L74.5,31 M61.5,50 L48.5,65 M61.5,50 L74.5,65 " fill="none" filter="url(#fo9xm0akvju3c)" style="stroke:#A80036;stroke-width:2.0;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="5" y="178.5576">Consommateur</text><ellipse cx="61.5" cy="191.8594" fill="#FEFECE" filter="url(#fo9xm0akvju3c)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;" /><path d="M61.5,199.8594 L61.5,226.8594 M48.5,207.8594 L74.5,207.8594 M61.5,226.8594 L48.5,241.8594 M61.5,226.8594 L74.5,241.8594 " fill="none" filter="url(#fo9xm0akvju3c)" style="stroke:#A80036;stroke-width:2.0;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="342" y="84.9951">ECLAIRE</text><ellipse cx="373.5" cy="15" fill="#FEFECE" filter="url(#fo9xm0akvju3c)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;" /><path d="M373.5,23 L373.5,50 M360.5,31 L386.5,31 M373.5,50 L360.5,65 M373.5,50 L386.5,65 " fill="none" filter="url(#fo9xm0akvju3c)" style="stroke:#A80036;stroke-width:2.0;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="342" y="178.5576">ECLAIRE</text><ellipse cx="373.5" cy="191.8594" fill="#FEFECE" filter="url(#fo9xm0akvju3c)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;" /><path d="M373.5,199.8594 L373.5,226.8594 M360.5,207.8594 L386.5,207.8594 M373.5,226.8594 L360.5,241.8594 M373.5,226.8594 L386.5,241.8594 " fill="none" filter="url(#fo9xm0akvju3c)" style="stroke:#A80036;stroke-width:2.0;" /><polygon fill="#A80036" points="361.5,115.4297,371.5,119.4297,361.5,123.4297,365.5,119.4297" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;" x1="61.5" x2="367.5" y1="119.4297" y2="119.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="196" x="68.5" y="114.3638">Requête : Critère de recherche</text><polygon fill="#A80036" points="72.5,144.5625,62.5,148.5625,72.5,152.5625,68.5,148.5625" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="66.5" x2="372.5" y1="148.5625" y2="148.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="288" x="78.5" y="143.4966">Réponse : Essais cliniques + ressources liées</text></g></svg></div>
 
-<p>Explication de comment doit être construit le flux</p>
+<h3 id="caractéristiques-de-lapi">Caractéristiques de l’API</h3>
+
+<table width="25%">
+<tbody>
+<tr>
+<td width="45%">
+<p><strong>Endpoint</strong></p>
+</td>
+
+<td width="54%">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="45%">
+<p><strong>Header</strong></p>
+</td>
+<td width="54%">
+<p>Content-type&nbsp;:=Json + FHIR</p>
+</td>
+</tr>
+
+<tr>
+<td width="45%">
+<p><strong>Encodage</strong></p>
+</td>
+<td width="54%">
+<p>&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td width="45%">
+<p><strong>Version FHIR</strong></p>
+</td>
+<td width="54%">
+<p>4.0.0</p>
+</td>
+</tr>
+
+<tr>
+<td width="45%">
+<p><strong>Version package</strong></p>
+</td>
+<td width="54%">
+<p>&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td width="45%">
+<p><strong>Publication</strong></p>
+</td>
+<td width="54%">
+<p>&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<h3 id="construction-de-la-requête-de-base">Construction de la requête de base</h3>
+
+<table>
+<tbody>
+
+<tr>
+<td width="149">
+<p><strong>Interaction FHIR</strong></p>
+</td>
+<td width="531">
+<p>Search <a href="#_ftn1" name="_ftnref1">[1]</a> </p>
+</td>
+</tr>
+
+<tr>
+<td width="149">
+<p><strong>Méthode http associée</strong></p>
+</td>
+<td width="531">
+<p>GET</p>
+</td>
+</tr>
+
+<tr>
+<td width="149">
+<p><strong>Ressource recherchée</strong></p>
+</td>
+<td width="531">
+<p>ResearchStudy</p>
+</td>
+</tr>
+
+<tr>
+<td width="149">
+<p><strong>Construction requête de base</strong></p>
+</td>
+<td width="531">
+<p><code>GET [base]/ResearchStudy{?[parameters]{&amp;_format=[mime-type]}}</code></p>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<p>&nbsp;</p>
+<p><a href="#_ftnref1" name="_ftn1">[1]</a> <a href="http://hl7.org/fhir/R4/http.html#search">http://hl7.org/fhir/R4/http.html#search</a> et <a href="http://hl7.org/fhir/R4/http.html#general">http://hl7.org/fhir/R4/http.html#general</a></p>
+
+<h3 id="construction-de-la-réponse-de-base">Construction de la réponse de base</h3>
+
+<h4 id="réponse-de-base--succès">Réponse de base – Succès</h4>
+
+<p>Lien vers la spécification FHIR : <a href="http://hl7.org/fhir/R4/bundle.html">http://hl7.org/fhir/R4/bundle.html</a></p>
+
+<p>Si la recherche est un succès, le serveur répond :</p>
+<ul>
+  <li>Un header avec un code 200 OK HTTP.</li>
+  <li>Un body contenant une ressource <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> dont le type = searchset. Le bundle encapsule 0 à n ressources ResearchStudy corespondant aux critères de recherche plus les ressources incluses correspondant aux critères de recherche.
+Le service développé renvoie les 200 premiers résultats et indique le total trouvé dans une balise <code class="language-plaintext highlighter-rouge">total</code>. Dans le cas où il n’y a pas de résultat le service renvoie <code class="language-plaintext highlighter-rouge">total</code>: 0.</li>
+</ul>
+
+<p>Remarque : La recherche est un succès à partir du moment où la requête peut être exécutée. Il peut il y avoir 0 à n correspondances.</p>
+
+<p>Plus de précision sur la spécification FHIR : <a href="http://hl7.org/fhir/R4/http.html">http://hl7.org/fhir/R4/http.html</a></p>
+
+<h4 id="réponse-de-base--echec">Réponse de base – Echec</h4>
+
+<p>Lien vers la spécification FHIR :
+<a href="http://hl7.org/fhir/R4/operationoutcome.html">http://hl7.org/fhir/R4/operationoutcome.html</a></p>
+
+<p>Si la recherche échoue, le serveur doit répondre :</p>
+<ul>
+  <li>Un header avec un un code erreur HTTP 4XX ou 5XX.</li>
+  <li>Un body contenant une ressource <a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a> qui donne les détails sur la raison de l’échec.</li>
+</ul>
+
+<p>Remarque : L’échec d’une recherche est la non-possibilité d’exécuter la
+requête, ce qui est différent d’aucune correspondance à la recherche.</p>
+
+<p>Plus de précision sur la spécification FHIR : <a href="http://hl7.org/fhir/R4/http.html">http://hl7.org/fhir/R4/http.html</a></p>
+
+<h3 id="critères-de-recherches">Critères de recherches</h3>
+
+<ul>
+  <li>Les critères de recherche, définis au <a href="search_param.html#structuredefinition-eclaire-researchstudy">paragraphe dédié</a>, de <strong>StructureDefinition-eclaire-researchstudy</strong> applicables à ce cas d’usage sont :</li>
+</ul>
+
+<table>
+<tbody>
+<tr>
+
+<td width="230">
+<p>_lastUpdated</p>
+</td>
+
+<td width="230">
+<p>identifier</p>
+</td>
+
+</tr>
+</tbody>
+</table>
+
+<h3 id="paramètres-et-modificateurs-de-requêtes-fhir">Paramètres et modificateurs de requêtes FHIR</h3>
+
+<p>Les paramètres et modificateurs de requêtes décrits au <a href="modifiers.html">paragraphe dédié</a>
+applicables à ce cas d’usage sont :</p>
+
+<ul>
+  <li>_include</li>
+  <li>_count, _sort</li>
+  <li>Tous les prefixes de comparaison</li>
+</ul>
+
+<h3 id="exemple-de-requêtes">Exemple de requêtes</h3>
+
+<h4 id="scénario-1-extraction-complète-des-essais-cliniques">Scénario 1 : Extraction complète des essais cliniques</h4>
+
+<p><strong>Description du scénario :</strong> Un consommateur souhaite récupér tous les essais cliniques recensés sur le périmètre national.</p>
+
+<p><strong>Requête :</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [BASE]/ResearchStudy?_include=ResearchStudy:site&amp;_include=ResearchStudy:sponsor&amp;_include=ResearchStudy:enrollment
+</code></pre></div></div>
+
+<p><strong>Requête expliquée :</strong></p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET <span class="o">[</span>BASE]/ResearchStudy? <span class="c"># Recherche sans critère pour récupérer tous les essais cliniques</span>
+<span class="nv">_include</span><span class="o">=</span>ResearchStudy:site <span class="c"># Inclus les Location référencées par ResearchStudy</span>
+&amp;_include<span class="o">=</span>ResearchStudy:sponsor <span class="c"># Inclus les Organization référencées par ResearchStudy</span>
+&amp;_include<span class="o">=</span>ResearchStudy:enrollment <span class="c"># Inclus les Group référencées par ResearchStudy</span>
+</code></pre></div></div>
+
+<h4 id="scénario-2-extraction-des-essais-cliniques-à-partir-dune-date-de-mise-à-jour">Scénario 2 : Extraction des essais cliniques à partir d’une date de mise à jour</h4>
+
+<p><strong>Description du scénario :</strong> Un consommateur souhaite mettre à jour tous les essais cliniques mis à jour depuis une certaine date &gt;= (06/11/2022).</p>
+
+<p><strong>Requête :</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00&amp;_include=ResearchStudy:site&amp;_include=ResearchStudy:sponsor&amp;_include=ResearchStudy:enrollment
+</code></pre></div></div>
+
+<p><strong>Requête expliquée :</strong></p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET <span class="o">[</span>BASE]/ResearchStudy?_lastUpdated<span class="o">=</span>ge2022-11-06T15:00 <span class="c"># Critère de recherche de sur la date de mise à jour (ge = greater than)</span>
+&amp;_include<span class="o">=</span>ResearchStudy:site <span class="c"># Inclus les Location référencées par ResearchStudy</span>
+&amp;_include<span class="o">=</span>ResearchStudy:sponsor <span class="c"># Inclus les Organization référencées par ResearchStudy</span>
+&amp;_include<span class="o">=</span>ResearchStudy:enrollment <span class="c"># Inclus les Group référencées par ResearchStudy</span>
+</code></pre></div></div>
 
 
 
@@ -233,7 +443,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="construction_des_flux.html">&lt;prev</a>
+                <a href="specifications_techniques.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -241,7 +451,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="st_flux2.html">next&gt;</a>
+                <a href="mapping.html">next&gt;</a>
 
               </td>
             </tr>
@@ -251,12 +461,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Mar 25, 2023 16:02+0000">2023-03-25</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 30, 2023 10:27+0000">2023-06-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: #81BEF7" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/example/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+                  | <a style="color: #81BEF7" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
                 
 
           </span>

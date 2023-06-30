@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.ECLAIRE\Téléchargements et usages - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.ECLAIRE\Critères de recherche - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.2"}
-    h3,h4,h5,h6{--heading-prefix:"6.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -143,15 +143,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='autres_ressources.html'><b>Autres Ressources</b></a></li><li><b>Téléchargements et usages</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Critères de recherche</b></li>
 
           <span style="float:right;">
 
-            <a href="securite.html">&lt;prev</a> | 
+            <a href="mapping.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="about.html">next&gt;</a>
+          | <a href="modifiers.html">next&gt;</a>
 
           </span>
 
@@ -174,7 +174,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
-  <h2>Téléchargements et usages</h2>
+  <h2>Critères de recherche</h2>
   
 
 
@@ -192,24 +192,86 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h3 id="téléchargements-et-usage">Téléchargements et usage</h3>
+<!-- # Critères de recherche -->
 
-<p>L’implementation guide contient un package <a href="package.tgz">téléchargeable ici</a> permettant de valider les instances par rapport aux profils qu’il contient.</p>
+<h3 id="structuredefinition-eclaire-researchstudy">StructureDefinition-eclaire-researchstudy</h3>
 
-<p>Pour cela, il suffit de télécharger le <a href="package.tgz">package.tgz</a> et l’importer dans un serveur, par exemple sur hapi en suivant ce <a href="https://github.com/nmdp-bioinformatics/igloader">script python</a> open source.</p>
+<p>Critères de recherches applicables à la ressource ResearchStudy.</p>
 
-<p>Vous pourrez ensuite utiliser l’opération <a href="https://www.hl7.org/fhir/resource-operation-validate.html">$validate</a> pour valider les instances de ressource contre un profil issu de cette spécification.</p>
+<table class="MsoTable15Grid4Accent5" border="1" cellspacing="0" cellpadding="0" width="98%" style="width:98.42%;border-collapse:collapse;border:none;
+ mso-border-alt:solid #8EAADB .5pt;mso-yfti-tbllook:1056;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
+ <tr style="mso-yfti-irow:-1;mso-yfti-firstrow:yes;mso-yfti-lastfirstrow:yes">
+  <td width="17%" valign="top" style="width:17.9%;border:solid #4472C4 1.0pt;
+  border-right:none;mso-border-top-alt:solid #4472C4 .5pt;mso-border-left-alt:
+  solid #4472C4 .5pt;mso-border-bottom-alt:solid #4472C4 .5pt;background:#4472C4;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center;mso-yfti-cnfc:1"><b><span style="font-size:8.0pt;line-height:115%;color:white">Attributs<o:p></o:p></span></b></p>
+  </td>
+  <td width="17%" valign="top" style="width:17.94%;border-top:solid #4472C4 1.0pt;
+  border-left:none;border-bottom:solid #4472C4 1.0pt;border-right:none;
+  mso-border-top-alt:solid #4472C4 .5pt;mso-border-bottom-alt:solid #4472C4 .5pt;
+  background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center;mso-yfti-cnfc:1"><span class="SpellE"><b><span style="font-size:8.0pt;line-height:115%;color:white">Search</span></b></span><b><span style="font-size:8.0pt;line-height:115%;color:white"> <span class="SpellE">parameters</span>
+  <o:p></o:p></span></b></p>
+  </td>
+  <td width="8%" valign="top" style="width:8.66%;border-top:solid #4472C4 1.0pt;
+  border-left:none;border-bottom:solid #4472C4 1.0pt;border-right:none;
+  mso-border-top-alt:solid #4472C4 .5pt;mso-border-bottom-alt:solid #4472C4 .5pt;
+  background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center;mso-yfti-cnfc:1"><b><span style="font-size:8.0pt;line-height:115%;color:white">Natif FHIR<o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign="top" style="width:9.24%;border-top:solid #4472C4 1.0pt;
+  border-left:none;border-bottom:solid #4472C4 1.0pt;border-right:none;
+  mso-border-top-alt:solid #4472C4 .5pt;mso-border-bottom-alt:solid #4472C4 .5pt;
+  background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center;mso-yfti-cnfc:1"><b><span style="font-size:8.0pt;line-height:115%;color:white">Type FHIR<o:p></o:p></span></b></p>
+  </td>
+  <td width="46%" valign="top" style="width:46.24%;border:solid #4472C4 1.0pt;
+  border-left:none;mso-border-top-alt:solid #4472C4 .5pt;mso-border-bottom-alt:
+  solid #4472C4 .5pt;mso-border-right-alt:solid #4472C4 .5pt;background:#4472C4;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center;mso-yfti-cnfc:1"><b><span style="font-size:8.0pt;line-height:115%;color:white">Description<o:p></o:p></span></b></p>
+  </td>
+ </tr>
 
-<p>Ensemble des ressources téléchargeables :</p>
-<ul>
-  <li><a href="full-ig.zip">L’ensemble de la specification (zip)</a></li>
-  <li><a href="package.tgz">Package (tgz)</a></li>
-  <li><a href="definitions.json.zip">JSON Définitions (zip)</a></li>
-  <li><a href="examples.json.zip">JSON Exemples (zip)</a></li>
-  <li><a href="definitions.xml.zip">XML Definitions (zip)</a></li>
-  <li><a href="examples.ttl.zip">XML Exemples (zip)</a></li>
-  <li><a href="definitions.ttl.zip">Turtle Définitions</a></li>
-</ul>
+ <tr style="mso-yfti-irow:1">
+  <td width="17%" valign="top" style="width:17.9%;border:solid #8EAADB 1.0pt;
+  border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span class="SpellE"><span style="font-size:8.0pt;line-height:115%">Metadonnee</span></span><span style="font-size:8.0pt;line-height:115%">/<span class="SpellE">Date de mise à jour</span><b><o:p></o:p></b></span></p>
+  </td>
+  <td width="17%" valign="top" style="width:17.94%;border-top:none;border-left:
+  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
+  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
+  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span style="font-size:
+  8.0pt;line-height:115%">_<span class="SpellE">lastUpdated</span><o:p></o:p></span></p>
+  </td>
+  <td width="8%" valign="top" style="width:8.66%;border-top:none;border-left:
+  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
+  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
+  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span style="font-size:
+  8.0pt;line-height:115%">Oui<o:p></o:p></span></p>
+  </td>
+  <td width="9%" valign="top" style="width:9.24%;border-top:none;border-left:
+  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
+  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
+  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span style="font-size:
+  8.0pt;line-height:115%">date <o:p></o:p></span></p>
+  </td>
+  <td width="46%" valign="top" style="width:46.24%;border-top:none;border-left:
+  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
+  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
+  mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span style="font-size:
+  8.0pt;line-height:115%">Date de dernière mise à jour de la ressource.<o:p></o:p></span></p>
+  </td>
+ </tr>
+
+</table>
+
 
 
 
@@ -239,7 +301,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="securite.html">&lt;prev</a>
+                <a href="mapping.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -247,7 +309,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="about.html">next&gt;</a>
+                <a href="modifiers.html">next&gt;</a>
 
               </td>
             </tr>
