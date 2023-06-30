@@ -1,20 +1,18 @@
-### Introduction
+### Contexte
 
-Il s'agit d'un exemple d'Implementation Guide de l'ANS, à prendre comme base pour créer de nouveaux IGs. 
+Dans le cadre du plan Innovation santé 2030, un nouveau SI va être créé pour recenser les essais cliniques en France. Il s’agit de mettre à disposition du grand public les essais cliniques autorisés et en cours ou à venir afin d’aider au recrutement et à la bonne connaissance des essais cliniques.
+Vous trouverez plus d'information ici https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques
 
-Selon la documentation officielle, cette page d'accueil de l'IG doit contenir :
-* De quoi parle l'IG (En termes non expert, compréhensible par un patient)
-* Des détails techniques sur le contexte et le besoin
+### Les flux
+Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d'études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.
+
+| | Nom des flux métiers  | Description |
+| ----- | ----- | ----- |
+| <a href="st_flux1.html">Flux 1</a> | Extraction de données des essais cliniques | Un consommateur réalise une extraction des essais cliniques, complète ou à partir d'une date de mise à jour. |
+
+### Vue globale
+
+<object data="vueGlobale.svg" type="image/svg+xml"></object>
 
 
-Les principales sections de l'IG  sont :
-* Le contexte de l'IG et les points dont les implémenteurs doivent être familier avant dans s'avoir plus sur l'IG
-* Ce que les Implémenteurs doivent mettre en place
-* Un onglet "télécharger"
-
-
-### Auteurs et contributeurs
-
-| Role  | Nom | Organisation | Contact |
-| --- | --- | --- | --- |
-| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@address.email |
+### Nomenclatures
