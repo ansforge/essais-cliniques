@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-27T15:14:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-30T11:31:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -572,6 +572,30 @@
            fhir:title [ fhir:v "Extraction de données des essais cliniques" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "mapping.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "mapping.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Mapping FHIR" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "search_param.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "search_param.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Critères de recherche" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "modifiers.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "modifiers.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Paramètres et modificateurs de requêtes FHIR" ] ;
+         fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;

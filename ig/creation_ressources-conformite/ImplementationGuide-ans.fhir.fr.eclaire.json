@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)",
   "status" : "draft",
-  "date" : "2023-06-27T15:14:34+00:00",
+  "date" : "2023-06-30T11:31:50+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -656,6 +656,33 @@
           "title" : "Extraction de données des essais cliniques",
           "generation" : "markdown"
         }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "mapping.html"
+        }],
+        "nameUrl" : "mapping.html",
+        "title" : "Mapping FHIR",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "search_param.html"
+        }],
+        "nameUrl" : "search_param.html",
+        "title" : "Critères de recherche",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "modifiers.html"
+        }],
+        "nameUrl" : "modifiers.html",
+        "title" : "Paramètres et modificateurs de requêtes FHIR",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
