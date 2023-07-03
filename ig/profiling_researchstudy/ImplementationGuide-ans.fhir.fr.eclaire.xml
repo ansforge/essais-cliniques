@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"/>
   <status value="draft"/>
-  <date value="2023-07-03T09:04:57+00:00"/>
+  <date value="2023-07-03T17:19:20+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -456,6 +456,28 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-condition-details"/>
+      </reference>
+      <name value="ECLAIREConditionDetails"/>
+      <description value="Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de précisions sur le sujet concerné par l'essai"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-recruitment-period"/>
+      </reference>
+      <name value="ECLAIRERecruitmentPeriod"/>
+      <description value="Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de la période prévisionnelle de recrutement l'essai"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -463,6 +485,39 @@
       </reference>
       <name value="ECLAIREResearchStudy"/>
       <description value="Profil pour le projet ECLAIRE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-review-date"/>
+      </reference>
+      <name value="ECLAIREReviewDate"/>
+      <description value="Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout d'une date de révision fonctionnelle lorque que l'on souhaite indiquer la date de la dernière modification substancielle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-secondary-sponsor"/>
+      </reference>
+      <name value="ECLAIRESecondarySponsor"/>
+      <description value="Extension créée dans le cadre du projet API ECLAIRE afin de promoteur(s) secondaire(s)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-therapeutic-area"/>
+      </reference>
+      <name value="ECLAIRETherapeuticArea"/>
+      <description value="Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout du domaine thérapeutique concerné par l'essai"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
