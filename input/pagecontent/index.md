@@ -10,6 +10,7 @@ Un flux est un échange entre deux systèmes. Des flux ont été identifiés lor
 | ----- | ----- | ----- |
 | <a href="st_flux1.html">Flux 1</a> | Extraction de données des essais cliniques | Un consommateur réalise une extraction des essais cliniques, complète ou à partir d'une date de mise à jour. |
 
+
 ### Vue globale
 
 <object data="vueGlobale.svg" type="image/svg+xml"></object>
