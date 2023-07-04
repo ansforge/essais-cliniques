@@ -36,6 +36,9 @@ Description: "Profil pour le projet ECLAIRE"
 * extension contains ECLAIRERecruitmentPeriod named eclaire-recruitment-period 0..1
 * extension[eclaire-recruitment-period] ^short = "Période prévisionnelle de recrutement"
 * contact ^short = "Contact (Contact for public / scientific queries)"
+* contact.extension contains
+    ECLAIREContactType named eclaire-contact-type 0..1
+* contact.extension[eclaire-contact-type] ^short = "type de contact : Public ou Scientific"  
 * enrollment ^short = "Critères d'inclusion et d'exclusion / Inclusion & exclusion criteria"
 * site ^short = "Lieux / Countries of Recruitment"
 * sponsor ^short = "promoteur / primary Sponsor"
