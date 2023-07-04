@@ -57,7 +57,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l&#39;Ecosystème)</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.1.0 - trial-use
 
 
             </span>
@@ -107,7 +107,7 @@
     <a href="modifiers.html">Paramètres et modificateurs de requêtes FHIR</a>
   </li>
   <li>
-    <a href="artifacts.html">Ressources de conformance</a>
+    <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
@@ -151,7 +151,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-eclaire-researchstudy.html">next&gt;</a>
+          | <a href="CapabilityStatement-eclaire.html">next&gt;</a>
 
           </span>
 
@@ -185,10 +185,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Comportement: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -197,6 +206,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Comportement: Capability Statements </h3>
+   <p>
+    <p>La ressource CapabilityStatement permet de définir les capacités spécifiques que les systèmes doivent supporter pour être conforme à cet Implementation Guide (IG). Les systèmes conformes à cet IG doivent déclarer leur conformance à au moins une de ces ressources CapabilityStatement.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-eclaire.html"
+                     title="CapabilityStatement/eclaire">eclaire</a>
+               </td>
+               <td>
+<p>Système ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l’Ecosystème)</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>Ces structures définissent les contraintes sur les ressources FHIR par les systèmes conformes à cet Implementation Guide (IG).</p>
@@ -217,7 +247,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
     <p>Ces structures définissent les contraintes sur les extensions FHIR par les systèmes conformes à cet Implementation Guide (IG).</p>
@@ -233,6 +263,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Extension créée dans le cadre du projet API ECLAIRE afin de permettre l’ajout de précisions sur le sujet concerné par l’essai</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-eclaire-contact-type.html"
+                     title="StructureDefinition/eclaire-contact-type">ECLAIREContactType</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du projet ECLAIRE qui indique le type de Contact! : Public ou Scientific</p>
 </td>
             </tr>
             <tr>
@@ -259,7 +298,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/eclaire-secondary-sponsor">ECLAIRESecondarySponsor</a>
                </td>
                <td>
-<p>Extension créée dans le cadre du projet API ECLAIRE afin de promoteur(s) secondaire(s)</p>
+<p>Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)</p>
 </td>
             </tr>
             <tr>
@@ -269,6 +308,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Extension créée dans le cadre du projet API ECLAIRE afin de permettre l’ajout du domaine thérapeutique concerné par l’essai</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>Les ressources ValueSet définissent les ensembles de codes utilisés par les systèmes conformes à cet Implementation Guide (IG). Equivalent NOS : Jeu De Valeur (JDV).</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eclaire-type-contact-vs.html"
+                     title="ValueSet/eclaire-type-contact-vs">Type Contact Value Set</a>
+               </td>
+               <td>
+<p>Type de contact pour les essais cliniques Value Set.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>Les ressources CodeSystem définissent les ensembles de codes définis par les systèmes conformes à cet Implementation Guide (IG). Equivalent NOS : Terminologie de REference (TRE).</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-eclaire-type-contact-code-system.html"
+                     title="CodeSystem/eclaire-type-contact-code-system">Type de contact</a>
+               </td>
+               <td>
+<p>Type de contact pour les essais cliniques</p>
 </td>
             </tr>
          </tbody>
@@ -310,7 +391,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-eclaire-researchstudy.html">next&gt;</a>
+                <a href="CapabilityStatement-eclaire.html">next&gt;</a>
 
               </td>
             </tr>
@@ -320,7 +401,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 3, 2023 17:19+0000">2023-07-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 4, 2023 17:45+0000">2023-07-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -48,7 +48,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "eclaire-secondary-sponsor","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","Extension créée dans le cadre du projet API ECLAIRE afin de promoteur(s) secondaire(s)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Extension","Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
 "eclaire-secondary-sponsor","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -59,7 +59,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "eclaire-secondary-sponsor","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"eclaire-secondary-sponsor","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Reference {[]} {[]}
+"eclaire-secondary-sponsor","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrOrganization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -111,7 +111,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "eclaire-researchstudy","ResearchStudy.extension:eclaire-secondary-sponsor","ResearchStudy.extension","eclaire-secondary-sponsor","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor]]} {[]}
-","Promoteur(s) secondaire(s) / Secondary Sponsor(s)","Extension créée dans le cadre du projet API ECLAIRE afin de promoteur(s) secondaire(s)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Promoteur(s) secondaire(s) / Secondary Sponsor(s)","Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "eclaire-researchstudy","ResearchStudy.modifierExtension","ResearchStudy.modifierExtension","","extensions
@@ -244,6 +244,26 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","Contact (Contact for public / scientific queries)","Contact details to assist a user in learning more about or engaging with the study.","","","","","","","","","",,,,,"",,,,"ResearchStudy.contact",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"eclaire-researchstudy","ResearchStudy.contact.id","ResearchStudy.contact.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"eclaire-researchstudy","ResearchStudy.contact.extension","ResearchStudy.contact.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"eclaire-researchstudy","ResearchStudy.contact.extension:eclaire-contact-type","ResearchStudy.contact.extension","eclaire-contact-type","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type]]} {[]}
+","type de contact : Public ou Scientific","Extension créée dans le cadre du projet ECLAIRE qui indique le type de Contact! : Public ou Scientific","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"eclaire-researchstudy","ResearchStudy.contact.name","ResearchStudy.contact.name","","","",0,1,"","","Y","string {[]} {[]}
+","Name of an individual to contact","The name of an individual to contact.","If there is no named individual, the telecom information is for the organization as a whole.","","","","","","","","",,,,,"",,,,"ContactDetail.name",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"eclaire-researchstudy","ResearchStudy.contact.telecom","ResearchStudy.contact.telecom","","","",0,*,"","","Y","ContactPoint {[]} {[]}
+","Contact details for individual or organization","The contact details for the individual (if a name was provided) or the organization.","","","","","","","","","",,,,,"",,,,"ContactDetail.telecom",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}"
 "eclaire-researchstudy","ResearchStudy.relatedArtifact","ResearchStudy.relatedArtifact","","","",0,*,"","","","RelatedArtifact {[]} {[]}
 ","References and dependencies","Citations, references and other related documents.","Each related artifact is either an attachment, or a reference to another knowledge resource, but not both.","","","","","","","","",,,,,"",,,,"ResearchStudy.relatedArtifact",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -348,6 +368,22 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "eclaire-researchstudy","ResearchStudy.objective.type","ResearchStudy.objective.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","primary | secondary | exploratory","The kind of study objective.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"preferred","Codes for the kind of study objective.","http://hl7.org/fhir/ValueSet/research-study-objective-type","",,,,"ResearchStudy.objective.type",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"eclaire-contact-type","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Extension","Extension créée dans le cadre du projet ECLAIRE qui indique le type de Contact! : Public ou Scientific","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"eclaire-contact-type","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"eclaire-contact-type","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"eclaire-contact-type","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"eclaire-contact-type","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-type-contact-vs","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "eclaire-recruitment-period","Extension","Extension","","","",0,*,"","","","null {[]} {[]}

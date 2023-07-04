@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)",
   "status" : "draft",
-  "date" : "2023-07-03T17:19:20+00:00",
+  "date" : "2023-07-04T17:45:33+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -74,7 +74,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "trial-use"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -353,7 +353,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "trial-use"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -613,6 +613,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/eclaire"
+      },
+      "name" : "eclaire",
+      "description" : "Système ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -620,6 +632,18 @@
       },
       "name" : "ECLAIREConditionDetails",
       "description" : "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de précisions sur le sujet concerné par l'essai",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eclaire-contact-type"
+      },
+      "name" : "ECLAIREContactType",
+      "description" : "Extension créée dans le cadre du projet ECLAIRE qui indique le type de Contact! : Public ou Scientific",
       "exampleBoolean" : false
     },
     {
@@ -667,7 +691,7 @@
         "reference" : "StructureDefinition/eclaire-secondary-sponsor"
       },
       "name" : "ECLAIRESecondarySponsor",
-      "description" : "Extension créée dans le cadre du projet API ECLAIRE afin de promoteur(s) secondaire(s)",
+      "description" : "Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)",
       "exampleBoolean" : false
     },
     {
@@ -680,6 +704,30 @@
       },
       "name" : "ECLAIRETherapeuticArea",
       "description" : "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout du domaine thérapeutique concerné par l'essai",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-type-contact-vs"
+      },
+      "name" : "Type Contact Value Set",
+      "description" : "Type de contact pour les essais cliniques Value Set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eclaire-type-contact-code-system"
+      },
+      "name" : "Type de contact",
+      "description" : "Type de contact pour les essais cliniques",
       "exampleBoolean" : false
     }],
     "page" : {

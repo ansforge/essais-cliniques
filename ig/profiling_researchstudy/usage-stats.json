@@ -11,6 +11,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type",
+      "title": "ECLAIREContactType",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period",
       "title": "ECLAIRERecruitmentPeriod",
       "types": [
@@ -91,6 +98,9 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-condition-details": [
       "ResearchStudy"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type": [
+      "ResearchStudy.contact"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period": [
       "ResearchStudy"

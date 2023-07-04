@@ -48,7 +48,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchStudy.extension:eclaire-secondary-sponsor","ResearchStudy.extension","eclaire-secondary-sponsor","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor]]} {[]}
-","Promoteur(s) secondaire(s) / Secondary Sponsor(s)","Extension créée dans le cadre du projet API ECLAIRE afin de promoteur(s) secondaire(s)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Promoteur(s) secondaire(s) / Secondary Sponsor(s)","Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchStudy.modifierExtension","ResearchStudy.modifierExtension","","extensions
@@ -181,6 +181,26 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","Contact (Contact for public / scientific queries)","Contact details to assist a user in learning more about or engaging with the study.","","","","","","","","","",,,,,"",,,,"ResearchStudy.contact",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PointOfContact > Project > Research Project > Study > StudyProtocol > StudyProtocolVersion","n/a","Central Contact; Central Contact Backup; Overall Study Officials; Facility Contact & Backup (if Study tied to only one location); Investigators"
+"ResearchStudy.contact.id","ResearchStudy.contact.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"ResearchStudy.contact.extension","ResearchStudy.contact.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"ResearchStudy.contact.extension:eclaire-contact-type","ResearchStudy.contact.extension","eclaire-contact-type","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type]]} {[]}
+","type de contact : Public ou Scientific","Extension créée dans le cadre du projet ECLAIRE qui indique le type de Contact! : Public ou Scientific","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ResearchStudy.contact.name","ResearchStudy.contact.name","","","",0,1,"","","Y","string {[]} {[]}
+","Name of an individual to contact","The name of an individual to contact.","If there is no named individual, the telecom information is for the organization as a whole.","","","","","","","","",,,,,"",,,,"ContactDetail.name",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"ResearchStudy.contact.telecom","ResearchStudy.contact.telecom","","","",0,*,"","","Y","ContactPoint {[]} {[]}
+","Contact details for individual or organization","The contact details for the individual (if a name was provided) or the organization.","","","","","","","","","",,,,,"",,,,"ContactDetail.telecom",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}","XTN","n/a","TEL"
 "ResearchStudy.relatedArtifact","ResearchStudy.relatedArtifact","","","",0,*,"","","","RelatedArtifact {[]} {[]}
 ","References and dependencies","Citations, references and other related documents.","Each related artifact is either an attachment, or a reference to another knowledge resource, but not both.","","","","","","","","",,,,,"",,,,"ResearchStudy.relatedArtifact",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
