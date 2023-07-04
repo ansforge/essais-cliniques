@@ -1,3 +1,5 @@
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.ECLAIRE\eclaire - XML Representation - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.ECLAIRE\ - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.1"}
-    h3,h4,h5,h6{--heading-prefix:"8.1"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -57,7 +59,7 @@
   </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l&#39;Ecosystème)</span>
+          <p><span style="font-size:12pt;font-weight:bold">Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l&#39;Ecosystème</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - trial-use
 
@@ -145,15 +147,11 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>eclaire</b></li>
+          
 
           <span style="float:right;">
 
-            <a href="CapabilityStatement-eclaire.html">&lt;prev</a> | 
-
             <a href="#bottom">bottom</a>
-
-          | <a href="CapabilityStatement-eclaire.json.html">next&gt;</a>
 
           </span>
 
@@ -167,9 +165,10 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
 
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  
 
 
 
@@ -181,27 +180,27 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="CapabilityStatement-eclaire.html">Narrative Content</a>
+    <a href="CapabilityStatement-eclaire-consommateur.html">Narrative Content</a>
   </li>
 
 
   
-    <li class="active">
-      <a href="#">XML</a>
+    <li>
+      <a href="CapabilityStatement-eclaire-consommateur.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="CapabilityStatement-eclaire.json.html">JSON</a>
+      <a href="CapabilityStatement-eclaire-consommateur.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="CapabilityStatement-eclaire.ttl.html">TTL</a>
+      <a href="CapabilityStatement-eclaire-consommateur.ttl.html">TTL</a>
     </li>
   
 
@@ -210,106 +209,14 @@
 </ul>
 
 
-<a name="root"> </a>
+  <a name="root"> </a>
+  <h2 id="root">: Eclaire - Change History</h2>
+  <p>History of changes for eclaire-consommateur .</p>
 
-
-<h2 id="root">: eclaire - XML Representation</h2>
-  <table class="colsi">
-    <tr>
-
-      <td colspan="2">
-        
-          Active
-          
-            as of 2023-07-04
-          
-        
-      </td>
-
-    </tr>
-  </table>
-
-
-<p><a href="CapabilityStatement-eclaire.xml" no-download="true">Raw xml</a> | <a href="CapabilityStatement-eclaire.xml" download>Download</a></p>
-
-  <!-- insert intro if present -->
   
-
-
-
-  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
-
-&lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement">CapabilityStatement</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;eclaire&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;Eclaire&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Système ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)&lt;/p&gt;
-&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Recherche et consultation des essais cliniques&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;GET a resource (read interaction)&quot;&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;GET all set of resources of the type (search interaction)&quot;&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;PUT a new resource version (update interaction)&quot;&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;POST a new resource (create interaction)&quot;&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ResearchStudy&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy&quot;&gt;https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">url</a>
-       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/eclaire/CapabilityStatement/eclaire&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Eclaire&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Eclaire&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-07-04&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://esante.gouv.fr&quot;/&gt;
-    &lt;/telecom&gt;
-  &lt;/contact&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.description">description</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Système ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.kind">kind</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;requirements&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4.0.1&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">format</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;application/fhir+json&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementationGuide">implementationGuide</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/eclaire/ImplementationGuide/ans.fhir.fr.eclaire&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">rest</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;server&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.documentation">documentation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Recherche et consultation des essais cliniques&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security">security</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.cors">cors</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-    &lt;/security&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ResearchStudy&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;search-type&quot;/&gt;
-      &lt;/interaction&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;read&quot;/&gt;
-      &lt;/interaction&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;_id&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/Resource-id&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Identifiant logique de la ressource&quot;/&gt;
-      &lt;/searchParam&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;_lastUpdated&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/SearchParameter/Resource-lastUpdated&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;date&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Date de la dernière mise a jour&quot;/&gt;
-      &lt;/searchParam&gt;
-    &lt;/resource&gt;
-  &lt;/rest&gt;
-&lt;/CapabilityStatement&gt;</code></pre>
-
-
-  <!-- insert notes if present -->
-  
-
-
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -317,6 +224,29 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -335,7 +265,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="CapabilityStatement-eclaire.html">&lt;prev</a>
+                <span style="visibility:hidden">&lt;prev</span>
 
               </td>
               <td style="text-align:center">
@@ -343,7 +273,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="CapabilityStatement-eclaire.json.html">next&gt;</a>
+                <span style="visibility:hidden">next&gt;</span>
 
               </td>
             </tr>
@@ -353,7 +283,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 4, 2023 17:45+0000">2023-07-04</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 4, 2023 19:15+0000">2023-07-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

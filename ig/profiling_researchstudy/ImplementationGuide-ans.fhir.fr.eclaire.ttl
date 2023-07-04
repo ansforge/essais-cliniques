@@ -15,9 +15,9 @@
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/ImplementationGuide/ans.fhir.fr.eclaire"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ECLAIRE"] ; # 
-  fhir:title [ fhir:v "ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"] ; # 
+  fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-04T17:45:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-04T19:15:23+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -532,10 +532,10 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/CapabilityStatement/eclaire> ;
-         fhir:reference [ fhir:v "CapabilityStatement/eclaire" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/CapabilityStatement/eclaire-consommateur> ;
+         fhir:reference [ fhir:v "CapabilityStatement/eclaire-consommateur" ]
        ] ;
-       fhir:name [ fhir:v "eclaire" ] ;
+       fhir:name [ fhir:v "eclaire-consommateur" ] ;
        fhir:description [ fhir:v "Système ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

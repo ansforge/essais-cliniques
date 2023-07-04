@@ -9,9 +9,9 @@
   <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ImplementationGuide/ans.fhir.fr.eclaire"/>
   <version value="0.1.0"/>
   <name value="ECLAIRE"/>
-  <title value="ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"/>
+  <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2023-07-04T17:45:33+00:00"/>
+  <date value="2023-07-04T19:15:23+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -459,9 +459,9 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/eclaire"/>
+        <reference value="CapabilityStatement/eclaire-consommateur"/>
       </reference>
-      <name value="eclaire"/>
+      <name value="eclaire-consommateur"/>
       <description value="Système ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"/>
       <exampleBoolean value="false"/>
     </resource>
