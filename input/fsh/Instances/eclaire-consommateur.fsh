@@ -1,4 +1,4 @@
-Instance: eclaire
+Instance: eclaire-consommateur
 InstanceOf: CapabilityStatement
 Usage: #definition
 * status = #active 
