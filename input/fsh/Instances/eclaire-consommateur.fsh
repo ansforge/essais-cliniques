@@ -6,7 +6,7 @@ Usage: #definition
 * title = "Eclaire"
 * experimental = true
 * date = "2023-07-04"
-* description = "Système ECLAIRE(Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"
+* description = "Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+json
