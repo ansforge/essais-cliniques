@@ -31,13 +31,14 @@ map "Organization" as Organization #back:BUSINESS;header:Gold {
     Identifiant => identifier : // Identifier [0..*] //
     Nom => name : // string [0..1] //
     Adresse => address : // Address [0..*] //
+    Contact => contact : // BackboneElement [0..*] //
 }
 
 map "Location" as Location #back:MistyRose;header:Violet {
     Identifiant => identifier : // Identifier [0..*] //
     Nom => name : // string [0..1] //
     Adresse => address : // Address [0..1] //
-    Contact => contact <&plus> : // ContactDetail [0..1] //
+    Contact => <:warning:> contact <&plus> : // ContactDetail [0..1] // <:warning:>
 }
 
 map "EssaiClinique : ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;line:blue {
@@ -45,7 +46,7 @@ map "EssaiClinique : ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;li
     Date de révision technique => meta.lastUpdated : // instant [0..1] // 
     Date de révision fonctionnelle => ECLAIREReviewDate <&plus> : // date [0..1] //
     Nom de l'essai (Public title) => title : // string [0..1] //
-    Statut de l'essai => status : //code [1..1] //
+    Statut de l'essai => <:warning:> status : //code [1..1] // <:warning:>
     Phase de l'essai (Study type : phase) => phase : // CodeableConcept [0..1] //
     Type d'essai (Study type : type of study) => category : // CodeableConcept [0..*] //
     Sujet concerné (Health Condition(s) or Problem(s) Studied) => condition : // CodeableConcept [0..*] (MeDRA) //
@@ -81,6 +82,7 @@ legend top left
   <&layers> : slice
   <&plus> : extension
   * : pas d'équivalence Santé.fr ni WHO
+  <:warning:> : en discussion
 endlegend
 
 @enduml
