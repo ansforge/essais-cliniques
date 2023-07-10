@@ -249,7 +249,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
 "eclaire-researchstudy","ResearchStudy.status","ResearchStudy.status","","","",1,1,"","Y","Y","code {[]} {[]}
-","Statut du recrutement / Recruitment Status","The current state of the study.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","Codes that convey the current status of the research study.","http://hl7.org/fhir/ValueSet/research-study-status|4.0.1","",,,,"ResearchStudy.status",1,1,"ele-1
+","Statut de l'essai / Study Status","The current state of the study.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","Codes that convey the current status of the research study.","http://hl7.org/fhir/ValueSet/research-study-status|4.0.1","",,,,"ResearchStudy.status",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "eclaire-researchstudy","ResearchStudy.primaryPurposeType","ResearchStudy.primaryPurposeType","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
