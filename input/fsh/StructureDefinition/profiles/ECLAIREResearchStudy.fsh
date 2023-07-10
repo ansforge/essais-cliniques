@@ -18,7 +18,7 @@ Description: "Profil pour le projet ECLAIRE"
 * extension contains ECLAIREReviewDate named eclaire-review-date 0..1
 * extension[eclaire-review-date] ^short = "Date de dernière modification substancielle"
 * title ^short = "Nom de l'étude / Public Title"
-* status ^short = "Statut du recrutement / Recruitment Status"
+* status ^short = "Statut de l'essai / Study Status"
 * phase ^short = "Phase de l'essai / Study type : phase"
 * category ^short = "Type d'essai  / Study type : type of study"
 * condition ^short = "Sujet concerné /  Problem(s) Studied exemple code MedDRA"
