@@ -3,12 +3,12 @@
 map "ContactDetail" as Contact #back:AliceBlue;header:LightSkyBlue;line:blue {
     Nom => name : // string [0..1] //
     Télécommunication => telecom : // ContactPoint [0..*] // 
-    Type => contacType <&plus> : // code [0..1] // \n // ("Public"/"Scientific") // 
+    Type => ECLAIREContacType <&plus> : // CodeableConcept [0..1] ("Public"/"Scientific") // 
 }
 
-map "Slice identifier" as slice_identifier #back:AliceBlue;header:LightSkyBlue;line:blue {
-    Identifiant principal => primaryId [0..1]
-    Identifiant secondaire => secondaryId [0..*]
+map "Slice identifier <&layers>" as slice_identifier #back:AliceBlue;header:LightSkyBlue;line:blue {
+    Identifiant principal => idPrimary [0..1]
+    Identifiant secondaire => idSecondary [0..*]
 }
 
 map "Group" as Group #back:TECHNOLOGY;header:LightGreen {
@@ -31,42 +31,46 @@ map "Organization" as Organization #back:BUSINESS;header:Gold {
     Identifiant => identifier : // Identifier [0..*] //
     Nom => name : // string [0..1] //
     Adresse => address : // Address [0..*] //
+    Contact => contact : // BackboneElement [0..*] //
 }
 
 map "Location" as Location #back:MistyRose;header:Violet {
     Identifiant => identifier : // Identifier [0..*] //
     Nom => name : // string [0..1] //
     Adresse => address : // Address [0..1] //
+    Contact => <:warning:> contact <&plus> : // ContactDetail [0..1] // <:warning:>
 }
 
 map "EssaiClinique : ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;line:blue {
     Identifiant (Primary and Secondary Identifying Numbers) => identifier <&layers> : // Identifier [0..*] // 
     Date de révision technique => meta.lastUpdated : // instant [0..1] // 
-    Date de révision fonctionnelle => reviewDate <&plus> : // dateTime [0..1] //
+    Date de révision fonctionnelle => ECLAIREReviewDate <&plus> : // date [0..1] //
     Nom de l'essai (Public title) => title : // string [0..1] //
-    Statut de l'essai => 
+    Statut de l'essai => <:warning:> status : //code [1..1] // <:warning:>
     Phase de l'essai (Study type : phase) => phase : // CodeableConcept [0..1] //
     Type d'essai (Study type : type of study) => category : // CodeableConcept [0..*] //
     Sujet concerné (Health Condition(s) or Problem(s) Studied) => condition : // CodeableConcept [0..*] (MeDRA) //
-    Précision sur le sujet (Health Condition(s)  or  Problem(s) Studied) => conditionDetails <&plus> : // string [0..1] //
-    Domaine thérapeutique* => therapeuticArea <&plus> : // string [0..1] //
+    Précision sur le sujet (Health Condition(s)  or  Problem(s) Studied) => ECLAIREConditionDetails <&plus> : // string [0..1] //
+    Domaine thérapeutique* => ECLAIRETherapeuticArea <&plus> : // string [0..1] //
     Résumé de l'essai => description : // markdown [0..1] //
-    Période prévisionnelle de recrutement => 
+    Période prévisionnelle de recrutement => ECLAIRERecruitmentPeriod <&plus> : // period [0..1] // 
     Contact (Contact for public / scientific queries) => contact : // ContactDetail [0..*] //
-    Participants (Key Inclusion and Exclusion Criteria, Sample size)=> enrollment : // Reference(Group) [0..*] //
+    Participants (Key Inclusion and Exclusion Criteria, Sample size) => enrollment : // Reference(Group) [0..*] //
     Lieux (Countries of Recruitment) => site : // Reference(Location) [0..1] //
-    Promoteur principal (Primary sponsor) => sponsor : // Reference(Organization) [0..1] // 
-    Promoteur secondaire (Secondary Sponsor(s)) => secondarySponsor <&plus> : // Reference(Organization) [0..*] // 
+    Promoteur principal (Primary sponsor) => sponsor // Reference(Organization) [0..1] // 
+    Promoteur secondaire (Secondary Sponsor(s)) => ECLAIRESecondarySponsor <&plus> : // Reference(Organization) [0..*] // 
 }
 
 
 RS::Lieux *-[#Violet,dashed,thickness=4]-> Location
 RS::Participants *-[#LightGreen,dashed,thickness=4]-> Group 
 RS::Promoteur *-[#Gold,dashed,thickness=4]-> Organization
-RS::Identifiant -left[#lightBlue,thickness=2] slice_identifier
+
+RS::Identifant -left[#lightBlue,thickness=2] slice_identifier
 RS::Contact -[#lightBlue,dotted,thickness=6] Contact
 
 Group -[hidden] Organization
+
 
 Group::Critères -left[#LightGreen,thickness=2]> Characteristic
 Group::Age -left[#LightGreen,thickness=2]> Characteristic
@@ -78,6 +82,7 @@ legend top left
   <&layers> : slice
   <&plus> : extension
   * : pas d'équivalence Santé.fr ni WHO
+  <:warning:> : en discussion
 endlegend
 
 @enduml
