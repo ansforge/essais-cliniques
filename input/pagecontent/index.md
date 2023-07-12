@@ -11,8 +11,18 @@ As part of the "Innovation santé 2030" plan, a new information system is going 
  Cet Implementation Guide est construit dans le cadre de l'élaboration d'un MVP
 </p>
 </blockquote>
-Dans le cadre du plan Innovation santé 2030, un nouveau SI va être créé pour recenser les essais cliniques en France. Il s’agit de mettre à disposition du grand public les essais cliniques autorisés et en cours ou à venir afin d’aider au recrutement et à la bonne connaissance des essais cliniques.
-Vous trouverez plus d'information <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">ici</a>.
+La France, en tête des pays européens dans le domaine de la recherche clinique, doit néanmoins renforcer la visibilité des essais cliniques en cours et faciliter l'accès au recrutement. C'est dans ce contexte et dans le cadre du plan Innovation santé 2030. que s'inscrit le projet de création d’une plateforme nationale référençant les essais cliniques.
+
+Le MVP de cette base nationale s’intitulera ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l’Ecosystème).
+
+L'objectif est de construire une base nationale des essais cliniques ouverte à l'écosystème public et privé. 
+Elle doit permettre, à terme, de :
+- Proposer une base exhaustive d’informations sur les essais cliniques issues des registres de référence ;
+- Mettre à disposition des résultats simplifiés en langue française via un moteur de recherche facile d’utilisation ;
+- Offrir un portail d’information simplifié sur la recherche clinique ;
+- Donner accès aux contacts et informations sur les centres investigateurs.
+
+Pour plus d’information consultez : <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">le communiqué de presse "Mise en œuvre d'une base nationale des essais clinique"</a>.
 
 ### Flux
 Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d'études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.
@@ -24,10 +34,14 @@ Un flux est un échange entre deux systèmes. Des flux ont été identifiés lor
 
 ### Ressources FHIR
 
-En FHIR, la ressource principale permettant de décrire un essai clinique est <a href="https://hl7.org/fhir/R4/researchstudy.html">ResearchStudy</a>. Cette ressource a été profilée pour s'adpater aux spécificités de projet, des informations plus détaillées à ce sujet sont disponibles sur les pages <a href="mapping.html">Mapping FHIR</a> et <a href="artifacts.html">Ressources de conformance</a>. La ressource ResearchStudy fait référence à d'autres ressources qui permettent de décrire certaines informations liées à un essai clinique, comme l'illustre le schéma ci-dessous.
+En FHIR, la ressource principale permettant de décrire un essai clinique est <a href="https://hl7.org/fhir/R4/researchstudy.html">ResearchStudy</a>. Cette ressource a été profilée pour s'adpater aux spécificités de projet, des informations plus détaillées à ce sujet sont disponibles sur les pages <a href="mapping.html">Mapping FHIR</a> et <a href="artifacts.html">Ressources de conformance</a>. La ressource ResearchStudy fait référence à d'autres ressources qui permettent de décrire :
+- Le promoteur grâce à la ressource <a href="https://hl7.org/fhir/R4/organization.html">Organization</a>
+- Le(s) lieux(s) de réalisation de l'essai clinique et les contacts associés grâce à la ressource <a href="https://hl7.org/fhir/R4/location.html">Location</a>
+- Les informations sur l'effectif à recruter et les critères d'inclusion et d'exclusion grâce à la ressource <a href="https://hl7.org/fhir/R4/group.html">Group</a>
 
 
-
+<p style="text-align:center">
 <object data="vueGlobale.svg" type="image/svg+xml"></object>
+</p>
 
 

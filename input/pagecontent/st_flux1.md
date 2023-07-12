@@ -76,10 +76,10 @@ Le SI répond au consommateur les essais cliniques correspondant aux critères d
 
 <tr>
 <td width="149">
-<p><strong>Interaction FHIR</strong></p>
+<p><strong> <a href="http://hl7.org/fhir/R4/http.html#general">Interaction FHIR</a> </strong></p>
 </td>
 <td width="531">
-<p>Search <a href="#_ftn1" name="_ftnref1">[1]</a> </p>
+<p> <a href="http://hl7.org/fhir/R4/http.html#search">Search</a> </p>
 </td>
 </tr>
 
@@ -112,10 +112,6 @@ Le SI répond au consommateur les essais cliniques correspondant aux critères d
 
 </tbody>
 </table>
-
-<p>&nbsp;</p>
-<p><a href="#_ftnref1" name="_ftn1">[1]</a> <a href="http://hl7.org/fhir/R4/http.html#search">http://hl7.org/fhir/R4/http.html#search</a> et <a href="http://hl7.org/fhir/R4/http.html#general">http://hl7.org/fhir/R4/http.html#general</a></p>
-
 
 ### Construction de la réponse de base
 
@@ -156,10 +152,6 @@ Plus de précision sur la spécification FHIR : <http://hl7.org/fhir/R4/http.htm
 
 <td width="230">
 <p>_lastUpdated</p>
-</td>
-
-<td width="230">
-<p>identifier</p>
 </td>
 
 </tr>
