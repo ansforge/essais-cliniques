@@ -204,7 +204,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-07-10
+            as of 2023-07-12
           
         
       </td>
@@ -231,12 +231,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#contexte" id="markdown-toc-contexte">Contexte</a></li>
-  <li><a href="#les-flux" id="markdown-toc-les-flux">Les flux</a></li>
-  <li><a href="#vue-globale" id="markdown-toc-vue-globale">Vue globale</a></li>
-  <li><a href="#nomenclatures" id="markdown-toc-nomenclatures">Nomenclatures</a></li>
+  <li><a href="#flux" id="markdown-toc-flux">Flux</a></li>
+  <li><a href="#ressources-fhir" id="markdown-toc-ressources-fhir">Ressources FHIR</a></li>
 </ul>
 
 </div>
+<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; max-width: 790px">
+<b>Brief description of this Implementation Guide</b><br/>
+As part of the "Innovation santé 2030" plan, a new information system is going to be created to list clinical trials in France. The aim is to provide the general public with access to all authorized clinical trials, whether ongoing or planned, in order to help recruitment and promote awareness of clinical trials. For more information, click <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">here</a>. The aim of this implementation guide is to define the specifications of the REST API (FHIR), enabling to query the database listing clinical trials.
+</p>
+
 <h3 id="contexte">Contexte</h3>
 <blockquote class="stu-note">
 <p>
@@ -246,10 +250,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </p>
 </blockquote>
 <p>Dans le cadre du plan Innovation santé 2030, un nouveau SI va être créé pour recenser les essais cliniques en France. Il s’agit de mettre à disposition du grand public les essais cliniques autorisés et en cours ou à venir afin d’aider au recrutement et à la bonne connaissance des essais cliniques.
-Vous trouverez plus d’information ici https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques</p>
+Vous trouverez plus d’information <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">ici</a>.</p>
 
-<h3 id="les-flux">Les flux</h3>
-<p><a name="l405">​</a>Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d’études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.</p>
+<h3 id="flux">Flux</h3>
+<p><a name="l414">​</a>Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d’études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.</p>
 
 <table>
   <thead>
@@ -268,11 +272,12 @@ Vous trouverez plus d’information ici https://esante.gouv.fr/espace-presse/mis
   </tbody>
 </table>
 
-<h3 id="vue-globale">Vue globale</h3>
+<h3 id="ressources-fhir">Ressources FHIR</h3>
+
+<p>En FHIR, la ressource principale permettant de décrire un essai clinique est <a href="https://hl7.org/fhir/R4/researchstudy.html">ResearchStudy</a>. Cette ressource a été profilée pour s’adpater aux spécificités de projet, des informations plus détaillées à ce sujet sont disponibles sur les pages <a href="mapping.html">Mapping FHIR</a> et <a href="artifacts.html">Ressources de conformance</a>. La ressource ResearchStudy fait référence à d’autres ressources qui permettent de décrire certaines informations liées à un essai clinique, comme l’illustre le schéma ci-dessous.</p>
 
 <object data="vueGlobale.svg" type="image/svg+xml"></object>
 
-<h3 id="nomenclatures">Nomenclatures</h3>
 
 
 
@@ -320,7 +325,7 @@ Vous trouverez plus d’information ici https://esante.gouv.fr/espace-presse/mis
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 10, 2023 12:01+0000">2023-07-10</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 12, 2023 08:58+0000">2023-07-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
