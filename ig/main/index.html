@@ -204,7 +204,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-07-12
+            as of 2023-07-13
           
         
       </td>
@@ -249,11 +249,23 @@ As part of the "Innovation santé 2030" plan, a new information system is going 
  Cet Implementation Guide est construit dans le cadre de l'élaboration d'un MVP
 </p>
 </blockquote>
-<p>Dans le cadre du plan Innovation santé 2030, un nouveau SI va être créé pour recenser les essais cliniques en France. Il s’agit de mettre à disposition du grand public les essais cliniques autorisés et en cours ou à venir afin d’aider au recrutement et à la bonne connaissance des essais cliniques.
-Vous trouverez plus d’information <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">ici</a>.</p>
+<p>La France, en tête des pays européens dans le domaine de la recherche clinique, doit néanmoins renforcer la visibilité des essais cliniques en cours et faciliter l’accès au recrutement. C’est dans ce contexte et dans le cadre du plan Innovation santé 2030. que s’inscrit le projet de création d’une plateforme nationale référençant les essais cliniques.</p>
+
+<p>Le MVP de cette base nationale s’intitulera ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l’Ecosystème).</p>
+
+<p>L’objectif est de construire une base nationale des essais cliniques ouverte à l’écosystème public et privé. 
+Elle doit permettre, à terme, de :</p>
+<ul>
+  <li>Proposer une base exhaustive d’informations sur les essais cliniques issues des registres de référence ;</li>
+  <li>Mettre à disposition des résultats simplifiés en langue française via un moteur de recherche facile d’utilisation ;</li>
+  <li>Offrir un portail d’information simplifié sur la recherche clinique ;</li>
+  <li>Donner accès aux contacts et informations sur les centres investigateurs.</li>
+</ul>
+
+<p>Pour plus d’information consultez : <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">le communiqué de presse “Mise en œuvre d’une base nationale des essais clinique”</a>.</p>
 
 <h3 id="flux">Flux</h3>
-<p><a name="l414">​</a>Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d’études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.</p>
+<p><a name="l438">​</a>Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d’études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.</p>
 
 <table>
   <thead>
@@ -274,9 +286,16 @@ Vous trouverez plus d’information <a href="https://esante.gouv.fr/espace-press
 
 <h3 id="ressources-fhir">Ressources FHIR</h3>
 
-<p>En FHIR, la ressource principale permettant de décrire un essai clinique est <a href="https://hl7.org/fhir/R4/researchstudy.html">ResearchStudy</a>. Cette ressource a été profilée pour s’adpater aux spécificités de projet, des informations plus détaillées à ce sujet sont disponibles sur les pages <a href="mapping.html">Mapping FHIR</a> et <a href="artifacts.html">Ressources de conformance</a>. La ressource ResearchStudy fait référence à d’autres ressources qui permettent de décrire certaines informations liées à un essai clinique, comme l’illustre le schéma ci-dessous.</p>
+<p>En FHIR, la ressource principale permettant de décrire un essai clinique est <a href="https://hl7.org/fhir/R4/researchstudy.html">ResearchStudy</a>. Cette ressource a été profilée pour s’adpater aux spécificités de projet, des informations plus détaillées à ce sujet sont disponibles sur les pages <a href="mapping.html">Mapping FHIR</a> et <a href="artifacts.html">Ressources de conformance</a>. La ressource ResearchStudy fait référence à d’autres ressources qui permettent de décrire :</p>
+<ul>
+  <li>Le promoteur grâce à la ressource <a href="https://hl7.org/fhir/R4/organization.html">Organization</a></li>
+  <li>Le(s) lieux(s) de réalisation de l’essai clinique et les contacts associés grâce à la ressource <a href="https://hl7.org/fhir/R4/location.html">Location</a></li>
+  <li>Les informations sur l’effectif à recruter et les critères d’inclusion et d’exclusion grâce à la ressource <a href="https://hl7.org/fhir/R4/group.html">Group</a></li>
+</ul>
 
+<p style="text-align:center">
 <object data="vueGlobale.svg" type="image/svg+xml"></object>
+</p>
 
 
 
@@ -325,7 +344,7 @@ Vous trouverez plus d’information <a href="https://esante.gouv.fr/espace-press
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 12, 2023 08:58+0000">2023-07-12</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 13, 2023 07:04+0000">2023-07-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
