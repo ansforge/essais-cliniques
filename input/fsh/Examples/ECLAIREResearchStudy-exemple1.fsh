@@ -17,7 +17,7 @@ Usage: #example
 * contact.telecom[=].use = #work
 * contact.telecom[=].value = "drci_promo@chu-lyon.fr"
 * contained = Inline-Instance-for-2022-500520-30-00-1
-* description = "INDISPONIBLE"
+* description = "Ceci est un exemple d'essai clinique référencé dans la base ECLAIRE"
 * enrollment = Reference(2022-500520-30-00-enrollment-group-id) "Reference to group detailing study characteristics"
 * enrollment.type = "Group"
 //* identifier.assigner = Reference(https://euclinicaltrials.eu/app/#/view/2022-500520-30-00) "euclinicaltrials.eu" => source Exemple OCTO => modification proposée ligne suivante
@@ -29,7 +29,7 @@ Usage: #example
 * phase.coding.version = "4.0.1"
 * phase.text = ""
 * status = #active
-* title = ""
+* title = "Exemple d'essai clinique"
 
 Instance: Inline-Instance-for-2022-500520-30-00-1
 InstanceOf: Group
