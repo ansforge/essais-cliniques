@@ -20,7 +20,8 @@ Usage: #example
 * description = "INDISPONIBLE"
 * enrollment = Reference(2022-500520-30-00-enrollment-group-id) "Reference to group detailing study characteristics"
 * enrollment.type = "Group"
-* identifier.assigner = Reference(https://euclinicaltrials.eu/app/#/view/2022-500520-30-00) "euclinicaltrials.eu"
+//* identifier.assigner = Reference(https://euclinicaltrials.eu/app/#/view/2022-500520-30-00) "euclinicaltrials.eu" => source Exemple OCTO => modification proposée ligne suivante
+* identifier.system = "https://euclinicaltrials.eu/app/#/view/2022-500520-30-00"
 * identifier.use = #usual
 * identifier.value = "2022-500520-30-00"
 * meta.lastUpdated = "2022-12-02T00:00:00.000Z"
