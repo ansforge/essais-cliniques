@@ -2,7 +2,7 @@ Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
 Alias: $research-study-phase = http://terminology.hl7.org/CodeSystem/research-study-phase
 
 Instance: 2022-500520-30-00
-InstanceOf: ResearchStudy
+InstanceOf: ECLAIREResearchStudy
 Usage: #example
 * category.coding.display = "REG536"
 * category.text = "Regulation Code"
