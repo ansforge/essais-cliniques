@@ -1,4 +1,3 @@
-Instance: fbee4162-f589-429b-a616-34d786d83be8
 InstanceOf: Bundle
 Usage: #example
 * entry[0].category.coding.display = "REG536"
