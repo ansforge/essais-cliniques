@@ -203,7 +203,7 @@ GET [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00&_include=ResearchStudy:
 
 **Requête expliquée :**
 ```sh
-GET [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00 # Critère de recherche de sur la date de mise à jour (ge = greater than)
+GET [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00 # Critère de recherche sur la date de mise à jour (ge = greater than)
 &_include=ResearchStudy:site # Inclus les Location référencées par ResearchStudy
 &_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
 &_include=ResearchStudy:enrollment # Inclus les Group référencées par ResearchStudy
