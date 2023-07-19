@@ -1,0 +1,601 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 84, errors = 0, warn = 14, info = 4-->
+<head>
+  <title>ECLAIRE : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for ECLAIRE</h1>
+ <p>Generated Wed Jul 19 14:33:43 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.3.23</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.eclaire, Canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>The file package-list.json should not exist in the root folder <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li><span title="Invalid HTTP response 404 from https://interop.esante.gouv.fr/ig/fhir/eclaire/package-list.json?nocache=1689777223306 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">19 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ans.fhir.fr.eclaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/fhir/eclaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.2.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> ANS.annuaire.fhir.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Not yet released">U</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.fr.core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Not yet released">U</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#0.2.2. Tools: current</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://interop.esante.gouv.fr/ig/fhir/eclaire (Problem #1 with package-list.json at https://interop.esante.gouv.fr/ig/fhir/eclaire: Invalid HTTP response 404 from https://interop.esante.gouv.fr/ig/fhir/eclaire/package-list.json?nocache=1689777189611 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 14, info = 4, broken links = 84</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>84</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_CapabilityStatement-eclaire-consommateur"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_CodeSystem-eclaire-type-contact-code-system"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_ImplementationGuide-ans.fhir.fr.eclaire"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-condition-details"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-condition-details</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-contact-type"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-type</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-recruitment-period"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-recruitment-period</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-researchstudy"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-review-date"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-review-date</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-secondary-sponsor"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-therapeutic-area"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-therapeutic-area</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_ValueSet-eclaire-type-contact-vs"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-type-contact-vs</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-condition-details.html#l553">output&#8203;/StructureDefinition-eclaire-condition-details&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 353, column 2591</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-condition-details-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-eclaireconditiondetails-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-condition-details.html#l599">output&#8203;/StructureDefinition-eclaire-condition-details&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 355, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-condition-details-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-eclaireconditiondetails-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-condition-details.html#l624">output&#8203;/StructureDefinition-eclaire-condition-details&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 356, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-condition-details-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-eclaireconditiondetails-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-condition-details.html#l860">output&#8203;/StructureDefinition-eclaire-condition-details&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 432, column 2591</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-condition-details-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-eclaireconditiondetails-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-condition-details.html#l906">output&#8203;/StructureDefinition-eclaire-condition-details&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 434, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-condition-details-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-eclaireconditiondetails-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-condition-details.html#l931">output&#8203;/StructureDefinition-eclaire-condition-details&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 435, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-condition-details-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, extension-eclaireconditiondetails-detailed-descriptions, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-contact-type.html#l553">output&#8203;/StructureDefinition-eclaire-contact-type&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 353, column 2586</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-contact-type-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, Extension.valueCodeableConcept, segment-header, extension-eclairecontacttype-detailed-descriptions, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, Extension.value[x]:valueCodeableConcept, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-contact-type.html#l599">output&#8203;/StructureDefinition-eclaire-contact-type&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 355, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-contact-type-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, Extension.valueCodeableConcept, segment-header, extension-eclairecontacttype-detailed-descriptions, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, Extension.value[x]:valueCodeableConcept, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-contact-type.html#l624">output&#8203;/StructureDefinition-eclaire-contact-type&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 356, column 630</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-contact-type-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, Extension.valueCodeableConcept, segment-header, extension-eclairecontacttype-detailed-descriptions, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, Extension.value[x]:valueCodeableConcept, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-contact-type.html#l878">output&#8203;/StructureDefinition-eclaire-contact-type&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 432, column 2586</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-contact-type-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, Extension.valueCodeableConcept, segment-header, extension-eclairecontacttype-detailed-descriptions, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, Extension.value[x]:valueCodeableConcept, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-contact-type.html#l924">output&#8203;/StructureDefinition-eclaire-contact-type&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 434, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-contact-type-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, Extension.valueCodeableConcept, segment-header, extension-eclairecontacttype-detailed-descriptions, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, Extension.value[x]:valueCodeableConcept, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-contact-type.html#l949">output&#8203;/StructureDefinition-eclaire-contact-type&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 435, column 630</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-contact-type-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, Extension.valueCodeableConcept, segment-header, extension-eclairecontacttype-detailed-descriptions, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, Extension.value[x]:valueCodeableConcept, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-recruitment-period.html#l553">output&#8203;/StructureDefinition-eclaire-recruitment-period&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 353, column 2592</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-recruitment-period-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, Extension.valuePeriod, segment-header, Extension.extension, publish-box, Extension.value[x]:valuePeriod, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, extension-eclairerecruitmentperiod-detailed-descriptions, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-recruitment-period.html#l599">output&#8203;/StructureDefinition-eclaire-recruitment-period&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 355, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-recruitment-period-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, Extension.valuePeriod, segment-header, Extension.extension, publish-box, Extension.value[x]:valuePeriod, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, extension-eclairerecruitmentperiod-detailed-descriptions, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-recruitment-period.html#l624">output&#8203;/StructureDefinition-eclaire-recruitment-period&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 356, column 630</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-recruitment-period-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, Extension.valuePeriod, segment-header, Extension.extension, publish-box, Extension.value[x]:valuePeriod, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, extension-eclairerecruitmentperiod-detailed-descriptions, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-recruitment-period.html#l860">output&#8203;/StructureDefinition-eclaire-recruitment-period&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 432, column 2592</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-recruitment-period-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, Extension.valuePeriod, segment-header, Extension.extension, publish-box, Extension.value[x]:valuePeriod, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, extension-eclairerecruitmentperiod-detailed-descriptions, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-recruitment-period.html#l906">output&#8203;/StructureDefinition-eclaire-recruitment-period&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 434, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-recruitment-period-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, Extension.valuePeriod, segment-header, Extension.extension, publish-box, Extension.value[x]:valuePeriod, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, extension-eclairerecruitmentperiod-detailed-descriptions, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-recruitment-period.html#l931">output&#8203;/StructureDefinition-eclaire-recruitment-period&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 435, column 630</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-recruitment-period-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, Extension.valuePeriod, segment-header, Extension.extension, publish-box, Extension.value[x]:valuePeriod, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, extension-eclairerecruitmentperiod-detailed-descriptions, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l595">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 380, column 2589</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy' for &quot;ResearchStudy&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l619">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 381, column 629</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.extension:eclaire-review-date' for &quot;eclaire-review-date&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l643">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 382, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.extension:eclaire-condition-details' for &quot;eclaire-condition-details&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l667">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 383, column 629</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.extension:eclaire-therapeutic-area' for &quot;eclaire-therapeutic-area&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l691">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 384, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.extension:eclaire-recruitment-period' for &quot;eclaire-recruitment-period&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l715">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 385, column 629</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.extension:eclaire-secondary-sponsor' for &quot;eclaire-secondary-sponsor&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l744">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 386, column 660</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.identifier' for &quot;Slices for identifier&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l775">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 387, column 760</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.identifier:idPrimary' for &quot;identifier:idPrimary&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l797">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 388, column 810</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.identifier:idPrimary.use' for &quot;use&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l826">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 389, column 764</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.identifier:idSecondary' for &quot;identifier:idSecondary&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l849">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 390, column 803</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.identifier:idSecondary.use' for &quot;use&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l878">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 391, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.title' for &quot;title&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l902">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 392, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.status' for &quot;status&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l926">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 393, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.phase' for &quot;phase&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l950">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 394, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.category' for &quot;category&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l974">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 395, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.condition' for &quot;condition&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l998">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 396, column 653</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.contact' for &quot;contact&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l1022">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 397, column 721</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.contact.extension:eclaire-contact-type' for &quot;eclaire-contact-type&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l1056">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 398, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.description' for &quot;description&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l1080">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 399, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.enrollment' for &quot;enrollment&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l1108">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 400, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.sponsor' for &quot;sponsor&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l1136">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 401, column 627</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.site' for &quot;site&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3234">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 625, column 2589</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#ms_ResearchStudy' for &quot;ResearchStudy&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3253">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 626, column 629</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#ms_ResearchStudy.identifier:idPrimary' for &quot;identifier:idPrimary&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3275">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 627, column 627</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#ms_ResearchStudy.identifier:idSecondary' for &quot;identifier:idSecondary&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3421">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 671, column 2589</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy' for &quot;ResearchStudy&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3445">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 672, column 629</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.extension:eclaire-review-date' for &quot;eclaire-review-date&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3469">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 673, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.extension:eclaire-condition-details' for &quot;eclaire-condition-details&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3493">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 674, column 629</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.extension:eclaire-therapeutic-area' for &quot;eclaire-therapeutic-area&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3517">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 675, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.extension:eclaire-recruitment-period' for &quot;eclaire-recruitment-period&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3541">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 676, column 629</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.extension:eclaire-secondary-sponsor' for &quot;eclaire-secondary-sponsor&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3570">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 677, column 660</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.identifier' for &quot;Slices for identifier&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3601">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 678, column 760</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.identifier:idPrimary' for &quot;identifier:idPrimary&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3623">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 679, column 810</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.identifier:idPrimary.use' for &quot;use&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3652">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 680, column 764</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.identifier:idSecondary' for &quot;identifier:idSecondary&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3675">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 681, column 803</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.identifier:idSecondary.use' for &quot;use&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3704">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 682, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.title' for &quot;title&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3728">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 683, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.status' for &quot;status&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3752">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 684, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.phase' for &quot;phase&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3776">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 685, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.category' for &quot;category&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3800">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 686, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.condition' for &quot;condition&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3824">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 687, column 653</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.contact' for &quot;contact&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3848">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 688, column 721</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.contact.extension:eclaire-contact-type' for &quot;eclaire-contact-type&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3882">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 689, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.description' for &quot;description&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3906">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 690, column 623</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.enrollment' for &quot;enrollment&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3934">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 691, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.sponsor' for &quot;sponsor&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-researchstudy.html#l3962">output&#8203;/StructureDefinition-eclaire-researchstudy&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 692, column 627</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-researchstudy-definitions.html#diff_ResearchStudy.site' for &quot;site&quot; cannot be resolved (valid targets: 89 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-review-date.html#l553">output&#8203;/StructureDefinition-eclaire-review-date&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 353, column 2585</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-review-date-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, extension-eclairereviewdate-detailed-descriptions, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, Extension.value[x]:valueDate, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.valueDate])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-review-date.html#l599">output&#8203;/StructureDefinition-eclaire-review-date&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 355, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-review-date-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, extension-eclairereviewdate-detailed-descriptions, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, Extension.value[x]:valueDate, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.valueDate])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-review-date.html#l624">output&#8203;/StructureDefinition-eclaire-review-date&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 356, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-review-date-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, extension-eclairereviewdate-detailed-descriptions, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, Extension.value[x]:valueDate, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.valueDate])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-review-date.html#l860">output&#8203;/StructureDefinition-eclaire-review-date&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 432, column 2585</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-review-date-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, extension-eclairereviewdate-detailed-descriptions, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, Extension.value[x]:valueDate, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.valueDate])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-review-date.html#l906">output&#8203;/StructureDefinition-eclaire-review-date&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 434, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-review-date-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, extension-eclairereviewdate-detailed-descriptions, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, Extension.value[x]:valueDate, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.valueDate])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-review-date.html#l931">output&#8203;/StructureDefinition-eclaire-review-date&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 435, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-review-date-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, extension-eclairereviewdate-detailed-descriptions, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, Extension.value[x]:valueDate, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.valueDate])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-secondary-sponsor.html#l553">output&#8203;/StructureDefinition-eclaire-secondary-sponsor&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 353, column 2591</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-secondary-sponsor-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, Extension.valueReference, extension-eclairesecondarysponsor-detailed-descriptions, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.value[x]:valueReference])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-secondary-sponsor.html#l599">output&#8203;/StructureDefinition-eclaire-secondary-sponsor&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 355, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-secondary-sponsor-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, Extension.valueReference, extension-eclairesecondarysponsor-detailed-descriptions, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.value[x]:valueReference])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-secondary-sponsor.html#l624">output&#8203;/StructureDefinition-eclaire-secondary-sponsor&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 356, column 651</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-secondary-sponsor-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, Extension.valueReference, extension-eclairesecondarysponsor-detailed-descriptions, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.value[x]:valueReference])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-secondary-sponsor.html#l868">output&#8203;/StructureDefinition-eclaire-secondary-sponsor&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 432, column 2591</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-secondary-sponsor-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, Extension.valueReference, extension-eclairesecondarysponsor-detailed-descriptions, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.value[x]:valueReference])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-secondary-sponsor.html#l914">output&#8203;/StructureDefinition-eclaire-secondary-sponsor&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 434, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-secondary-sponsor-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, Extension.valueReference, extension-eclairesecondarysponsor-detailed-descriptions, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.value[x]:valueReference])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-secondary-sponsor.html#l939">output&#8203;/StructureDefinition-eclaire-secondary-sponsor&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 435, column 651</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-secondary-sponsor-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.extension, publish-box, bottom, hl7-logo, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, Extension.valueReference, extension-eclairesecondarysponsor-detailed-descriptions, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb, Extension.value[x]:valueReference])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-therapeutic-area.html#l553">output&#8203;/StructureDefinition-eclaire-therapeutic-area&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 353, column 2590</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-therapeutic-area-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, extension-eclairetherapeuticarea-detailed-descriptions, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-therapeutic-area.html#l599">output&#8203;/StructureDefinition-eclaire-therapeutic-area&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 355, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-therapeutic-area-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, extension-eclairetherapeuticarea-detailed-descriptions, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-therapeutic-area.html#l624">output&#8203;/StructureDefinition-eclaire-therapeutic-area&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 356, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-therapeutic-area-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, extension-eclairetherapeuticarea-detailed-descriptions, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-therapeutic-area.html#l860">output&#8203;/StructureDefinition-eclaire-therapeutic-area&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 432, column 2590</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-therapeutic-area-definitions.html#diff_Extension' for &quot;Extension&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, extension-eclairetherapeuticarea-detailed-descriptions, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-therapeutic-area.html#l906">output&#8203;/StructureDefinition-eclaire-therapeutic-area&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 434, column 617</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-therapeutic-area-definitions.html#diff_Extension.url' for &quot;url&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, extension-eclairetherapeuticarea-detailed-descriptions, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-eclaire-therapeutic-area.html#l931">output&#8203;/StructureDefinition-eclaire-therapeutic-area&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 435, column 641</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-eclaire-therapeutic-area-definitions.html#diff_Extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [ans-nav, segment-header, Extension.value[x]:valueString, Extension.extension, publish-box, Extension.valueString, bottom, hl7-logo, extension-eclairetherapeuticarea-detailed-descriptions, segment-post-footer, Extension.value[x], hl7-search-lnk, Extension.id, family-nav, Extension, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, Extension.url, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l438">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 268, column 195</a></b></td><td><b>error</b></td><td><b>The link 'construction_des_flux.html' for &quot;construction des flux&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_CapabilityStatement-eclaire-consommateur"> </a>
+<h2><a href="CapabilityStatement-eclaire-consommateur.html">fsh-generated/resources/CapabilityStatement-eclaire-consommateur.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_CodeSystem-eclaire-type-contact-code-system"> </a>
+<h2><a href="CodeSystem-eclaire-type-contact-code-system.html">fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c1226)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c1226)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_ImplementationGuide-ans.fhir.fr.eclaire"> </a>
+<h2><a href="ImplementationGuide-ans.fhir.fr.eclaire.html">fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"></div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-condition-details"> </a>
+<h2><a href="StructureDefinition-eclaire-condition-details.html">fsh-generated/resources/StructureDefinition-eclaire-condition-details.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-condition-details')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-contact-type"> </a>
+<h2><a href="StructureDefinition-eclaire-contact-type.html">fsh-generated/resources/StructureDefinition-eclaire-contact-type.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-contact-type')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-recruitment-period"> </a>
+<h2><a href="StructureDefinition-eclaire-recruitment-period.html">fsh-generated/resources/StructureDefinition-eclaire-recruitment-period.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-recruitment-period')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-researchstudy"> </a>
+<h2><a href="StructureDefinition-eclaire-researchstudy.html">fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c82913)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c98213)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[53]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c132515)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-researchstudy')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-review-date"> </a>
+<h2><a href="StructureDefinition-eclaire-review-date.html">fsh-generated/resources/StructureDefinition-eclaire-review-date.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-review-date')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-secondary-sponsor"> </a>
+<h2><a href="StructureDefinition-eclaire-secondary-sponsor.html">fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-secondary-sponsor')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-therapeutic-area"> </a>
+<h2><a href="StructureDefinition-eclaire-therapeutic-area.html">fsh-generated/resources/StructureDefinition-eclaire-therapeutic-area.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-therapeutic-area')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_ValueSet-eclaire-type-contact-vs"> </a>
+<h2><a href="ValueSet-eclaire-type-contact-vs.html">fsh-generated/resources/ValueSet-eclaire-type-contact-vs.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c888)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>Have verified that these examples are being checked against the expected profiles/resources.</b></p><ul>
+ <li>INFORMATION: Binary/example: Binary: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Binary <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Bundle/h1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient: Validate resource against profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation'): The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner'): The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>The objective is to show a reference to an unknown code system, so these warnings are expected</b></p><ul>
+ <li>WARNING: ValueSet.where(id = 'valueset-no-codesystem'): Error from server: Unable to provide support for code system http://not-a-known-code-system <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: ValueSet/valueset-no-codesystem: ValueSet.compose[0].include[0]: Unknown System/Version specified, so Concepts and Filters can''t be checked <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>These examples are fake code systems - they're not expected to be checked</b></p><ul>
+ <li>Code System URI 'http://example.org/some-id-type-system' is unknown so the code cannot be validated <span style="color: maroon">(0 uses)<span></li>
+ <li>Code System URI 'http://example.org/some-system' is unknown so the code cannot be validated <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We don't want a code for the change reason (and this binding shouldn't be extensible anyhow)</b></p><ul>
+ <li>WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse) <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse) <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We expect that all of the 'structural' resources will only be validated against their respective 'core' resource definitions</b></p><ul>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide <span style="color: maroon">(0 uses)<span></li>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library <span style="color: maroon">(0 uses)<span></li>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition <span style="color: maroon">(0 uses)<span></li>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="CODESYSTEM_SHAREABLE_MISSING"> </a>
+<h2>CODESYSTEM_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-eclaire-type-contact-code-system.html">fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system.json</a></td><td><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-eclaire-type-contact-code-system.html">fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system.json</a></td><td><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SECURITY_STRING_CONTENT_WARNING"> </a>
+<h2>SECURITY_STRING_CONTENT_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-eclaire-researchstudy.html">fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-eclaire-researchstudy.html">fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-eclaire-researchstudy.html">fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_SHAREABLE_MISSING"> </a>
+<h2>VALUESET_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-eclaire-type-contact-vs.html">fsh-generated/resources/ValueSet-eclaire-type-contact-vs.json</a></td><td><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+   </tr>
+</table>
+</body>
+</html>
