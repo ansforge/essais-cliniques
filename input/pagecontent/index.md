@@ -11,7 +11,7 @@ As part of the "Innovation santé 2030" plan, a new information system is going 
  Cet Implementation Guide est construit dans le cadre de l'élaboration d'un MVP
 </p>
 </blockquote>
-La France, en tête des pays européens dans le domaine de la recherche clinique, doit néanmoins renforcer la visibilité des essais cliniques en cours et faciliter l'accès au recrutement. C'est dans ce contexte et dans le cadre du plan Innovation santé 2030. que s'inscrit le projet de création d’une plateforme nationale référençant les essais cliniques.
+La France, en tête des pays européens dans le domaine de la recherche clinique, doit néanmoins renforcer la visibilité des essais cliniques en cours et faciliter l'accès au recrutement. C'est dans ce contexte et dans le cadre du plan Innovation santé 2030 que s'inscrit le projet de création d’une plateforme nationale référençant les essais cliniques.
 
 Le MVP de cette base nationale s’intitulera ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l’Ecosystème).
 
