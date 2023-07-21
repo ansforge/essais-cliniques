@@ -28,7 +28,7 @@ Usage: #example
 * phase.coding.version = "4.0.1"
 * phase.text = ""
 * status = #active
-* title = "titre de l'essai"
+* title = "Exemple d'un essai clinique"
 
 Instance: Inline-Instance-for-2022-500520-30-00-1
 InstanceOf: Group
