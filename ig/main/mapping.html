@@ -192,9 +192,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<p>Mapping FHIR du modèle de données</p>
+<p>Le mapping permet de mettre en correspondance les données fonctionnelles avec les éléments FHIR. Les éléments natifs FHIR sont utilisés au maximum mais certaines spécificités nécessitent de <a href="https://hl7.org/fhir/R4/profiling.html">profiler</a> les ressources FHIR, ce qui permet notamment de :</p>
+<ul>
+  <li>Modifier la  <a href="https://hl7.org/fhir/R4/profiling.html#cardinality">cardinalité</a> des éléments</li>
+  <li><a href="https://hl7.org/fhir/R4/profiling.html#slicing">Slicer</a> des éléments</li>
+  <li>Créer des <a href="https://hl7.org/fhir/R4/profiling.html#extensions">extensions</a></li>
+</ul>
+
+<p>Points spécifiques :</p>
+<ul>
+  <li>Les critères (inclusion, exclusion, genre, âge, …) sont représentés par l’élément characteristic multivalué de la ressource Group via l’élément enrollment. Un critère correspond à un élément characteristic, qui possède un type, une valeur et un indicateur permettant de savoir s’il s’agit d’un critère d’inclusion ou d’exclusion.</li>
+</ul>
 
 <object data="mappingResearchStudy.svg" style="width:100%" type="image/svg+xml"></object>
+
 
 
 
@@ -242,7 +253,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 13, 2023 07:04+0000">2023-07-13</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 21, 2023 09:40+0000">2023-07-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
