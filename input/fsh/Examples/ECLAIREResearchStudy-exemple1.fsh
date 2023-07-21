@@ -9,15 +9,15 @@ Usage: #example
 * condition[0].coding.display = ""
 * condition[=].text = "Disease Condition"
 * condition[+].text = "MedDRA Condition"
-* contact.name = "ZUBLENA, IRENE"
+* contact.name = "ZZZZZ, ttttt"
 * contact.telecom[0].system = #phone
 * contact.telecom[=].use = #work
-* contact.telecom[=].value = "0472406846"
+* contact.telecom[=].value = "0401010101"
 * contact.telecom[+].system = #email
 * contact.telecom[=].use = #work
-* contact.telecom[=].value = "drci_promo@chu-lyon.fr"
+* contact.telecom[=].value = "acme@chu-gotham.fr"
 * contained = Inline-Instance-for-2022-500520-30-00-1
-* description = "Ceci est un exemple d'essai clinique référencé dans la base ECLAIRE"
+* description = "Ceci est est un exemple de description d'un essai clinique"
 * enrollment = Reference(2022-500520-30-00-enrollment-group-id) "Reference to group detailing study characteristics"
 * enrollment.type = "Group"
 //* identifier.assigner = Reference(https://euclinicaltrials.eu/app/#/view/2022-500520-30-00) "euclinicaltrials.eu" => source Exemple OCTO => supprimé car incorrect
@@ -28,7 +28,7 @@ Usage: #example
 * phase.coding.version = "4.0.1"
 * phase.text = ""
 * status = #active
-* title = "Exemple d'essai clinique"
+* title = "titre de l'essai"
 
 Instance: Inline-Instance-for-2022-500520-30-00-1
 InstanceOf: Group
