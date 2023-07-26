@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-26T16:33:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-26T16:38:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -600,6 +600,18 @@
        ] ;
        fhir:name [ fhir:v "ECLAIRERecruitmentPeriod" ] ;
        fhir:description [ fhir:v "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de la période prévisionnelle de recrutement l'essai" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-region> ;
+         fhir:reference [ fhir:v "StructureDefinition/eclaire-region" ]
+       ] ;
+       fhir:name [ fhir:v "ECLAIRERegion" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du projet ECLAIRE qui indique le ou les pays de recrutement de l'essai" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

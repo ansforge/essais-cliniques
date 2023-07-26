@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2023-07-26T16:33:02+00:00",
+  "date" : "2023-07-26T16:38:57+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -680,6 +680,18 @@
       },
       "name" : "ECLAIRERecruitmentPeriod",
       "description" : "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de la période prévisionnelle de recrutement l'essai",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eclaire-region"
+      },
+      "name" : "ECLAIRERegion",
+      "description" : "Extension créée dans le cadre du projet ECLAIRE qui indique le ou les pays de recrutement de l'essai",
       "exampleBoolean" : false
     },
     {
