@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2023-07-19T14:33:10+00:00"/>
+  <date value="2023-07-26T09:20:01+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -485,6 +485,17 @@
       </reference>
       <name value="ECLAIREContactType"/>
       <description value="Extension créée dans le cadre du projet ECLAIRE qui indique le type de Contact : Public ou Scientific"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-label"/>
+      </reference>
+      <name value="ECLAIRELabel"/>
+      <description value="Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de plusieurs titres pour l'essai"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

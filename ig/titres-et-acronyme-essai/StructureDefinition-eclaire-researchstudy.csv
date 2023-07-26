@@ -51,6 +51,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Promoteur(s) secondaire(s) / Secondary Sponsor(s)","Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ResearchStudy.extension:eclaire-label","ResearchStudy.extension","eclaire-label","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label]]} {[]}
+","autres titres et acronyme / Additional names for the study","Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de plusieurs titres pour l'essai","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchStudy.modifierExtension","ResearchStudy.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -77,7 +81,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "ResearchStudy.identifier:idPrimary.use","ResearchStudy.identifier.use","","","",1,1,"","Y","Y","code {[]} {[]}
-","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""usual""/>","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"ele-1
+","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A","n/a","Role.code or implied by context"
 "ResearchStudy.identifier:idPrimary.type","ResearchStudy.identifier.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
@@ -141,7 +145,7 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}","CX.4 / (CX.4,CX.9,CX.10)","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
 "ResearchStudy.title","ResearchStudy.title","","","",0,1,"","","Y","string {[]} {[]}
-","Nom de l'étude / Public Title","A short, descriptive user-friendly label for the study.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,,,,"",,,,"ResearchStudy.title",0,1,"ele-1
+","Nom scientifique de l'étude / Scientific Title","A short, descriptive user-friendly label for the study.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,,,,"",,,,"ResearchStudy.title",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","No BRIDG mapping (although there is  StudyProtocolDocumentVersionPublicTitle this is arguably a different semantic: title of a document vs title of a research study)","n/a","Brief Title"
 "ResearchStudy.protocol","ResearchStudy.protocol","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/PlanDefinition]]}

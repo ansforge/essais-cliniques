@@ -3,10 +3,16 @@
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system.json: line 1, col 1226, Warning - The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile (REQUIRED)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-condition-details.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-type.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 1, col 31842, Error - Canonical URL 'http://hl7.org/fhir/ValueSet/title-type' does not resolve (INVALID)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 1, col 38965, Error - ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1) (STRUCTURE)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 1, col 39372, Error - Canonical URL 'http://hl7.org/fhir/ValueSet/title-type' does not resolve (INVALID)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 0, col 0, Warning - The valueSet reference http://hl7.org/fhir/ValueSet/title-type on element Extension.extension.value[x] could not be resolved (BUSINESSRULE)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 0, col 0, Warning - The valueSet reference http://hl7.org/fhir/ValueSet/title-type on element Extension.extension.value[x] could not be resolved (BUSINESSRULE)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-recruitment-period.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json: line 1, col 82913, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json: line 1, col 98213, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json: line 1, col 132515, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json: line 1, col 85841, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json: line 1, col 101141, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json: line 1, col 135460, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-review-date.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
@@ -16,6 +22,6 @@
 ECLAIRE : Validation Results
 =========================================
 
-err = 0, warn = 14, info = 4
-IG Publisher Version: 1.3.23
-Generated Wed Jul 19 14:33:44 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+err = 4, warn = 17, info = 4
+IG Publisher Version: 1.3.24
+Generated Wed Jul 26 09:20:58 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
