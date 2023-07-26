@@ -19,7 +19,7 @@ Usage: #definition
 * group.element[+].code = #WAIT
 * group.element[=].target.code = #temporarily-closed-to-accrual
 * group.element[=].target.equivalence = #equivalent
-** group.element[+].code = #WAIT
+* group.element[+].code = #WAIT
 * group.element[=].target.code = #temporarily-closed-to-accrual-and-intervention
 * group.element[=].target.equivalence = #equivalent
 * group.element[+].code = #PROL
