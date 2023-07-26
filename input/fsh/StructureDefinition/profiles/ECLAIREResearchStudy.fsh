@@ -37,13 +37,15 @@ Description: "Profil pour le projet ECLAIRE"
     ECLAIRETherapeuticArea named eclaire-therapeutic-area 0..1 and
     ECLAIRERecruitmentPeriod named eclaire-recruitment-period 0..1 and
     ECLAIRESecondarySponsor named eclaire-secondary-sponsor 0..* and
+    ECLAIRERegion named eclaire-region 0..* and
     ECLAIRELabel named eclaire-label 0..* // extension label inspiré de R5
 * extension[eclaire-review-date] ^short = "Date de dernière modification substancielle"
-* extension[eclaire-label] ^short = "autres titres et acronyme / Additional names for the study"
 * extension[eclaire-condition-details] ^short = "Précisions sur le sujet / Health Condition(s) or Problem(s) Studied"
 * extension[eclaire-therapeutic-area] ^short = "Domaine thérapeutique concerné"
 * extension[eclaire-recruitment-period] ^short = "Période prévisionnelle de recrutement"   
 * extension[eclaire-secondary-sponsor] ^short = "Promoteur(s) secondaire(s) / Secondary Sponsor(s)"
+* extension[eclaire-region] ^short = "zone de recrutement  / A country, state or other area where the study is taking place rather than its precise geographic location or address"
+* extension[eclaire-label] ^short = "autres titres et acronyme / Additional names for the study"
 * contact.extension contains
     ECLAIREContactType named eclaire-contact-type 0..1
 * contact.extension[eclaire-contact-type] ^short = "type de contact : Public ou Scientific" 
