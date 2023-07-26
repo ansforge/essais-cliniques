@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2023-07-26T16:55:40+00:00"/>
+  <date value="2023-07-26T17:10:58+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -467,6 +467,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/eclaire-study-status-code-system"/>
+      </reference>
+      <name value="Définition des statuts de l'essai utilisés dans la base de données ECLAIRE"/>
+      <description value="Statut de l'essai clinique utilisé dans la base de données ECLAIRE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -474,6 +485,17 @@
       </reference>
       <name value="eclaire-consommateur"/>
       <description value="Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/eclaire-study-status-concept-map"/>
+      </reference>
+      <name value="eclaire-study-status-concept-map"/>
+      <description value="Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -584,6 +606,17 @@
       </reference>
       <name value="Type de contact"/>
       <description value="Type de contact pour les essais cliniques"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eclaire-study-status-vs"/>
+      </reference>
+      <name value="Value Set Statut Eclaire de l'essai"/>
+      <description value="Value Set Statut Eclaire de l'essei clinique."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

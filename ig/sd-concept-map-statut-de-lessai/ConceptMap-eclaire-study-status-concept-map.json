@@ -1,0 +1,100 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eclaire-study-status-concept-map",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-eclaire-study-status-vs.html\">Value Set Statut Eclaire de l'essai</a> to http://hl7.org/fhir/R4/valueset-research-study-status</p><p>DRAFT (not intended for production usage). Published on 2023-07-26 17:10:58+0000 by ANS (ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a>). </p><div><p>Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"ValueSet-eclaire-study-status-vs.html\">Value Set Statut Eclaire de l'essai</a> to <code>http://hl7.org/fhir/R4/valueset-research-study-status</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>INIT</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>approved</td></tr><tr><td>RUN</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>active</td></tr><tr><td>WAIT</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>temporarily-closed-to-accrual</td></tr><tr><td>WAIT</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>temporarily-closed-to-accrual-and-intervention</td></tr><tr><td>PROL</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>approved</td></tr><tr><td>EXP</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>approved</td></tr><tr><td>TERM</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>completed</td></tr><tr><td>EARLY</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>administratively-completed</td></tr><tr><td>ARCH</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>completed</td></tr><tr><td>DISC</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>withdrawn</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ConceptMap/eclaire-study-status-concept-map",
+  "version" : "0.1.0",
+  "name" : "FHIR-Eclaire-status-concept-map",
+  "title" : "FHIR/Eclaire ResearchStudy status Use Mapping",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-07-26T17:10:58+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)",
+  "sourceUri" : "eclaire-study-status-vs",
+  "targetUri" : "http://hl7.org/fhir/R4/valueset-research-study-status",
+  "group" : [{
+    "source" : "eclaire-study-status-vs",
+    "target" : "http://hl7.org/fhir/R4/valueset-research-study-status",
+    "element" : [{
+      "code" : "INIT",
+      "target" : [{
+        "code" : "approved",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RUN",
+      "target" : [{
+        "code" : "active",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WAIT",
+      "target" : [{
+        "code" : "temporarily-closed-to-accrual",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WAIT",
+      "target" : [{
+        "code" : "temporarily-closed-to-accrual-and-intervention",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROL",
+      "target" : [{
+        "code" : "approved",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EXP",
+      "target" : [{
+        "code" : "approved",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TERM",
+      "target" : [{
+        "code" : "completed",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EARLY",
+      "target" : [{
+        "code" : "administratively-completed",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ARCH",
+      "target" : [{
+        "code" : "completed",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISC",
+      "target" : [{
+        "code" : "withdrawn",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}

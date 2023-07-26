@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-26T16:55:40+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-26T17:10:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -544,6 +544,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/eclaire-study-status-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Définition des statuts de l'essai utilisés dans la base de données ECLAIRE" ] ;
+       fhir:description [ fhir:v "Statut de l'essai clinique utilisé dans la base de données ECLAIRE" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
@@ -552,6 +564,18 @@
        ] ;
        fhir:name [ fhir:v "eclaire-consommateur" ] ;
        fhir:description [ fhir:v "Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ConceptMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/ConceptMap/eclaire-study-status-concept-map> ;
+         fhir:reference [ fhir:v "ConceptMap/eclaire-study-status-concept-map" ]
+       ] ;
+       fhir:name [ fhir:v "eclaire-study-status-concept-map" ] ;
+       fhir:description [ fhir:v "Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -672,6 +696,18 @@
        ] ;
        fhir:name [ fhir:v "Type de contact" ] ;
        fhir:description [ fhir:v "Type de contact pour les essais cliniques" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs> ;
+         fhir:reference [ fhir:v "ValueSet/eclaire-study-status-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Value Set Statut Eclaire de l'essai" ] ;
+       fhir:description [ fhir:v "Value Set Statut Eclaire de l'essei clinique." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

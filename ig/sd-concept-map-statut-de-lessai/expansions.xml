@@ -1,11 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="fff8c667-2706-4688-8caf-3ac3ee8b7eca"/>
+  <id value="66be9fe4-5579-4c49-a6b8-51d3fdcbcc6b"/>
   <meta>
-    <lastUpdated value="2023-07-26T16:55:40.659+00:00"/>
+    <lastUpdated value="2023-07-26T17:10:58.435+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 9 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-eclaire-study-status-code-system.html">Définition des statuts de l'essai utilisés dans la base de données ECLAIRE v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-status-code-system-INIT"> </a>  
+                  <a href="CodeSystem-eclaire-study-status-code-system.html#eclaire-study-status-code-system-INIT">INIT</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system</td>
+                <td>A démarrer</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-status-code-system-RUN"> </a>  
+                  <a href="CodeSystem-eclaire-study-status-code-system.html#eclaire-study-status-code-system-RUN">RUN</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system</td>
+                <td>En cours</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-status-code-system-WAIT"> </a>  
+                  <a href="CodeSystem-eclaire-study-status-code-system.html#eclaire-study-status-code-system-WAIT">WAIT</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system</td>
+                <td>Suspendue</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-status-code-system-PROL"> </a>  
+                  <a href="CodeSystem-eclaire-study-status-code-system.html#eclaire-study-status-code-system-PROL">PROL</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system</td>
+                <td>Prolongée - prorogée</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-status-code-system-EXP"> </a>  
+                  <a href="CodeSystem-eclaire-study-status-code-system.html#eclaire-study-status-code-system-EXP">EXP</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system</td>
+                <td>Expirée</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-status-code-system-TERM"> </a>  
+                  <a href="CodeSystem-eclaire-study-status-code-system.html#eclaire-study-status-code-system-TERM">TERM</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system</td>
+                <td>Terminée</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-status-code-system-EARLY"> </a>  
+                  <a href="CodeSystem-eclaire-study-status-code-system.html#eclaire-study-status-code-system-EARLY">EARLY</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system</td>
+                <td>Terminée (fin anticipée)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-status-code-system-ARCH"> </a>  
+                  <a href="CodeSystem-eclaire-study-status-code-system.html#eclaire-study-status-code-system-ARCH">ARCH</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system</td>
+                <td>Archivée</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-status-code-system-DISC"> </a>  
+                  <a href="CodeSystem-eclaire-study-status-code-system.html#eclaire-study-status-code-system-DISC">DISC</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system</td>
+                <td>Abandonnée</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs"/>
+        <version value="0.1.0"/>
+        <name value="EclaireStudyStatusVS"/>
+        <title value="Value Set Statut Eclaire de l'essai"/>
+        <status value="draft"/>
+        <date value="2023-07-26T17:10:58+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:94ba775e-837f-4d9f-927b-b7349d526a16"/>
+          <timestamp value="2023-07-26T17:11:23+00:00"/>
+          <total value="9"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system"/>
+            <code value="INIT"/>
+            <display value="A démarrer"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system"/>
+            <code value="RUN"/>
+            <display value="En cours"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system"/>
+            <code value="WAIT"/>
+            <display value="Suspendue"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system"/>
+            <code value="PROL"/>
+            <display value="Prolongée - prorogée"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system"/>
+            <code value="EXP"/>
+            <display value="Expirée"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system"/>
+            <code value="TERM"/>
+            <display value="Terminée"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system"/>
+            <code value="EARLY"/>
+            <display value="Terminée (fin anticipée)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system"/>
+            <code value="ARCH"/>
+            <display value="Archivée"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system"/>
+            <code value="DISC"/>
+            <display value="Abandonnée"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-type-contact-vs"/>
     <resource>
@@ -53,10 +218,10 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-07-26T16:55:40+00:00"/>
+        <date value="2023-07-26T17:10:58+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:62220192-c1cb-4529-9c4d-7f73fc3cd20a"/>
-          <timestamp value="2023-07-26T16:56:25+00:00"/>
+          <identifier value="urn:uuid:f8396fb2-5f98-4fb1-98ef-261fa2eda397"/>
+          <timestamp value="2023-07-26T17:11:24+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>

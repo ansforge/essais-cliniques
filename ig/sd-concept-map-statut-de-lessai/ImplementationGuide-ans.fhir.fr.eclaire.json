@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2023-07-26T16:55:40+00:00",
+  "date" : "2023-07-26T17:10:58+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -625,6 +625,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eclaire-study-status-code-system"
+      },
+      "name" : "Définition des statuts de l'essai utilisés dans la base de données ECLAIRE",
+      "description" : "Statut de l'essai clinique utilisé dans la base de données ECLAIRE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -632,6 +644,18 @@
       },
       "name" : "eclaire-consommateur",
       "description" : "Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/eclaire-study-status-concept-map"
+      },
+      "name" : "eclaire-study-status-concept-map",
+      "description" : "Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)",
       "exampleBoolean" : false
     },
     {
@@ -752,6 +776,18 @@
       },
       "name" : "Type de contact",
       "description" : "Type de contact pour les essais cliniques",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-study-status-vs"
+      },
+      "name" : "Value Set Statut Eclaire de l'essai",
+      "description" : "Value Set Statut Eclaire de l'essei clinique.",
       "exampleBoolean" : false
     }],
     "page" : {

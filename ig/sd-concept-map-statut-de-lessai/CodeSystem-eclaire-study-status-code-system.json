@@ -1,0 +1,61 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "eclaire-study-status-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">INIT<a name=\"eclaire-study-status-code-system-INIT\"> </a></td><td>A démarrer</td></tr><tr><td style=\"white-space:nowrap\">RUN<a name=\"eclaire-study-status-code-system-RUN\"> </a></td><td>En cours</td></tr><tr><td style=\"white-space:nowrap\">WAIT<a name=\"eclaire-study-status-code-system-WAIT\"> </a></td><td>Suspendue</td></tr><tr><td style=\"white-space:nowrap\">PROL<a name=\"eclaire-study-status-code-system-PROL\"> </a></td><td>Prolongée - prorogée</td></tr><tr><td style=\"white-space:nowrap\">EXP<a name=\"eclaire-study-status-code-system-EXP\"> </a></td><td>Expirée</td></tr><tr><td style=\"white-space:nowrap\">TERM<a name=\"eclaire-study-status-code-system-TERM\"> </a></td><td>Terminée</td></tr><tr><td style=\"white-space:nowrap\">EARLY<a name=\"eclaire-study-status-code-system-EARLY\"> </a></td><td>Terminée (fin anticipée)</td></tr><tr><td style=\"white-space:nowrap\">ARCH<a name=\"eclaire-study-status-code-system-ARCH\"> </a></td><td>Archivée</td></tr><tr><td style=\"white-space:nowrap\">DISC<a name=\"eclaire-study-status-code-system-DISC\"> </a></td><td>Abandonnée</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system",
+  "version" : "0.1.0",
+  "name" : "EclaireStudyStatusCS",
+  "title" : "Définition des statuts de l'essai utilisés dans la base de données ECLAIRE",
+  "status" : "draft",
+  "date" : "2023-07-26T17:10:58+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Statut de l'essai clinique utilisé dans la base de données ECLAIRE",
+  "content" : "complete",
+  "count" : 9,
+  "concept" : [{
+    "code" : "INIT",
+    "display" : "A démarrer"
+  },
+  {
+    "code" : "RUN",
+    "display" : "En cours"
+  },
+  {
+    "code" : "WAIT",
+    "display" : "Suspendue"
+  },
+  {
+    "code" : "PROL",
+    "display" : "Prolongée - prorogée"
+  },
+  {
+    "code" : "EXP",
+    "display" : "Expirée"
+  },
+  {
+    "code" : "TERM",
+    "display" : "Terminée"
+  },
+  {
+    "code" : "EARLY",
+    "display" : "Terminée (fin anticipée)"
+  },
+  {
+    "code" : "ARCH",
+    "display" : "Archivée"
+  },
+  {
+    "code" : "DISC",
+    "display" : "Abandonnée"
+  }]
+}
