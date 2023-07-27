@@ -5,7 +5,7 @@ Description: "Statut de l'essai clinique utilisé dans la base de données ECLAI
 * #a-demarrer "A démarrer"
 * #en-cours "En cours"
 * #suspendue "Suspendue"
-* #prolongee-prorogee "Prolongée - prorogée"
+* #prorogee "Prorogée"
 * #expiree "Expirée"
 * #terminee "Terminée"
 * #terminee-fin-anticipee "Terminée (fin anticipée)"
