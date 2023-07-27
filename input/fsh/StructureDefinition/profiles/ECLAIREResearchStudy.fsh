@@ -1,22 +1,33 @@
 Profile: ECLAIREResearchStudy
 Parent: ResearchStudy
 Id: eclaire-researchstudy
-Description: "Profil pour le projet ECLAIRE"
+Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 
 /* Données fonctionnelles */
 
 /*définition supplémntaires par rapport à la ressource parent*/
 * title ^short = "Nom scientifique de l'étude / Scientific Title"
+* title MS
 * status ^short = "Statut de l'essai / Study Status"
+* status MS
 * phase ^short = "Phase de l'essai / Study type : phase"
+* phase MS
 * category ^short = "Type d'essai  / Study type : type of study"
+* category MS
 * condition ^short = "Sujet concerné /  Problem(s) Studied exemple code MedDRA"
+* condition MS
 * description ^short = "Résumé de l'essai / Summary Results"
+* description MS
 * contact ^short = "Contact (Contact for public / scientific queries)"
+* contact MS
 * enrollment ^short = "Critères d'inclusion et d'exclusion / Inclusion & exclusion criteria"
+* enrollment MS
 * site ^short = "Lieux / Countries of Recruitment"
+* site MS
 * sponsor ^short = "Promoteur / primary Sponsor"
+* sponsor MS
 * location ^short = "Pays de recrutement / Countries of Recruitment"
+* location MS
 
 /*slice*/
 * identifier ^slicing.discriminator.type = #value
@@ -33,12 +44,12 @@ Description: "Profil pour le projet ECLAIRE"
 
 /*Extensions*/
 * extension contains 
-    ECLAIREReviewDate named eclaire-review-date 0..1 and
-    ECLAIREConditionDetails named eclaire-condition-details 0..1 and
-    ECLAIRETherapeuticArea named eclaire-therapeutic-area 0..1 and
-    ECLAIRERecruitmentPeriod named eclaire-recruitment-period 0..1 and
-    ECLAIRESecondarySponsor named eclaire-secondary-sponsor 0..* and
-    ECLAIRELabel named eclaire-label 0..* // extension label inspiré de R5
+    ECLAIREReviewDate named eclaire-review-date 0..1 MS and
+    ECLAIREConditionDetails named eclaire-condition-details 0..1 MS and
+    ECLAIRETherapeuticArea named eclaire-therapeutic-area 0..1 MS and
+    ECLAIRERecruitmentPeriod named eclaire-recruitment-period 0..1 MS and
+    ECLAIRESecondarySponsor named eclaire-secondary-sponsor 0..* MS and
+    ECLAIRELabel named eclaire-label 0..* MS // extension label inspiré de R5
 * extension[eclaire-review-date] ^short = "Date de dernière modification substancielle"
 * extension[eclaire-label] ^short = "autres titres et acronyme / Additional names for the study"
 * extension[eclaire-condition-details] ^short = "Précisions sur le sujet / Health Condition(s) or Problem(s) Studied"
@@ -46,8 +57,5 @@ Description: "Profil pour le projet ECLAIRE"
 * extension[eclaire-recruitment-period] ^short = "Période prévisionnelle de recrutement"   
 * extension[eclaire-secondary-sponsor] ^short = "Promoteur(s) secondaire(s) / Secondary Sponsor(s)"
 * contact.extension contains
-    ECLAIREContactType named eclaire-contact-type 0..1
+    ECLAIREContactType named eclaire-contact-type 0..1 MS
 * contact.extension[eclaire-contact-type] ^short = "type de contact : Public ou Scientific" 
-* site.extension contains
-    ECLAIRESiteContactName named eclaire-site-contact-name 0..1
-* site.extension[eclaire-site-contact-name] ^short = "Nom du contact spécifique au site de recrutement" 
