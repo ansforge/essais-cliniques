@@ -324,7 +324,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Un header avec un code 200 OK HTTP.</li>
   <li>Un body contenant une ressource <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> dont le type = searchset. Le bundle encapsule 0 à n ressources ResearchStudy corespondant aux critères de recherche plus les ressources incluses correspondant aux critères de recherche.
-Le service développé renvoie les 200 premiers résultats et indique le total trouvé dans une balise <code class="language-plaintext highlighter-rouge">total</code>. Dans le cas où il n’y a pas de résultat le service renvoie <code class="language-plaintext highlighter-rouge">total</code>: 0.</li>
+Le service développé renvoie par défaut les 20 premiers résultats et indique le total trouvé dans une balise <code class="language-plaintext highlighter-rouge">total</code>. Dans le cas où il n’y a pas de résultat le service renvoie <code class="language-plaintext highlighter-rouge">total</code>: 0. Le nombre de résultats renvoyés peut être modifié en utilisant le modificateur de requête <a href="http://hl7.org/fhir/R4/search.html#count">_count</a>, avec une valeur maximale de 5000.</li>
 </ul>
 
 <p>Remarque : La recherche est un succès à partir du moment où la requête peut être exécutée. Il peut il y avoir 0 à n correspondances.</p>
@@ -473,7 +473,7 @@ applicables à ce cas d’usage sont :</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 27, 2023 08:46+0000">2023-07-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 27, 2023 08:48+0000">2023-07-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
