@@ -122,7 +122,7 @@ Lien vers la spécification FHIR : <http://hl7.org/fhir/R4/bundle.html>
 Si la recherche est un succès, le serveur répond :
 -  Un header avec un code 200 OK HTTP.
 -  Un body contenant une ressource [Bundle](http://hl7.org/fhir/R4/bundle.html) dont le type = searchset. Le bundle encapsule 0 à n ressources ResearchStudy corespondant aux critères de recherche plus les ressources incluses correspondant aux critères de recherche.
-Le service développé renvoie les 200 premiers résultats et indique le total trouvé dans une balise `total`. Dans le cas où il n'y a pas de résultat le service renvoie `total`: 0.
+Le service développé renvoie par défaut les 20 premiers résultats et indique le total trouvé dans une balise `total`. Dans le cas où il n'y a pas de résultat le service renvoie `total`: 0. Le nombre de résultats renvoyés peut être modifié en utilisant le modificateur de requête [_count](http://hl7.org/fhir/R4/search.html#count), avec une valeur maximale de 5000.
 
 Remarque : La recherche est un succès à partir du moment où la requête peut être exécutée. Il peut il y avoir 0 à n correspondances.
 
