@@ -200,7 +200,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#5">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#6">Example: Example Instances</a>
+         <a href="#6">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -343,6 +346,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Type de contact pour les essais cliniques Value Set.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eclaire-study-status-vs.html"
+                     title="ValueSet/eclaire-study-status-vs">Value Set Statut Eclaire de l'essai</a>
+               </td>
+               <td>
+<p>Value Set Statut Eclaire de l’essei clinique.</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -357,6 +369,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-eclaire-study-status-code-system.html"
+                     title="CodeSystem/eclaire-study-status-code-system">Définition des statuts de l'essai utilisés dans la base de données ECLAIRE</a>
+               </td>
+               <td>
+<p>Statut de l’essai clinique utilisé dans la base de données ECLAIRE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-eclaire-type-contact-code-system.html"
                      title="CodeSystem/eclaire-type-contact-code-system">Type de contact</a>
                </td>
@@ -368,6 +389,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="6"> </a>
+   <h3>Terminology: Concept Maps </h3>
+   <p>
+    <p>Les ConceptMap définissent les transformations de conversion entre les CodeSystem conformes à cet Implementation Guide (IG). Equivalent NOS : tables d’ASSociation (ASS).</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ConceptMap-eclaire-study-status-concept-map.html"
+                     title="ConceptMap/eclaire-study-status-concept-map">eclaire-study-status-concept-map</a>
+               </td>
+               <td>
+<p>Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>Ces exemples dévoilent à quoi doivent ressembler les données produites et consommées par les systèmes conformes à cet Implementation Guide (IG).</p>
@@ -434,7 +476,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 26, 2023 16:31+0000">2023-07-26</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 27, 2023 08:05+0000">2023-07-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
