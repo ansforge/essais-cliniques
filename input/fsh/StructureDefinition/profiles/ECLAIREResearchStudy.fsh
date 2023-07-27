@@ -48,3 +48,6 @@ Description: "Profil pour le projet ECLAIRE"
 * contact.extension contains
     ECLAIREContactType named eclaire-contact-type 0..1
 * contact.extension[eclaire-contact-type] ^short = "type de contact : Public ou Scientific" 
+* site.extension contains
+    ECLAIRESiteContactName named eclaire-site-contact-name 0..1
+* site.extension[eclaire-site-contact-name] ^short = "Nom du contact spécifique au site de recrutement" 
