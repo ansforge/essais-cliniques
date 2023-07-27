@@ -22,7 +22,7 @@ Usage: #definition
 * group.element[+].code = #suspendue
 * group.element[=].target.code = #temporarily-closed-to-accrual-and-intervention
 * group.element[=].target.equivalence = #equivalent
-* group.element[+].code = #prolongee-prorogee
+* group.element[+].code = #prorogee
 * group.element[=].target.code = #approved
 * group.element[=].target.equivalence = #equivalent
 * group.element[+].code = #expiree
