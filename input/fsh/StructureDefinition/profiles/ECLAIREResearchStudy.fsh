@@ -15,7 +15,8 @@ Description: "Profil pour le projet ECLAIRE"
 * contact ^short = "Contact (Contact for public / scientific queries)"
 * enrollment ^short = "Critères d'inclusion et d'exclusion / Inclusion & exclusion criteria"
 * site ^short = "Lieux / Countries of Recruitment"
-* sponsor ^short = "promoteur / primary Sponsor"
+* sponsor ^short = "Promoteur / primary Sponsor"
+* location ^short = "Pays de recrutement / Countries of Recruitment"
 
 /*slice*/
 * identifier ^slicing.discriminator.type = #value
