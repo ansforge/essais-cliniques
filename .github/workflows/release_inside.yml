@@ -49,15 +49,6 @@ jobs:
           CHECK_FIRELY_TERMINAL_VERSION=$(fhir -v | tr '\n' ' ') # Print everything in a single line
           echo "FIRELY_TERMINAL_VERSION: $CHECK_FIRELY_TERMINAL_VERSION"
         
-      - name: Run bake  ans.annuaire.fhir.r4
-        run: |
-          fhir install ans.annuaire.fhir.r4 0.2.0
-          fhir bake --package ans.annuaire.fhir.r4
-      - name: Run bake hl7.fhir.fr.core
-        run: |
-          fhir install hl7.fhir.fr.core 1.1.0
-          fhir bake --package hl7.fhir.fr.core
-          
       # Persist the FHIR Package Cache between runners.
       # Doc: https://confluence.hl7.org/display/FHIR/FHIR+Package+Cache
       - name: 🗂️ Cache FHIR Packages
@@ -87,7 +78,7 @@ jobs:
         run : java -Xmx8192m -jar publisher.jar publisher -ig igRepo/.  
         
       - name: 🏃‍♂️ Run  Publisher to release
-        run :   java -jar publisher.jar -go-publish  -source igRepo  -web  ./IG-website-release/www/ig -registry ./IG-website-release/ig-registry/fhir-ig-list.json -history ./IG-website-release/fhir-ig-history-template -templates ./IG-website-release/templates 
+        run :   java -jar publisher.jar -go-publish  -source igRepo  -web  ./IG-website-release/www/ig/fhir -registry ./IG-website-release/ig-registry/fhir-ig-list.json -history ./IG-website-release/fhir-ig-history-template -templates ./IG-website-release/templates 
         
           
         
