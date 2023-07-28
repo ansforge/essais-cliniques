@@ -1,11 +1,12 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 14, warn = 24, info = 8
+err = 15, warn = 28, info = 9
 IG Publisher Version: 1.3.25
-Generated Fri Jul 28 10:18:39 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Fri Jul 28 13:01:15 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 143 / 4 / 0
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
+ /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 2 / 2
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-status-code-system : 0 / 2 / 2
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system : 0 / 2 / 2
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map : 2 / 3 / 1
@@ -21,6 +22,7 @@ Generated Fri Jul 28 10:18:39 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-site-contact-name : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-therapeutic-area : 0 / 1 / 1
+ /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-study-phase-vs : 1 / 2 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-study-status-vs : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-type-contact-vs : 0 / 1 / 1
 </table>
@@ -173,6 +175,10 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-eclaire-consommateur.json ==
+== fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system.json ==
+INFORMATION: CodeSystem/eclaire-study-phase-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/eclaire-study-phase-code-system: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/eclaire-study-phase-code-system: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-eclaire-study-status-code-system.json ==
 INFORMATION: CodeSystem/eclaire-study-status-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/eclaire-study-status-code-system: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
@@ -227,6 +233,10 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-site-contact-name'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-therapeutic-area.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-therapeutic-area'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-eclaire-study-phase-vs.json ==
+ERROR: ValueSet/eclaire-study-phase-vs: ValueSet.compose.include[0].system: URL value 'http://hl7.org/fhir/research-study-phase' does not resolve
+WARNING: ValueSet/eclaire-study-phase-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'eclaire-study-phase-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/research-study-phase
 == fsh-generated/resources/ValueSet-eclaire-study-status-vs.json ==
 WARNING: ValueSet/eclaire-study-status-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-eclaire-type-contact-vs.json ==
