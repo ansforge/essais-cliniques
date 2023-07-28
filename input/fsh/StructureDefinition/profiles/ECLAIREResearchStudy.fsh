@@ -12,7 +12,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * status MS
 * phase ^short = "Phase de l'essai / Study type : phase"
 * phase MS
-* phase.valueCodeableConcept from eclaire-study-phase-vs (extensible)
+* phase from eclaire-study-phase-vs (extensible)
 * category ^short = "Type d'essai  / Study type : type of study"
 * category MS
 * condition ^short = "Sujet concerné /  Problem(s) Studied exemple code MedDRA"
