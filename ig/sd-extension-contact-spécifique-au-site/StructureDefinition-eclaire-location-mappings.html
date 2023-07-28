@@ -241,7 +241,7 @@
         
           Draft
           
-            as of 2023-07-27
+            as of 2023-07-28
           
         
       </td>
@@ -276,6 +276,13 @@
  <tr><td>&nbsp;&nbsp;&nbsp;mode</td><td>n/a, .playingEntity[classCode=PLC].determinerCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>n/a, CD, .code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>n/a, TEL, .telecom</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a, N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>n/a, ./scheme</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>n/a, ./url</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>n/a, unique(./use)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rank</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>n/a, IVL&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;] or URG&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;], ./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>n/a, AD, .addr</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;physicalType</td><td>n/a, CD, .playingEntity [classCode=PLC].code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;position</td><td>n/a, .playingEntity [classCode=PLC determinerCode=INSTANCE].positionText</td> </tr>
@@ -383,7 +390,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 27, 2023 17:03+0000">2023-07-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 28, 2023 07:09+0000">2023-07-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
