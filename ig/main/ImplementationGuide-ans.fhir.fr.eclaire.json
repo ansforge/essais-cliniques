@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2023-07-27T15:15:25+00:00",
+  "date" : "2023-07-28T08:09:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -697,6 +697,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eclaire-location"
+      },
+      "name" : "ECLAIRELocation",
+      "description" : "Profil de Location pour le projet ECLAIRE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -715,7 +727,7 @@
         "reference" : "StructureDefinition/eclaire-researchstudy"
       },
       "name" : "ECLAIREResearchStudy",
-      "description" : "Profil pour le projet ECLAIRE",
+      "description" : "Profil de ResearchStudy pour le projet ECLAIRE",
       "exampleBoolean" : false
     },
     {
@@ -740,6 +752,18 @@
       },
       "name" : "ECLAIRESecondarySponsor",
       "description" : "Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eclaire-site-contact-name"
+      },
+      "name" : "ECLAIRESiteContactName",
+      "description" : "Extension créée dans le cadre du projet ECLAIRE pour indiquer le nom de contact spécifique au site de recrutement",
       "exampleBoolean" : false
     },
     {

@@ -97,6 +97,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-site-contact-name",
+      "title": "ECLAIRESiteContactName",
+      "types": [
+        "HumanName"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-therapeutic-area",
       "title": "ECLAIRETherapeuticArea",
       "types": [
@@ -105,6 +112,12 @@
     }
   ],
   "profiles": {
+    "Location": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-location",
+        "title": "ECLAIRELocation"
+      }
+    ],
     "ResearchStudy": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy",
@@ -130,6 +143,9 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
@@ -172,6 +188,9 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor": [
       "ResearchStudy"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-site-contact-name": [
+      "Location.telecom"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-therapeutic-area": [
       "ResearchStudy"
