@@ -24,9 +24,11 @@
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00.json: line 155, col 6, Info - Details for #2022-500520-30-00-enrollment-group-id matching against profile http://hl7.org/fhir/StructureDefinition/Group|4.0.1 (STRUCTURE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-condition-details.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-type.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 1, col 15411, Error - ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1) (STRUCTURE)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 0, col 0, Warning - The valueSet reference https://hl7.org/fhir/valueset-title-type.html on element Extension.extension.value[x] could not be resolved (BUSINESSRULE)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 0, col 0, Warning - The valueSet reference https://hl7.org/fhir/valueset-title-type.html on element Extension.extension.value[x] could not be resolved (BUSINESSRULE)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 1, col 8410, Error - Canonical URL 'http://hl7.org/fhir/ValueSet/title-type' does not resolve (INVALID)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 1, col 15533, Error - ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1) (STRUCTURE)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 1, col 15940, Error - Canonical URL 'http://hl7.org/fhir/ValueSet/title-type' does not resolve (INVALID)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 0, col 0, Warning - The valueSet reference http://hl7.org/fhir/ValueSet/title-type on element Extension.extension.value[x] could not be resolved (BUSINESSRULE)
+/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 0, col 0, Warning - The valueSet reference http://hl7.org/fhir/ValueSet/title-type on element Extension.extension.value[x] could not be resolved (BUSINESSRULE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location.json: line 1, col 41130, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
@@ -45,6 +47,6 @@
 ECLAIRE : Validation Results
 =========================================
 
-err = 11, warn = 27, info = 9
+err = 14, warn = 27, info = 9
 IG Publisher Version: 1.4.0
-Generated Wed Aug 23 14:15:31 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Wed Aug 23 16:25:47 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)

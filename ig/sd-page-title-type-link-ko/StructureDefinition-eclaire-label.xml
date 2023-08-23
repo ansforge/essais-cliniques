@@ -5,11 +5,14 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-bind"/>
+  </extension>
   <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label"/>
   <version value="0.1.0"/>
   <name value="ECLAIRELabel"/>
   <status value="draft"/>
-  <date value="2023-08-23T14:14:43+00:00"/>
+  <date value="2023-08-23T16:24:38+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -290,7 +293,7 @@
       </constraint>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="https://hl7.org/fhir/valueset-title-type.html"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/title-type"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -692,7 +695,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="https://hl7.org/fhir/valueset-title-type.html"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/title-type"/>
       </binding>
     </element>
     <element id="Extension.extension:labelValue">

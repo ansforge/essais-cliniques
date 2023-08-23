@@ -5,11 +5,15 @@
     "status" : "extensions",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-bind"
+  }],
   "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label",
   "version" : "0.1.0",
   "name" : "ECLAIRELabel",
   "status" : "draft",
-  "date" : "2023-08-23T14:14:43+00:00",
+  "date" : "2023-08-23T16:24:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -303,7 +307,7 @@
       }],
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.org/fhir/valueset-title-type.html"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/title-type"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -721,7 +725,7 @@
       }],
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.org/fhir/valueset-title-type.html"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/title-type"
       }
     },
     {
