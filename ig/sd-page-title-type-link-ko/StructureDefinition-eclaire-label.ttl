@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ECLAIRELabel"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-23T13:46:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-23T14:14:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -327,8 +327,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/title-type"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/title-type>
+           fhir:v "https://hl7.org/fhir/valueset-title-type.html"^^xsd:anyURI ;
+           fhir:link <https://hl7.org/fhir/valueset-title-type.html>
          ]
        ] ;
        fhir:mapping ( [
@@ -701,8 +701,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/title-type"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/title-type>
+           fhir:v "https://hl7.org/fhir/valueset-title-type.html"^^xsd:anyURI ;
+           fhir:link <https://hl7.org/fhir/valueset-title-type.html>
          ]
        ]
      ] [
