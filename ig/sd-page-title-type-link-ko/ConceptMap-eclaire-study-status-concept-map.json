@@ -1,0 +1,100 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eclaire-study-status-concept-map",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ConceptMap/eclaire-study-status-concept-map",
+  "version" : "0.1.0",
+  "name" : "FHIR-Eclaire-status-concept-map",
+  "title" : "FHIR/Eclaire ResearchStudy status Use Mapping",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-08-23T13:46:33+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)",
+  "sourceUri" : "eclaire-study-status-vs",
+  "targetUri" : "http://hl7.org/fhir/R4/valueset-research-study-status",
+  "group" : [{
+    "source" : "eclaire-study-status-vs",
+    "target" : "http://hl7.org/fhir/R4/valueset-research-study-status",
+    "element" : [{
+      "code" : "a-demarrer",
+      "target" : [{
+        "code" : "approved",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "en-cours",
+      "target" : [{
+        "code" : "active",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "suspendue",
+      "target" : [{
+        "code" : "temporarily-closed-to-accrual",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "suspendue",
+      "target" : [{
+        "code" : "temporarily-closed-to-accrual-and-intervention",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "prorogee",
+      "target" : [{
+        "code" : "approved",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "expiree",
+      "target" : [{
+        "code" : "approved",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "terminee",
+      "target" : [{
+        "code" : "completed",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "terminee-fin-anticipee",
+      "target" : [{
+        "code" : "administratively-completed",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "archivee",
+      "target" : [{
+        "code" : "completed",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "abandonnee",
+      "target" : [{
+        "code" : "withdrawn",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}
