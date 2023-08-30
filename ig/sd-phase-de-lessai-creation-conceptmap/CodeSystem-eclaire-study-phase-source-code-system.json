@@ -1,0 +1,69 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "eclaire-study-phase-source-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system",
+  "version" : "0.1.0",
+  "name" : "EclaireStudyPhaseSourceCS",
+  "title" : "Définition des phase de l'essai utilisés dans la base de données ECLAIRE",
+  "status" : "draft",
+  "date" : "2023-08-30T14:09:22+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Définition des phase de l'essai utilisés dans la base de données ECLAIRE",
+  "content" : "complete",
+  "count" : 11,
+  "concept" : [{
+    "code" : "phase-I-first-admin",
+    "display" : "Human Pharmacology (Phase I) - First administration to humans"
+  },
+  {
+    "code" : "phase-I-bioequivalence",
+    "display" : "Human Pharmacology (Phase I) - Bioequivalence Study"
+  },
+  {
+    "code" : "phase-I-other",
+    "display" : "Human Pharmacology (Phase I) -  Other"
+  },
+  {
+    "code" : "phase-I-II-first-admin",
+    "display" : "Phase I and Phase II (Integrated) - First administration to humans"
+  },
+  {
+    "code" : "phase-I-II-first-bioequivalence",
+    "display" : "Phase I and Phase II (Integrated) - Bioequivalence Study"
+  },
+  {
+    "code" : "phase-I-II-other",
+    "display" : "Phase I and Phase II (Integrated) - Other"
+  },
+  {
+    "code" : "phase-II",
+    "display" : "Therapeutic exploratory (Phase II)"
+  },
+  {
+    "code" : "phase-II-III",
+    "display" : "Phase II and Phase III (Integrated)"
+  },
+  {
+    "code" : "phase-III",
+    "display" : "Therapeutic confirmatory  (Phase III)"
+  },
+  {
+    "code" : "phase-IV",
+    "display" : "Therapeutic use (Phase IV)"
+  },
+  {
+    "code" : "phase-III-IV",
+    "display" : "Phase III and phase IV (Integrated)"
+  }]
+}
