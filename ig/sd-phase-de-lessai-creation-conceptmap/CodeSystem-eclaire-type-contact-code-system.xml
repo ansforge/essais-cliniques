@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="eclaire-type-contact-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system"/>
+  <version value="0.1.0"/>
+  <name value="EclaireTypeContactCS"/>
+  <title value="Type de contact"/>
+  <status value="draft"/>
+  <date value="2023-08-30T08:25:30+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Type de contact pour les essais cliniques"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="PUB"/>
+    <display value="Publique / Public"/>
+  </concept>
+  <concept>
+    <code value="SCI"/>
+    <display value="Scientifique / Scientific"/>
+  </concept>
+</CodeSystem>
