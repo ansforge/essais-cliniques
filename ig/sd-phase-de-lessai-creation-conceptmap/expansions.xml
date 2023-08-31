@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="dc896ccc-3912-4f95-b952-ef40f0a074b1"/>
+  <id value="627351da-42fc-44e1-9280-fab61584e6c4"/>
   <meta>
-    <lastUpdated value="2023-08-30T14:09:22.498+00:00"/>
+    <lastUpdated value="2023-08-31T07:32:14.168+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -53,10 +53,10 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-08-30T14:09:22+00:00"/>
+        <date value="2023-08-31T07:32:14+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9b21290b-5695-46cf-9616-820c58e218aa"/>
-          <timestamp value="2023-08-30T14:09:54+00:00"/>
+          <identifier value="urn:uuid:81982d38-3ff7-4269-9f46-3624a16ef9c2"/>
+          <timestamp value="2023-08-31T07:32:43+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -87,7 +87,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 11 concepts</p>
+            <p>This value set contains 12 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-eclaire-study-phase-source-code-system.html">codesystem Définition des phase de l'essai utilisés dans la base de données ECLAIRE v0.1.0 (CodeSystem)</a>
             </p>
@@ -102,6 +102,14 @@
                 <td>
                   <b>Display</b>
                 </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-jarde-early"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-jarde-early">jarde-early</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Jardé phase précoce</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -199,11 +207,11 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai"/>
         <status value="draft"/>
-        <date value="2023-08-30T14:09:22+00:00"/>
+        <date value="2023-08-31T07:32:14+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:28c7a9fe-9d8a-4b2c-840a-f5eb2f8cfdf4"/>
-          <timestamp value="2023-08-30T14:09:59+00:00"/>
-          <total value="11"/>
+          <identifier value="urn:uuid:51aa67c5-47f6-47d4-827b-ebf57c00d3e0"/>
+          <timestamp value="2023-08-31T07:32:47+00:00"/>
+          <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -212,6 +220,11 @@
             <name value="used-codesystem"/>
             <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system|0.1.0"/>
           </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="jarde-early"/>
+            <display value="Jardé phase précoce"/>
+          </contains>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
             <code value="phase-I-first-admin"/>
@@ -374,10 +387,10 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-08-30T14:09:22+00:00"/>
+        <date value="2023-08-31T07:32:14+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f8bf954a-ffce-4e9e-afec-c74dcbe52f7b"/>
-          <timestamp value="2023-08-30T14:10:00+00:00"/>
+          <identifier value="urn:uuid:35cf22f3-12ca-4a63-9709-8eaa0d0cecbf"/>
+          <timestamp value="2023-08-31T07:32:47+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -604,10 +617,10 @@
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-08-30T14:09:22+00:00"/>
+        <date value="2023-08-31T07:32:14+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4846e8d8-4d65-4458-90bc-0dbdbdf9f991"/>
-          <timestamp value="2023-08-30T14:10:00+00:00"/>
+          <identifier value="urn:uuid:f35292b0-4164-42cc-a1b6-1a283437d059"/>
+          <timestamp value="2023-08-31T07:32:48+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>

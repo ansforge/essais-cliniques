@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "FHIR/Eclaire ResearchStudy phase Use Mapping"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-08-30T14:09:22+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-31T07:32:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -34,40 +34,46 @@
      fhir:source [ fhir:v "eclaire-study-phase-source-vs"^^xsd:anyURI ] ;
      fhir:target [ fhir:v "eclaire-study-phase-vs"^^xsd:anyURI ] ;
      fhir:element ( [
+       fhir:code [ fhir:v "jarde-early" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-1-phase-2" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
        fhir:code [ fhir:v "phase-I-first-admin" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "phase-1" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "wider" ]
        ] )
      ] [
        fhir:code [ fhir:v "phase-I-bioequivalence" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "phase-1" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "wider" ]
        ] )
      ] [
        fhir:code [ fhir:v "phase-I-other" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "phase-1" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "wider" ]
        ] )
      ] [
        fhir:code [ fhir:v "phase-I-II-first-admin" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "phase-1-phase-2" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "wider" ]
        ] )
      ] [
        fhir:code [ fhir:v "phase-I-II-first-bioequivalence" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "phase-1-phase-2" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "wider" ]
        ] )
      ] [
        fhir:code [ fhir:v "phase-I-II-other" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "phase-1-phase-2" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "wider" ]
        ] )
      ] [
        fhir:code [ fhir:v "phase-II" ] ;

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EclaireStudyPhaseSourceCS"] ; # 
   fhir:title [ fhir:v "Définition des phase de l'essai utilisés dans la base de données ECLAIRE"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-30T14:09:22+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-31T07:32:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -26,10 +26,13 @@
        fhir:value [ fhir:v "https://esante.gouv.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Définition des phase de l'essai utilisés dans la base de données ECLAIRE"] ; # 
+  fhir:description [ fhir:v "Définition des phases de l'essai utilisées dans la base de données ECLAIRE"] ; # 
   fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
+     fhir:code [ fhir:v "jarde-early" ] ;
+     fhir:display [ fhir:v "Jardé phase précoce" ]
+  ] [
      fhir:code [ fhir:v "phase-I-first-admin" ] ;
      fhir:display [ fhir:v "Human Pharmacology (Phase I) - First administration to humans" ]
   ] [
