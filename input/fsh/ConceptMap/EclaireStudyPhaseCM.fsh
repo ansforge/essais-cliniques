@@ -12,6 +12,8 @@ Usage: #definition
 * targetUri = "eclaire-study-phase-vs"
 * group.element[0].code = #jarde-early
 * group.element[=].target.code = #phase-1
+* group.element[=].target.equivalence = #equivalent
+* group.element[+].code = #jarde-early
 * group.element[=].target.code = #phase-1-phase-2
 * group.element[=].target.equivalence = #equivalent
 * group.element[+].code = #phase-I-first-admin

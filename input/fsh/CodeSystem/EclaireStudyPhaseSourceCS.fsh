@@ -2,6 +2,7 @@ CodeSystem: EclaireStudyPhaseSourceCS
 Id: eclaire-study-phase-source-code-system
 Title: "Définition des phase de l'essai utilisés dans la base de données ECLAIRE"
 Description: "Définition des phases de l'essai utilisées dans la base de données ECLAIRE"
+* ^caseSensitive = true
 * #jarde-early "Jardé phase précoce"
 * #phase-I-first-admin "Human Pharmacology (Phase I) - First administration to humans"
 * #phase-I-bioequivalence "Human Pharmacology (Phase I) - Bioequivalence Study"
