@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2023-08-30T13:32:08+00:00",
+  "date" : "2023-09-01T08:48:57+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -616,6 +616,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/eclaire-study-phase-source-code-system"
+      },
+      "name" : "Définition des phase de l'essai utilisés dans la base de données ECLAIRE",
+      "description" : "Définition des phases de l'essai utilisées dans la base de données ECLAIRE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/eclaire-study-status-code-system"
       },
       "name" : "Définition des statuts de l'essai utilisés dans la base de données ECLAIRE",
@@ -644,6 +656,18 @@
       },
       "name" : "eclaire-consommateur",
       "description" : "Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/eclaire-study-phase-concept-map"
+      },
+      "name" : "eclaire-study-phase-concept-map",
+      "description" : "Correspondance entre la phase définie dans la base Eclaire et le ValueSet https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet-eclaire-study-phase-vs",
       "exampleBoolean" : false
     },
     {
@@ -808,6 +832,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/eclaire-study-phase-source-vs"
+      },
+      "name" : "Value Set de la phase de l'essai tel que définie dans la base ECLAIRE",
+      "description" : "Value Set de la phase de l'essai clinique tel qu'il est défini dans la base ECLAIRE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/eclaire-study-status-vs"
       },
       "name" : "Value Set Statut Eclaire de l'essai",
@@ -822,7 +858,7 @@
       "reference" : {
         "reference" : "ValueSet/eclaire-study-phase-vs"
       },
-      "name" : "Value Set type de phase Eclaire de l'essai",
+      "name" : "Value Set type de phase de l'essai clinique",
       "description" : "Value Set type de phase Eclaire de l'essei clinique.",
       "exampleBoolean" : false
     }],

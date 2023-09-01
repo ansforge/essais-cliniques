@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="3ff02332-87b5-41af-8f13-b653c1be7e10"/>
+  <id value="078b6acb-01e5-433f-8270-1c7553c107c2"/>
   <meta>
-    <lastUpdated value="2023-08-30T13:32:08.148+00:00"/>
+    <lastUpdated value="2023-09-01T08:48:57.812+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -53,10 +53,10 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-08-30T13:32:08+00:00"/>
+        <date value="2023-09-01T08:48:57+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:af13ce9f-9932-4b35-8b31-ea7b9ea281a2"/>
-          <timestamp value="2023-08-30T13:32:46+00:00"/>
+          <identifier value="urn:uuid:653a17e8-4ee9-4d37-8086-9020ead1f962"/>
+          <timestamp value="2023-09-01T08:49:36+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -75,6 +75,210 @@
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system"/>
             <code value="SCI"/>
             <display value="Scientifique / Scientific"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 12 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-eclaire-study-phase-source-code-system.html">codesystem Définition des phase de l'essai utilisés dans la base de données ECLAIRE v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-jarde-early"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-jarde-early">jarde-early</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Jardé phase précoce</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-I-first-admin"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-I-first-admin">phase-I-first-admin</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Human Pharmacology (Phase I) - First administration to humans</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-I-bioequivalence"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-I-bioequivalence">phase-I-bioequivalence</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Human Pharmacology (Phase I) - Bioequivalence Study</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-I-other"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-I-other">phase-I-other</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Human Pharmacology (Phase I) -  Other</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-I-II-first-admin"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-I-II-first-admin">phase-I-II-first-admin</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Phase I and Phase II (Integrated) - First administration to humans</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-I-II-first-bioequivalence"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-I-II-first-bioequivalence">phase-I-II-first-bioequivalence</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Phase I and Phase II (Integrated) - Bioequivalence Study</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-I-II-other"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-I-II-other">phase-I-II-other</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Phase I and Phase II (Integrated) - Other</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-II"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-II">phase-II</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Therapeutic exploratory (Phase II)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-II-III"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-II-III">phase-II-III</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Phase II and Phase III (Integrated)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-III"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-III">phase-III</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Therapeutic confirmatory  (Phase III)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-IV"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-IV">phase-IV</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Therapeutic use (Phase IV)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-source-code-system-phase-III-IV"> </a>  
+                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html#eclaire-study-phase-source-code-system-phase-III-IV">phase-III-IV</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
+                <td>Phase III and phase IV (Integrated)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs"/>
+        <version value="0.1.0"/>
+        <name value="EclaireStudyPhaseSourceVS"/>
+        <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
+        <status value="draft"/>
+        <date value="2023-09-01T08:48:57+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:8058dc28-195c-4e1a-96d8-3a8e28e46c9d"/>
+          <timestamp value="2023-09-01T08:49:39+00:00"/>
+          <total value="12"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="jarde-early"/>
+            <display value="Jardé phase précoce"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-I-first-admin"/>
+            <display value="Human Pharmacology (Phase I) - First administration to humans"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-I-bioequivalence"/>
+            <display value="Human Pharmacology (Phase I) - Bioequivalence Study"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-I-other"/>
+            <display value="Human Pharmacology (Phase I) -  Other"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-I-II-first-admin"/>
+            <display value="Phase I and Phase II (Integrated) - First administration to humans"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-I-II-first-bioequivalence"/>
+            <display value="Phase I and Phase II (Integrated) - Bioequivalence Study"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-I-II-other"/>
+            <display value="Phase I and Phase II (Integrated) - Other"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-II"/>
+            <display value="Therapeutic exploratory (Phase II)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-II-III"/>
+            <display value="Phase II and Phase III (Integrated)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-III"/>
+            <display value="Therapeutic confirmatory  (Phase III)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-IV"/>
+            <display value="Therapeutic use (Phase IV)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+            <code value="phase-III-IV"/>
+            <display value="Phase III and phase IV (Integrated)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -183,10 +387,10 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-08-30T13:32:08+00:00"/>
+        <date value="2023-09-01T08:48:57+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:dcef2b85-a632-4bb0-bbc3-0b4ceda57f26"/>
-          <timestamp value="2023-08-30T13:32:50+00:00"/>
+          <identifier value="urn:uuid:458bb760-1035-4cb7-9fa6-20e22f0d4a10"/>
+          <timestamp value="2023-09-01T08:49:40+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -399,7 +603,10 @@
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system</td>
                 <td>Phase III and phase IV (Integrated)</td>
                 <td>
-                  <div/>
+                  <div>
+                    <p>Trials that are a combination of phases III and IV.</p>
+
+                  </div>
                 </td>
               </tr>
             </table>
@@ -408,12 +615,12 @@
         <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs"/>
         <version value="0.1.0"/>
         <name value="EclaireStudyPhaseVS"/>
-        <title value="Value Set type de phase Eclaire de l'essai"/>
+        <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-08-30T13:32:08+00:00"/>
+        <date value="2023-09-01T08:48:57+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a7089cbe-22de-404c-b671-f3c99f916658"/>
-          <timestamp value="2023-08-30T13:32:51+00:00"/>
+          <identifier value="urn:uuid:eb6f8d85-92e6-4002-9608-9ec3d94e7dc9"/>
+          <timestamp value="2023-09-01T08:49:41+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="eclaire-study-phase-source-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
+  <version value="0.1.0"/>
+  <name value="EclaireStudyPhaseSourceCS"/>
+  <title value="Définition des phase de l'essai utilisés dans la base de données ECLAIRE"/>
+  <status value="draft"/>
+  <date value="2023-09-01T08:48:57+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Définition des phases de l'essai utilisées dans la base de données ECLAIRE"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="jarde-early"/>
+    <display value="Jardé phase précoce"/>
+  </concept>
+  <concept>
+    <code value="phase-I-first-admin"/>
+    <display value="Human Pharmacology (Phase I) - First administration to humans"/>
+  </concept>
+  <concept>
+    <code value="phase-I-bioequivalence"/>
+    <display value="Human Pharmacology (Phase I) - Bioequivalence Study"/>
+  </concept>
+  <concept>
+    <code value="phase-I-other"/>
+    <display value="Human Pharmacology (Phase I) -  Other"/>
+  </concept>
+  <concept>
+    <code value="phase-I-II-first-admin"/>
+    <display value="Phase I and Phase II (Integrated) - First administration to humans"/>
+  </concept>
+  <concept>
+    <code value="phase-I-II-first-bioequivalence"/>
+    <display value="Phase I and Phase II (Integrated) - Bioequivalence Study"/>
+  </concept>
+  <concept>
+    <code value="phase-I-II-other"/>
+    <display value="Phase I and Phase II (Integrated) - Other"/>
+  </concept>
+  <concept>
+    <code value="phase-II"/>
+    <display value="Therapeutic exploratory (Phase II)"/>
+  </concept>
+  <concept>
+    <code value="phase-II-III"/>
+    <display value="Phase II and Phase III (Integrated)"/>
+  </concept>
+  <concept>
+    <code value="phase-III"/>
+    <display value="Therapeutic confirmatory  (Phase III)"/>
+  </concept>
+  <concept>
+    <code value="phase-IV"/>
+    <display value="Therapeutic use (Phase IV)"/>
+  </concept>
+  <concept>
+    <code value="phase-III-IV"/>
+    <display value="Phase III and phase IV (Integrated)"/>
+  </concept>
+</CodeSystem>
