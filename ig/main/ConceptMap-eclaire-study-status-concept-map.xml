@@ -11,7 +11,7 @@
   <title value="FHIR/Eclaire ResearchStudy status Use Mapping"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2023-09-01T14:26:19+00:00"/>
+  <date value="2023-09-01T14:41:02+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -22,10 +22,10 @@
   </contact>
   <description value="Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)"/>
   <sourceUri value="eclaire-study-status-vs"/>
-  <targetUri value="http://hl7.org/fhir/R4/valueset-research-study-status"/>
+  <targetUri value="http://hl7.org/fhir/ValueSet/research-study-status"/>
   <group>
     <source value="eclaire-study-status-vs"/>
-    <target value="http://hl7.org/fhir/R4/valueset-research-study-status"/>
+    <target value="http://hl7.org/fhir/ValueSet/research-study-status"/>
     <element>
       <code value="a-demarrer"/>
       <target>
