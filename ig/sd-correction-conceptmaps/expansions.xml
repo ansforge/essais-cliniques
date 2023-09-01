@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="906527eb-ef2a-4873-9667-c587335a74da"/>
+  <id value="e97afc18-b0fb-4652-81e8-36fe1460f966"/>
   <meta>
-    <lastUpdated value="2023-09-01T20:06:11.498+00:00"/>
+    <lastUpdated value="2023-09-01T20:29:55.934+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -53,10 +53,10 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-09-01T20:06:11+00:00"/>
+        <date value="2023-09-01T20:29:55+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e0f49417-f907-4221-af78-cc5247a41da9"/>
-          <timestamp value="2023-09-01T20:06:38+00:00"/>
+          <identifier value="urn:uuid:b56d24c9-f8ba-4ad8-960c-73d2101174d4"/>
+          <timestamp value="2023-09-01T20:30:47+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -296,10 +296,10 @@
         <name value="EclaireStudyTitleTypetVS"/>
         <title value="Type de titre Value Set"/>
         <status value="draft"/>
-        <date value="2023-09-01T20:06:11+00:00"/>
+        <date value="2023-09-01T20:29:55+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:18ead684-b9a0-49ae-bcce-94a8b9d83e87"/>
-          <timestamp value="2023-09-01T20:06:39+00:00"/>
+          <identifier value="urn:uuid:4a2e98c6-c649-4a87-bf08-d612ae5ba562"/>
+          <timestamp value="2023-09-01T20:30:47+00:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
@@ -505,10 +505,10 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2023-09-01T20:06:11+00:00"/>
+        <date value="2023-09-01T20:29:55+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d1ab872d-43d4-4c44-a220-60cc8c0737d8"/>
-          <timestamp value="2023-09-01T20:06:42+00:00"/>
+          <identifier value="urn:uuid:235851e2-27c9-4fc3-9d2c-b23672f68331"/>
+          <timestamp value="2023-09-01T20:30:52+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -685,10 +685,10 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-09-01T20:06:11+00:00"/>
+        <date value="2023-09-01T20:29:55+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:09fa43ea-c048-4e41-955f-3c74364fbf62"/>
-          <timestamp value="2023-09-01T20:06:43+00:00"/>
+          <identifier value="urn:uuid:1e4b6061-52dc-4e64-82da-ef9e7e22011d"/>
+          <timestamp value="2023-09-01T20:30:53+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -763,9 +763,6 @@
                 </li>
                 <li>
                   <a href="CodeSystem-eclaire-study-phase-code-system.html">codesystem Définition des type de phase de l'essai cliniques incluant https://hl7.org/fhir/R4/valueset-research-study-phase.html v0.1.0 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="http://hl7.org/fhir/R4/valueset-research-study-phase.html">valueset ResearchStudyPhase v4.0.1 (ValueSet)</a>
                 </li>
               </ul>
             </div>
@@ -918,18 +915,14 @@
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-09-01T20:06:11+00:00"/>
+        <date value="2023-09-01T20:29:55+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:41b8d490-32fd-4b0e-bb2c-989016c29851"/>
-          <timestamp value="2023-09-01T20:06:43+00:00"/>
+          <identifier value="urn:uuid:864b6a7f-1f97-444f-a7df-0750180063dc"/>
+          <timestamp value="2023-09-01T20:30:54+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="http://hl7.org/fhir/ValueSet/research-study-phase|4.0.1"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>

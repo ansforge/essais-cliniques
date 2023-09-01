@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "906527eb-ef2a-4873-9667-c587335a74da",
+  "id" : "e97afc18-b0fb-4652-81e8-36fe1460f966",
   "meta" : {
-    "lastUpdated" : "2023-09-01T20:06:11.498+00:00"
+    "lastUpdated" : "2023-09-01T20:29:55.934+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "name" : "EclaireTypeContactVS",
       "title" : "Type Contact Value Set",
       "status" : "draft",
-      "date" : "2023-09-01T20:06:11+00:00",
+      "date" : "2023-09-01T20:29:55+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e0f49417-f907-4221-af78-cc5247a41da9",
-        "timestamp" : "2023-09-01T20:06:38+00:00",
+        "identifier" : "urn:uuid:b56d24c9-f8ba-4ad8-960c-73d2101174d4",
+        "timestamp" : "2023-09-01T20:30:47+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -57,10 +57,10 @@
       "name" : "EclaireStudyTitleTypetVS",
       "title" : "Type de titre Value Set",
       "status" : "draft",
-      "date" : "2023-09-01T20:06:11+00:00",
+      "date" : "2023-09-01T20:29:55+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:18ead684-b9a0-49ae-bcce-94a8b9d83e87",
-        "timestamp" : "2023-09-01T20:06:39+00:00",
+        "identifier" : "urn:uuid:4a2e98c6-c649-4a87-bf08-d612ae5ba562",
+        "timestamp" : "2023-09-01T20:30:47+00:00",
         "total" : 13,
         "parameter" : [{
           "name" : "excludeNested",
@@ -151,10 +151,10 @@
       "name" : "EclaireStudyPhaseSourceVS",
       "title" : "Value Set de la phase de l'essai tel que définie dans la base ECLAIRE",
       "status" : "draft",
-      "date" : "2023-09-01T20:06:11+00:00",
+      "date" : "2023-09-01T20:29:55+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:d1ab872d-43d4-4c44-a220-60cc8c0737d8",
-        "timestamp" : "2023-09-01T20:06:42+00:00",
+        "identifier" : "urn:uuid:235851e2-27c9-4fc3-9d2c-b23672f68331",
+        "timestamp" : "2023-09-01T20:30:52+00:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",
@@ -240,10 +240,10 @@
       "name" : "EclaireStudyStatusVS",
       "title" : "Value Set Statut Eclaire de l'essai",
       "status" : "draft",
-      "date" : "2023-09-01T20:06:11+00:00",
+      "date" : "2023-09-01T20:29:55+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:09fa43ea-c048-4e41-955f-3c74364fbf62",
-        "timestamp" : "2023-09-01T20:06:43+00:00",
+        "identifier" : "urn:uuid:1e4b6061-52dc-4e64-82da-ef9e7e22011d",
+        "timestamp" : "2023-09-01T20:30:53+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -307,25 +307,21 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 9 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html\">codesystem ResearchStudyPhase v0.1.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-eclaire-study-phase-code-system.html\">codesystem Définition des type de phase de l'essai cliniques incluant https://hl7.org/fhir/R4/valueset-research-study-phase.html v0.1.0 (CodeSystem)</a></li><li><a href=\"http://hl7.org/fhir/R4/valueset-research-study-phase.html\">valueset ResearchStudyPhase v4.0.1 (ValueSet)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-n-a\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-n-a\">n-a</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>N/A</td><td><div><p>Trials without phases (for example, studies of devices or behavioral interventions).</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-early-phase-1\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-early-phase-1\">early-phase-1</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Early Phase 1</td><td><div><p>Designation for optional exploratory trials conducted in accordance with the United States Food and Drug Administration's (FDA) 2006 Guidance on Exploratory Investigational New Drug (IND) Studies. Formerly called Phase 0.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-1\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-1\">phase-1</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 1</td><td><div><p>Includes initial studies to determine the metabolism and pharmacologic actions of drugs in humans, the side effects associated with increasing doses, and to gain early evidence of effectiveness; may include healthy participants and/or patients.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-1-phase-2\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-1-phase-2\">phase-1-phase-2</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 1/Phase 2</td><td><div><p>Trials that are a combination of phases 1 and 2.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-2\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-2\">phase-2</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 2</td><td><div><p>Includes controlled clinical studies conducted to evaluate the effectiveness of the drug for a particular indication or indications in participants with the disease or condition under study and to determine the common short-term side effects and risks.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-2-phase-3\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-2-phase-3\">phase-2-phase-3</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 2/Phase 3</td><td><div><p>Trials that are a combination of phases 2 and 3.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-3\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-3\">phase-3</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 3</td><td><div><p>Includes trials conducted after preliminary evidence suggesting effectiveness of the drug has been obtained, and are intended to gather additional information to evaluate the overall benefit-risk relationship of the drug.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-4\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-4\">phase-4</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 4</td><td><div><p>Studies of FDA-approved drugs to delineate additional information including the drug's risks, benefits, and optimal use.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-code-system-phase-3-phase-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-eclaire-study-phase-code-system.html#eclaire-study-phase-code-system-phase-3-phase-4\">phase-3-phase-4</a></td><td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system</td><td>Phase III and phase IV (Integrated)</td><td><div><p>Trials that are a combination of phases III and IV.</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 9 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html\">codesystem ResearchStudyPhase v0.1.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-eclaire-study-phase-code-system.html\">codesystem Définition des type de phase de l'essai cliniques incluant https://hl7.org/fhir/R4/valueset-research-study-phase.html v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-n-a\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-n-a\">n-a</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>N/A</td><td><div><p>Trials without phases (for example, studies of devices or behavioral interventions).</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-early-phase-1\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-early-phase-1\">early-phase-1</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Early Phase 1</td><td><div><p>Designation for optional exploratory trials conducted in accordance with the United States Food and Drug Administration's (FDA) 2006 Guidance on Exploratory Investigational New Drug (IND) Studies. Formerly called Phase 0.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-1\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-1\">phase-1</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 1</td><td><div><p>Includes initial studies to determine the metabolism and pharmacologic actions of drugs in humans, the side effects associated with increasing doses, and to gain early evidence of effectiveness; may include healthy participants and/or patients.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-1-phase-2\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-1-phase-2\">phase-1-phase-2</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 1/Phase 2</td><td><div><p>Trials that are a combination of phases 1 and 2.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-2\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-2\">phase-2</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 2</td><td><div><p>Includes controlled clinical studies conducted to evaluate the effectiveness of the drug for a particular indication or indications in participants with the disease or condition under study and to determine the common short-term side effects and risks.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-2-phase-3\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-2-phase-3\">phase-2-phase-3</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 2/Phase 3</td><td><div><p>Trials that are a combination of phases 2 and 3.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-3\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-3\">phase-3</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 3</td><td><div><p>Includes trials conducted after preliminary evidence suggesting effectiveness of the drug has been obtained, and are intended to gather additional information to evaluate the overall benefit-risk relationship of the drug.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-research-study-phase-phase-4\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-4\">phase-4</a></td><td>http://terminology.hl7.org/CodeSystem/research-study-phase</td><td>Phase 4</td><td><div><p>Studies of FDA-approved drugs to delineate additional information including the drug's risks, benefits, and optimal use.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-phase-code-system-phase-3-phase-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-eclaire-study-phase-code-system.html#eclaire-study-phase-code-system-phase-3-phase-4\">phase-3-phase-4</a></td><td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system</td><td>Phase III and phase IV (Integrated)</td><td><div><p>Trials that are a combination of phases III and IV.</p>\n</div></td></tr></table></div>"
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs",
       "version" : "0.1.0",
       "name" : "EclaireStudyPhaseVS",
       "title" : "Value Set type de phase de l'essai clinique",
       "status" : "draft",
-      "date" : "2023-09-01T20:06:11+00:00",
+      "date" : "2023-09-01T20:29:55+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:41b8d490-32fd-4b0e-bb2c-989016c29851",
-        "timestamp" : "2023-09-01T20:06:43+00:00",
+        "identifier" : "urn:uuid:864b6a7f-1f97-444f-a7df-0750180063dc",
+        "timestamp" : "2023-09-01T20:30:54+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
-        },
-        {
-          "name" : "used-valueset",
-          "valueUri" : "http://hl7.org/fhir/ValueSet/research-study-phase|4.0.1"
         },
         {
           "name" : "used-codesystem",

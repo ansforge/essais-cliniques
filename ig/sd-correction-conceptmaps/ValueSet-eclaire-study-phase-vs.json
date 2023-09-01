@@ -10,7 +10,7 @@
   "name" : "EclaireStudyPhaseVS",
   "title" : "Value Set type de phase de l'essai clinique",
   "status" : "draft",
-  "date" : "2023-09-01T20:06:11+00:00",
+  "date" : "2023-09-01T20:29:55+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -22,7 +22,7 @@
   "description" : "Value Set type de phase Eclaire de l'essei clinique.",
   "compose" : {
     "include" : [{
-      "valueSet" : ["http://hl7.org/fhir/ValueSet/research-study-phase"]
+      "system" : "http://terminology.hl7.org/CodeSystem/research-study-phase"
     },
     {
       "system" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system"
