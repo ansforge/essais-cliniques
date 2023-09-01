@@ -1,9 +1,9 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 14, warn = 29, info = 6
+err = 12, warn = 29, info = 6
 IG Publisher Version: 1.4.2
-Generated Fri Sep 01 14:01:22 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Fri Sep 01 14:25:29 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 143 / 4 / 0
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
@@ -11,7 +11,7 @@ Generated Fri Sep 01 14:01:22 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-status-code-system : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map : 0 / 3 / 1
- /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map : 2 / 3 / 1
+ /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map : 0 / 3 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire : 0 / 0 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00 : 8 / 0 / 4
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-condition-details : 0 / 1 / 1
@@ -192,10 +192,8 @@ WARNING: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].source:
 WARNING: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].target: Unknown Target Code System eclaire-study-phase-vs, so the target codes cannot be checked
 == fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json ==
 WARNING: ConceptMap/eclaire-study-status-concept-map: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.target.ofType(uri): URL value 'http://hl7.org/fhir/R4/valueset-research-study-status' does not resolve
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].target: URL value 'http://hl7.org/fhir/R4/valueset-research-study-status' does not resolve
 WARNING: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].source: Unknown Source Code System eclaire-study-status-vs, so the source codes cannot be checked
-WARNING: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].target: Unknown Target Code System http://hl7.org/fhir/R4/valueset-research-study-status, so the target codes cannot be checked
+WARNING: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].target: Unknown Target Code System http://hl7.org/fhir/ValueSet/research-study-status, so the target codes cannot be checked
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire.json ==
 == fsh-generated/resources/ResearchStudy-2022-500520-30-00.json ==
 INFORMATION: ResearchStudy/2022-500520-30-00: ResearchStudy.identifier[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.0
