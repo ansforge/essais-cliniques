@@ -7,7 +7,7 @@ Usage: #definition
 * experimental = true
 * description = "Correspondance entre la phase définie dans la base Eclaire et le ValueSet https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet-eclaire-study-phase-vs"
 * group.source = "eclaire-study-phase-source-code-system"
-* group.target = "http://terminology.hl7.org/CodeSystem/research-study-phase"
+* group.target = "eclaire-study-phase-code-system"
 * sourceUri = "eclaire-study-phase-source-vs"
 * targetUri = "eclaire-study-phase-vs"
 * group.element[0].code = #jarde-early
@@ -46,7 +46,6 @@ Usage: #definition
 * group.element[+].code = #phase-IV
 * group.element[=].target.code = #phase-4
 * group.element[=].target.equivalence = #equivalent
-* group.target = "eclaire-study-phase-code-system"
 * group.element[+].code = #phase-III-IV
 * group.element[=].target.code = #phase-3-phase-4
 * group.element[=].target.equivalence = #equivalent
