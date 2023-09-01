@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EclaireStudyTitleTypetVS"] ; # 
   fhir:title [ fhir:v "Type de titre Value Set"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-01T13:23:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-01T13:38:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -29,7 +29,7 @@
   fhir:description [ fhir:v "Type de titre pour les essais cliniques Value Set (inspiré du Value Set de R5 : https://hl7.org/fhir/valueset-title-type.html)"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"^^xsd:anyURI ]
      ] )
   ] . # 
 
