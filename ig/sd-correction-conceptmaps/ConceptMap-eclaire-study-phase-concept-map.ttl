@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "FHIR/Eclaire ResearchStudy phase Use Mapping"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-09-01T14:48:43+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-01T15:11:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -31,8 +31,8 @@
   fhir:source [ fhir:v "eclaire-study-phase-source-vs"^^xsd:anyURI] ; # 
   fhir:target [ fhir:v "eclaire-study-phase-vs"^^xsd:anyURI] ; # 
   fhir:group ( [
-     fhir:source [ fhir:v "eclaire-study-phase-source-vs"^^xsd:anyURI ] ;
-     fhir:target [ fhir:v "eclaire-study-phase-vs"^^xsd:anyURI ] ;
+     fhir:source [ fhir:v "eclaire-study-phase-source-code-system"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "eclaire-study-phase-code-system"^^xsd:anyURI ] ;
      fhir:element ( [
        fhir:code [ fhir:v "jarde-early" ] ;
        fhir:target ( [

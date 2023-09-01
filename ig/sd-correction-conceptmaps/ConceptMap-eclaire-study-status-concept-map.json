@@ -11,7 +11,7 @@
   "title" : "FHIR/Eclaire ResearchStudy status Use Mapping",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2023-09-01T14:48:43+00:00",
+  "date" : "2023-09-01T15:11:28+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -24,8 +24,8 @@
   "sourceUri" : "eclaire-study-status-vs",
   "targetUri" : "http://hl7.org/fhir/ValueSet/research-study-status",
   "group" : [{
-    "source" : "eclaire-study-status-vs",
-    "target" : "http://hl7.org/fhir/ValueSet/research-study-status",
+    "source" : "eclaire-study-status-code-system",
+    "target" : "http://hl7.org/fhir/research-study-status",
     "element" : [{
       "code" : "a-demarrer",
       "target" : [{
