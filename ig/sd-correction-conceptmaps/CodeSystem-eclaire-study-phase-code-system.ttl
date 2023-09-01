@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EclaireStudyPhaseCS"] ; # 
   fhir:title [ fhir:v "Définition des type de phase de l'essai cliniques incluant https://hl7.org/fhir/R4/valueset-research-study-phase.html"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-01T16:27:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-01T17:43:23+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -28,8 +28,11 @@
   ] ) ; # 
   fhir:description [ fhir:v "type de phase de l'essai clinique"] ; # 
   fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:content [ fhir:v "supplement"] ; # 
+  fhir:supplements [
+     fhir:v "http://terminology.hl7.org/CodeSystem/research-study-phase"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/CodeSystem/research-study-phase>
+  ] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "phase-3-phase-4" ] ;
      fhir:display [ fhir:v "Phase III and phase IV (Integrated)" ] ;

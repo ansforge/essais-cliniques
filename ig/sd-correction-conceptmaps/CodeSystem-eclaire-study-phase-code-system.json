@@ -10,7 +10,7 @@
   "name" : "EclaireStudyPhaseCS",
   "title" : "Définition des type de phase de l'essai cliniques incluant https://hl7.org/fhir/R4/valueset-research-study-phase.html",
   "status" : "draft",
-  "date" : "2023-09-01T16:27:26+00:00",
+  "date" : "2023-09-01T17:43:23+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -21,8 +21,8 @@
   }],
   "description" : "type de phase de l'essai clinique",
   "caseSensitive" : true,
-  "content" : "complete",
-  "count" : 1,
+  "content" : "supplement",
+  "supplements" : "http://terminology.hl7.org/CodeSystem/research-study-phase",
   "concept" : [{
     "code" : "phase-3-phase-4",
     "display" : "Phase III and phase IV (Integrated)",

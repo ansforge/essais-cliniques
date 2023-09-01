@@ -10,7 +10,7 @@
   "name" : "EclaireStudyPhaseSourceVS",
   "title" : "Value Set de la phase de l'essai tel que définie dans la base ECLAIRE",
   "status" : "draft",
-  "date" : "2023-09-01T16:27:26+00:00",
+  "date" : "2023-09-01T17:43:23+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -22,6 +22,9 @@
   "description" : "Value Set de la phase de l'essai clinique tel qu'il est défini dans la base ECLAIRE",
   "compose" : {
     "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/research-study-phase"
+    },
+    {
       "system" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"
     }]
   }
