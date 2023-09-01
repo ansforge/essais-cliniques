@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e8f4a2bf-c53e-412e-95eb-505fa387167e"/>
+  <id value="4c68fc8c-2e27-4063-940d-5e27d7713f2d"/>
   <meta>
-    <lastUpdated value="2023-09-01T17:43:23.154+00:00"/>
+    <lastUpdated value="2023-09-01T17:52:23.342+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -53,10 +53,10 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-09-01T17:43:23+00:00"/>
+        <date value="2023-09-01T17:52:23+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7efb912a-85fe-4071-9939-b95521a384b1"/>
-          <timestamp value="2023-09-01T17:44:13+00:00"/>
+          <identifier value="urn:uuid:a91a2e07-04e3-4c36-94b9-73537d34b5c4"/>
+          <timestamp value="2023-09-01T17:52:51+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -296,10 +296,10 @@
         <name value="EclaireStudyTitleTypetVS"/>
         <title value="Type de titre Value Set"/>
         <status value="draft"/>
-        <date value="2023-09-01T17:43:23+00:00"/>
+        <date value="2023-09-01T17:52:23+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ccdeeffa-d00c-40a3-91cd-d007579282ee"/>
-          <timestamp value="2023-09-01T17:44:13+00:00"/>
+          <identifier value="urn:uuid:7d5d9e99-26df-4931-a4b7-9f9f72818760"/>
+          <timestamp value="2023-09-01T17:52:51+00:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
@@ -385,21 +385,10 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 20 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html">codesystem ResearchStudyPhase v0.1.0 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="CodeSystem-eclaire-study-phase-source-code-system.html">codesystem Définition des phase de l'essai utilisés dans la base de données ECLAIRE v0.1.0 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="CodeSystem-eclaire-study-phase-code-system.html">supplement Définition des type de phase de l'essai cliniques incluant https://hl7.org/fhir/R4/valueset-research-study-phase.html v0.1.0 (CodeSystem)</a>
-                </li>
-              </ul>
-            </div>
+            <p>This value set contains 12 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-eclaire-study-phase-source-code-system.html">codesystem Définition des phase de l'essai utilisés dans la base de données ECLAIRE v0.1.0 (CodeSystem)</a>
+            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -411,121 +400,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-research-study-phase-n-a"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-n-a">n-a</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/research-study-phase</td>
-                <td>N/A</td>
-                <td>
-                  <div>
-                    <p>Trials without phases (for example, studies of devices or behavioral interventions).</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-research-study-phase-early-phase-1"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-early-phase-1">early-phase-1</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/research-study-phase</td>
-                <td>Early Phase 1</td>
-                <td>
-                  <div>
-                    <p>Designation for optional exploratory trials conducted in accordance with the United States Food and Drug Administration's (FDA) 2006 Guidance on Exploratory Investigational New Drug (IND) Studies. Formerly called Phase 0.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-research-study-phase-phase-1"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-1">phase-1</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/research-study-phase</td>
-                <td>Phase 1</td>
-                <td>
-                  <div>
-                    <p>Includes initial studies to determine the metabolism and pharmacologic actions of drugs in humans, the side effects associated with increasing doses, and to gain early evidence of effectiveness; may include healthy participants and/or patients.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-research-study-phase-phase-1-phase-2"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-1-phase-2">phase-1-phase-2</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/research-study-phase</td>
-                <td>Phase 1/Phase 2</td>
-                <td>
-                  <div>
-                    <p>Trials that are a combination of phases 1 and 2.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-research-study-phase-phase-2"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-2">phase-2</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/research-study-phase</td>
-                <td>Phase 2</td>
-                <td>
-                  <div>
-                    <p>Includes controlled clinical studies conducted to evaluate the effectiveness of the drug for a particular indication or indications in participants with the disease or condition under study and to determine the common short-term side effects and risks.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-research-study-phase-phase-2-phase-3"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-2-phase-3">phase-2-phase-3</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/research-study-phase</td>
-                <td>Phase 2/Phase 3</td>
-                <td>
-                  <div>
-                    <p>Trials that are a combination of phases 2 and 3.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-research-study-phase-phase-3"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-3">phase-3</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/research-study-phase</td>
-                <td>Phase 3</td>
-                <td>
-                  <div>
-                    <p>Includes trials conducted after preliminary evidence suggesting effectiveness of the drug has been obtained, and are intended to gather additional information to evaluate the overall benefit-risk relationship of the drug.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-research-study-phase-phase-4"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html#research-study-phase-phase-4">phase-4</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/research-study-phase</td>
-                <td>Phase 4</td>
-                <td>
-                  <div>
-                    <p>Studies of FDA-approved drugs to delineate additional information including the drug's risks, benefits, and optimal use.</p>
-
-                  </div>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -534,9 +408,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Jardé phase précoce</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -545,9 +416,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Human Pharmacology (Phase I) - First administration to humans</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -556,9 +424,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Human Pharmacology (Phase I) - Bioequivalence Study</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -567,9 +432,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Human Pharmacology (Phase I) -  Other</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -578,9 +440,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Phase I and Phase II (Integrated) - First administration to humans</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -589,9 +448,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Phase I and Phase II (Integrated) - Bioequivalence Study</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -600,9 +456,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Phase I and Phase II (Integrated) - Other</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -611,9 +464,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Therapeutic exploratory (Phase II)</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -622,9 +472,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Phase II and Phase III (Integrated)</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -633,9 +480,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Therapeutic confirmatory  (Phase III)</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -644,9 +488,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Therapeutic use (Phase IV)</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -655,9 +496,6 @@
                 </td>
                 <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system</td>
                 <td>Phase III and phase IV (Integrated)</td>
-                <td>
-                  <div/>
-                </td>
               </tr>
             </table>
           </div>
@@ -667,67 +505,19 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2023-09-01T17:43:23+00:00"/>
+        <date value="2023-09-01T17:52:23+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:719b3816-44a7-445c-9a0a-5745e57ce825"/>
-          <timestamp value="2023-09-01T17:44:19+00:00"/>
-          <total value="20"/>
+          <identifier value="urn:uuid:89b49ccd-79da-44e1-8636-972d2dcc0fc0"/>
+          <timestamp value="2023-09-01T17:52:55+00:00"/>
+          <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/research-study-phase|0.1.0"/>
-          </parameter>
-          <parameter>
-            <name value="used-supplement"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
             <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system|0.1.0"/>
           </parameter>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
-            <code value="n-a"/>
-            <display value="N/A"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
-            <code value="early-phase-1"/>
-            <display value="Early Phase 1"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
-            <code value="phase-1"/>
-            <display value="Phase 1"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
-            <code value="phase-1-phase-2"/>
-            <display value="Phase 1/Phase 2"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
-            <code value="phase-2"/>
-            <display value="Phase 2"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
-            <code value="phase-2-phase-3"/>
-            <display value="Phase 2/Phase 3"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
-            <code value="phase-3"/>
-            <display value="Phase 3"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
-            <code value="phase-4"/>
-            <display value="Phase 4"/>
-          </contains>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
             <code value="jarde-early"/>
@@ -895,10 +685,10 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-09-01T17:43:23+00:00"/>
+        <date value="2023-09-01T17:52:23+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:74150af1-c698-4d54-b184-2c1d3690ade9"/>
-          <timestamp value="2023-09-01T17:44:21+00:00"/>
+          <identifier value="urn:uuid:7e5464dd-af60-417b-97f9-903518d8b041"/>
+          <timestamp value="2023-09-01T17:52:55+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
