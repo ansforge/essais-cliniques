@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 137, errors = 23, warn = 26, info = 6-->
+<!-- broken links = 137, errors = 21, warn = 25, info = 6-->
 <head>
   <title>ECLAIRE : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ECLAIRE</h1>
- <p>Generated Fri Sep 01 19:57:43 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Fri Sep 01 20:06:58 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.4.2</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.eclaire, Canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire</td></tr>
@@ -86,6 +86,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-research-study-reason-stopped.html">ResearchStudyReasonStopped</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-research-study-objective-type.html">ResearchStudyObjectiveType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-research-study-phase.html">ResearchStudyPhase</a>
  (1 uses),     <code>_id</code>
  (1 uses),     <code>_lastUpdated</code>
  (1 uses)
@@ -99,7 +100,7 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Previous Version Comparison:</td><td> </td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 23, warn = 26, info = 6, broken links = 137</td></tr>
+ <tr><td>Summary:</td><td> errors = 21, warn = 25, info = 6, broken links = 137</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -162,8 +163,8 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_ValueSet-eclaire-study-phase-source-vs"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-study-phase-source-vs</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_ValueSet-eclaire-study-phase-vs"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-study-phase-vs</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_ValueSet-eclaire-study-phase-vs"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-study-phase-vs</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-essais-cliniques_IG-essais-cliniques_fsh-generated_resources_ValueSet-eclaire-study-status-vs"><b>/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-study-status-vs</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -916,17 +917,8 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.valueSet[0] (l1&#8203;/c663)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/R4/valueset-research-study-phase' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose.include[0].valueSet[0]</b></td><td><b>warning</b></td><td title=""><b>The value set import http://hl7.org/fhir/R4/valueset-research-study-phase could not be found so cannot be checked</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c771)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet&#8203;.where(id = 'eclaire-study-phase-vs')</b></td><td><b>error</b></td><td><b>Error from server: Unable to find value set &quot;http://hl7.org/fhir/R4/valueset-research-study-phase&quot;</b> (<a href="qa-tx.html#l6">see Tx log</a>)</td>
+     <td><b>ValueSet (l1/c768)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -1083,14 +1075,6 @@ hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSyst
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-eclaire-researchstudy.html">fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
-<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="ValueSet-eclaire-study-phase-vs.html">fsh-generated/resources/ValueSet-eclaire-study-phase-vs.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/R4/valueset-research-study-phase' does not resolve</b></td>
    </tr>
 </table>
 <hr/>

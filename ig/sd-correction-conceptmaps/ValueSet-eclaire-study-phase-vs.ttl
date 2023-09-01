@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EclaireStudyPhaseVS"] ; # 
   fhir:title [ fhir:v "Value Set type de phase de l'essai clinique"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-01T19:56:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-01T20:06:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -30,8 +30,8 @@
   fhir:compose [
      fhir:include ( [
        fhir:valueSet ( [
-         fhir:v "http://hl7.org/fhir/R4/valueset-research-study-phase"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/R4/valueset-research-study-phase>
+         fhir:v "http://hl7.org/fhir/ValueSet/research-study-phase"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/ValueSet/research-study-phase>
        ] )
      ] [
        fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system"^^xsd:anyURI ]
