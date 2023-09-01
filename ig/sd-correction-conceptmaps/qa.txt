@@ -1,9 +1,9 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 10, warn = 25, info = 6
+err = 21, warn = 25, info = 6
 IG Publisher Version: 1.4.2
-Generated Fri Sep 01 16:12:29 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Fri Sep 01 16:28:32 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 137 / 4 / 0
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
@@ -11,7 +11,7 @@ Generated Fri Sep 01 16:12:29 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-status-code-system : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-title-type-code-system : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system : 0 / 1 / 1
- /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map : 1 / 1 / 1
+ /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map : 12 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire : 0 / 0 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00 : 8 / 0 / 4
@@ -186,7 +186,18 @@ WARNING: CodeSystem/eclaire-study-title-type-code-system: CodeSystem: The Sharea
 WARNING: CodeSystem/eclaire-type-contact-code-system: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json ==
 WARNING: ConceptMap/eclaire-study-phase-concept-map: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[12].target[0].code: The target code 'phase-3-phase-4' is not valid in the code system http://terminology.hl7.org/CodeSystem/research-study-phase|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[0].target[0].code: The target code 'phase-1' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[1].target[0].code: The target code 'phase-1-phase-2' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[2].target[0].code: The target code 'phase-1' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[3].target[0].code: The target code 'phase-1' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[4].target[0].code: The target code 'phase-1' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[5].target[0].code: The target code 'phase-1-phase-2' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[6].target[0].code: The target code 'phase-1-phase-2' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[7].target[0].code: The target code 'phase-1-phase-2' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[8].target[0].code: The target code 'phase-2' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[9].target[0].code: The target code 'phase-2-phase-3' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[10].target[0].code: The target code 'phase-3' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[11].target[0].code: The target code 'phase-4' is not valid in the code system https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.0
 == fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json ==
 WARNING: ConceptMap/eclaire-study-status-concept-map: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire.json ==
