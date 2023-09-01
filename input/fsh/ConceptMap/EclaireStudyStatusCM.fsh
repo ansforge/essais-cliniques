@@ -7,9 +7,9 @@ Usage: #definition
 * experimental = true
 * description = "Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)"
 * group.source = "eclaire-study-status-vs"
-* group.target = "http://hl7.org/fhir/R4/valueset-research-study-status"
+* group.target = "http://hl7.org/fhir/ValueSet/research-study-status"
 * sourceUri = "eclaire-study-status-vs"
-* targetUri = "http://hl7.org/fhir/R4/valueset-research-study-status"
+* targetUri = "http://hl7.org/fhir/ValueSet/research-study-status"
 * group.element[0].code = #a-demarrer
 * group.element[=].target.code = #approved
 * group.element[=].target.equivalence = #equivalent
