@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="078b6acb-01e5-433f-8270-1c7553c107c2"/>
+  <id value="cbdd55c9-6be1-4d6a-b4b8-e7ccddf0aa15"/>
   <meta>
-    <lastUpdated value="2023-09-01T08:48:57.812+00:00"/>
+    <lastUpdated value="2023-09-01T14:26:19.167+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -53,10 +53,10 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-09-01T08:48:57+00:00"/>
+        <date value="2023-09-01T14:26:19+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:653a17e8-4ee9-4d37-8086-9020ead1f962"/>
-          <timestamp value="2023-09-01T08:49:36+00:00"/>
+          <identifier value="urn:uuid:35c0b61f-6410-452f-ba77-bd0af6c994a8"/>
+          <timestamp value="2023-09-01T14:26:47+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -75,6 +75,304 @@
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system"/>
             <code value="SCI"/>
             <display value="Scientifique / Scientific"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 13 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-eclaire-study-title-type-code-system.html">codesystem Définition des types de titre pour l'essai v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-primary"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-primary">primary</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Primary title</td>
+                <td>
+                  <div>
+                    <p>Main title for common use. The primary title used for representation if multiple titles exist.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-official"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-official">official</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Official title</td>
+                <td>
+                  <div>
+                    <p>The official or authoritative title.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-scientific"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-scientific">scientific</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Scientific title</td>
+                <td>
+                  <div>
+                    <p>Title using scientific terminology.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-plain-language"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-plain-language">plain-language</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Plain language title</td>
+                <td>
+                  <div>
+                    <p>Title using language common to lay public discourse.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-subtitle"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-subtitle">subtitle</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Subtitle</td>
+                <td>
+                  <div>
+                    <p>Subtitle or secondary title.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-short-title"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-short-title">short-title</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Short title</td>
+                <td>
+                  <div>
+                    <p>Brief title (e.g. 'running title' or title used in page headers)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-acronym"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-acronym">acronym</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Acronym</td>
+                <td>
+                  <div>
+                    <p>Abbreviation used as title</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-earlier-title"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-earlier-title">earlier-title</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Different text in an earlier version</td>
+                <td>
+                  <div>
+                    <p>Alternative form of title in an earlier version such as epub ahead of print.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-language"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-language">language</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Different language</td>
+                <td>
+                  <div>
+                    <p>Additional form of title in a different language.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-autotranslated"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-autotranslated">autotranslated</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Different language derived from autotranslation</td>
+                <td>
+                  <div>
+                    <p>Machine translated form of title in a different language, language element codes the language into which it was translated by machine.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-human-use"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-human-use">human-use</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Human use</td>
+                <td>
+                  <div>
+                    <p>Human-friendly title</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-machine-use"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-machine-use">machine-use</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Machine use</td>
+                <td>
+                  <div>
+                    <p>Machine-friendly title</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-title-type-code-system-duplicate-uid"> </a>  
+                  <a href="CodeSystem-eclaire-study-title-type-code-system.html#eclaire-study-title-type-code-system-duplicate-uid">duplicate-uid</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system</td>
+                <td>Different text for the same object with a different identifier</td>
+                <td>
+                  <div>
+                    <p>An alternative form of the title in two or more entries, e.g. in multiple medline entries</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="EclaireStudyTitleTypetVS"/>
+        <title value="Type de titre Value Set"/>
+        <status value="draft"/>
+        <date value="2023-09-01T14:26:19+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:d8094fdc-5097-4a3a-b7bf-dfc43e3df555"/>
+          <timestamp value="2023-09-01T14:26:47+00:00"/>
+          <total value="13"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="primary"/>
+            <display value="Primary title"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="official"/>
+            <display value="Official title"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="scientific"/>
+            <display value="Scientific title"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="plain-language"/>
+            <display value="Plain language title"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="subtitle"/>
+            <display value="Subtitle"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="short-title"/>
+            <display value="Short title"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="acronym"/>
+            <display value="Acronym"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="earlier-title"/>
+            <display value="Different text in an earlier version"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="language"/>
+            <display value="Different language"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="autotranslated"/>
+            <display value="Different language derived from autotranslation"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="human-use"/>
+            <display value="Human use"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="machine-use"/>
+            <display value="Machine use"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
+            <code value="duplicate-uid"/>
+            <display value="Different text for the same object with a different identifier"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -207,10 +505,10 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2023-09-01T08:48:57+00:00"/>
+        <date value="2023-09-01T14:26:19+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8058dc28-195c-4e1a-96d8-3a8e28e46c9d"/>
-          <timestamp value="2023-09-01T08:49:39+00:00"/>
+          <identifier value="urn:uuid:003030d0-4a00-4220-bc38-2f4ab07161a2"/>
+          <timestamp value="2023-09-01T14:26:51+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -387,10 +685,10 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-09-01T08:48:57+00:00"/>
+        <date value="2023-09-01T14:26:19+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:458bb760-1035-4cb7-9fa6-20e22f0d4a10"/>
-          <timestamp value="2023-09-01T08:49:40+00:00"/>
+          <identifier value="urn:uuid:23bc231b-3f9d-497e-b4ee-5f5a8b154dec"/>
+          <timestamp value="2023-09-01T14:26:52+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -617,10 +915,10 @@
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-09-01T08:48:57+00:00"/>
+        <date value="2023-09-01T14:26:19+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:eb6f8d85-92e6-4002-9608-9ec3d94e7dc9"/>
-          <timestamp value="2023-09-01T08:49:41+00:00"/>
+          <identifier value="urn:uuid:6b96d6f1-7e61-4de9-a5e7-32042c8af317"/>
+          <timestamp value="2023-09-01T14:26:52+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>

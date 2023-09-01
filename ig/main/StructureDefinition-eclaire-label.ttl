@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ECLAIRELabel"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-01T08:48:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-01T14:26:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -327,8 +327,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/title-type"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/title-type>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs>
          ]
        ] ;
        fhir:mapping ( [
@@ -701,8 +701,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/title-type"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/title-type>
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs"^^xsd:anyURI ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs>
          ]
        ]
      ] [

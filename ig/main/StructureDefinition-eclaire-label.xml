@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="ECLAIRELabel"/>
   <status value="draft"/>
-  <date value="2023-09-01T08:48:57+00:00"/>
+  <date value="2023-09-01T14:26:19+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -290,7 +290,7 @@
       </constraint>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/title-type"/>
+        <valueSet value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -692,7 +692,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/title-type"/>
+        <valueSet value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs"/>
       </binding>
     </element>
     <element id="Extension.extension:labelValue">
