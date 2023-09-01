@@ -13,7 +13,7 @@ Description: "Extension créée dans le cadre du projet API ECLAIRE afin de perm
     labelValue 0..1
 * extension[labelType].value[x] only CodeableConcept
 * extension[labelType] ^short = "primary | official | plain-language | subtitle | short-title | acronym | earlier-title | language | auto-translated | human-use | machine-use"
-* extension[labelType].valueCodeableConcept from http://hl7.org/fhir/ValueSet/title-type (extensible)
+* extension[labelType].valueCodeableConcept from eclaire-study-title-type-vs (extensible)
 * extension[labelType] ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * extension[labelType] ^binding.extension[=].valueString = "TitleType"
 * extension[labelType] ^binding.description = "desc."
