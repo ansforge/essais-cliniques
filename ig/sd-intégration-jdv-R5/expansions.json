@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b86ce77f-4470-40af-97a4-e062d2017f6a",
+  "id" : "b93b5011-0d82-427e-b23b-df98f30069b9",
   "meta" : {
-    "lastUpdated" : "2023-09-01T13:01:29.571+00:00"
+    "lastUpdated" : "2023-09-01T13:23:16.832+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,49 @@
       "name" : "EclaireTypeContactVS",
       "title" : "Type Contact Value Set",
       "status" : "draft",
-      "date" : "2023-09-01T13:01:29+00:00",
+      "date" : "2023-09-01T13:23:16+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:02bdf513-fded-4719-a9ef-78cedcbaffbd",
-        "timestamp" : "2023-09-01T13:02:19+00:00",
+        "identifier" : "urn:uuid:454b955b-93d0-4b45-9094-99e82f0244a4",
+        "timestamp" : "2023-09-01T13:23:46+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system",
+          "code" : "PUB",
+          "display" : "Publique / Public"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system",
+          "code" : "SCI",
+          "display" : "Scientifique / Scientific"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-eclaire-type-contact-code-system.html\">codesystem Type de contact v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-type-contact-code-system-PUB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-eclaire-type-contact-code-system.html#eclaire-type-contact-code-system-PUB\">PUB</a></td><td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system</td><td>Publique / Public</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-type-contact-code-system-SCI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-eclaire-type-contact-code-system.html#eclaire-type-contact-code-system-SCI\">SCI</a></td><td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system</td><td>Scientifique / Scientific</td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs",
+      "version" : "0.1.0",
+      "name" : "EclaireStudyTitleTypetVS",
+      "title" : "Type de titre Value Set",
+      "status" : "draft",
+      "date" : "2023-09-01T13:23:16+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:add3369e-befa-4376-87d3-2d851be14251",
+        "timestamp" : "2023-09-01T13:23:47+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -57,10 +96,10 @@
       "name" : "EclaireStudyPhaseSourceVS",
       "title" : "Value Set de la phase de l'essai tel que définie dans la base ECLAIRE",
       "status" : "draft",
-      "date" : "2023-09-01T13:01:29+00:00",
+      "date" : "2023-09-01T13:23:16+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:17c2efca-7946-4dbb-bf4a-c09a453b0b04",
-        "timestamp" : "2023-09-01T13:02:24+00:00",
+        "identifier" : "urn:uuid:1b31b746-04f2-4e2e-abf7-57de532aa5e5",
+        "timestamp" : "2023-09-01T13:23:50+00:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",
@@ -146,10 +185,10 @@
       "name" : "EclaireStudyStatusVS",
       "title" : "Value Set Statut Eclaire de l'essai",
       "status" : "draft",
-      "date" : "2023-09-01T13:01:29+00:00",
+      "date" : "2023-09-01T13:23:16+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:83b277a8-6896-4ab4-8067-f244e8e7692b",
-        "timestamp" : "2023-09-01T13:02:25+00:00",
+        "identifier" : "urn:uuid:a11c8e0f-1afc-496e-9e07-95160cbcc42b",
+        "timestamp" : "2023-09-01T13:23:51+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -220,10 +259,10 @@
       "name" : "EclaireStudyPhaseVS",
       "title" : "Value Set type de phase de l'essai clinique",
       "status" : "draft",
-      "date" : "2023-09-01T13:01:29+00:00",
+      "date" : "2023-09-01T13:23:16+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:6404c7a6-38fe-4902-a4f2-41d917ed393f",
-        "timestamp" : "2023-09-01T13:02:25+00:00",
+        "identifier" : "urn:uuid:fd445310-205d-4c48-9383-6fe8277efc2e",
+        "timestamp" : "2023-09-01T13:23:51+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",

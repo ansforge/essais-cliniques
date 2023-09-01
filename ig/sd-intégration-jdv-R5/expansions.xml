@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b86ce77f-4470-40af-97a4-e062d2017f6a"/>
+  <id value="b93b5011-0d82-427e-b23b-df98f30069b9"/>
   <meta>
-    <lastUpdated value="2023-09-01T13:01:29.571+00:00"/>
+    <lastUpdated value="2023-09-01T13:23:16.832+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -53,10 +53,84 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-09-01T13:01:29+00:00"/>
+        <date value="2023-09-01T13:23:16+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:02bdf513-fded-4719-a9ef-78cedcbaffbd"/>
-          <timestamp value="2023-09-01T13:02:19+00:00"/>
+          <identifier value="urn:uuid:454b955b-93d0-4b45-9094-99e82f0244a4"/>
+          <timestamp value="2023-09-01T13:23:46+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system"/>
+            <code value="PUB"/>
+            <display value="Publique / Public"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system"/>
+            <code value="SCI"/>
+            <display value="Scientifique / Scientific"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-eclaire-type-contact-code-system.html">codesystem Type de contact v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-type-contact-code-system-PUB"> </a>  
+                  <a href="CodeSystem-eclaire-type-contact-code-system.html#eclaire-type-contact-code-system-PUB">PUB</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system</td>
+                <td>Publique / Public</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-type-contact-code-system-SCI"> </a>  
+                  <a href="CodeSystem-eclaire-type-contact-code-system.html#eclaire-type-contact-code-system-SCI">SCI</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system</td>
+                <td>Scientifique / Scientific</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="EclaireStudyTitleTypetVS"/>
+        <title value="Type de titre Value Set"/>
+        <status value="draft"/>
+        <date value="2023-09-01T13:23:16+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:add3369e-befa-4376-87d3-2d851be14251"/>
+          <timestamp value="2023-09-01T13:23:47+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -207,10 +281,10 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2023-09-01T13:01:29+00:00"/>
+        <date value="2023-09-01T13:23:16+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:17c2efca-7946-4dbb-bf4a-c09a453b0b04"/>
-          <timestamp value="2023-09-01T13:02:24+00:00"/>
+          <identifier value="urn:uuid:1b31b746-04f2-4e2e-abf7-57de532aa5e5"/>
+          <timestamp value="2023-09-01T13:23:50+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -387,10 +461,10 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-09-01T13:01:29+00:00"/>
+        <date value="2023-09-01T13:23:16+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:83b277a8-6896-4ab4-8067-f244e8e7692b"/>
-          <timestamp value="2023-09-01T13:02:25+00:00"/>
+          <identifier value="urn:uuid:a11c8e0f-1afc-496e-9e07-95160cbcc42b"/>
+          <timestamp value="2023-09-01T13:23:51+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -617,10 +691,10 @@
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-09-01T13:01:29+00:00"/>
+        <date value="2023-09-01T13:23:16+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6404c7a6-38fe-4902-a4f2-41d917ed393f"/>
-          <timestamp value="2023-09-01T13:02:25+00:00"/>
+          <identifier value="urn:uuid:fd445310-205d-4c48-9383-6fe8277efc2e"/>
+          <timestamp value="2023-09-01T13:23:51+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
