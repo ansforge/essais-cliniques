@@ -1,0 +1,62 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "eclaire-study-status-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system",
+  "version" : "0.1.0",
+  "name" : "EclaireStudyStatusCS",
+  "title" : "Définition des statuts de l'essai utilisés dans la base de données ECLAIRE",
+  "status" : "draft",
+  "date" : "2023-09-01T14:48:43+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Statut de l'essai clinique utilisé dans la base de données ECLAIRE",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 9,
+  "concept" : [{
+    "code" : "a-demarrer",
+    "display" : "A démarrer"
+  },
+  {
+    "code" : "en-cours",
+    "display" : "En cours"
+  },
+  {
+    "code" : "suspendue",
+    "display" : "Suspendue"
+  },
+  {
+    "code" : "prorogee",
+    "display" : "Prorogée"
+  },
+  {
+    "code" : "expiree",
+    "display" : "Expirée"
+  },
+  {
+    "code" : "terminee",
+    "display" : "Terminée"
+  },
+  {
+    "code" : "terminee-fin-anticipee",
+    "display" : "Terminée (fin anticipée)"
+  },
+  {
+    "code" : "archivee",
+    "display" : "Archivée"
+  },
+  {
+    "code" : "abandonnee",
+    "display" : "Abandonnée"
+  }]
+}
