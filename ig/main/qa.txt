@@ -1,9 +1,9 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 9, warn = 29, info = 6
+err = 8, warn = 23, info = 6
 IG Publisher Version: 1.4.2
-Generated Mon Sep 04 08:23:12 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Mon Sep 04 12:30:17 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 137 / 4 / 0
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
@@ -11,13 +11,13 @@ Generated Mon Sep 04 08:23:12 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-status-code-system : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-title-type-code-system : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system : 0 / 1 / 1
- /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map : 0 / 3 / 1
- /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map : 0 / 3 / 1
+ /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map : 0 / 0 / 1
+ /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map : 0 / 0 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire : 0 / 0 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00 : 8 / 0 / 4
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-condition-details : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-type : 0 / 1 / 1
- /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label : 1 / 1 / 1
+ /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location : 0 / 1 / 2
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-recruitment-period : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy : 0 / 0 / 4
@@ -185,13 +185,7 @@ WARNING: CodeSystem/eclaire-study-title-type-code-system: CodeSystem: The Sharea
 == fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system.json ==
 WARNING: CodeSystem/eclaire-type-contact-code-system: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json ==
-WARNING: ConceptMap/eclaire-study-phase-concept-map: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].source: Unknown Source Code System eclaire-study-phase-source-vs, so the source codes cannot be checked
-WARNING: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].target: Unknown Target Code System eclaire-study-phase-vs, so the target codes cannot be checked
 == fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json ==
-WARNING: ConceptMap/eclaire-study-status-concept-map: ConceptMap: Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].source: Unknown Source Code System eclaire-study-status-vs, so the source codes cannot be checked
-WARNING: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].target: Unknown Target Code System http://hl7.org/fhir/ValueSet/research-study-status, so the target codes cannot be checked
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire.json ==
 == fsh-generated/resources/ResearchStudy-2022-500520-30-00.json ==
 INFORMATION: ResearchStudy/2022-500520-30-00: ResearchStudy.identifier[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.0
@@ -209,7 +203,6 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-eclaire-contact-type.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-label.json ==
-ERROR: StructureDefinition/eclaire-label: StructureDefinition.differential.element[1].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-location.json ==
 INFORMATION: StructureDefinition/eclaire-location: StructureDefinition.snapshot.element[25].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk

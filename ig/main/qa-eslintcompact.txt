@@ -3,12 +3,6 @@
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-status-code-system.json: line 1, col 1115, Warning - The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile (REQUIRED)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-title-type-code-system.json: line 1, col 2405, Warning - The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile (REQUIRED)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system.json: line 1, col 722, Warning - The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile (REQUIRED)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json: line 1, col 2018, Warning - Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed (INVARIANT)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json: line 1, col 2016, Warning - Unknown Source Code System eclaire-study-phase-source-vs, so the source codes cannot be checked (NOTFOUND)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json: line 1, col 2016, Warning - Unknown Target Code System eclaire-study-phase-vs, so the target codes cannot be checked (NOTFOUND)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json: line 1, col 1825, Warning - Rule cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed (INVARIANT)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json: line 1, col 1823, Warning - Unknown Source Code System eclaire-study-status-vs, so the source codes cannot be checked (NOTFOUND)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json: line 1, col 1823, Warning - Unknown Target Code System http://hl7.org/fhir/ValueSet/research-study-status, so the target codes cannot be checked (NOTFOUND)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00.json: line 162, col 6, Info - This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.0 (INFORMATIONAL)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00.json: line 124, col 30, Error - Rule ele-1: 'All FHIR elements must have a @value or children' Failed (INVARIANT)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00.json: line 124, col 30, Error - value cannot be empty (INVALID)
@@ -21,7 +15,6 @@
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00.json: line 155, col 6, Info - Details for #2022-500520-30-00-enrollment-group-id matching against profile http://hl7.org/fhir/StructureDefinition/Group|4.0.1 (STRUCTURE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-condition-details.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-type.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-/home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 1, col 15449, Error - ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1) (STRUCTURE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location.json: line 1, col 41130, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
 /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
@@ -42,6 +35,6 @@
 ECLAIRE : Validation Results
 =========================================
 
-err = 9, warn = 29, info = 6
+err = 8, warn = 23, info = 6
 IG Publisher Version: 1.4.2
-Generated Mon Sep 04 08:23:12 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Mon Sep 04 12:30:17 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)

@@ -14,11 +14,11 @@
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/ConceptMap/eclaire-study-phase-concept-map"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "FHIR-Eclaire-phase-concept-map"] ; # 
+  fhir:name [ fhir:v "FHIR_Eclaire_phase_concept_map"] ; # 
   fhir:title [ fhir:v "FHIR/Eclaire ResearchStudy phase Use Mapping"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-09-04T08:22:22+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-04T12:29:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -31,8 +31,8 @@
   fhir:source [ fhir:v "eclaire-study-phase-source-vs"^^xsd:anyURI] ; # 
   fhir:target [ fhir:v "eclaire-study-phase-vs"^^xsd:anyURI] ; # 
   fhir:group ( [
-     fhir:source [ fhir:v "eclaire-study-phase-source-vs"^^xsd:anyURI ] ;
-     fhir:target [ fhir:v "eclaire-study-phase-vs"^^xsd:anyURI ] ;
+     fhir:source [ fhir:v "eclaire-study-phase-source-code-system"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-phase"^^xsd:anyURI ] ;
      fhir:element ( [
        fhir:code [ fhir:v "jarde-early" ] ;
        fhir:target ( [
@@ -99,13 +99,11 @@
          fhir:code [ fhir:v "phase-3" ] ;
          fhir:equivalence [ fhir:v "equivalent" ]
        ] )
-     ] [
-       fhir:code [ fhir:v "phase-IV" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "phase-4" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
+     ] )
+  ] [
+     fhir:source [ fhir:v "eclaire-study-phase-source-code-system"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "eclaire-study-phase-code-system"^^xsd:anyURI ] ;
+     fhir:element ( [
        fhir:code [ fhir:v "phase-III-IV" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "phase-3-phase-4" ] ;

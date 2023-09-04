@@ -7,11 +7,11 @@
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ConceptMap/eclaire-study-status-concept-map",
   "version" : "0.1.0",
-  "name" : "FHIR-Eclaire-status-concept-map",
+  "name" : "FHIR_Eclaire_status_concept_map",
   "title" : "FHIR/Eclaire ResearchStudy status Use Mapping",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2023-09-04T08:22:22+00:00",
+  "date" : "2023-09-04T12:29:28+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -24,8 +24,8 @@
   "sourceUri" : "eclaire-study-status-vs",
   "targetUri" : "http://hl7.org/fhir/ValueSet/research-study-status",
   "group" : [{
-    "source" : "eclaire-study-status-vs",
-    "target" : "http://hl7.org/fhir/ValueSet/research-study-status",
+    "source" : "eclaire-study-status-code-system",
+    "target" : "http://hl7.org/fhir/research-study-status",
     "element" : [{
       "code" : "a-demarrer",
       "target" : [{

@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "ECLAIRELabel",
   "status" : "draft",
-  "date" : "2023-09-04T08:22:22+00:00",
+  "date" : "2023-09-04T12:29:28+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -694,14 +694,7 @@
       "sliceName" : "labelType",
       "short" : "primary | official | plain-language | subtitle | short-title | acronym | earlier-title | language | auto-translated | human-use | machine-use",
       "min" : 0,
-      "max" : "1",
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "TitleType"
-        }],
-        "description" : "desc."
-      }
+      "max" : "1"
     },
     {
       "id" : "Extension.extension:labelType.extension",
