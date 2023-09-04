@@ -11,7 +11,7 @@
   "title" : "FHIR/Eclaire ResearchStudy phase Use Mapping",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2023-09-01T20:45:21+00:00",
+  "date" : "2023-09-04T08:26:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -27,9 +27,9 @@
     "source" : "eclaire-study-phase-source-code-system",
     "target" : "eclaire-study-phase-code-system",
     "element" : [{
-      "code" : "phase-III-IV",
+      "code" : "jarde-early",
       "target" : [{
-        "code" : "phase-3-phase-4",
+        "code" : "phase-1",
         "equivalence" : "equivalent"
       }]
     },
@@ -107,6 +107,13 @@
       "code" : "phase-IV",
       "target" : [{
         "code" : "phase-4",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "phase-III-IV",
+      "target" : [{
+        "code" : "phase-3-phase-4",
         "equivalence" : "equivalent"
       }]
     }]
