@@ -2,7 +2,7 @@ Instance: eclaire-study-phase-concept-map
 InstanceOf: ConceptMap
 Usage: #definition
 * status = #draft
-* name = "FHIR-Eclaire-phase-concept-map"
+* name = "FHIR_Eclaire_phase_concept_map"
 * title = "FHIR/Eclaire ResearchStudy phase Use Mapping"
 * experimental = true
 * sourceUri = "eclaire-study-phase-source-vs"

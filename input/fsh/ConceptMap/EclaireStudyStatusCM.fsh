@@ -2,7 +2,7 @@ Instance: eclaire-study-status-concept-map
 InstanceOf: ConceptMap
 Usage: #definition
 * status = #draft
-* name = "FHIR-Eclaire-status-concept-map"
+* name = "FHIR_Eclaire_status_concept_map"
 * title = "FHIR/Eclaire ResearchStudy status Use Mapping"
 * experimental = true
 * description = "Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)"
