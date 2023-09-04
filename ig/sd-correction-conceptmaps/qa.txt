@@ -1,9 +1,9 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 9, warn = 25, info = 6
+err = 8, warn = 25, info = 6
 IG Publisher Version: 1.4.2
-Generated Mon Sep 04 08:53:26 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Mon Sep 04 09:00:53 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 137 / 4 / 0
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
@@ -17,7 +17,7 @@ Generated Mon Sep 04 08:53:26 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00 : 8 / 0 / 4
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-condition-details : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-type : 0 / 1 / 1
- /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label : 1 / 1 / 1
+ /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location : 0 / 1 / 2
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-recruitment-period : 0 / 1 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy : 0 / 0 / 4
@@ -205,7 +205,6 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-eclaire-contact-type.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-label.json ==
-ERROR: StructureDefinition/eclaire-label: StructureDefinition.differential.element[1].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-location.json ==
 INFORMATION: StructureDefinition/eclaire-location: StructureDefinition.snapshot.element[25].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
