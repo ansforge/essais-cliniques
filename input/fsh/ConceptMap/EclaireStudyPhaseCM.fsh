@@ -5,11 +5,12 @@ Usage: #definition
 * name = "FHIR-Eclaire-phase-concept-map"
 * title = "FHIR/Eclaire ResearchStudy phase Use Mapping"
 * experimental = true
-* description = "Correspondance entre la phase définie dans la base Eclaire et le ValueSet https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet-eclaire-study-phase-vs"
-* group.source = "eclaire-study-phase-source-code-system"
-* group.target = "eclaire-study-phase-code-system"
 * sourceUri = "eclaire-study-phase-source-vs"
 * targetUri = "eclaire-study-phase-vs"
+* description = "Correspondance entre la phase définie dans la base Eclaire et le ValueSet https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet-eclaire-study-phase-vs"
+* group[0].source = eclaire-study-phase-source-code-system
+* group[0].target = "http://terminology.hl7.org/CodeSystem/research-study-phase"
+
 * group.element[0].code = #jarde-early
 * group.element[=].target.code = #phase-1
 * group.element[=].target.equivalence = #equivalent
@@ -43,9 +44,9 @@ Usage: #definition
 * group.element[+].code = #phase-III
 * group.element[=].target.code = #phase-3
 * group.element[=].target.equivalence = #equivalent
-* group.element[+].code = #phase-IV
-* group.element[=].target.code = #phase-4
-* group.element[=].target.equivalence = #equivalent
-* group.element[+].code = #phase-III-IV
+
+* group[1].source = eclaire-study-phase-source-code-system
+* group[1].target = eclaire-study-phase-code-system
+* group.element[0].code = #phase-III-IV
 * group.element[=].target.code = #phase-3-phase-4
 * group.element[=].target.equivalence = #equivalent
