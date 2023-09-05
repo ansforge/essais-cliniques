@@ -166,7 +166,9 @@ Plus de précision sur la spécification FHIR : <http://hl7.org/fhir/R4/http.htm
 Les paramètres et modificateurs de requêtes décrits au [paragraphe dédié](modifiers.html)
 applicables à ce cas d'usage sont :
 
+- _include
 - _count, _sort
+- _content, _text
 - Tous les prefixes de comparaison
 
 

@@ -170,6 +170,7 @@ applicables à ce cas d'usage sont :
 
 - _include
 - _count, _sort
+- _content, _text
 - Tous les prefixes de comparaison
 
 
