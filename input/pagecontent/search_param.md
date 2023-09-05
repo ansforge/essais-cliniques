@@ -83,7 +83,7 @@ Critères de recherches applicables à la ressource ResearchStudy.
   mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
   mso-border-alt:solid #8EAADB .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='font-size:
-  8.0pt;line-height:115%'>Date de dernière mise à jour de la ressource.<o:p></o:p></span></p>
+  8.0pt;line-height:115%'>Date de dernière mise à jour de la ressource<o:p></o:p></span></p>
   </td>
  </tr>
 
@@ -126,7 +126,50 @@ Critères de recherches applicables à la ressource ResearchStudy.
   mso-border-alt:solid #8EAADB .5pt;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
   style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>Identifiant
-  de l’essai clinique.</span><span style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
+  de l’essai clinique</span><span style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
+  </td>
+ </tr>
+
+  <tr style='mso-yfti-irow:2'>
+  <td width="17%" valign=top style='width:17.9%;border:solid #8EAADB 1.0pt;
+  border-top:none;mso-border-top-alt:solid #8EAADB .5pt;mso-border-alt:solid #8EAADB .5pt;
+  background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
+  style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>Status</span><b><span
+  style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="17%" valign=top style='width:17.94%;border-top:none;border-left:
+  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
+  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
+  mso-border-alt:solid #8EAADB .5pt;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
+  style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>status</span><span
+  style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
+  </td>
+  <td width="8%" valign=top style='width:8.66%;border-top:none;border-left:
+  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
+  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
+  mso-border-alt:solid #8EAADB .5pt;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
+  style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>Oui</span><span
+  style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
+  </td>
+  <td width="9%" valign=top style='width:9.24%;border-top:none;border-left:
+  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
+  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
+  mso-border-alt:solid #8EAADB .5pt;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
+  class=SpellE><span class=GramE><span style='font-size:8.0pt;line-height:115%;
+  color:black;mso-color-alt:windowtext'>token</span></span></span><span
+  style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
+  </td>
+  <td width="46%" valign=top style='width:46.24%;border-top:none;border-left:
+  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
+  mso-border-top-alt:solid #8EAADB .5pt;mso-border-left-alt:solid #8EAADB .5pt;
+  mso-border-alt:solid #8EAADB .5pt;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-yfti-cnfc:64'><span
+  style='font-size:8.0pt;line-height:115%;color:black;mso-color-alt:windowtext'>Statut
+  de l’essai clinique</span><span style='font-size:8.0pt;line-height:115%'><o:p></o:p></span></p>
   </td>
  </tr>
 
