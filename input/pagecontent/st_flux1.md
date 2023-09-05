@@ -142,7 +142,7 @@ requête, ce qui est différent d'aucune correspondance à la recherche.
 
 Plus de précision sur la spécification FHIR : <http://hl7.org/fhir/R4/http.html>
 
-### Critères de recherches
+### Critères de recherche
 
 -   Les critères de recherche, définis au [paragraphe dédié](search_param.html#structuredefinition-eclaire-researchstudy), de **StructureDefinition-eclaire-researchstudy** applicables à ce cas d'usage sont :
 
