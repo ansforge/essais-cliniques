@@ -4,7 +4,6 @@ Un consommateur recherche des essais cliniques à partir de critères de recherc
 
 Le SI répond au consommateur les essais cliniques correspondant aux critères de recherche et les ressources liées.
 
-
 <div style="text-inlin:center;">{%include flux2.svg%}</div>
 
 
