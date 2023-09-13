@@ -178,7 +178,7 @@ applicables à ce cas d'usage sont :
 
 #### Scénario 1 : Extraction complète des essais cliniques
 
-**Description du scénario :** Un consommateur souhaite récupér tous les essais cliniques recensés sur le périmètre national.
+**Description du scénario :** Un consommateur souhaite récupérer tous les essais cliniques recensés sur le périmètre national.
 
 **Requête :**
 ```
