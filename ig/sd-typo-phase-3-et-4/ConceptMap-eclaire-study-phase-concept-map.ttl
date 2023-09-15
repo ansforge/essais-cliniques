@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/eclaire/ConceptMap/eclaire-study-phase-concept-map> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "eclaire-study-phase-concept-map"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/ConceptMap/eclaire-study-phase-concept-map"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "FHIR_Eclaire_phase_concept_map"] ; # 
+  fhir:title [ fhir:v "FHIR/Eclaire ResearchStudy phase Use Mapping"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-15T13:31:52+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ANS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ANS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Correspondance entre la phase définie dans la base Eclaire et le ValueSet https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet-eclaire-study-phase-vs"] ; # 
+  fhir:source [ fhir:v "eclaire-study-phase-source-vs"^^xsd:anyURI] ; # 
+  fhir:target [ fhir:v "eclaire-study-phase-vs"^^xsd:anyURI] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "eclaire-study-phase-source-code-system"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-phase"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "jarde-early" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-1" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "jarde-early" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-1-phase-2" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "phase-I-first-admin" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-1" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "phase-I-bioequivalence" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-1" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "phase-I-other" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-1" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "phase-I-II-first-admin" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-1-phase-2" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "phase-I-II-first-bioequivalence" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-1-phase-2" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "phase-I-II-other" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-1-phase-2" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "phase-II" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-2" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "phase-II-III" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-2-phase-3" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "phase-III" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-3" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [ fhir:v "eclaire-study-phase-source-code-system"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "eclaire-study-phase-code-system"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "phase-III-IV" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "phase-3-phase-4" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

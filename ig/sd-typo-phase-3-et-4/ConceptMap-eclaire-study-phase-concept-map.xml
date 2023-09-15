@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="eclaire-study-phase-concept-map"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ConceptMap/eclaire-study-phase-concept-map"/>
+  <version value="0.1.0"/>
+  <name value="FHIR_Eclaire_phase_concept_map"/>
+  <title value="FHIR/Eclaire ResearchStudy phase Use Mapping"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-09-15T13:31:52+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Correspondance entre la phase définie dans la base Eclaire et le ValueSet https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet-eclaire-study-phase-vs"/>
+  <sourceUri value="eclaire-study-phase-source-vs"/>
+  <targetUri value="eclaire-study-phase-vs"/>
+  <group>
+    <source value="eclaire-study-phase-source-code-system"/>
+    <target value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
+    <element>
+      <code value="jarde-early"/>
+      <target>
+        <code value="phase-1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="jarde-early"/>
+      <target>
+        <code value="phase-1-phase-2"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="phase-I-first-admin"/>
+      <target>
+        <code value="phase-1"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="phase-I-bioequivalence"/>
+      <target>
+        <code value="phase-1"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="phase-I-other"/>
+      <target>
+        <code value="phase-1"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="phase-I-II-first-admin"/>
+      <target>
+        <code value="phase-1-phase-2"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="phase-I-II-first-bioequivalence"/>
+      <target>
+        <code value="phase-1-phase-2"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="phase-I-II-other"/>
+      <target>
+        <code value="phase-1-phase-2"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="phase-II"/>
+      <target>
+        <code value="phase-2"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="phase-II-III"/>
+      <target>
+        <code value="phase-2-phase-3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="phase-III"/>
+      <target>
+        <code value="phase-3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="eclaire-study-phase-source-code-system"/>
+    <target value="eclaire-study-phase-code-system"/>
+    <element>
+      <code value="phase-III-IV"/>
+      <target>
+        <code value="phase-3-phase-4"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>
