@@ -3,7 +3,15 @@
 map "ContactDetail" as Contact #back:AliceBlue;header:LightSkyBlue;line:blue {
     Nom => name :  string [0..1] 
     Télécommunication => telecom :  ContactPoint [0..*]  
-    Type => <&plus> ECLAIREContacType :  CodeableConcept [0..1] \n ("Public"/"Scientific")  
+    Type => <&plus> ECLAIREContacType :  CodeableConcept [0..1] \n ("Public"/"Scientific")
+    Adresse => <&plus> ECLAIREContactAddress : Address [0..1]
+    Affiliation => <&plus> extensionECLAIREContactAffiliation : string [0..1]
+    Nom => <&plus> ECLAIREContactName : HumanName [0..1]
+}
+
+map "HumanName" as slice_name #back:AliceBlue;header:LightSkyBlue;line:blue {
+    Nom de famille (Last name) => family : string [0..1]
+    \n Prénom (First name) \n Deuxième prénom (Middle name) => given : string [0..*] \n    <&layers> slice firstName [0..1] \n    <&layers> slice middleName [0..1]
 }
 
 map "<&layers> Slice identifier" as slice_identifier #back:AliceBlue;header:LightSkyBlue;line:blue {
@@ -80,6 +88,8 @@ RS *-[#Gold,dashed,thickness=4]-> Organization
 slice_identifier --[#lightBlue,thickness=2] RS
 Contact --[#lightBlue,thickness=2] RS
 label --[#lightBlue,thickness=2] RS
+slice_name --[#lightBlue,thickness=2] Contact
+Contact -[hidden] slice_identifier
 
 Group -[hidden] Organization
 
