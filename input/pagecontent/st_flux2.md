@@ -1,10 +1,10 @@
 ### Description
 
-Le consommateur réalise une extraction des essais cliniques à partir de critères de recherche.
+Un consommateur recherche des essais cliniques à partir de critères de recherche.
 
 Le SI répond au consommateur les essais cliniques correspondant aux critères de recherche et les ressources liées.
 
-<div style="text-inlin:center;">{%include flux1.svg%}</div>
+<div style="text-inlin:center;">{%include flux2.svg%}</div>
 
 
 ### Caractéristiques de l'API 
@@ -113,6 +113,7 @@ Le SI répond au consommateur les essais cliniques correspondant aux critères d
 </tbody>
 </table>
 
+
 ### Construction de la réponse de base
 
 #### Réponse de base -- Succès
@@ -151,11 +152,7 @@ Plus de précision sur la spécification FHIR : <http://hl7.org/fhir/R4/http.htm
 <tr>
 
 <td width="230">
-<p>_lastUpdated</p>
-</td>
-
-<td width="230">
-<p>identifier</p>
+<p>status</p>
 </td>
 
 </tr>
@@ -176,52 +173,18 @@ applicables à ce cas d'usage sont :
 
 ### Exemple de requêtes
 
-#### Scénario 1 : Extraction complète des essais cliniques
+#### Scénario 1 : Recherche des essais cliniques selon le statut
 
-**Description du scénario :** Un consommateur souhaite récupérer tous les essais cliniques recensés sur le périmètre national.
+**Description du scénario :** Un consommateur cherche les essais cliniques ayant pour statut = "active".
 
 **Requête :**
 ```
-GET [BASE]/ResearchStudy?_include=ResearchStudy:site&_include=ResearchStudy:sponsor&_include=ResearchStudy:enrollment
+GET [BASE]/ResearchStudy?status=http://hl7.org/fhir/ValueSet/research-study-status|active&_include=ResearchStudy:site&_include=ResearchStudy:sponsor&_include=ResearchStudy:enrollment
 ```
 
 **Requête expliquée :**
 ```sh
-GET [BASE]/ResearchStudy? # Recherche sans critère pour récupérer tous les essais cliniques
-_include=ResearchStudy:site # Inclus les Location référencées par ResearchStudy
-&_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
-&_include=ResearchStudy:enrollment # Inclus les Group référencées par ResearchStudy
-```
-
-#### Scénario 2 : Extraction des essais cliniques à partir d'une date de mise à jour
-
-**Description du scénario :** Un consommateur souhaite mettre à jour tous les essais cliniques mis à jour depuis une certaine date \>= (06/11/2022).
-
-**Requête :**
-```
-GET [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00&_include=ResearchStudy:site&_include=ResearchStudy:sponsor&_include=ResearchStudy:enrollment
-```
-
-**Requête expliquée :**
-```sh
-GET [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00 # Critère de recherche sur la date de mise à jour (ge = greater or equal)
-&_include=ResearchStudy:site # Inclus les Location référencées par ResearchStudy
-&_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
-&_include=ResearchStudy:enrollment # Inclus les Group référencées par ResearchStudy
-```
-
-#### Scénario 3 : Extraction d'un essai clinique à partir de son identifiant
-
-**Description du scénario :** Un consommateur souhaite rechercher un essai clinique à partir de son identifiant = XXX.
-
-**Requête :**
-```
-GET [BASE]/ResearchStudy?identifier=XXX&_include=ResearchStudy:site&_include=ResearchStudy:sponsor&_include=ResearchStudy:enrollment
-```
-
-**Requête expliquée :**
-```sh
-GET [BASE]/ResearchStudy?identifier=XXX # Critère de recherche de l’identifiant de l'essai
+GET [BASE]/ResearchStudy?status=http://hl7.org/fhir/R4/ValueSet/research-study-status|active # Critère de recherche sur le statut
 &_include=ResearchStudy:site # Inclus les Location référencées par ResearchStudy
 &_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
 &_include=ResearchStudy:enrollment # Inclus les Group référencés par ResearchStudy

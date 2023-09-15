@@ -8,7 +8,7 @@ As part of the "Innovation santé 2030" plan, a new information system is going 
 <p>
   <b>Attention !</b>
   <br>
- Cet Implementation Guide est construit dans le cadre de l'élaboration d'un MVP
+ Cet Implementation Guide est construit dans le cadre de l'élaboration d'un MVP (minimum viable product).
 </p>
 </blockquote>
 La France, en tête des pays européens dans le domaine de la recherche clinique, doit néanmoins renforcer la visibilité des essais cliniques en cours et faciliter l'accès au recrutement. C'est dans ce contexte et dans le cadre du plan Innovation santé 2030 que s'inscrit le projet de création d’une plateforme nationale référençant les essais cliniques.
@@ -30,6 +30,7 @@ Un flux est un échange entre deux systèmes. Des flux ont été identifiés lor
 | | Nom des flux métiers  | Description |
 | ----- | ----- | ----- |
 | <a href="st_flux1.html">Flux 1</a> | Extraction de données des essais cliniques | Un consommateur réalise une extraction des essais cliniques, complète ou à partir d'une date de mise à jour. |
+| <a href="st_flux2.html">Flux 2</a> | Recherche des essais cliniques sur critères | Un consommateur recherche des essais cliniques à partir de critères de recherche. |
 
 
 ### Ressources FHIR
