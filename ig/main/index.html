@@ -95,6 +95,9 @@
       <li>
         <a href="st_flux1.html">Extraction de données des essais cliniques</a>
       </li>
+      <li>
+        <a href="st_flux2.html">Recherche des essais cliniques sur critères</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -204,7 +207,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-09-04
+            as of 2023-09-15
           
         
       </td>
@@ -246,7 +249,7 @@ As part of the "Innovation santé 2030" plan, a new information system is going 
 <p>
   <b>Attention !</b>
   <br/>
- Cet Implementation Guide est construit dans le cadre de l'élaboration d'un MVP
+ Cet Implementation Guide est construit dans le cadre de l'élaboration d'un MVP (minimum viable product).
 </p>
 </blockquote>
 <p>La France, en tête des pays européens dans le domaine de la recherche clinique, doit néanmoins renforcer la visibilité des essais cliniques en cours et faciliter l’accès au recrutement. C’est dans ce contexte et dans le cadre du plan Innovation santé 2030 que s’inscrit le projet de création d’une plateforme nationale référençant les essais cliniques.</p>
@@ -265,7 +268,7 @@ Elle doit permettre, à terme, de :</p>
 <p>Pour plus d’information consultez : <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">le communiqué de presse “Mise en œuvre d’une base nationale des essais clinique”</a>.</p>
 
 <h3 id="flux">Flux</h3>
-<p><a name="l438">​</a>Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d’études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.</p>
+<p><a name="l444">​</a>Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d’études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.</p>
 
 <table>
   <thead>
@@ -280,6 +283,11 @@ Elle doit permettre, à terme, de :</p>
       <td><a href="st_flux1.html">Flux 1</a></td>
       <td>Extraction de données des essais cliniques</td>
       <td>Un consommateur réalise une extraction des essais cliniques, complète ou à partir d’une date de mise à jour.</td>
+    </tr>
+    <tr>
+      <td><a href="st_flux2.html">Flux 2</a></td>
+      <td>Recherche des essais cliniques sur critères</td>
+      <td>Un consommateur recherche des essais cliniques à partir de critères de recherche.</td>
     </tr>
   </tbody>
 </table>
@@ -344,7 +352,7 @@ Elle doit permettre, à terme, de :</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 4, 2023 12:29+0000">2023-09-04</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 15, 2023 14:08+0000">2023-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

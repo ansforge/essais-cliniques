@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-04T12:29:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-15T14:08:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -41,7 +41,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.0.0" ]
+     fhir:version [ fhir:v "5.3.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -833,6 +833,14 @@
            ] ) ;
            fhir:name [ fhir:v "st_flux1.html"^^xsd:anyURI ] ;
            fhir:title [ fhir:v "Extraction de données des essais cliniques" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "st_flux2.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "st_flux2.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Recherche des essais cliniques sur critères" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [
