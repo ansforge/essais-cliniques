@@ -2,8 +2,8 @@
 =========================================
 
 err = 31, warn = 24, info = 6
-IG Publisher Version: 1.4.5
-Generated Fri Sep 15 15:27:16 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+IG Publisher Version: 1.4.6
+Generated Mon Sep 18 08:18:48 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 137 / 4 / 0
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
@@ -212,14 +212,14 @@ ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire.json ==
 == fsh-generated/resources/ResearchStudy-2022-500520-30-00.json ==
 INFORMATION: ResearchStudy/2022-500520-30-00: ResearchStudy.identifier[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.0
-WARNING: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/: Rule dom-6: 'A resource should have narrative for robust management' Failed (Best Practice Recommendation)
-ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[3].value.ofType(CodeableConcept).coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+WARNING: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/: Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[3].value.ofType(CodeableConcept).coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[3].value.ofType(CodeableConcept).coding[0].display: value cannot be empty
-ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[4].value.ofType(CodeableConcept).coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[4].value.ofType(CodeableConcept).coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[4].value.ofType(CodeableConcept).coding[0].display: value cannot be empty
-ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.phase.text: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.phase.text: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.phase.text: value cannot be empty
-ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[0].coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[0].coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[0].coding[0].display: value cannot be empty
 INFORMATION: ResearchStudy/2022-500520-30-00: ResearchStudy.enrollment[0]: Details for #2022-500520-30-00-enrollment-group-id matching against profile http://hl7.org/fhir/StructureDefinition/Group|4.0.1
 == fsh-generated/resources/StructureDefinition-eclaire-condition-details.json ==
