@@ -2,8 +2,8 @@
 =========================================
 
 err = 31, warn = 24, info = 6
-IG Publisher Version: 1.4.5
-Generated Fri Sep 15 14:16:09 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+IG Publisher Version: 1.4.6
+Generated Wed Sep 20 09:42:37 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 137 / 4 / 0
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-essais-cliniques/IG-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
@@ -185,41 +185,41 @@ WARNING: CodeSystem/eclaire-study-title-type-code-system: CodeSystem: Published 
 == fsh-generated/resources/CodeSystem-eclaire-type-contact-code-system.json ==
 WARNING: CodeSystem/eclaire-type-contact-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 == fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json ==
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[0].code: The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[1].code: The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[2].code: The source code 'phase-I-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[3].code: The source code 'phase-I-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[4].code: The source code 'phase-I-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[5].code: The source code 'phase-I-II-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[6].code: The source code 'phase-I-II-first-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[7].code: The source code 'phase-I-II-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[8].code: The source code 'phase-II' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[9].code: The source code 'phase-II-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[10].code: The source code 'phase-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[1].element[0].code: The source code 'phase-III-IV' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[1].element[0].target[0].code: The source code 'phase-3-phase-4' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs|0.1.0
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[0].code: The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[1].code: The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[2].code: The source code 'phase-I-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[3].code: The source code 'phase-I-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[4].code: The source code 'phase-I-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[5].code: The source code 'phase-I-II-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[6].code: The source code 'phase-I-II-first-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[7].code: The source code 'phase-I-II-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[8].code: The source code 'phase-II' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[9].code: The source code 'phase-II-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[0].element[10].code: The source code 'phase-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[1].element[0].code: The source code 'phase-III-IV' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-phase-concept-map: ConceptMap.group[1].element[0].target[0].code: The source code 'phase-3-phase-4' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs|0.1.1
 == fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json ==
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[0].code: The source code 'a-demarrer' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[1].code: The source code 'en-cours' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[2].code: The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[3].code: The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[4].code: The source code 'prorogee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[5].code: The source code 'expiree' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[6].code: The source code 'terminee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[7].code: The source code 'terminee-fin-anticipee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[8].code: The source code 'archivee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.0
-ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[9].code: The source code 'abandonnee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.0
+ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[0].code: The source code 'a-demarrer' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[1].code: The source code 'en-cours' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[2].code: The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[3].code: The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[4].code: The source code 'prorogee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[5].code: The source code 'expiree' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[6].code: The source code 'terminee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[7].code: The source code 'terminee-fin-anticipee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[8].code: The source code 'archivee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
+ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[9].code: The source code 'abandonnee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire.json ==
 == fsh-generated/resources/ResearchStudy-2022-500520-30-00.json ==
-INFORMATION: ResearchStudy/2022-500520-30-00: ResearchStudy.identifier[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.0
-WARNING: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/: Rule dom-6: 'A resource should have narrative for robust management' Failed (Best Practice Recommendation)
-ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[3].value.ofType(CodeableConcept).coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+INFORMATION: ResearchStudy/2022-500520-30-00: ResearchStudy.identifier[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.1
+WARNING: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/: Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[3].value.ofType(CodeableConcept).coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[3].value.ofType(CodeableConcept).coding[0].display: value cannot be empty
-ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[4].value.ofType(CodeableConcept).coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[4].value.ofType(CodeableConcept).coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[4].value.ofType(CodeableConcept).coding[0].display: value cannot be empty
-ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.phase.text: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.phase.text: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.phase.text: value cannot be empty
-ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[0].coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[0].coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[0].coding[0].display: value cannot be empty
 INFORMATION: ResearchStudy/2022-500520-30-00: ResearchStudy.enrollment[0]: Details for #2022-500520-30-00-enrollment-group-id matching against profile http://hl7.org/fhir/StructureDefinition/Group|4.0.1
 == fsh-generated/resources/StructureDefinition-eclaire-condition-details.json ==
