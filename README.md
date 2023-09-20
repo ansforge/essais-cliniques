@@ -15,7 +15,7 @@ Le type de ressource FHIR ciblé sera [ResearchStudy](http://hl7.org/fhir/R4/res
 Les workflows associés à ce repository (.github/workflows) permettent : 
 * D'executer Sushi pour vérifier la grammaire
 * De faire les tests avec le validator_cli
-* Publier les pages : https://ansforge.github.io/IG-essais-cliniques/ig/main/ (ou https://ansforge.github.io/IG-essais-cliniques/ig/[nom_de_la_branche] pour prévisualiser l'IG d'une branche)
+* Publier les pages : https://ansforge.github.io/IG-essais-cliniques/ig/main/ (ou https://ansforge.github.io/IG-fhir-essais-cliniques/ig/[nom_de_la_branche] pour prévisualiser l'IG d'une branche)
 
 # Notes
 Ce repo utilise le template "IG-modele" créé à partir du repo [sample-ig](https://github.com/FHIR/sample-ig) de l'organisation GitHub FHIR.
