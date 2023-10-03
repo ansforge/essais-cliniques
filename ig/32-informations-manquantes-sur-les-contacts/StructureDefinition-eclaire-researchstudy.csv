@@ -195,7 +195,19 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "ResearchStudy.contact.extension:eclaire-contact-type","ResearchStudy.contact.extension","eclaire-contact-type","","",0,1,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type]]} {[]}
-","type de contact : Public ou Scientific","Extension créée dans le cadre du projet ECLAIRE qui indique le type de Contact : Public ou Scientific","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Type de contact : Public ou Scientific","Extension créée dans le cadre du projet ECLAIRE qui indique le type de Contact : Public ou Scientific","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ResearchStudy.contact.extension:eclaire-contact-address","ResearchStudy.contact.extension","eclaire-contact-address","","",0,1,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address]]} {[]}
+","Adresse du contact","Extension créée dans le cadre du projet ECLAIRE pour indiquer l'adresse du contact","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ResearchStudy.contact.extension:eclaire-contact-affiliation","ResearchStudy.contact.extension","eclaire-contact-affiliation","","",0,1,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation]]} {[]}
+","Affiliation du contact","Extension créée dans le cadre du projet ECLAIRE pour indiquer l'affiliation du contact","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ResearchStudy.contact.extension:eclaire-contact-name","ResearchStudy.contact.extension","eclaire-contact-name","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name]]} {[]}
+","Nom du contact","Extension créée dans le cadre du projet ECLAIRE pour indiquer le nom de contact","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchStudy.contact.name","ResearchStudy.contact.name","","","",0,1,"","","Y","string {[]} {[]}
