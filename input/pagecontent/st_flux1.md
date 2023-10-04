@@ -154,9 +154,6 @@ Plus de précision sur la spécification FHIR : <http://hl7.org/fhir/R4/http.htm
 <p>_lastUpdated</p>
 </td>
 
-<td width="230">
-<p>identifier</p>
-</td>
 
 </tr>
 </tbody>
@@ -210,19 +207,3 @@ GET [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00 # Critère de recherche
 &_include=ResearchStudy:enrollment # Inclus les Group référencées par ResearchStudy
 ```
 
-#### Scénario 3 : Extraction d'un essai clinique à partir de son identifiant
-
-**Description du scénario :** Un consommateur souhaite rechercher un essai clinique à partir de son identifiant = XXX.
-
-**Requête :**
-```
-GET [BASE]/ResearchStudy?identifier=XXX&_include=ResearchStudy:site&_include=ResearchStudy:sponsor&_include=ResearchStudy:enrollment
-```
-
-**Requête expliquée :**
-```sh
-GET [BASE]/ResearchStudy?identifier=XXX # Critère de recherche de l’identifiant de l'essai
-&_include=ResearchStudy:site # Inclus les Location référencées par ResearchStudy
-&_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
-&_include=ResearchStudy:enrollment # Inclus les Group référencés par ResearchStudy
-```
