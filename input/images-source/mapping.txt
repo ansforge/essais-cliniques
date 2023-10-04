@@ -5,7 +5,7 @@ map "ContactDetail" as Contact #back:AliceBlue;header:LightSkyBlue;line:blue {
     Télécommunication => telecom :  ContactPoint [0..*]  
     Type => <&plus> ECLAIREContacType :  CodeableConcept [0..1] \n ("Public"/"Scientific")
     Adresse => <&plus> ECLAIREContactAddress : Address [0..1]
-    Affiliation => <&plus> extensionECLAIREContactAffiliation : string [0..1]
+    Affiliation => <&plus> ECLAIREContactAffiliation : string [0..1]
     Nom => <&plus> ECLAIREContactName : HumanName [0..1]
 }
 
