@@ -43,17 +43,26 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * identifier[idSecondary].use = #secondary
 * identifier[idSecondary] ^short = "identifiants secondaires / Secondary Identifying Numbers (e.g., protocol number) if available.  Also include other trial registries that have issued an identifying number to this trial. There is no limit on the number of Secondary identifying numbers that can be provided."
 
+* condition ^slicing.discriminator.type = #value
+* condition ^slicing.discriminator.path = "id"
+* condition ^slicing.rules = #open
+* condition ^slicing.description = "Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied"
+* condition contains
+    medDRACondition 0..* MS and
+    diseaseCondition 0..* MS
+* condition[medDRACondition] ^short = "code MedDRA / MedDRA condition"
+* condition[medDRACondition].coding.system from http://terminology.hl7.org/CodeSystem/mdr
+* condition[diseaseCondition] ^short = "condition de la pathologie / Disease Condition"
+
 /*Extensions*/
 * extension contains 
     ECLAIREReviewDate named eclaire-review-date 0..1 MS and
-    ECLAIREConditionDetails named eclaire-condition-details 0..1 MS and
     ECLAIRETherapeuticArea named eclaire-therapeutic-area 0..1 MS and
     ECLAIRERecruitmentPeriod named eclaire-recruitment-period 0..1 MS and
     ECLAIRESecondarySponsor named eclaire-secondary-sponsor 0..* MS and
     ECLAIRELabel named eclaire-label 0..* MS // extension label inspiré de R5
 * extension[eclaire-review-date] ^short = "Date de dernière modification substancielle"
 * extension[eclaire-label] ^short = "autres titres et acronyme / Additional names for the study"
-* extension[eclaire-condition-details] ^short = "Précisions sur le sujet / Health Condition(s) or Problem(s) Studied"
 * extension[eclaire-therapeutic-area] ^short = "Domaine thérapeutique concerné"
 * extension[eclaire-recruitment-period] ^short = "Période prévisionnelle de recrutement"   
 * extension[eclaire-secondary-sponsor] ^short = "Promoteur(s) secondaire(s) / Secondary Sponsor(s)"
