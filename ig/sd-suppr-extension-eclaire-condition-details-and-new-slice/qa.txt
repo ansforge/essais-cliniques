@@ -1,9 +1,9 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 31, warn = 23, info = 6
+err = 35, warn = 24, info = 5
 IG Publisher Version: 1.4.11
-Generated Tue Oct 03 17:22:56 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Wed Oct 04 17:38:20 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 1 / 4 / 0
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
@@ -14,13 +14,12 @@ Generated Tue Oct 03 17:22:56 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map : 13 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map : 10 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire : 0 / 0 / 1
- /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00 : 8 / 0 / 4
- /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-condition-details : 0 / 1 / 1
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500520-30-00 : 12 / 0 / 3
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-type : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location : 0 / 1 / 2
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-recruitment-period : 0 / 1 / 1
- /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy : 0 / 0 / 4
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy : 0 / 2 / 4
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-review-date : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-site-contact-name : 0 / 1 / 1
@@ -75,7 +74,10 @@ ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[
 ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[9].code: The source code 'abandonnee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.1.1
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire.json ==
 == fsh-generated/resources/ResearchStudy-2022-500520-30-00.json ==
-INFORMATION: ResearchStudy/2022-500520-30-00: ResearchStudy.identifier[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.1
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [id] in profile ResearchStudy.condition:medDRACondition - the discriminator https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.1 does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [id] in profile ResearchStudy.condition:medDRACondition - the discriminator https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.1 does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [id] in profile ResearchStudy.condition:diseaseCondition - the discriminator https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.1 does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [id] in profile ResearchStudy.condition:diseaseCondition - the discriminator https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.1 does not have fixed value, binding or existence assertions
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[3].value.ofType(CodeableConcept).coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[3].value.ofType(CodeableConcept).coding[0].display: value cannot be empty
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.contained[0]/*Group/2022-500520-30-00-enrollment-group-id*/.characteristic[4].value.ofType(CodeableConcept).coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
@@ -85,8 +87,6 @@ ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.phase.text: value cannot b
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[0].coding[0].display: Rule ele-1: 'All FHIR elements must have a @value or children' Failed (defined in http://hl7.org/fhir/StructureDefinition/Element)
 ERROR: ResearchStudy/2022-500520-30-00: ResearchStudy.condition[0].coding[0].display: value cannot be empty
 INFORMATION: ResearchStudy/2022-500520-30-00: ResearchStudy.enrollment[0]: Details for #2022-500520-30-00-enrollment-group-id matching against profile http://hl7.org/fhir/StructureDefinition/Group|4.0.1
-== fsh-generated/resources/StructureDefinition-eclaire-condition-details.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-condition-details'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-contact-type.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-label.json ==
@@ -97,9 +97,11 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-eclaire-recruitment-period.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json ==
-INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[23].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[32].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[54].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[22].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[31].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[66].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition/eclaire-researchstudy: StructureDefinition.differential.element[17].binding: The valueSet reference http://terminology.hl7.org/CodeSystem/mdr on element ResearchStudy.condition.coding.system could not be resolved
+WARNING: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[48].binding: The valueSet reference http://terminology.hl7.org/CodeSystem/mdr on element ResearchStudy.condition.coding.system could not be resolved
 == fsh-generated/resources/StructureDefinition-eclaire-review-date.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-review-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor.json ==
