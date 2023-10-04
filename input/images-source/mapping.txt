@@ -11,7 +11,7 @@ map "ContactDetail" as Contact #back:AliceBlue;header:LightSkyBlue;line:blue {
 
 map "HumanName" as slice_name #back:AliceBlue;header:LightSkyBlue;line:blue {
     Nom de famille (Last name) => family : string [0..1]
-    \n Prénom (First name) \n Deuxième prénom (Middle name) => given : string [0..*] \n    <&layers> slice firstName [0..1] \n    <&layers> slice middleName [0..1]
+    Prénom (First name) \n Deuxième prénom (Middle name) => given : string [0..*]
 }
 
 map "<&layers> Slice identifier" as slice_identifier #back:AliceBlue;header:LightSkyBlue;line:blue {
