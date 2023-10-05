@@ -51,7 +51,6 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
     medDRACondition 0..* MS and
     diseaseCondition 0..* MS
 * condition[medDRACondition] ^short = "code MedDRA / MedDRA condition"
-* condition[medDRACondition].coding.system from http://terminology.hl7.org/CodeSystem/mdr
 * condition[diseaseCondition] ^short = "condition de la pathologie / Disease Condition"
 
 /*Extensions*/
