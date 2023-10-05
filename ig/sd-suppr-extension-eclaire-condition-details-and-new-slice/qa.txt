@@ -1,9 +1,9 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 35, warn = 24, info = 5
+err = 35, warn = 22, info = 5
 IG Publisher Version: 1.4.12
-Generated Thu Oct 05 13:59:38 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Thu Oct 05 15:18:48 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 1 / 4 / 0
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
@@ -19,7 +19,7 @@ Generated Thu Oct 05 13:59:38 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location : 0 / 1 / 2
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-recruitment-period : 0 / 1 / 1
- /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy : 0 / 2 / 4
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy : 0 / 0 / 4
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-review-date : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-site-contact-name : 0 / 1 / 1
@@ -99,9 +99,7 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json ==
 INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[22].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[31].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[66].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/eclaire-researchstudy: StructureDefinition.differential.element[17].binding: The valueSet reference http://terminology.hl7.org/CodeSystem/mdr on element ResearchStudy.condition.coding.system could not be resolved
-WARNING: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[48].binding: The valueSet reference http://terminology.hl7.org/CodeSystem/mdr on element ResearchStudy.condition.coding.system could not be resolved
+INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[55].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated/resources/StructureDefinition-eclaire-review-date.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-review-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor.json ==
