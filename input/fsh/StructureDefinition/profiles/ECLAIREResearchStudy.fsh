@@ -66,5 +66,11 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * extension[eclaire-recruitment-period] ^short = "Période prévisionnelle de recrutement"   
 * extension[eclaire-secondary-sponsor] ^short = "Promoteur(s) secondaire(s) / Secondary Sponsor(s)"
 * contact.extension contains
-    ECLAIREContactType named eclaire-contact-type 0..1 MS
-* contact.extension[eclaire-contact-type] ^short = "type de contact : Public ou Scientific" 
+    ECLAIREContactType named eclaire-contact-type 0..1 MS and
+    ECLAIREContactAddress named eclaire-contact-address 0..1 MS and
+    ECLAIREContactAffiliation named eclaire-contact-affiliation 0..1 MS and
+    ECLAIREContactName named eclaire-contact-name 0..1
+* contact.extension[eclaire-contact-type] ^short = "Type de contact : Public ou Scientific"
+* contact.extension[eclaire-contact-address] ^short = "Adresse du contact"
+* contact.extension[eclaire-contact-affiliation] ^short = "Affiliation du contact"
+* contact.extension[eclaire-contact-name] ^short = "Nom du contact"

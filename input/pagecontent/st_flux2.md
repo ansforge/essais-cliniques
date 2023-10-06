@@ -155,6 +155,10 @@ Plus de précision sur la spécification FHIR : <http://hl7.org/fhir/R4/http.htm
 <p>status</p>
 </td>
 
+<td width="230">
+<p>identifier</p>
+</td>
+
 </tr>
 </tbody>
 </table>
@@ -185,6 +189,23 @@ GET [BASE]/ResearchStudy?status=http://hl7.org/fhir/ValueSet/research-study-stat
 **Requête expliquée :**
 ```sh
 GET [BASE]/ResearchStudy?status=http://hl7.org/fhir/R4/ValueSet/research-study-status|active # Critère de recherche sur le statut
+&_include=ResearchStudy:site # Inclus les Location référencées par ResearchStudy
+&_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
+&_include=ResearchStudy:enrollment # Inclus les Group référencés par ResearchStudy
+```
+
+#### Scénario 2 : Recherche d'un essai clinique à partir de son identifiant
+
+**Description du scénario :** Un consommateur souhaite rechercher un essai clinique à partir de son identifiant = XXX.
+
+**Requête :**
+```
+GET [BASE]/ResearchStudy?identifier=XXX&_include=ResearchStudy:site&_include=ResearchStudy:sponsor&_include=ResearchStudy:enrollment
+```
+
+**Requête expliquée :**
+```sh
+GET [BASE]/ResearchStudy?identifier=XXX # Critère de recherche de l’identifiant de l'essai
 &_include=ResearchStudy:site # Inclus les Location référencées par ResearchStudy
 &_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
 &_include=ResearchStudy:enrollment # Inclus les Group référencés par ResearchStudy
