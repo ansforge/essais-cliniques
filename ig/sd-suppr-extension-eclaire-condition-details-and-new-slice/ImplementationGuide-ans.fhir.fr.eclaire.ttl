@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-05T15:17:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-06T06:48:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -587,6 +587,42 @@
        ] ;
        fhir:name [ fhir:v "Eclaire" ] ;
        fhir:description [ fhir:v "Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address> ;
+         fhir:reference [ fhir:v "StructureDefinition/eclaire-contact-address" ]
+       ] ;
+       fhir:name [ fhir:v "ECLAIREContactAddress" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du projet ECLAIRE pour indiquer l'adresse du contact" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation> ;
+         fhir:reference [ fhir:v "StructureDefinition/eclaire-contact-affiliation" ]
+       ] ;
+       fhir:name [ fhir:v "ECLAIREContactAffiliation" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du projet ECLAIRE pour indiquer l'affiliation du contact" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name> ;
+         fhir:reference [ fhir:v "StructureDefinition/eclaire-contact-name" ]
+       ] ;
+       fhir:name [ fhir:v "ECLAIREContactName" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du projet ECLAIRE pour indiquer le nom de contact" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

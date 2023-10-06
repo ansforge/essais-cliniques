@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2023-10-05T15:17:51+00:00"/>
+  <date value="2023-10-06T06:48:32+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -513,6 +513,39 @@
       </reference>
       <name value="Eclaire"/>
       <description value="Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-contact-address"/>
+      </reference>
+      <name value="ECLAIREContactAddress"/>
+      <description value="Extension créée dans le cadre du projet ECLAIRE pour indiquer l'adresse du contact"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-contact-affiliation"/>
+      </reference>
+      <name value="ECLAIREContactAffiliation"/>
+      <description value="Extension créée dans le cadre du projet ECLAIRE pour indiquer l'affiliation du contact"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-contact-name"/>
+      </reference>
+      <name value="ECLAIREContactName"/>
+      <description value="Extension créée dans le cadre du projet ECLAIRE pour indiquer le nom de contact"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

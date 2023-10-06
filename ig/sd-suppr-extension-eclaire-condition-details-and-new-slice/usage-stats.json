@@ -4,6 +4,27 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address",
+      "title": "ECLAIREContactAddress",
+      "types": [
+        "Address"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation",
+      "title": "ECLAIREContactAffiliation",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name",
+      "title": "ECLAIREContactName",
+      "types": [
+        "HumanName"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type",
       "title": "ECLAIREContactType",
       "types": [
@@ -162,6 +183,15 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address": [
+      "ResearchStudy.contact"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation": [
+      "ResearchStudy.contact"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name": [
+      "ResearchStudy.contact"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type": [
       "ResearchStudy.contact"
