@@ -51,7 +51,9 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
     medDRACondition 0..* MS and
     diseaseCondition 0..* MS
 * condition[medDRACondition] ^short = "code MedDRA / MedDRA condition"
+* condition[medDRACondition].id = #meddra-condition
 * condition[diseaseCondition] ^short = "condition de la pathologie / Disease Condition"
+* condition[diseaseCondition].id = #disease-condition
 
 /*Extensions*/
 * extension contains 
