@@ -19,6 +19,11 @@ map "<&layers> Slice identifier" as slice_identifier #back:AliceBlue;header:Ligh
     Identifiant secondaire => idSecondary [0..*]
 }
 
+map "<&layers> Slice condition" as slice_condition #back:AliceBlue;header:LightSkyBlue;line:blue {
+    Code MedDRA => medDRACondition [0..*]
+    Pathologie => diseaseCondition [0..*]
+}
+
 map "<&plus> ECLAIRELabel" as label #back:AliceBlue;header:LightSkyBlue;line:blue {
     Type => labelType : CodeableConcept [0..1]
     Valeur => labelValue : string [0..1]
@@ -67,8 +72,7 @@ map "EssaiClinique : ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;li
     Statut de l'essai => status : code [1..1]
     Phase de l'essai (Study type : phase) => phase : CodeableConcept [0..1] 
     Type d'essai (Study type : type of study) => category : CodeableConcept [0..*] 
-    Sujet concerné (Health Condition(s) or Problem(s) Studied) => condition : CodeableConcept [0..*] (MeDRA) 
-    Précision sur le sujet (Health Condition(s)  or  Problem(s) Studied) => <&plus> ECLAIREConditionDetails : string [0..1] 
+    Sujet concerné (Health Condition(s) or Problem(s) Studied) => <&layers> condition : CodeableConcept [0..*] (MeDRA) 
     Domaine thérapeutique* => <&plus> ECLAIRETherapeuticArea : string [0..1] 
     Résumé de l'essai => description : markdown [0..1] 
     Période prévisionnelle de recrutement => <&plus> ECLAIRERecruitmentPeriod : period [0..1]  
@@ -85,11 +89,11 @@ RS *-[#Violet,dashed,thickness=4]-> Location
 RS *-[#LightGreen,dashed,thickness=4]-> Group 
 RS *-[#Gold,dashed,thickness=4]-> Organization
 
-slice_identifier --[#lightBlue,thickness=2] RS
+slice_identifier -[#lightBlue,thickness=2] RS
+RS -[#lightBlue,thickness=2] slice_condition
 Contact --[#lightBlue,thickness=2] RS
 label --[#lightBlue,thickness=2] RS
 slice_name --[#lightBlue,thickness=2] Contact
-Contact -[hidden] slice_identifier
 
 Group -[hidden] Organization
 
