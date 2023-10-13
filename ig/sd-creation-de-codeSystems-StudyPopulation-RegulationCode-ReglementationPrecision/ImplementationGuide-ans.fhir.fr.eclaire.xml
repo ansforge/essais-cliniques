@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2023-10-02T10:12:49+00:00"/>
+  <date value="2023-10-13T11:58:38+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -462,6 +462,50 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eclaire-study-population-vs"/>
+      </reference>
+      <name value="Caractérisation de la poulation Value Set"/>
+      <description value="Caractérisation de la poulation Value Set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/eclaire-regulation-code-code-system"/>
+      </reference>
+      <name value="Code de régulation de l'essai"/>
+      <description value="Code de régulation de l'essai"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/eclaire-study-population-code-system"/>
+      </reference>
+      <name value="Code de régulation de l'essai"/>
+      <description value="Code de régulation de l'essai"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eclaire-regulation-code-vs"/>
+      </reference>
+      <name value="Code de régulation Value Set"/>
+      <description value="Code de régulation Value Set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -656,6 +700,28 @@
       </reference>
       <name value="FHIR/Eclaire ResearchStudy status Use Mapping"/>
       <description value="Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/eclaire-reglementation-precision-code-system"/>
+      </reference>
+      <name value="Précision sur la réglementation concernant l'essai"/>
+      <description value="Précision sur la réglementation concernant l'essai"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eclaire-reglementation-precision-vs"/>
+      </reference>
+      <name value="Précision sur la réglementation concernant l'essai Value Set"/>
+      <description value="Précision sur la réglementation concernant l'essai Value Set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

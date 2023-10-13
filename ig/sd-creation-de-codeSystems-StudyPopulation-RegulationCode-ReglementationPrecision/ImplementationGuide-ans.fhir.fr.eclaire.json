@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2023-10-02T10:12:49+00:00",
+  "date" : "2023-10-13T11:58:38+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -623,6 +623,54 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-study-population-vs"
+      },
+      "name" : "Caractérisation de la poulation Value Set",
+      "description" : "Caractérisation de la poulation Value Set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eclaire-regulation-code-code-system"
+      },
+      "name" : "Code de régulation de l'essai",
+      "description" : "Code de régulation de l'essai",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eclaire-study-population-code-system"
+      },
+      "name" : "Code de régulation de l'essai",
+      "description" : "Code de régulation de l'essai",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-regulation-code-vs"
+      },
+      "name" : "Code de régulation Value Set",
+      "description" : "Code de régulation Value Set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -834,6 +882,30 @@
       },
       "name" : "FHIR/Eclaire ResearchStudy status Use Mapping",
       "description" : "Correspondance entre le statut défini dans la base Eclaire et le ValueSet http://hl7.org/fhir/R4/valueset-research-study-status.html (required)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eclaire-reglementation-precision-code-system"
+      },
+      "name" : "Précision sur la réglementation concernant l'essai",
+      "description" : "Précision sur la réglementation concernant l'essai",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-reglementation-precision-vs"
+      },
+      "name" : "Précision sur la réglementation concernant l'essai Value Set",
+      "description" : "Précision sur la réglementation concernant l'essai Value Set.",
       "exampleBoolean" : false
     },
     {
