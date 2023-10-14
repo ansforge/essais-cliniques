@@ -15,6 +15,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * phase from eclaire-study-phase-vs (extensible)
 * category ^short = "Type d'essai  / Study type : type of study"
 * category MS
+* category from eclaire-category-vs (extensible)
 * condition ^short = "Sujet concerné /  Problem(s) Studied exemple code MedDRA"
 * condition MS
 * description ^short = "Résumé de l'essai / Summary Results"
