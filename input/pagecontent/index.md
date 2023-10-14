@@ -48,5 +48,5 @@ En FHIR, la ressource principale permettant de décrire un essai clinique est <a
 ### Swagger API FHIR ECLAIRE
 
 Le Swagger de l'API FHIR ECLAIRE est accesible ici:
-<a href="https://eclaire-api.osc-fr1.scalingo.io/api">ResearchStudySwagger API FHIR</a>
+<a href="https://eclaire-api.osc-fr1.scalingo.io/api">Swagger API FHIR</a>
 
