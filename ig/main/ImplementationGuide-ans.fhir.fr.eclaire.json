@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2023-10-14T10:16:45+00:00",
+  "date" : "2023-10-14T10:31:55+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -623,6 +623,54 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-study-population-vs"
+      },
+      "name" : "Caractérisation de la poulation Value Set",
+      "description" : "Caractérisation de la poulation Value Set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eclaire-regulation-code-code-system"
+      },
+      "name" : "Code de régulation de l'essai",
+      "description" : "Code de régulation de l'essai",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eclaire-study-population-code-system"
+      },
+      "name" : "Code de régulation de l'essai",
+      "description" : "Code de régulation de l'essai",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-regulation-code-vs"
+      },
+      "name" : "Code de régulation Value Set",
+      "description" : "Code de régulation Value Set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -726,6 +774,18 @@
       },
       "name" : "ECLAIREContactType",
       "description" : "Extension créée dans le cadre du projet ECLAIRE qui indique le type de Contact : Public ou Scientific",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eclaire-group"
+      },
+      "name" : "ECLAIREGroup",
+      "description" : "Profil de Group pour le projet ECLAIRE",
       "exampleBoolean" : false
     },
     {
@@ -863,6 +923,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eclaire-reglementation-precision-code-system"
+      },
+      "name" : "Précision sur la réglementation concernant l'essai",
+      "description" : "Précision sur la réglementation concernant l'essai",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-reglementation-precision-vs"
+      },
+      "name" : "Précision sur la réglementation concernant l'essai Value Set",
+      "description" : "Précision sur la réglementation concernant l'essai Value Set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -930,6 +1014,18 @@
       },
       "name" : "Value Set type de phase de l'essai clinique",
       "description" : "Value Set type de phase Eclaire de l'essai clinique.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-category-vs"
+      },
+      "name" : "Value Set type pour spécifier la catégorie l'essai clinique",
+      "description" : "Value Set our spécifier la catégorie de l'essai clinique et préciser la réglementation ou le code regulation renseigner dans les bases de registre comme CTIS et EUDAMED.",
       "exampleBoolean" : false
     }],
     "page" : {

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "872d45e3-0d38-49e2-bc16-ed31de5bb04d-24",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/872d45e3-0d38-49e2-bc16-ed31de5bb04d-24",
+  "id" : "8e7f371a-4a8f-4786-991f-c4367b4ba621-24",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8e7f371a-4a8f-4786-991f-c4367b4ba621-24",
   "name" : "IntersectionECLAIREResearchStudyAndECLAIREResearchStudy",
   "title" : "Intersection of null And null",
   "status" : "draft",
-  "date" : "2023-10-14T10:17:11+00:00",
+  "date" : "2023-10-14T10:32:28+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "ResearchStudy",
@@ -763,12 +763,8 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "ResearchStudyCategory"
-        }],
-        "strength" : "example",
-        "description" : "Codes that describe the type of research study.  E.g. Study phase, Interventional/Observational, blinding type, etc."
+        "strength" : "extensible",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-category-vs"
       },
       "mapping" : [{
         "identity" : "rim",
