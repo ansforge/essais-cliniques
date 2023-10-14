@@ -40,6 +40,11 @@ En FHIR, la ressource principale permettant de décrire un essai clinique est <a
 - Le(s) lieux(s) de réalisation de l'essai clinique et les contacts associés grâce à la ressource <a href="https://hl7.org/fhir/R4/location.html">Location</a>
 - Les informations sur l'effectif à recruter et les critères d'inclusion et d'exclusion grâce à la ressource <a href="https://hl7.org/fhir/R4/group.html">Group</a>
 
+### Swagger API FHIR ECLAIRE
+
+Le Swagger de l'API FHIR ECLAIRE est accesible ici:
+<a href="https://eclaire-api.osc-fr1.scalingo.io/api">ResearchStudySwagger API FHIR</a>
+
 
 <p style="text-align:center">
 <object data="vueGlobale.svg" type="image/svg+xml"></object>
