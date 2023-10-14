@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2023-10-13T11:58:38+00:00"/>
+  <date value="2023-10-14T08:48:02+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -583,6 +583,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-group"/>
+      </reference>
+      <name value="ECLAIREGroup"/>
+      <description value="Profil de Group pour le projet ECLAIRE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -788,6 +799,17 @@
       </reference>
       <name value="Value Set type de phase de l'essai clinique"/>
       <description value="Value Set type de phase Eclaire de l'essai clinique."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eclaire-category-vs"/>
+      </reference>
+      <name value="Value Set type pour spécifier la catégorie l'essai clinique"/>
+      <description value="Value Set our spécifier la catégorie de l'essai clinique et préciser la réglementation ou le code regulation renseigner dans les bases de registre comme CTIS et EUDAMED."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

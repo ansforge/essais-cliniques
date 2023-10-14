@@ -1,11 +1,344 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="dd92d2ca-38a0-419d-8f42-d6914ad721b8"/>
+  <id value="febe48fe-fef8-480e-9e6b-227cb281f7cd"/>
   <meta>
-    <lastUpdated value="2023-10-13T11:58:38.990+00:00"/>
+    <lastUpdated value="2023-10-14T08:48:02.848+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-category-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 21 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html">codesystem Précision sur la réglementation concernant l'essai v0.1.1 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-eclaire-regulation-code-code-system.html">codesystem Code de régulation de l'essai v0.1.1 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-IC-Cas-1"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-IC-Cas-1">IC-Cas-1</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>IC-Cas 1 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-IC-Cas-2"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-IC-Cas-2">IC-Cas-2</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>IC-Cas 2 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-IC-Cas-3"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-IC-Cas-3">IC-Cas-3</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>IC-Cas 3 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-IC-Cas-4-1"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-IC-Cas-4-1">IC-Cas-4-1</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>IC-Cas 4.1 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-IC-Cas-4-2"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-IC-Cas-4-2">IC-Cas-4-2</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>IC-Cas 4.2 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-IC-Cas-4-3"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-IC-Cas-4-3">IC-Cas-4-3</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>IC-Cas 4.3 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-IC-Cas-4-4"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-IC-Cas-4-4">IC-Cas-4-4</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>IC-Cas 4.4 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-EP-Cas-1"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-EP-Cas-1">EP-Cas-1</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>EP-Cas 1 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-EP-Cas-2"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-EP-Cas-2">EP-Cas-2</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>EP-Cas 2 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-cat1-jarde"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-cat1-jarde">cat1-jarde</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>Catégorie 1 (JARDE)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-cat2-jarde"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-cat2-jarde">cat2-jarde</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>Catégorie 2 (JARDE)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-cat3-jarde"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-cat3-jarde">cat3-jarde</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>Catégorie 3 (JARDE)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-cat3-questionnaire-jarde"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-cat3-questionnaire-jarde">cat3-questionnaire-jarde</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>Catégorie 3 questionnaire (JARDE)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-derog-obligation-info-jarde"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-derog-obligation-info-jarde">derog-obligation-info-jarde</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>Dérogation à l’obligation d’information (JARDE)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-study-low-inter-ctis"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-study-low-inter-ctis">study-low-inter-ctis</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>un essai clinique à faible intervention (CTIS)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-reglementation-precision-code-system-study-ctis"> </a>  
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html#eclaire-reglementation-precision-code-system-study-ctis">study-ctis</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system</td>
+                <td>un essai clinique (CTIS)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-regulation-code-code-system-IC-Cas-1"> </a>  
+                  <a href="CodeSystem-eclaire-regulation-code-code-system.html#eclaire-regulation-code-code-system-IC-Cas-1">IC-Cas-1</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system</td>
+                <td>IC-Cas 1 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-regulation-code-code-system-REG536"> </a>  
+                  <a href="CodeSystem-eclaire-regulation-code-code-system.html#eclaire-regulation-code-code-system-REG536">REG536</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system</td>
+                <td>REG536 (CTIS)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-regulation-code-code-system-REG745"> </a>  
+                  <a href="CodeSystem-eclaire-regulation-code-code-system.html#eclaire-regulation-code-code-system-REG745">REG745</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system</td>
+                <td>REG745 (DM)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-regulation-code-code-system-REG746"> </a>  
+                  <a href="CodeSystem-eclaire-regulation-code-code-system.html#eclaire-regulation-code-code-system-REG746">REG746</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system</td>
+                <td>REG746 (DM-DIV)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-regulation-code-code-system-JARDE"> </a>  
+                  <a href="CodeSystem-eclaire-regulation-code-code-system.html#eclaire-regulation-code-code-system-JARDE">JARDE</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system</td>
+                <td>JARDE (Jarde)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-category-vs"/>
+        <version value="0.1.1"/>
+        <name value="EclaireCategoryVS"/>
+        <title value="Value Set type pour spécifier la catégorie l'essai clinique"/>
+        <status value="draft"/>
+        <date value="2023-10-14T08:48:02+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:12a17da1-93a8-483a-b02d-65aa5d371d29"/>
+          <timestamp value="2023-10-14T08:48:43+00:00"/>
+          <total value="21"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system|0.1.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system|0.1.1"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="IC-Cas-1"/>
+            <display value="IC-Cas 1 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="IC-Cas-2"/>
+            <display value="IC-Cas 2 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="IC-Cas-3"/>
+            <display value="IC-Cas 3 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="IC-Cas-4-1"/>
+            <display value="IC-Cas 4.1 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="IC-Cas-4-2"/>
+            <display value="IC-Cas 4.2 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="IC-Cas-4-3"/>
+            <display value="IC-Cas 4.3 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="IC-Cas-4-4"/>
+            <display value="IC-Cas 4.4 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="EP-Cas-1"/>
+            <display value="EP-Cas 1 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="EP-Cas-2"/>
+            <display value="EP-Cas 2 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="cat1-jarde"/>
+            <display value="Catégorie 1 (JARDE)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="cat2-jarde"/>
+            <display value="Catégorie 2 (JARDE)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="cat3-jarde"/>
+            <display value="Catégorie 3 (JARDE)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="cat3-questionnaire-jarde"/>
+            <display value="Catégorie 3 questionnaire (JARDE)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="derog-obligation-info-jarde"/>
+            <display value="Dérogation à l’obligation d’information (JARDE)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="study-low-inter-ctis"/>
+            <display value="un essai clinique à faible intervention (CTIS)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
+            <code value="study-ctis"/>
+            <display value="un essai clinique (CTIS)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
+            <code value="IC-Cas-1"/>
+            <display value="IC-Cas 1 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
+            <code value="REG536"/>
+            <display value="REG536 (CTIS)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
+            <code value="REG745"/>
+            <display value="REG745 (DM)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
+            <code value="REG746"/>
+            <display value="REG746 (DM-DIV)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
+            <code value="JARDE"/>
+            <display value="JARDE (Jarde)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-reglementation-precision-vs"/>
     <resource>
@@ -165,10 +498,10 @@
         <name value="EclaireReglementationPrecisionVS"/>
         <title value="Précision sur la réglementation concernant l'essai Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-13T11:58:38+00:00"/>
+        <date value="2023-10-14T08:48:02+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:db5c150d-cd67-4dba-b554-b81f5e9a3bbf"/>
-          <timestamp value="2023-10-13T11:59:19+00:00"/>
+          <identifier value="urn:uuid:bc89b9bd-617c-492f-b6a3-9bf8185c61eb"/>
+          <timestamp value="2023-10-14T08:48:44+00:00"/>
           <total value="16"/>
           <parameter>
             <name value="excludeNested"/>
@@ -333,10 +666,10 @@
         <name value="EclaireRegulationCodeVS"/>
         <title value="Code de régulation Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-13T11:58:38+00:00"/>
+        <date value="2023-10-14T08:48:02+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0856a40d-ac77-4dc1-bd7c-98363f8031d9"/>
-          <timestamp value="2023-10-13T11:59:19+00:00"/>
+          <identifier value="urn:uuid:1020f127-d006-49a1-9dd9-5c9a213f245e"/>
+          <timestamp value="2023-10-14T08:48:44+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -502,10 +835,10 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2023-10-13T11:58:38+00:00"/>
+        <date value="2023-10-14T08:48:02+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:112e03b1-9cb1-47c3-b11f-0308daa12700"/>
-          <timestamp value="2023-10-13T11:59:19+00:00"/>
+          <identifier value="urn:uuid:3e119423-3162-40cb-805a-020385c4b5d9"/>
+          <timestamp value="2023-10-14T08:48:44+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -747,10 +1080,10 @@
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-10-13T11:58:38+00:00"/>
+        <date value="2023-10-14T08:48:02+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:74d64635-28b7-408b-b10b-f4ddabbec31e"/>
-          <timestamp value="2023-10-13T11:59:19+00:00"/>
+          <identifier value="urn:uuid:31ed47d2-6216-44bf-8281-c174520ec300"/>
+          <timestamp value="2023-10-14T08:48:44+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -916,10 +1249,10 @@
         <name value="EclaireStudyPopulationVS"/>
         <title value="Caractérisation de la poulation Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-13T11:58:38+00:00"/>
+        <date value="2023-10-14T08:48:02+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9fe7c1d3-651e-4515-a323-9c35dd7a972b"/>
-          <timestamp value="2023-10-13T11:59:19+00:00"/>
+          <identifier value="urn:uuid:97ff92fd-3075-42ee-bd2f-8d87f059ac0c"/>
+          <timestamp value="2023-10-14T08:48:44+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1081,10 +1414,10 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-10-13T11:58:38+00:00"/>
+        <date value="2023-10-14T08:48:02+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9aec4aad-3bb1-482e-9e99-5d17db7376f9"/>
-          <timestamp value="2023-10-13T11:59:19+00:00"/>
+          <identifier value="urn:uuid:13e8ed57-470b-4384-aace-aa21b187059f"/>
+          <timestamp value="2023-10-14T08:48:44+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1359,10 +1692,10 @@
         <name value="EclaireStudyTitleTypetVS"/>
         <title value="Type de titre Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-13T11:58:38+00:00"/>
+        <date value="2023-10-14T08:48:02+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b1bf978c-f548-43d6-9660-9887fb5f5faf"/>
-          <timestamp value="2023-10-13T11:59:19+00:00"/>
+          <identifier value="urn:uuid:3065f351-ec62-4682-aa94-662f974a95d1"/>
+          <timestamp value="2023-10-14T08:48:44+00:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1488,10 +1821,10 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-13T11:58:38+00:00"/>
+        <date value="2023-10-14T08:48:02+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:77464a6a-ae4d-4c0f-bcfc-9e47fcab5cbc"/>
-          <timestamp value="2023-10-13T11:59:19+00:00"/>
+          <identifier value="urn:uuid:1d72e781-fbc3-4367-8e09-53e3f8f26c61"/>
+          <timestamp value="2023-10-14T08:48:44+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
