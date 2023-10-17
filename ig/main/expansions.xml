@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2ff098ca-b81f-4f15-a237-45cdfb57de66"/>
+  <id value="aa2daa7c-1f5b-49d3-b723-e3b82cd7cd10"/>
   <meta>
-    <lastUpdated value="2023-10-14T10:31:55.498+00:00"/>
+    <lastUpdated value="2023-10-17T10:04:53.910+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,7 +13,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 21 concepts</p>
+            <p>This value set contains 20 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -167,14 +167,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-regulation-code-code-system-IC-Cas-1"> </a>  
-                  <a href="CodeSystem-eclaire-regulation-code-code-system.html#eclaire-regulation-code-code-system-IC-Cas-1">IC-Cas-1</a>
-                </td>
-                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system</td>
-                <td>IC-Cas 1 (DM)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-regulation-code-code-system-REG536"> </a>  
                   <a href="CodeSystem-eclaire-regulation-code-code-system.html#eclaire-regulation-code-code-system-REG536">REG536</a>
                 </td>
@@ -213,11 +205,11 @@
         <name value="EclaireCategoryVS"/>
         <title value="Value Set type pour spécifier la catégorie l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-10-14T10:31:55+00:00"/>
+        <date value="2023-10-17T10:04:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7a5285eb-1413-401e-a4cf-7debaf1f6a56"/>
-          <timestamp value="2023-10-14T10:32:50+00:00"/>
-          <total value="21"/>
+          <identifier value="urn:uuid:6e9d190d-1ed2-45ca-867f-94e610ec65de"/>
+          <timestamp value="2023-10-17T10:05:36+00:00"/>
+          <total value="20"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -309,11 +301,6 @@
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
             <code value="study-ctis"/>
             <display value="un essai clinique (CTIS)"/>
-          </contains>
-          <contains>
-            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
-            <code value="IC-Cas-1"/>
-            <display value="IC-Cas 1 (DM)"/>
           </contains>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
@@ -498,10 +485,10 @@
         <name value="EclaireReglementationPrecisionVS"/>
         <title value="Précision sur la réglementation concernant l'essai Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-14T10:31:55+00:00"/>
+        <date value="2023-10-17T10:04:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a48098ca-b474-4625-a4a6-7b89e9a38b7a"/>
-          <timestamp value="2023-10-14T10:32:50+00:00"/>
+          <identifier value="urn:uuid:fa8aa0af-95db-4894-a255-2185635fbd89"/>
+          <timestamp value="2023-10-17T10:05:36+00:00"/>
           <total value="16"/>
           <parameter>
             <name value="excludeNested"/>
@@ -602,7 +589,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
+            <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-eclaire-regulation-code-code-system.html">codesystem Code de régulation de l'essai v0.1.1 (CodeSystem)</a>
             </p>
@@ -617,14 +604,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-regulation-code-code-system-IC-Cas-1"> </a>  
-                  <a href="CodeSystem-eclaire-regulation-code-code-system.html#eclaire-regulation-code-code-system-IC-Cas-1">IC-Cas-1</a>
-                </td>
-                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system</td>
-                <td>IC-Cas 1 (DM)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -666,11 +645,11 @@
         <name value="EclaireRegulationCodeVS"/>
         <title value="Code de régulation Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-14T10:31:55+00:00"/>
+        <date value="2023-10-17T10:04:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a36e5d83-394d-4b0b-8449-a0d43abd21bc"/>
-          <timestamp value="2023-10-14T10:32:50+00:00"/>
-          <total value="5"/>
+          <identifier value="urn:uuid:590cdf35-9d40-46f1-850c-fbc50616f33d"/>
+          <timestamp value="2023-10-17T10:05:37+00:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -679,11 +658,6 @@
             <name value="used-codesystem"/>
             <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system|0.1.1"/>
           </parameter>
-          <contains>
-            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
-            <code value="IC-Cas-1"/>
-            <display value="IC-Cas 1 (DM)"/>
-          </contains>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
             <code value="REG536"/>
@@ -835,10 +809,10 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2023-10-14T10:31:55+00:00"/>
+        <date value="2023-10-17T10:04:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:620e665e-3baa-43a5-8d21-e30b57c71288"/>
-          <timestamp value="2023-10-14T10:32:50+00:00"/>
+          <identifier value="urn:uuid:d1ae6f08-d9f5-4f63-ab32-138b2dc40e2e"/>
+          <timestamp value="2023-10-17T10:05:37+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1080,10 +1054,10 @@
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-10-14T10:31:55+00:00"/>
+        <date value="2023-10-17T10:04:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:14c15409-5037-4cc1-8a6e-82bc3c21c6ff"/>
-          <timestamp value="2023-10-14T10:32:50+00:00"/>
+          <identifier value="urn:uuid:36a1a13e-6926-44e5-a1ad-3e9e9fdf8598"/>
+          <timestamp value="2023-10-17T10:05:37+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1249,10 +1223,10 @@
         <name value="EclaireStudyPopulationVS"/>
         <title value="Caractérisation de la poulation Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-14T10:31:55+00:00"/>
+        <date value="2023-10-17T10:04:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:073da6e4-c701-4f27-b654-569039a36e5d"/>
-          <timestamp value="2023-10-14T10:32:50+00:00"/>
+          <identifier value="urn:uuid:2588a29c-cd9d-4309-a4aa-96d3010daebe"/>
+          <timestamp value="2023-10-17T10:05:37+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1414,10 +1388,10 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-10-14T10:31:55+00:00"/>
+        <date value="2023-10-17T10:04:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:76038d07-5b83-42c6-ae51-ebd3183cc889"/>
-          <timestamp value="2023-10-14T10:32:50+00:00"/>
+          <identifier value="urn:uuid:31aef781-196d-4d5f-aee1-cc709091863f"/>
+          <timestamp value="2023-10-17T10:05:37+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1692,10 +1666,10 @@
         <name value="EclaireStudyTitleTypetVS"/>
         <title value="Type de titre Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-14T10:31:55+00:00"/>
+        <date value="2023-10-17T10:04:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:579fb784-dfd6-49d9-9e3e-fde0e91de32d"/>
-          <timestamp value="2023-10-14T10:32:50+00:00"/>
+          <identifier value="urn:uuid:118d4115-fa9f-4e34-95bf-af9128c4e14d"/>
+          <timestamp value="2023-10-17T10:05:37+00:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1821,10 +1795,10 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-14T10:31:55+00:00"/>
+        <date value="2023-10-17T10:04:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:348616f9-7dea-40e4-82bd-daf0108354de"/>
-          <timestamp value="2023-10-14T10:32:50+00:00"/>
+          <identifier value="urn:uuid:85f05c3f-3220-4449-b04c-c179398a3f33"/>
+          <timestamp value="2023-10-17T10:05:37+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
