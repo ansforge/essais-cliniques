@@ -57,7 +57,7 @@ Usage: #example
 Instance: 2019-003543-30
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -97,7 +97,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "Disease Condition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "MedDRA Condition"
 * meta.lastUpdated = "2023-02-27T00:00:00.000Z"
@@ -140,7 +140,7 @@ Usage: #inline
 Instance: 2017-001832-21
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -180,7 +180,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "Disease Condition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "MedDRA Condition"
 * meta.lastUpdated = "2023-09-06T00:00:00.000Z"
@@ -223,7 +223,7 @@ Usage: #inline
 Instance: 2018-001746-34
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -263,7 +263,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "Disease Condition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "MedDRA Condition"
 * meta.lastUpdated = "2023-06-26T00:00:00.000Z"
@@ -348,10 +348,10 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Locally-Advanced or Metastatic breast cancer (MBC)"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10070575 "N/A"
+* condition[+].coding = $mdr#10070575 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
-* condition[+].coding = $mdr#10065430 "N/A"
+* condition[+].coding = $mdr#10065430 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-04-12T00:00:00.000Z"
@@ -487,7 +487,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Rheumatoid Arthritis"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr# "N/A"
+* condition[+].coding = $mdr# 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-06-03T00:00:00.000Z"
@@ -602,7 +602,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "SARS CoV-2 (COVID-19)"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10037373 "N/A"
+* condition[+].coding = $mdr#10037373 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-06-29T00:00:00.000Z"
@@ -702,7 +702,7 @@ Usage: #inline
 Instance: 2022-500643-20-00
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -789,7 +789,7 @@ Usage: #inline
 Instance: 2022-500177-13-00
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -910,7 +910,7 @@ Usage: #inline
 Instance: 2022-500264-35-00
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -1003,7 +1003,7 @@ Usage: #inline
 Instance: 2022-500085-96-00
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -1148,7 +1148,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "vasoplegic syndrome"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10067654 "N/A"
+* condition[+].coding = $mdr#10067654 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-08-23T00:00:00.000Z"
@@ -1263,7 +1263,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Cirrhotic patients who are hospitalized for Acute on chronic liver failure (ACLF), ACLF combines an acute deterioration of liver function in an individual with pre-existing chronic liver disease and extrahepatic organ failures characterized by high short-term mortality (30-40% at 28 days). The development of ACLF is associated with exacerbated systemic inflammation that may indeed cause organ failures."
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10077305 "N/A"
+* condition[+].coding = $mdr#10077305 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-04-26T00:00:00.000Z"
@@ -1417,7 +1417,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "IgA Nephropathy - rare disease"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10021263 "N/A"
+* condition[+].coding = $mdr#10021263 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-07-19T00:00:00.000Z"
@@ -1523,7 +1523,7 @@ Usage: #inline
 Instance: 2022-500461-28-06
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -1607,7 +1607,7 @@ Usage: #inline
 Instance: 2022-500652-37-00
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -1764,7 +1764,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Subjects with High Risk Invasive Urothelial Carcinoma"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10064467 "N/A"
+* condition[+].coding = $mdr#10064467 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-03-13T00:00:00.000Z"
@@ -1899,13 +1899,13 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Haemophilia - rare disease"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10018938 "N/A"
+* condition[+].coding = $mdr#10018938 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
-* condition[+].coding = $mdr#10018937 "N/A"
+* condition[+].coding = $mdr#10018937 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
-* condition[+].coding = $mdr#10018939 "N/A"
+* condition[+].coding = $mdr#10018939 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-03-23T00:00:00.000Z"
@@ -2029,7 +2029,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "gastrointestinal stromal tumor - rare disease"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10062427 "N/A"
+* condition[+].coding = $mdr#10062427 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-04-13T00:00:00.000Z"
@@ -2174,7 +2174,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "patients with advanced/metastatic solid tumors treated by standard immunotherapies"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr# "N/A"
+* condition[+].coding = $mdr# 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-05-02T00:00:00.000Z"
@@ -2289,7 +2289,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Monkeypox virus disease"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10069538 "N/A"
+* condition[+].coding = $mdr#10069538 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-07-21T00:00:00.000Z"

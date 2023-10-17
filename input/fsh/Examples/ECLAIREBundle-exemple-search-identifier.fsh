@@ -17,7 +17,7 @@ Usage: #example
 Instance: 2021-A01861-40
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -57,7 +57,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2022-03-01T00:00:00.000Z"

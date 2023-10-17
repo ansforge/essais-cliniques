@@ -100,7 +100,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Kidney transplant"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10023438 "N/A"
+* condition[+].coding = $mdr#10023438 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:08.013Z"
@@ -215,7 +215,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Acute Myeloid Leukemia - rare disease"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10000886 "N/A"
+* condition[+].coding = $mdr#10000886 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:08.016Z"
@@ -330,7 +330,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Advanced Melanoma"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10053571 "N/A"
+* condition[+].coding = $mdr#10053571
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:08.016Z"
@@ -451,7 +451,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Subjects with relapsed/refractory peripheral T-cell lymphoma (R/R PTCL)"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10042971 "N/A"
+* condition[+].coding = $mdr#10042971
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:08.018Z"
@@ -575,13 +575,13 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Axial Spondyloarthritis"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10071400 "N/A"
+* condition[+].coding = $mdr#10071400 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
-* condition[+].coding = $mdr#10002556 "N/A"
+* condition[+].coding = $mdr#10002556 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
-* condition[+].coding = $mdr#10076297 "N/A"
+* condition[+].coding = $mdr#10076297 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:08.018Z"
@@ -720,7 +720,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Primary Sclerosing Cholangitis (PSC)"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10036732 "N/A"
+* condition[+].coding = $mdr#10036732 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * site = Reference(Location/2022-500790-14-00-0-site) "Reference to site"
@@ -843,7 +843,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "MRSA patients"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr# "N/A"
+* condition[+].coding = $mdr# 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * site = Reference(Location/2022-500642-25-00-0-site) "Reference to site"
@@ -960,7 +960,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Idiopathic osteoarthritis of the hip or knee"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10003416 "N/A"
+* condition[+].coding = $mdr#10003416 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:08.025Z"
@@ -1075,7 +1075,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Rheumatoid arthritis"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10039073 "N/A"
+* condition[+].coding = $mdr#10039073 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * site[0] = Reference(Location/2022-501017-31-00-0-site) "Reference to site"
@@ -1226,7 +1226,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Monkeypox"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr# "N/A"
+* condition[+].coding = $mdr# 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * site = Reference(Location/2022-501979-10-00-0-site) "Reference to site"
@@ -1361,7 +1361,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Sickle Cell Disease - rare disease"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr# "N/A"
+* condition[+].coding = $mdr# 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * site = Reference(Location/2022-502144-12-00-0-site) "Reference to site"
@@ -1478,7 +1478,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "Triple negative metastatic breast cancer"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10084066 "N/A"
+* condition[+].coding = $mdr#10084066 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * site[0] = Reference(Location/2022-502369-10-00-0-site) "Reference to site"
@@ -1570,7 +1570,7 @@ Usage: #inline
 Instance: 2021-A01563-38
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -1610,7 +1610,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:13.510Z"
@@ -1680,7 +1680,7 @@ Usage: #inline
 Instance: 2021-A01519-32
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -1720,7 +1720,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:13.510Z"
@@ -1790,7 +1790,7 @@ Usage: #inline
 Instance: 2021-A01121-40
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -1830,7 +1830,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:13.511Z"
@@ -1900,7 +1900,7 @@ Usage: #inline
 Instance: 2021-A00557-34
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -1940,7 +1940,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:13.511Z"
@@ -2010,7 +2010,7 @@ Usage: #inline
 Instance: 2021-A01576-35
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -2050,7 +2050,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:13.511Z"
@@ -2120,7 +2120,7 @@ Usage: #inline
 Instance: 2021-A01757-34
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -2160,7 +2160,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:13.511Z"
@@ -2230,7 +2230,7 @@ Usage: #inline
 Instance: 2021-A01770-41
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -2270,7 +2270,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:13.513Z"
@@ -2340,7 +2340,7 @@ Usage: #inline
 Instance: 2021-A01910-41
 InstanceOf: ResearchStudy
 Usage: #inline
-* phase.coding = $research-study-phase#n-a "N/A"
+* phase.coding = $research-study-phase#n-a 
 * phase.coding.version = "4.0.1"
 * phase.text = "Research Study Phase"
 * identifier[0].use = #official
@@ -2380,7 +2380,7 @@ Usage: #inline
 * enrollment.type = "Group"
 * condition[0].coding.display = "INDISPONIBLE"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#INDISPONIBLE "N/A"
+* condition[+].coding = $mdr#INDISPONIBLE 
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-10-17T04:13:13.513Z"

@@ -48,10 +48,10 @@ Usage: #example
 * enrollment.type = "Group"
 * condition[0].coding.display = "Locally-Advanced or Metastatic breast cancer (MBC)"
 * condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10070575 "N/A"
+* condition[+].coding = $mdr#10070575
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
-* condition[+].coding = $mdr#10065430 "N/A"
+* condition[+].coding = $mdr#10065430
 * condition[=].coding.version = "2.0.1"
 * condition[=].text = "medDRACondition"
 * meta.lastUpdated = "2023-04-12T00:00:00.000Z"
