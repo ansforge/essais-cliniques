@@ -1,6 +1,5 @@
 Alias: $research-study-phase = http://terminology.hl7.org/CodeSystem/research-study-phase
 Alias: $title-type = http://hl7.org/fhir/title-type
-Alias: $mdr = http://terminology.hl7.org/CodeSystem/mdr
 Alias: $eclaire-type-contact-code-system = https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system
 
 Instance: 2022-500014-26-00
@@ -46,26 +45,28 @@ Usage: #example
 * title = "A PHASE III, RANDOMIZED, OPEN-LABEL STUDY EVALUATING THE EFFICACY AND SAFETY OF GIREDESTRANT IN COMBINATION WITH PHESGO VERSUS PHESGO AFTER INDUCTION THERAPY WITH PHESGO+TAXANE IN PATIENTS WITH PREVIOUSLY UNTREATED HER2-POSITIVE, ESTROGEN RECEPTOR-POSITIVE LOCALLY-ADVANCED OR METASTATIC BREAST CANCER"
 * enrollment = Reference(Group/2022-500014-26-00-enrollment-group) "Reference to group detailing study characteristics"
 * enrollment.type = "Group"
-* condition[0].coding.display = "Locally-Advanced or Metastatic breast cancer (MBC)"
-* condition[=].text = "diseaseCondition"
-* condition[+].coding = $mdr#10070575
-* condition[=].coding.version = "2.0.1"
-* condition[=].text = "medDRACondition"
-* condition[+].coding = $mdr#10065430
-* condition[=].coding.version = "2.0.1"
-* condition[=].text = "medDRACondition"
+* condition[0].id = "ResearchStudy.condition:diseaseCondition"
+* condition[=].coding.display = "Locally-Advanced or Metastatic breast cancer (MBC)"
+* condition[=].text = "Locally-Advanced or Metastatic breast cancer (MBC)"
+* condition[+].id = "ResearchStudy.condition:medDRACondition"
+* condition[=].text = "10070575"
+* condition[+].id = "ResearchStudy.condition:medDRACondition"
+* condition[=].text = "10065430"
 * meta.lastUpdated = "2023-04-12T00:00:00.000Z"
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy"
-* contact[0].extension[0].valueHumanName.given = "Head of EU"
+* contact[0].extension[0].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name"
+* contact[=].extension[=].valueHumanName.given = "Head of EU"
 * contact[=].extension[=].valueHumanName.use = #official
 * contact[=].extension[=].valueHumanName.family = "Trial Information Support Line-TISL, Switzerland"
 * contact[=].extension[+].valueAddress.country = "INDISPONIBLE"
+* contact[=].extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address"
 * contact[=].extension[=].valueAddress.city = "INDISPONIBLE"
 * contact[=].extension[=].valueAddress.line = "INDISPONIBLE"
 * contact[=].extension[=].valueAddress.use = #work
 * contact[=].extension[=].valueAddress.postalCode = "INDISPONIBLE"
 * contact[=].extension[=].valueAddress.type = #physical
 * contact[=].extension[+].valueString = "INDISPONIBLE"
+* contact[=].extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation"
 * contact[=].telecom[0].system = #phone
 * contact[=].telecom[=].use = #work
 * contact[=].telecom[=].value = "0041616881111"
@@ -73,15 +74,18 @@ Usage: #example
 * contact[=].telecom[=].use = #work
 * contact[=].telecom[=].value = "global.rochegenentechtrials@roche.com"
 * contact[+].extension[0].valueHumanName.given = "INDISPONIBLE"
+* contact[=].extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name"
 * contact[=].extension[=].valueHumanName.use = #official
 * contact[=].extension[=].valueHumanName.family = "INDISPONIBLE"
 * contact[=].extension[+].valueAddress.country = "INDISPONIBLE"
+* contact[=].extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address"
 * contact[=].extension[=].valueAddress.city = "INDISPONIBLE"
 * contact[=].extension[=].valueAddress.line = "INDISPONIBLE"
 * contact[=].extension[=].valueAddress.use = #work
 * contact[=].extension[=].valueAddress.postalCode = "INDISPONIBLE"
 * contact[=].extension[=].valueAddress.type = #physical
 * contact[=].extension[+].valueString = "INDISPONIBLE"
+* contact[=].extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation"
 * contact[=].extension[+].valueCodeableConcept.coding = $eclaire-type-contact-code-system#SCI "Scientifique / Scientific"
 * contact[=].extension[=].valueCodeableConcept.coding.version = "0.1.0"
 * contact[=].extension[=].valueCodeableConcept.text = "Contact Type"
@@ -93,15 +97,18 @@ Usage: #example
 * contact[=].telecom[=].use = #work
 * contact[=].telecom[=].value = "INDISPONIBLE"
 * contact[+].extension[0].valueHumanName.given = "INDISPONIBLE"
+* contact[=].extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name"
 * contact[=].extension[=].valueHumanName.use = #official
 * contact[=].extension[=].valueHumanName.family = "INDISPONIBLE"
 * contact[=].extension[+].valueAddress.country = "INDISPONIBLE"
+* contact[=].extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address"
 * contact[=].extension[=].valueAddress.city = "INDISPONIBLE"
 * contact[=].extension[=].valueAddress.line = "INDISPONIBLE"
 * contact[=].extension[=].valueAddress.use = #work
 * contact[=].extension[=].valueAddress.postalCode = "INDISPONIBLE"
 * contact[=].extension[=].valueAddress.type = #physical
 * contact[=].extension[+].valueString = "INDISPONIBLE"
+* contact[=].extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation"
 * contact[=].extension[+].valueCodeableConcept.coding = $eclaire-type-contact-code-system#PUB "Publique / Public"
 * contact[=].extension[=].valueCodeableConcept.coding.version = "0.1.0"
 * contact[=].extension[=].valueCodeableConcept.text = "Contact Type"
