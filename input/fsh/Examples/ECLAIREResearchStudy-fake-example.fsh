@@ -11,7 +11,7 @@ Usage: #example
 * implicitRules = "http://hl7.org/fhir/reference"
 * extension[0]
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-review-date"
-  * valueInstant = "2023"
+  * valueInstant = "2023-01-06T00:00:00Z"
 * extension[+]
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-therapeutic-area"
   * valueString = "domaine thérapeutique z"
@@ -23,9 +23,6 @@ Usage: #example
 * identifier[0]
   * use = #official
   * type
-    * coding = $reference# "Fantastic Dog"
-      * version = "Inventive Mouse"
-      * userSelected = "false"
     * text = "Hilarious Cat"
   * system = "http://www.acme.com/identifiers/patient"
   * value = "123456"
