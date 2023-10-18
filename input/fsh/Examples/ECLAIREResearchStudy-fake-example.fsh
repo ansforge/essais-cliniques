@@ -96,10 +96,7 @@ Usage: #example
   * document
     * contentType = #"text/plain; charset=UTF-8, image/png"
     * language = #en-US
-    * data = ""
     * url = "http://www.acme.com/logo-small.png"
-    * size = "476039095"
-    * hash = ""
     * title = "Official Corporate Logo"
     * creation = "1992-04-11"
   * resource = "http://not-so-random-yet"
@@ -116,7 +113,6 @@ Usage: #example
 * reasonStopped
   * coding = $reasonstop#closed-due-to-toxicity "ouch"
     * version = "4.0.1"
-    * userSelected = "false"
   * text = "ouch"
 * arm
   * name = "Slow Elephant"
