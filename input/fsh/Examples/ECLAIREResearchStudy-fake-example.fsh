@@ -18,7 +18,7 @@ Usage: #example
 * extension[+].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period"
 * extension[+]
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor"
-  * valueReference = Reference(Organization) "Energetic Dog"
+  * valueReference = Reference(Organization/2) "Energetic Dog"
 * extension[+].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label"
 * identifier[0]
   * use = #official
@@ -26,13 +26,13 @@ Usage: #example
     * text = "Hilarious Cat"
   * system = "http://www.acme.com/identifiers/patient"
   * value = "123456"
-  * assigner = Reference(Organization) "Crazy Mouse"
+  * assigner = Reference(Organization/1) "Crazy Mouse"
 * identifier[+].use = #secondary
 * identifier[=].assigner = Reference(Organization/ctis) "Reference to secondary assigner"
 * identifier[=].assigner.type = "Organization"
 * identifier[=].value = "2022-500014-26-00"
 * title = "Energetic Zebra"
-* protocol = Reference(PlanDefinition) "Energetic plan"
+* protocol = Reference(PlanDefinition/3) "Energetic plan"
 * status = #in-review
 * primaryPurposeType
   * coding = #treatment "Slow Dog"
@@ -41,9 +41,7 @@ Usage: #example
   * coding = #phase-3 "Phase 3"
   * text = "Research Study Phase"
 * category
-  * coding = $#IC-Cas-1 "Hilarious Elephant"
-    * version = "Fast Elephant"
-    * userSelected = "false"
+  * coding = #IC-Cas-1 "Hilarious Elephant"
   * text = "Crazy Cat"
 * focus
   * text = "Hilarious medicament"
@@ -55,15 +53,11 @@ Usage: #example
 * contact
   * name = "Slow Zebra"
   * telecom[0]
-    * system = #pager
     * value = "Energetic Zebra"
     * use = #work
-    * rank = "1835196615"
   * telecom[+]
-    * system = #pager
     * value = "Energetic Badger"
     * use = #home
-    * rank = "1366447162"
   * extension[0]
     * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type"
     * valueCodeableConcept
@@ -115,10 +109,10 @@ Usage: #example
   * coding = urn:iso:std:iso:3166#FR "France"
   * text = "France"
 * description = "This is a fake research study"
-* enrollment = Reference(Group) "Fast Zebra"
-* sponsor = Reference(Organization) "Big boss"
-* principalInvestigator = Reference(Practitioner) "Docteur Super"
-* site = Reference(Location) "Rainbow"
+* enrollment = Reference(Group/6) "Fast Zebra"
+* sponsor = Reference(Organization:4) "Big boss"
+* principalInvestigator = Reference(Practitioner:5) "Docteur Super"
+* site = Reference(Location/8) "Rainbow"
 * reasonStopped
   * coding = $reasonstop#closed-due-to-toxicity "ouch"
     * version = "4.0.1"
@@ -126,8 +120,6 @@ Usage: #example
   * text = "ouch"
 * arm
   * name = "Slow Elephant"
-    * text = "Crazy Elephant"
   * description = "Hilarious Badger"
 * objective
   * name = "Inventive Mouse"
-    * text = "Crazy Badger"
