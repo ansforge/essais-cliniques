@@ -1,10 +1,10 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 32, warn = 46, info = 9
+err = 50, warn = 52, info = 12
 IG Publisher Version: 1.4.16
-Generated Tue Oct 17 18:27:28 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
- Build Errors : 4 / 4 / 0
+Generated Wed Oct 18 17:03:31 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+ Build Errors : 10 / 4 / 0
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-reglementation-precision-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-regulation-code-code-system : 0 / 1 / 1
@@ -18,6 +18,7 @@ Generated Tue Oct 17 18:27:28 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map : 10 / 10 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ResearchStudy-2022-500014-26-00 : 9 / 0 / 4
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ResearchStudy-fake-study-example : 18 / 6 / 4
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-address : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-affiliation : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-name : 0 / 0 / 1
@@ -45,6 +46,12 @@ Generated Tue Oct 17 18:27:28 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
 ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-2022-500014-26-00.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 578: The link 'Organization/2022-500014-26-00-secondary-sponsor' for "Organization/2022-500014-26-00-secondary-sponsor: Reference to secondary sponsor" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-2022-500014-26-00.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 5504: The link 'Group/2022-500014-26-00-enrollment-group' for "Group/2022-500014-26-00-enrollment-group: Reference to group detailing study characteristics" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-2022-500014-26-00.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 5674: The link 'Organization/2022-500014-26-00-primary-sponsor' for "Organization/2022-500014-26-00-primary-sponsor: Reference to primary sponsor" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 745: The link 'Organization/2' for "Organization/2: Energetic Dog" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 966: The link 'PlanDefinition/3' for "PlanDefinition/3: Energetic plan" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 3080: The link 'Group/6' for "Group/6: Fast Zebra" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 3144: The link 'Organization:4' for "Organization:4: Big boss" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 3234: The link 'Practitioner:5' for "Practitioner:5: Docteur Super" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 3312: The link 'Location/8' for "Location/8: Rainbow" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/index.html#/html/body/div/div/div/div/div/p/a at Line 271, column 195: The link 'construction_des_flux.html' for "construction des flux" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
@@ -128,6 +135,34 @@ ERROR: ResearchStudy/2022-500014-26-00: ResearchStudy.identifier[1].assigner: Un
 ERROR: ResearchStudy/2022-500014-26-00: ResearchStudy.condition[2]: Duplicate id value 'ResearchStudy.condition:medDRACondition'
 ERROR: ResearchStudy/2022-500014-26-00: ResearchStudy.enrollment[0]: Unable to resolve resource with reference 'Group/2022-500014-26-00-enrollment-group'
 ERROR: ResearchStudy/2022-500014-26-00: ResearchStudy.sponsor: Unable to resolve resource with reference 'Organization/2022-500014-26-00-primary-sponsor'
+== fsh-generated/resources/ResearchStudy-fake-study-example.json ==
+INFORMATION: ResearchStudy/fake-study-example: ResearchStudy.condition[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.1
+INFORMATION: ResearchStudy/fake-study-example: ResearchStudy.condition[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.1
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.implicitRules: URL value 'http://hl7.org/fhir/reference' does not resolve
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.extension[2]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.extension[2]: The Extension 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period' definition is for a simple extension, so it must contain a value
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.extension[3].value.ofType(Reference): Unable to resolve resource with reference 'Organization/2'
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.extension[4]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+WARNING: ResearchStudy/fake-study-example: ResearchStudy.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.identifier[0].assigner: Unable to resolve resource with reference 'Organization/1'
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.identifier[1].assigner: Unable to resolve resource with reference 'Organization/ctis'
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.protocol[0]: Unable to resolve resource with reference 'PlanDefinition/3'
+WARNING: ResearchStudy/fake-study-example: ResearchStudy.primaryPurposeType.coding[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: ResearchStudy/fake-study-example: ResearchStudy.phase.coding[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: ResearchStudy/fake-study-example: ResearchStudy.category[0].coding[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: ResearchStudy/fake-study-example: ResearchStudy.condition[1].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.contact[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Type Contact Value Set' (https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-type-contact-vs|0.1.1), and a coding from this value set is required) (codes = null#PUB)
+WARNING: ResearchStudy/fake-study-example: ResearchStudy.contact[0].extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.contact[0].telecom[0]: Constraint failed: cpt-2: 'A system is required if a value is provided.' (defined in http://hl7.org/fhir/StructureDefinition/ContactDetail)
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.contact[0].telecom[1]: Constraint failed: cpt-2: 'A system is required if a value is provided.' (defined in http://hl7.org/fhir/StructureDefinition/ContactDetail)
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.relatedArtifact[0].citation: Constraint failed: ele-1: 'All FHIR elements must have a @value or children' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.relatedArtifact[0].citation: value cannot be empty
+WARNING: ResearchStudy/fake-study-example: ResearchStudy.relatedArtifact[0].document.language: Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.enrollment[0]: Unable to resolve resource with reference 'Group/6'
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.sponsor: Unable to resolve resource with reference 'Organization:4'
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.principalInvestigator: Unable to resolve resource with reference 'Practitioner:5'
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.site[0]: Unable to resolve resource with reference 'Location/8'
+ERROR: ResearchStudy/fake-study-example: ResearchStudy.reasonStopped.coding[0]: Wrong Display Name 'ouch' for http://terminology.hl7.org/CodeSystem/research-study-reason-stopped#closed-due-to-toxicity - should be 'Closed due to toxicity' (for the language(s) '--') (from Tx-Server) for 'http://terminology.hl7.org/CodeSystem/research-study-reason-stopped#closed-due-to-toxicity'
 == fsh-generated/resources/StructureDefinition-eclaire-contact-address.json ==
 == fsh-generated/resources/StructureDefinition-eclaire-contact-affiliation.json ==
 == fsh-generated/resources/StructureDefinition-eclaire-contact-name.json ==

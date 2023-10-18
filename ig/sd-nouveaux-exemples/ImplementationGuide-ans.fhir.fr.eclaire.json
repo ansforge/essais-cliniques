@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2023-10-17T18:26:26+00:00",
+  "date" : "2023-10-18T17:01:58+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -895,6 +895,18 @@
       "name" : "ECLAIRETherapeuticArea",
       "description" : "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout du domaine thérapeutique concerné par l'essai",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/fake-study-example"
+      },
+      "name" : "Energetic Zebra",
+      "description" : "This is a fake research study",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy"
     },
     {
       "extension" : [{
