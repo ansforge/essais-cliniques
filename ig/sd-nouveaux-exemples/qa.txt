@@ -1,9 +1,9 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 41, warn = 48, info = 9
+err = 38, warn = 48, info = 9
 IG Publisher Version: 1.4.16
-Generated Thu Oct 19 13:25:35 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Thu Oct 19 14:32:20 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 7 / 4 / 0
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-reglementation-precision-code-system : 0 / 1 / 1
@@ -17,7 +17,7 @@ Generated Thu Oct 19 13:25:35 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map : 13 / 12 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map : 10 / 10 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire : 0 / 0 / 1
- /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ResearchStudy-fake-study-example : 18 / 2 / 4
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ResearchStudy-fake-study-example : 15 / 2 / 4
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-address : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-affiliation : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-contact-name : 0 / 0 / 1
@@ -42,12 +42,12 @@ Generated Thu Oct 19 13:25:35 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-type-contact-vs : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 745: The link 'Organization/2' for "Organization/2: Energetic Dog" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 966: The link 'PlanDefinition/3' for "PlanDefinition/3: Energetic plan" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 3258: The link 'Group/6' for "Group/6: Fast Zebra" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 3322: The link 'Organization:4' for "Organization:4: Big boss" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 3412: The link 'Practitioner:5' for "Practitioner:5: Docteur Super" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 3490: The link 'Location/8' for "Location/8: Rainbow" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 826: The link 'Organization/2' for "Organization/2: Energetic Dog" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 1963: The link 'PlanDefinition/3' for "PlanDefinition/3: Energetic plan" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 4255: The link 'Group/6' for "Group/6: Fast Zebra" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 4319: The link 'Organization:4' for "Organization:4: Big boss" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 4409: The link 'Practitioner:5' for "Practitioner:5: Docteur Super" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/ResearchStudy-fake-study-example.html#/html/body/div/div/div/div/div/div/p/a at Line 228, column 4487: The link 'Location/8' for "Location/8: Rainbow" cannot be resolved
 ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/output/index.html#/html/body/div/div/div/div/div/p/a at Line 271, column 195: The link 'construction_des_flux.html' for "construction des flux" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
@@ -122,10 +122,7 @@ ERROR: ConceptMap/eclaire-study-status-concept-map: ConceptMap.group[0].element[
 INFORMATION: ResearchStudy/fake-study-example: ResearchStudy.condition[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.1
 INFORMATION: ResearchStudy/fake-study-example: ResearchStudy.condition[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.1.1
 ERROR: ResearchStudy/fake-study-example: ResearchStudy.implicitRules: URL value 'http://hl7.org/fhir/reference' does not resolve
-ERROR: ResearchStudy/fake-study-example: ResearchStudy.extension[2]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Element)
-ERROR: ResearchStudy/fake-study-example: ResearchStudy.extension[2]: The Extension 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period' definition is for a simple extension, so it must contain a value
 ERROR: ResearchStudy/fake-study-example: ResearchStudy.extension[3].value.ofType(Reference): Unable to resolve resource with reference 'Organization/2'
-ERROR: ResearchStudy/fake-study-example: ResearchStudy.extension[4]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Element)
 WARNING: ResearchStudy/fake-study-example: ResearchStudy.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
 ERROR: ResearchStudy/fake-study-example: ResearchStudy.identifier[0].assigner: Unable to resolve resource with reference 'Organization/1'
 ERROR: ResearchStudy/fake-study-example: ResearchStudy.identifier[1].assigner: Unable to resolve resource with reference 'Organization/ctis'
