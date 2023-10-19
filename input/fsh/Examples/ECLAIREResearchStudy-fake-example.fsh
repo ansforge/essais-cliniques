@@ -5,7 +5,7 @@ Alias: $reasonstop = http://terminology.hl7.org/CodeSystem/research-study-reason
 Alias: $primpurp = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type
 Alias: $phase = eclaire-study-phase-vs
 Alias: $category = eclaire-category-vs
-Alias: $contact eclaire-type-contact-code-system
+Alias: $contact = eclaire-type-contact-code-system
 
 
 Instance: fake-study-example
