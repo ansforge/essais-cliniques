@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-19T15:25:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-19T16:10:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -798,11 +798,11 @@
          fhir:value [ fhir:v "ResearchStudy" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/ResearchStudy/2022-500520-30-00> ;
-         fhir:reference [ fhir:v "ResearchStudy/2022-500520-30-00" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/ResearchStudy/fake-study-example> ;
+         fhir:reference [ fhir:v "ResearchStudy/fake-study-example" ]
        ] ;
-       fhir:name [ fhir:v "Exemple d'un essai clinique" ] ;
-       fhir:description [ fhir:v "Ceci est est un exemple de description d'un essai clinique" ] ;
+       fhir:name [ fhir:v "Energetic Zebra" ] ;
+       fhir:description [ fhir:v "This is a fake research study" ] ;
        fhir:example [
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy"^^xsd:anyURI ;
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy>
