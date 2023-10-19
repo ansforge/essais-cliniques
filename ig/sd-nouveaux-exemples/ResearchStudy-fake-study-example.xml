@@ -5,9 +5,8 @@
   <meta>
     <profile value="https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy"/>
   </meta>
-  <implicitRules value="http://hl7.org/fhir/reference"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ResearchStudy</b><a name="fake-study-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ResearchStudy &quot;fake-study-example&quot; </p><p style="margin-bottom: 0px"><b>Special rules apply: http://hl7.org/fhir/reference!</b></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eclaire-researchstudy.html">ECLAIREResearchStudy</a></p></div><p><b>ECLAIREReviewDate</b>: Jan 6, 2023, 12:00:00 AM</p><p><b>ECLAIRETherapeuticArea</b>: domaine thérapeutique z</p><p><b>ECLAIRERecruitmentPeriod</b>: 2022-06-30 00:00:00+0000 --&gt; (ongoing)</p><p><b>ECLAIRESecondarySponsor</b>: <a href="Organization/2">Organization/2: Energetic Dog</a></p><blockquote><p><b>ECLAIRELabel</b></p><blockquote><p><b>url</b></p><code>labelValue</code></blockquote><p><b>value</b>: INDISPONIBLE</p><blockquote><p><b>url</b></p><code>labelType</code></blockquote><p><b>value</b>: Label Type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eclaire-study-title-type-code-system.html">Définition des types de titre pour l'essai</a>#human-use)</span></p></blockquote><blockquote><p><b>ECLAIRELabel</b></p><blockquote><p><b>url</b></p><code>labelValue</code></blockquote><p><b>value</b>: INDISPONIBLE</p><blockquote><p><b>url</b></p><code>labelType</code></blockquote><p><b>value</b>: Label Type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eclaire-study-title-type-code-system.html">Définition des types de titre pour l'essai</a>#acronym)</span></p></blockquote><p><b>identifier</b>: Hilarious Cat: 123456 (use: OFFICIAL), id: 2022-500014-26-00 (use: SECONDARY)</p><p><b>title</b>: Energetic Zebra</p><p><b>protocol</b>: <a href="PlanDefinition/3">PlanDefinition/3: Energetic plan</a></p><p><b>status</b>: in-review</p><p><b>primaryPurposeType</b>: Zebra treatment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (ResearchStudyPrimaryPurposeType[4.0.1]#treatment &quot;Treatment&quot;)</span></p><p><b>phase</b>: Research Study Phase <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-research-study-phase.html">ResearchStudyPhase</a>#phase-3)</span></p><p><b>category</b>: Crazy Cat <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eclaire-reglementation-precision-code-system.html">Précision sur la réglementation concernant l'essai</a>#IC-Cas-1 &quot;Hilarious Elephant&quot;)</span></p><p><b>focus</b>: Hilarious medicament <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>condition</b>: Locally-Advanced or Metastatic breast cancer (MBC) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span>, MedDRA condition  code 10070575 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (mdr#10070575 &quot;10070575&quot;)</span></p><p><b>contact</b>: Slow Zebra: Energetic Zebra(WORK),Energetic Badger(HOME)</p><blockquote><p><b>relatedArtifact</b></p><p><b>type</b>: documentation</p><p><b>label</b>: Fantastic Giraffe</p><p><b>display</b>: Crazy Mouse</p><p><b>citation</b>: </p><p><b>url</b>: <a href="http://not-so-random-yet">http://not-so-random-yet</a></p><blockquote><p><b>document</b></p></blockquote><p><b>resource</b>: <a href="http://not-so-random-yet">http://not-so-random-yet</a></p></blockquote><p><b>keyword</b>: Fast Elephant <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>location</b>: Countries of recruitment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code[4.0.1]#FR &quot;France&quot;)</span></p><p><b>description</b>: This is a fake research study</p><p><b>enrollment</b>: <a href="Group/6">Group/6: Fast Zebra</a></p><p><b>sponsor</b>: <a href="Organization:4">Organization:4: Big boss</a></p><p><b>principalInvestigator</b>: <a href="Practitioner:5">Practitioner:5: Docteur Super</a></p><p><b>site</b>: <a href="Location/8">Location/8: Rainbow</a></p><p><b>reasonStopped</b>: ouch <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (ResearchStudyReasonStopped[4.0.1]#closed-due-to-toxicity)</span></p><h3>Arms</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>Slow Elephant</td><td>Hilarious Badger</td></tr></table><h3>Objectives</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td>Inventive Mouse</td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ResearchStudy</b><a name="fake-study-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ResearchStudy &quot;fake-study-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eclaire-researchstudy.html">ECLAIREResearchStudy</a></p></div><p><b>ECLAIREReviewDate</b>: Jan 6, 2023, 12:00:00 AM</p><p><b>ECLAIRETherapeuticArea</b>: domaine thérapeutique z</p><p><b>ECLAIRERecruitmentPeriod</b>: 2022-06-30 00:00:00+0000 --&gt; (ongoing)</p><p><b>ECLAIRESecondarySponsor</b>: <a href="Organization/2">Organization/2: Energetic Dog</a></p><blockquote><p><b>ECLAIRELabel</b></p><blockquote><p><b>url</b></p><code>labelValue</code></blockquote><p><b>value</b>: INDISPONIBLE</p><blockquote><p><b>url</b></p><code>labelType</code></blockquote><p><b>value</b>: Label Type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eclaire-study-title-type-code-system.html">Définition des types de titre pour l'essai</a>#human-use)</span></p></blockquote><blockquote><p><b>ECLAIRELabel</b></p><blockquote><p><b>url</b></p><code>labelValue</code></blockquote><p><b>value</b>: INDISPONIBLE</p><blockquote><p><b>url</b></p><code>labelType</code></blockquote><p><b>value</b>: Label Type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eclaire-study-title-type-code-system.html">Définition des types de titre pour l'essai</a>#acronym)</span></p></blockquote><p><b>identifier</b>: Hilarious Cat: 123456 (use: OFFICIAL), id: 2022-500014-26-00 (use: SECONDARY)</p><p><b>title</b>: Energetic Zebra</p><p><b>protocol</b>: <a href="PlanDefinition/3">PlanDefinition/3: Energetic plan</a></p><p><b>status</b>: in-review</p><p><b>primaryPurposeType</b>: Zebra treatment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (ResearchStudyPrimaryPurposeType[4.0.1]#treatment)</span></p><p><b>phase</b>: Research Study Phase <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-research-study-phase.html">ResearchStudyPhase</a>#phase-3)</span></p><p><b>category</b>: IC-Cas 1 (DM) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eclaire-reglementation-precision-code-system.html">Précision sur la réglementation concernant l'essai</a>#IC-Cas-1)</span></p><p><b>focus</b>: Hilarious medicament <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>condition</b>: Locally-Advanced or Metastatic breast cancer (MBC) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span>, MedDRA condition  code 10070575 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (mdr#10070575 &quot;10070575&quot;)</span></p><p><b>contact</b>: Slow Zebra: Energetic Zebra(WORK),Energetic Badger(HOME)</p><p><b>keyword</b>: Fast Elephant <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>location</b>: Countries of recruitment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code[4.0.1]#FR)</span></p><p><b>description</b>: This is a fake research study</p><p><b>enrollment</b>: <a href="Group/6">Group/6: Fast Zebra</a></p><p><b>sponsor</b>: <a href="Organization:4">Organization:4: Big boss</a></p><p><b>principalInvestigator</b>: <a href="Practitioner:5">Practitioner:5: Docteur Super</a></p><p><b>site</b>: <a href="Location/8">Location/8: Rainbow</a></p><p><b>reasonStopped</b>: ouch <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (ResearchStudyReasonStopped[4.0.1]#closed-due-to-toxicity)</span></p><h3>Arms</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>Slow Elephant</td><td>Hilarious Badger</td></tr></table><h3>Objectives</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td>Inventive Mouse</td></tr></table></div>
   </text>
   <extension url="https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-review-date">
     <valueInstant value="2023-01-06T00:00:00Z"/>
@@ -59,7 +58,6 @@
     <type>
       <text value="Hilarious Cat"/>
     </type>
-    <system value="http://www.acme.com/identifiers/patient"/>
     <value value="123456"/>
     <assigner>
       <reference value="Organization/1"/>
@@ -86,7 +84,6 @@
       <system value="http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type"/>
       <version value="4.0.1"/>
       <code value="treatment"/>
-      <display value="Treatment"/>
     </coding>
     <text value="Zebra treatment"/>
   </primaryPurposeType>
@@ -101,9 +98,7 @@
     <coding>
       <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
       <code value="IC-Cas-1"/>
-      <display value="Hilarious Elephant"/>
     </coding>
-    <text value="Crazy Cat"/>
   </category>
   <focus>
     <text value="Hilarious medicament"/>
@@ -125,7 +120,6 @@
         <coding>
           <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system"/>
           <code value="PUB"/>
-          <display value="Publique / Public"/>
         </coding>
         <text value="Publique / Public"/>
       </valueCodeableConcept>
@@ -166,21 +160,6 @@
       <use value="home"/>
     </telecom>
   </contact>
-  <relatedArtifact>
-    <type value="documentation"/>
-    <label value="Fantastic Giraffe"/>
-    <display value="Crazy Mouse"/>
-    <citation value=""/>
-    <url value="http://not-so-random-yet"/>
-    <document>
-      <contentType value="text/plain; charset=UTF-8, image/png"/>
-      <language value="en-US"/>
-      <url value="http://www.acme.com/logo-small.png"/>
-      <title value="Official Corporate Logo"/>
-      <creation value="1992-04-11"/>
-    </document>
-    <resource value="http://not-so-random-yet"/>
-  </relatedArtifact>
   <keyword>
     <text value="Fast Elephant"/>
   </keyword>
@@ -189,7 +168,6 @@
       <system value="urn:iso:std:iso:3166"/>
       <version value="4.0.1"/>
       <code value="FR"/>
-      <display value="France"/>
     </coding>
     <text value="Countries of recruitment"/>
   </location>
@@ -215,7 +193,6 @@
       <system value="http://terminology.hl7.org/CodeSystem/research-study-reason-stopped"/>
       <version value="4.0.1"/>
       <code value="closed-due-to-toxicity"/>
-      <display value="ouch"/>
     </coding>
     <text value="ouch"/>
   </reasonStopped>
