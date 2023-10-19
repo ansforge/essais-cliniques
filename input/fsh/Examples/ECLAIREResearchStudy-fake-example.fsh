@@ -2,6 +2,10 @@
 Alias: $mdr = http://terminology.hl7.org/CodeSystem/mdr
 Alias: $loc = http://hl7.org/fhir/ValueSet/jurisdiction
 Alias: $reasonstop = http://terminology.hl7.org/CodeSystem/research-study-reason-stopped
+Alias: $primpurp = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type
+Alias: $phase = eclaire-study-phase-vs
+Alias: $category = eclaire-category-vs
+Alias: $contact eclaire-type-contact-code-system
 
 
 Instance: fake-study-example
@@ -35,13 +39,14 @@ Usage: #example
 * protocol = Reference(PlanDefinition/3) "Energetic plan"
 * status = #in-review
 * primaryPurposeType
-  * coding = #treatment "Slow Dog"
+  * coding = $primpurp#treatment "Treatment"
+    * version = "4.0.1"
   * text = "Zebra treatment"
 * phase
-  * coding = #phase-3 "Phase 3"
+  * coding = $phase#phase-3-phase-4 "Phase 3 et 4"
   * text = "Research Study Phase"
 * category
-  * coding = #IC-Cas-1 "Hilarious Elephant"
+  * coding = $category#IC-Cas-1 "Hilarious Elephant"
   * text = "Crazy Cat"
 * focus
   * text = "Hilarious medicament"
@@ -61,7 +66,7 @@ Usage: #example
   * extension[0]
     * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type"
     * valueCodeableConcept
-      * coding = #PUB "Publique / Public"
+      * coding = $contact#PUB "Publique / Public"
       * text = "Publique / Public"
   * extension[+]
     * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address"
@@ -104,7 +109,8 @@ Usage: #example
   * text = "Fast Elephant"
 * location
   * coding = urn:iso:std:iso:3166#FR "France"
-  * text = "France"
+    * version = "4.0.1"
+  * text = "Countries of recruitment"
 * description = "This is a fake research study"
 * enrollment = Reference(Group/6) "Fast Zebra"
 * sponsor = Reference(Organization:4) "Big boss"
