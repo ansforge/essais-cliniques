@@ -12,7 +12,7 @@
   <version value="0.1.1"/>
   <name value="ECLAIRELocation"/>
   <status value="draft"/>
-  <date value="2023-10-18T10:12:56+00:00"/>
+  <date value="2023-10-19T14:17:53+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -165,6 +165,12 @@
       </mapping>
     </element>
     <element id="Location.implicitRules">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.implicitRules"/>
       <short value="A set of rules under which this content was created"/>
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc."/>
@@ -197,6 +203,12 @@
       </mapping>
     </element>
     <element id="Location.language">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.language"/>
       <short value="Language of the resource content"/>
       <definition value="The base language in which the resource is written."/>
@@ -359,7 +371,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -417,7 +429,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them"/>
@@ -487,6 +499,12 @@
       </mapping>
     </element>
     <element id="Location.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.status"/>
       <short value="active | suspended | inactive"/>
       <definition value="The status property covers the general availability of the resource, not the current value which may be covered by the operationStatus, or by a schedule/slots if they are configured for the location."/>
@@ -595,6 +613,12 @@
       </mapping>
     </element>
     <element id="Location.name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.name"/>
       <short value="Name of the location as used by humans"/>
       <definition value="Name of the location as used by humans. Does not need to be unique."/>
@@ -629,6 +653,12 @@
       </mapping>
     </element>
     <element id="Location.alias">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.alias"/>
       <short value="A list of alternate names that the location is known as, or was known as, in the past"/>
       <definition value="A list of alternate names that the location is known as, or was known as, in the past."/>
@@ -663,6 +693,12 @@
       </mapping>
     </element>
     <element id="Location.description">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.description"/>
       <short value="Additional details about the location that could be displayed as further information to identify the location beyond its name"/>
       <definition value="Description of the Location, which helps in finding or referencing the place."/>
@@ -698,6 +734,12 @@
       </mapping>
     </element>
     <element id="Location.mode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.mode"/>
       <short value="instance | kind"/>
       <definition value="Indicates whether a resource instance represents a specific location or a class of locations."/>
@@ -843,7 +885,7 @@
         <human value="A system is required if a value is provided."/>
         <expression value="value.empty() or system.exists()"/>
         <xpath value="not(exists(f:value)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ContactDetail"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -935,7 +977,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -977,11 +1019,17 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Location.telecom.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.telecom.system"/>
       <short value="phone | fax | email | pager | url | sms | other"/>
       <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact."/>
@@ -1033,6 +1081,12 @@
       </mapping>
     </element>
     <element id="Location.telecom.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.telecom.value"/>
       <short value="The actual contact point details"/>
       <definition value="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)."/>
@@ -1076,6 +1130,12 @@
       </mapping>
     </element>
     <element id="Location.telecom.use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.telecom.use"/>
       <short value="home | work | temp | old | mobile - purpose of this contact point"/>
       <definition value="Identifies the purpose for the contact point."/>
@@ -1129,6 +1189,12 @@
       </mapping>
     </element>
     <element id="Location.telecom.rank">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.telecom.rank"/>
       <short value="Specify preferred order of use (1 = highest)"/>
       <definition value="Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values."/>
@@ -1198,7 +1264,7 @@
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1451,7 +1517,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -1502,7 +1568,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
@@ -1517,6 +1583,12 @@
       </mapping>
     </element>
     <element id="Location.position.longitude">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.position.longitude"/>
       <short value="Longitude with WGS84 datum"/>
       <definition value="Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes below)."/>
@@ -1550,6 +1622,12 @@
       </mapping>
     </element>
     <element id="Location.position.latitude">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.position.latitude"/>
       <short value="Latitude with WGS84 datum"/>
       <definition value="Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes below)."/>
@@ -1583,6 +1661,12 @@
       </mapping>
     </element>
     <element id="Location.position.altitude">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.position.altitude"/>
       <short value="Altitude with WGS84 datum"/>
       <definition value="Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes below)."/>
@@ -1833,7 +1917,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -1884,7 +1968,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
@@ -1899,6 +1983,12 @@
       </mapping>
     </element>
     <element id="Location.hoursOfOperation.daysOfWeek">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.hoursOfOperation.daysOfWeek"/>
       <short value="mon | tue | wed | thu | fri | sat | sun"/>
       <definition value="Indicates which days of the week are available between the start and end Times."/>
@@ -1940,6 +2030,12 @@
       </mapping>
     </element>
     <element id="Location.hoursOfOperation.allDay">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.hoursOfOperation.allDay"/>
       <short value="The Location is open all day"/>
       <definition value="The Location is open all day."/>
@@ -1972,6 +2068,12 @@
       </mapping>
     </element>
     <element id="Location.hoursOfOperation.openingTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.hoursOfOperation.openingTime"/>
       <short value="Time that the Location opens"/>
       <definition value="Time that the Location opens."/>
@@ -2004,6 +2106,12 @@
       </mapping>
     </element>
     <element id="Location.hoursOfOperation.closingTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.hoursOfOperation.closingTime"/>
       <short value="Time that the Location closes"/>
       <definition value="Time that the Location closes."/>
@@ -2036,6 +2144,12 @@
       </mapping>
     </element>
     <element id="Location.availabilityExceptions">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
       <path value="Location.availabilityExceptions"/>
       <short value="Description of availability exceptions"/>
       <definition value="A description of when the locations opening ours are different to normal, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as detailed in the opening hours Times."/>

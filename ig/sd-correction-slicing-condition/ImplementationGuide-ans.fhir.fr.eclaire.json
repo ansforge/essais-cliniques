@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2023-10-18T10:12:56+00:00",
+  "date" : "2023-10-19T14:17:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -628,8 +628,8 @@
       "reference" : {
         "reference" : "ValueSet/eclaire-study-population-vs"
       },
-      "name" : "Caractérisation de la poulation Value Set",
-      "description" : "Caractérisation de la poulation Value Set.",
+      "name" : "Caractérisation de la population Value Set",
+      "description" : "Caractérisation de la population Value Set.",
       "exampleBoolean" : false
     },
     {
@@ -647,18 +647,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/eclaire-study-population-code-system"
-      },
-      "name" : "Code de régulation de l'essai",
-      "description" : "Code de régulation de l'essai",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -666,6 +654,18 @@
       },
       "name" : "Code de régulation Value Set",
       "description" : "Code de régulation Value Set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eclaire-study-population-code-system"
+      },
+      "name" : "Codes pour caractériser la population de l'étude",
+      "description" : "Codes pour caractériser la population ciblée par l'étude",
       "exampleBoolean" : false
     },
     {
@@ -1025,7 +1025,7 @@
         "reference" : "ValueSet/eclaire-category-vs"
       },
       "name" : "Value Set type pour spécifier la catégorie l'essai clinique",
-      "description" : "Value Set our spécifier la catégorie de l'essai clinique et préciser la réglementation ou le code regulation renseigner dans les bases de registre comme CTIS et EUDAMED.",
+      "description" : "Value Set pour spécifier la catégorie de l'essai clinique et préciser la réglementation ou le code regulation renseigner dans les bases de registre comme CTIS et EUDAMED.",
       "exampleBoolean" : false
     }],
     "page" : {
