@@ -1,7 +1,7 @@
 CodeSystem: EclaireStudyPopulationCS
 Id: eclaire-study-population-code-system
-Title: "Code de régulation de l'essai"
-Description: "Code de régulation de l'essai"
+Title: "Codes pour caractériser la population de l'étude"
+Description: "Codes pour caractériser la population ciblée par l'étude"
 * ^caseSensitive = true
 * #incap-pop "Incapacitated population (Population en situation de handicap)"
 * #minors "Minors (Mineurs)"

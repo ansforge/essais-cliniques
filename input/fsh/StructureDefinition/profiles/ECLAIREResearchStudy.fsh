@@ -45,15 +45,16 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * identifier[idSecondary] ^short = "identifiants secondaires / Secondary Identifying Numbers (e.g., protocol number) if available.  Also include other trial registries that have issued an identifying number to this trial. There is no limit on the number of Secondary identifying numbers that can be provided."
 
 * condition ^slicing.discriminator.type = #value
-* condition ^slicing.discriminator.path = "id"
 * condition ^slicing.rules = #open
-* condition ^slicing.description = "Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied"
+* condition ^slicing.description = "Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel"
 * condition contains
     medDRACondition 0..* MS and
     diseaseCondition 0..* MS
 * condition[medDRACondition] ^short = "code MedDRA / MedDRA condition"
 * condition[medDRACondition].id = "meddra-condition"
+* condition[medDRACondition].coding.system = "http://terminology.hl7.org/CodeSystem/mdr"
 * condition[diseaseCondition] ^short = "condition de la pathologie / Disease Condition"
+* condition[diseaseCondition].text 1..1
 * condition[diseaseCondition].id = "disease-condition"
 
 /*Extensions*/
