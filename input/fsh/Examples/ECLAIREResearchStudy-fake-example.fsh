@@ -20,17 +20,22 @@ Usage: #example
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-therapeutic-area"
   * valueString = "domaine thérapeutique z"
 * extension[+].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period"
+  * valuePeriod.start = "2022-06-30T00:00:00.000Z"
 * extension[+]
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor"
   * valueReference = Reference(Organization/2) "Energetic Dog"
-* extension[+]
-  * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label"
-  * extension[0]
-    * url = labelType
-    * value.coding = $title-type#short-title
-  * extension[+]
-    * url = labelValue
-    * valueString = "short study"
+* extension[+].extension[0].valueString = "INDISPONIBLE"
+* extension[=].extension[=].url = "labelValue"
+* extension[=].extension[+].valueCodeableConcept.coding = $title-type#human-use
+* extension[=].extension[=].valueCodeableConcept.text = "Label Type"
+* extension[=].extension[=].url = "labelType"
+* extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label"
+* extension[+].extension[0].valueString = "INDISPONIBLE"
+* extension[=].extension[=].url = "labelValue"
+* extension[=].extension[+].valueCodeableConcept.coding = $title-type#acronym
+* extension[=].extension[=].valueCodeableConcept.text = "Label Type"
+* extension[=].extension[=].url = "labelType"
+* extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label"
 * identifier[0]
   * use = #official
   * type
