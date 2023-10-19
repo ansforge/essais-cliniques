@@ -32,8 +32,8 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * location MS
 
 /*slice*/
-//* identifier ^slicing.discriminator.type = #value
-//* identifier ^slicing.discriminator.path = "use"
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slicing pour les différents identifiants de l'essai clinique"
 * identifier contains
@@ -44,10 +44,8 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * identifier[idSecondary].use = #secondary
 * identifier[idSecondary] ^short = "identifiants secondaires / Secondary Identifying Numbers (e.g., protocol number) if available.  Also include other trial registries that have issued an identifying number to this trial. There is no limit on the number of Secondary identifying numbers that can be provided."
 
-* condition ^slicing.discriminator.type = #value
-* condition ^slicing.discriminator.path = "use"
 * condition ^slicing.rules = #open
-* condition ^slicing.description = "Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel"
+* condition ^slicing.description = "Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. "
 * condition contains
     medDRACondition 0..* MS and
     diseaseCondition 0..* MS
