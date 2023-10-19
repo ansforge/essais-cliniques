@@ -13,7 +13,7 @@
   <version value="0.1.1"/>
   <name value="ECLAIREContactAddress"/>
   <status value="draft"/>
-  <date value="2023-10-17T10:04:53+00:00"/>
+  <date value="2023-10-19T15:25:12+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -128,7 +128,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
     </element>
     <element id="Extension.url">

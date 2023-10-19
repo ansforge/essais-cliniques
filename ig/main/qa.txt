@@ -1,9 +1,9 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 31, warn = 55, info = 10
+err = 31, warn = 57, info = 10
 IG Publisher Version: 1.4.16
-Generated Tue Oct 17 10:05:55 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Thu Oct 19 15:26:13 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.1.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 1 / 4 / 0
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-reglementation-precision-code-system : 0 / 1 / 1
@@ -26,7 +26,7 @@ Generated Tue Oct 17 10:05:55 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location : 0 / 1 / 2
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-recruitment-period : 0 / 1 / 1
- /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy : 0 / 0 / 4
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy : 0 / 2 / 4
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-review-date : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-site-contact-name : 0 / 1 / 1
@@ -147,7 +147,9 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json ==
 INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[22].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[31].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[66].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[41].slicing.description: value should not start or finish with whitespace 'Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. '
+INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[73].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition/eclaire-researchstudy: StructureDefinition.differential.element[15].slicing.description: value should not start or finish with whitespace 'Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. '
 == fsh-generated/resources/StructureDefinition-eclaire-review-date.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-review-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor.json ==

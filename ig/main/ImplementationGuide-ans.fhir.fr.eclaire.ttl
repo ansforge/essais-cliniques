@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T10:04:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-19T15:25:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -537,8 +537,8 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-population-vs> ;
          fhir:reference [ fhir:v "ValueSet/eclaire-study-population-vs" ]
        ] ;
-       fhir:name [ fhir:v "Caractérisation de la poulation Value Set" ] ;
-       fhir:description [ fhir:v "Caractérisation de la poulation Value Set." ] ;
+       fhir:name [ fhir:v "Caractérisation de la population Value Set" ] ;
+       fhir:description [ fhir:v "Caractérisation de la population Value Set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -555,18 +555,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-population-code-system> ;
-         fhir:reference [ fhir:v "CodeSystem/eclaire-study-population-code-system" ]
-       ] ;
-       fhir:name [ fhir:v "Code de régulation de l'essai" ] ;
-       fhir:description [ fhir:v "Code de régulation de l'essai" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -575,6 +563,18 @@
        ] ;
        fhir:name [ fhir:v "Code de régulation Value Set" ] ;
        fhir:description [ fhir:v "Code de régulation Value Set." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-population-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/eclaire-study-population-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Codes pour caractériser la population de l'étude" ] ;
+       fhir:description [ fhir:v "Codes pour caractériser la population ciblée par l'étude" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -937,7 +937,7 @@
          fhir:reference [ fhir:v "ValueSet/eclaire-category-vs" ]
        ] ;
        fhir:name [ fhir:v "Value Set type pour spécifier la catégorie l'essai clinique" ] ;
-       fhir:description [ fhir:v "Value Set our spécifier la catégorie de l'essai clinique et préciser la réglementation ou le code regulation renseigner dans les bases de registre comme CTIS et EUDAMED." ] ;
+       fhir:description [ fhir:v "Value Set pour spécifier la catégorie de l'essai clinique et préciser la réglementation ou le code regulation renseigner dans les bases de registre comme CTIS et EUDAMED." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

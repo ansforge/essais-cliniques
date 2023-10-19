@@ -9,7 +9,7 @@
   "version" : "0.1.1",
   "name" : "ECLAIRELocation",
   "status" : "draft",
-  "date" : "2023-10-17T10:04:53+00:00",
+  "date" : "2023-10-19T15:25:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -171,6 +171,14 @@
     },
     {
       "id" : "Location.implicitRules",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.implicitRules",
       "short" : "A set of rules under which this content was created",
       "definition" : "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.",
@@ -204,6 +212,14 @@
     },
     {
       "id" : "Location.language",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.language",
       "short" : "Language of the resource content",
       "definition" : "The base language in which the resource is written.",
@@ -376,7 +392,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -437,7 +453,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them",
@@ -511,6 +527,14 @@
     },
     {
       "id" : "Location.status",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.status",
       "short" : "active | suspended | inactive",
       "definition" : "The status property covers the general availability of the resource, not the current value which may be covered by the operationStatus, or by a schedule/slots if they are configured for the location.",
@@ -625,6 +649,14 @@
     },
     {
       "id" : "Location.name",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.name",
       "short" : "Name of the location as used by humans",
       "definition" : "Name of the location as used by humans. Does not need to be unique.",
@@ -660,6 +692,14 @@
     },
     {
       "id" : "Location.alias",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.alias",
       "short" : "A list of alternate names that the location is known as, or was known as, in the past",
       "definition" : "A list of alternate names that the location is known as, or was known as, in the past.",
@@ -695,6 +735,14 @@
     },
     {
       "id" : "Location.description",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.description",
       "short" : "Additional details about the location that could be displayed as further information to identify the location beyond its name",
       "definition" : "Description of the Location, which helps in finding or referencing the place.",
@@ -731,6 +779,14 @@
     },
     {
       "id" : "Location.mode",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.mode",
       "short" : "instance | kind",
       "definition" : "Indicates whether a resource instance represents a specific location or a class of locations.",
@@ -884,7 +940,7 @@
         "human" : "A system is required if a value is provided.",
         "expression" : "value.empty() or system.exists()",
         "xpath" : "not(exists(f:value)) or exists(f:system)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Device"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactDetail"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -981,7 +1037,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1024,12 +1080,20 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true
     },
     {
       "id" : "Location.telecom.system",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.telecom.system",
       "short" : "phone | fax | email | pager | url | sms | other",
       "definition" : "Telecommunications form for contact point - what communications system is required to make use of the contact.",
@@ -1083,6 +1147,14 @@
     },
     {
       "id" : "Location.telecom.value",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.telecom.value",
       "short" : "The actual contact point details",
       "definition" : "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
@@ -1127,6 +1199,14 @@
     },
     {
       "id" : "Location.telecom.use",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.telecom.use",
       "short" : "home | work | temp | old | mobile - purpose of this contact point",
       "definition" : "Identifies the purpose for the contact point.",
@@ -1182,6 +1262,14 @@
     },
     {
       "id" : "Location.telecom.rank",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.telecom.rank",
       "short" : "Specify preferred order of use (1 = highest)",
       "definition" : "Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.",
@@ -1254,7 +1342,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Questionnaire"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1522,7 +1610,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1576,7 +1664,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
@@ -1592,6 +1680,14 @@
     },
     {
       "id" : "Location.position.longitude",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.position.longitude",
       "short" : "Longitude with WGS84 datum",
       "definition" : "Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes below).",
@@ -1626,6 +1722,14 @@
     },
     {
       "id" : "Location.position.latitude",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.position.latitude",
       "short" : "Latitude with WGS84 datum",
       "definition" : "Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes below).",
@@ -1660,6 +1764,14 @@
     },
     {
       "id" : "Location.position.altitude",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.position.altitude",
       "short" : "Altitude with WGS84 datum",
       "definition" : "Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes below).",
@@ -1925,7 +2037,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1979,7 +2091,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
@@ -1995,6 +2107,14 @@
     },
     {
       "id" : "Location.hoursOfOperation.daysOfWeek",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.hoursOfOperation.daysOfWeek",
       "short" : "mon | tue | wed | thu | fri | sat | sun",
       "definition" : "Indicates which days of the week are available between the start and end Times.",
@@ -2038,6 +2158,14 @@
     },
     {
       "id" : "Location.hoursOfOperation.allDay",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.hoursOfOperation.allDay",
       "short" : "The Location is open all day",
       "definition" : "The Location is open all day.",
@@ -2071,6 +2199,14 @@
     },
     {
       "id" : "Location.hoursOfOperation.openingTime",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.hoursOfOperation.openingTime",
       "short" : "Time that the Location opens",
       "definition" : "Time that the Location opens.",
@@ -2104,6 +2240,14 @@
     },
     {
       "id" : "Location.hoursOfOperation.closingTime",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.hoursOfOperation.closingTime",
       "short" : "Time that the Location closes",
       "definition" : "Time that the Location closes.",
@@ -2137,6 +2281,14 @@
     },
     {
       "id" : "Location.availabilityExceptions",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "Location.availabilityExceptions",
       "short" : "Description of availability exceptions",
       "definition" : "A description of when the locations opening ours are different to normal, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as detailed in the opening hours Times.",

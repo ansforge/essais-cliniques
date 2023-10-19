@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EclaireCategoryVS"] ; # 
   fhir:title [ fhir:v "Value Set type pour spécifier la catégorie l'essai clinique"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T10:04:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-19T15:25:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://esante.gouv.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Value Set our spécifier la catégorie de l'essai clinique et préciser la réglementation ou le code regulation renseigner dans les bases de registre comme CTIS et EUDAMED."] ; # 
+  fhir:description [ fhir:v "Value Set pour spécifier la catégorie de l'essai clinique et préciser la réglementation ou le code regulation renseigner dans les bases de registre comme CTIS et EUDAMED."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"^^xsd:anyURI ]
