@@ -5,6 +5,7 @@ Alias: $primpurp = http://terminology.hl7.org/CodeSystem/research-study-prim-pur
 Alias: $phase = http://terminology.hl7.org/CodeSystem/research-study-phase
 Alias: $category = eclaire-reglementation-precision-code-system
 Alias: $contact = eclaire-type-contact-code-system
+Alias: $title-type = eclaire-study-title-type-code-system
 
 
 Instance: fake-study-example
@@ -22,7 +23,14 @@ Usage: #example
 * extension[+]
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor"
   * valueReference = Reference(Organization/2) "Energetic Dog"
-* extension[+].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label"
+* extension[+]
+  * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label"
+  * extension[0]
+    * url = labelType
+    * value.coding = $title-type#short-title
+  * extension[+]
+    * url = labelValue
+    * valueString = "short study"
 * identifier[0]
   * use = #official
   * type
