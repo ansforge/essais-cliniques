@@ -12,7 +12,6 @@ Instance: fake-study-example
 InstanceOf: ResearchStudy
 Usage: #example
 * meta.profile = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy"
-* implicitRules = "http://hl7.org/fhir/reference"
 * extension[0]
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-review-date"
   * valueInstant = "2023-01-06T00:00:00Z"
@@ -41,7 +40,6 @@ Usage: #example
   * use = #official
   * type
     * text = "Hilarious Cat"
-  * system = "http://www.acme.com/identifiers/patient"
   * value = "123456"
   * assigner = Reference(Organization/1) "Crazy Mouse"
 * identifier[+].use = #secondary
@@ -52,15 +50,14 @@ Usage: #example
 * protocol = Reference(PlanDefinition/3) "Energetic plan"
 * status = #in-review
 * primaryPurposeType
-  * coding = $primpurp#treatment "Treatment"
+  * coding = $primpurp#treatment
     * version = "4.0.1"
   * text = "Zebra treatment"
 * phase
   * coding = $phase#phase-3
   * text = "Research Study Phase"
 * category
-  * coding = $category#IC-Cas-1 "Hilarious Elephant"
-  * text = "Crazy Cat"
+  * coding = $category#IC-Cas-1
 * focus
   * text = "Hilarious medicament"
 * condition[0]
@@ -79,7 +76,7 @@ Usage: #example
   * extension[0]
     * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type"
     * valueCodeableConcept
-      * coding = $contact#PUB "Publique / Public"
+      * coding = $contact#PUB
       * text = "Publique / Public"
   * extension[+]
     * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address"
@@ -105,23 +102,10 @@ Usage: #example
       * given = "Energetic Cat"
       * prefix = "Fantastic Zebra"
       * suffix = "Crazy Elephant"
-* relatedArtifact
-  * type = #documentation
-  * label = "Fantastic Giraffe"
-  * display = "Crazy Mouse"
-  * citation = ""
-  * url = "http://not-so-random-yet"
-  * document
-    * contentType = #"text/plain; charset=UTF-8, image/png"
-    * language = #en-US
-    * url = "http://www.acme.com/logo-small.png"
-    * title = "Official Corporate Logo"
-    * creation = "1992-04-11"
-  * resource = "http://not-so-random-yet"
 * keyword
   * text = "Fast Elephant"
 * location
-  * coding = urn:iso:std:iso:3166#FR "France"
+  * coding = urn:iso:std:iso:3166#FR
     * version = "4.0.1"
   * text = "Countries of recruitment"
 * description = "This is a fake research study"
@@ -130,7 +114,7 @@ Usage: #example
 * principalInvestigator = Reference(Practitioner:5) "Docteur Super"
 * site = Reference(Location/8) "Rainbow"
 * reasonStopped
-  * coding = $reasonstop#closed-due-to-toxicity "ouch"
+  * coding = $reasonstop#closed-due-to-toxicity
     * version = "4.0.1"
   * text = "ouch"
 * arm
