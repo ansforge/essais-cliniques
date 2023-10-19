@@ -3,6 +3,7 @@ Alias: $mdr = http://terminology.hl7.org/CodeSystem/mdr
 Alias: $reasonstop = http://terminology.hl7.org/CodeSystem/research-study-reason-stopped
 Alias: $primpurp = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type
 Alias: $phase = http://terminology.hl7.org/CodeSystem/research-study-phase
+Alias: $telecom = http://hl7.org/fhir/contact-point-system
 Alias: $category = eclaire-reglementation-precision-code-system
 Alias: $contact = eclaire-type-contact-code-system
 Alias: $title-type = eclaire-study-title-type-code-system
@@ -69,9 +70,11 @@ Usage: #example
   * name = "Slow Zebra"
   * telecom[0]
     * value = "Energetic Zebra"
+    * system = $telecom#phone
     * use = #work
   * telecom[+]
     * value = "Energetic Badger"
+    * system = $telecom#phone
     * use = #home
   * extension[0]
     * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type"
