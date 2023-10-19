@@ -541,7 +541,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "eclaire-researchstudy","ResearchStudy.identifier","ResearchStudy.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
-","Business Identifier for study","Identifiers assigned to this research study by the sponsor or other systems.","","Allows identification of the research study as it is known by various participating systems and in a way that remains consistent across servers.","","","","","","","",,,,,"","","Slicing pour les différents identifiants de l'essai clinique",,"open","ResearchStudy.identifier",0,*,"ele-1
+","Business Identifier for study","Identifiers assigned to this research study by the sponsor or other systems.","","Allows identification of the research study as it is known by various participating systems and in a way that remains consistent across servers.","","","","","","","",,,,,"","value:use}
+","Slicing pour les différents identifiants de l'essai clinique",,"open","ResearchStudy.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "eclaire-researchstudy","ResearchStudy.identifier:idPrimary","ResearchStudy.identifier","idPrimary","","",0,1,"Y","","Y","Identifier {[]} {[]}
@@ -556,7 +557,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"eclaire-researchstudy","ResearchStudy.identifier:idPrimary.use","ResearchStudy.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
+"eclaire-researchstudy","ResearchStudy.identifier:idPrimary.use","ResearchStudy.identifier.use","","","",1,1,"","Y","Y","code {[]} {[]}
 ","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -594,7 +595,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"eclaire-researchstudy","ResearchStudy.identifier:idSecondary.use","ResearchStudy.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
+"eclaire-researchstudy","ResearchStudy.identifier:idSecondary.use","ResearchStudy.identifier.use","","","",1,1,"","Y","Y","code {[]} {[]}
 ","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""secondary""/>","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -654,8 +655,8 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "eclaire-researchstudy","ResearchStudy.condition","ResearchStudy.condition","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
-","Sujet concerné /  Problem(s) Studied exemple code MedDRA","The condition that is the focus of the study.  For example, In a study to examine risk factors for Lupus, might have as an inclusion criterion ""healthy volunteer"", but the target condition code would be a Lupus SNOMED code.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"example","Identification of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-code","","value:use}
-","Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel",,"open","ResearchStudy.condition",0,*,"ele-1
+","Sujet concerné /  Problem(s) Studied exemple code MedDRA","The condition that is the focus of the study.  For example, In a study to examine risk factors for Lupus, might have as an inclusion criterion ""healthy volunteer"", but the target condition code would be a Lupus SNOMED code.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"example","Identification of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-code","","","Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.
+Ainsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. ",,"open","ResearchStudy.condition",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "eclaire-researchstudy","ResearchStudy.condition:medDRACondition","ResearchStudy.condition","medDRACondition","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
