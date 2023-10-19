@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-eclaire-study-population-code-system.html"><code>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-population-code-system</code></a></li></ul></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-population-vs"/>
-  <version value="0.1.1"/>
+  <version value="0.2.0"/>
   <name value="EclaireStudyPopulationVS"/>
   <title value="Caractérisation de la population Value Set"/>
   <status value="draft"/>
-  <date value="2023-10-19T16:17:18+00:00"/>
+  <date value="2023-10-19T17:05:12+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -20,6 +20,12 @@
     </telecom>
   </contact>
   <description value="Caractérisation de la population Value Set."/>
+  <jurisdiction>
+    <coding>
+      <system value="https://www.iso.org/obp/ui/fr/"/>
+      <code value="iso:code:3166:FR"/>
+    </coding>
+  </jurisdiction>
   <compose>
     <include>
       <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-population-code-system"/>

@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ImplementationGuide/ans.fhir.fr.eclaire"/>
-  <version value="0.1.1"/>
+  <version value="0.2.0"/>
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2023-10-19T16:17:18+00:00"/>
+  <date value="2023-10-19T17:05:12+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -21,6 +21,12 @@
     </telecom>
   </contact>
   <description value="Implementation Guide pour définir l'API FHIR pour ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"/>
+  <jurisdiction>
+    <coding>
+      <system value="https://www.iso.org/obp/ui/fr/"/>
+      <code value="iso:code:3166:FR"/>
+    </coding>
+  </jurisdiction>
   <packageId value="ans.fhir.fr.eclaire"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -54,7 +60,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="trial-use"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -265,7 +271,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="trial-use"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

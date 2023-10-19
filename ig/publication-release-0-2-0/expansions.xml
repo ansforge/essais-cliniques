@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4c930851-6c2e-4dcb-bf40-5c64b873bafb"/>
+  <id value="bb9a1d45-b2ae-4a8d-8374-e15edbe1cb0a"/>
   <meta>
-    <lastUpdated value="2023-10-19T16:17:18.766+00:00"/>
+    <lastUpdated value="2023-10-19T17:05:12.567+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -18,10 +18,10 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html">codesystem Précision sur la réglementation concernant l'essai v0.1.1 (CodeSystem)</a>
+                  <a href="CodeSystem-eclaire-reglementation-precision-code-system.html">codesystem Précision sur la réglementation concernant l'essai v0.2.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-eclaire-regulation-code-code-system.html">codesystem Code de régulation de l'essai v0.1.1 (CodeSystem)</a>
+                  <a href="CodeSystem-eclaire-regulation-code-code-system.html">codesystem Code de régulation de l'essai v0.2.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -201,14 +201,20 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-category-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.2.0"/>
         <name value="EclaireCategoryVS"/>
         <title value="Value Set type pour spécifier la catégorie l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-10-19T16:17:18+00:00"/>
+        <date value="2023-10-19T17:05:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="https://www.iso.org/obp/ui/fr/"/>
+            <code value="iso:code:3166:FR"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b43429fb-2f7e-468a-bfab-c46616178b48"/>
-          <timestamp value="2023-10-19T16:18:09+00:00"/>
+          <identifier value="urn:uuid:f85586bd-e5a6-4ade-b8dc-291f052d4844"/>
+          <timestamp value="2023-10-19T17:05:53+00:00"/>
           <total value="20"/>
           <parameter>
             <name value="excludeNested"/>
@@ -216,11 +222,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system|0.1.1"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system|0.2.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system|0.1.1"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system|0.2.0"/>
           </parameter>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
@@ -335,7 +341,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 16 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-eclaire-reglementation-precision-code-system.html">codesystem Précision sur la réglementation concernant l'essai v0.1.1 (CodeSystem)</a>
+              <a href="CodeSystem-eclaire-reglementation-precision-code-system.html">codesystem Précision sur la réglementation concernant l'essai v0.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -481,14 +487,20 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-reglementation-precision-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.2.0"/>
         <name value="EclaireReglementationPrecisionVS"/>
         <title value="Précision sur la réglementation concernant l'essai Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-19T16:17:18+00:00"/>
+        <date value="2023-10-19T17:05:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="https://www.iso.org/obp/ui/fr/"/>
+            <code value="iso:code:3166:FR"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1ba1449d-2097-4a8b-a06c-4f8e197855e7"/>
-          <timestamp value="2023-10-19T16:18:09+00:00"/>
+          <identifier value="urn:uuid:06effb0e-c209-4839-89bc-12bdac14e14d"/>
+          <timestamp value="2023-10-19T17:05:53+00:00"/>
           <total value="16"/>
           <parameter>
             <name value="excludeNested"/>
@@ -496,7 +508,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system|0.1.1"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system|0.2.0"/>
           </parameter>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"/>
@@ -591,7 +603,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-eclaire-regulation-code-code-system.html">codesystem Code de régulation de l'essai v0.1.1 (CodeSystem)</a>
+              <a href="CodeSystem-eclaire-regulation-code-code-system.html">codesystem Code de régulation de l'essai v0.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -641,14 +653,20 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-regulation-code-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.2.0"/>
         <name value="EclaireRegulationCodeVS"/>
         <title value="Code de régulation Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-19T16:17:18+00:00"/>
+        <date value="2023-10-19T17:05:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="https://www.iso.org/obp/ui/fr/"/>
+            <code value="iso:code:3166:FR"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ca8d1d2-9546-49e8-9f86-cec4ba64cb2a"/>
-          <timestamp value="2023-10-19T16:18:10+00:00"/>
+          <identifier value="urn:uuid:e0411cb7-cbf2-4900-aeac-b24ac6c243fe"/>
+          <timestamp value="2023-10-19T17:05:53+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -656,7 +674,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system|0.1.1"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system|0.2.0"/>
           </parameter>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
@@ -691,7 +709,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 12 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-eclaire-study-phase-source-code-system.html">codesystem Définition des phase de l'essai utilisés dans la base de données ECLAIRE v0.1.1 (CodeSystem)</a>
+              <a href="CodeSystem-eclaire-study-phase-source-code-system.html">codesystem Définition des phase de l'essai utilisés dans la base de données ECLAIRE v0.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -805,14 +823,20 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.2.0"/>
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2023-10-19T16:17:18+00:00"/>
+        <date value="2023-10-19T17:05:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="https://www.iso.org/obp/ui/fr/"/>
+            <code value="iso:code:3166:FR"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6b9addaa-c933-4779-be8c-3ef55abc1cc7"/>
-          <timestamp value="2023-10-19T16:18:10+00:00"/>
+          <identifier value="urn:uuid:590bd672-5ed7-4017-8388-773cb56eda55"/>
+          <timestamp value="2023-10-19T17:05:53+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -820,7 +844,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system|0.1.1"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system|0.2.0"/>
           </parameter>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system"/>
@@ -901,7 +925,7 @@
                   <a href="http://terminology.hl7.org/5.3.0/CodeSystem-research-study-phase.html">codesystem ResearchStudyPhase v0.1.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-eclaire-study-phase-code-system.html">codesystem Définition des type de phase de l'essai cliniques incluant https://hl7.org/fhir/R4/valueset-research-study-phase.html v0.1.1 (CodeSystem)</a>
+                  <a href="CodeSystem-eclaire-study-phase-code-system.html">codesystem Définition des type de phase de l'essai cliniques incluant https://hl7.org/fhir/R4/valueset-research-study-phase.html v0.2.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -1050,14 +1074,20 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.2.0"/>
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-10-19T16:17:18+00:00"/>
+        <date value="2023-10-19T17:05:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="https://www.iso.org/obp/ui/fr/"/>
+            <code value="iso:code:3166:FR"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:59648f34-47ea-44c0-8ec5-fef8bb7114a1"/>
-          <timestamp value="2023-10-19T16:18:10+00:00"/>
+          <identifier value="urn:uuid:4f4576f7-0fbc-4772-947f-53f883532f05"/>
+          <timestamp value="2023-10-19T17:05:53+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1069,7 +1099,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.1.1"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system|0.2.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
@@ -1129,7 +1159,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 9 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-eclaire-study-population-code-system.html">codesystem Codes pour caractériser la population de l'étude v0.1.1 (CodeSystem)</a>
+              <a href="CodeSystem-eclaire-study-population-code-system.html">codesystem Codes pour caractériser la population de l'étude v0.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1219,14 +1249,20 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-population-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.2.0"/>
         <name value="EclaireStudyPopulationVS"/>
         <title value="Caractérisation de la population Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-19T16:17:18+00:00"/>
+        <date value="2023-10-19T17:05:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="https://www.iso.org/obp/ui/fr/"/>
+            <code value="iso:code:3166:FR"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b0bcb328-dd1d-4d47-9270-9ee8648f868c"/>
-          <timestamp value="2023-10-19T16:18:10+00:00"/>
+          <identifier value="urn:uuid:74ffbb40-aa1e-401f-b15b-e2cfdd0b725b"/>
+          <timestamp value="2023-10-19T17:05:53+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1234,7 +1270,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-population-code-system|0.1.1"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-population-code-system|0.2.0"/>
           </parameter>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-population-code-system"/>
@@ -1294,7 +1330,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 9 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-eclaire-study-status-code-system.html">codesystem Définition des statuts de l'essai utilisés dans la base de données ECLAIRE v0.1.1 (CodeSystem)</a>
+              <a href="CodeSystem-eclaire-study-status-code-system.html">codesystem Définition des statuts de l'essai utilisés dans la base de données ECLAIRE v0.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1384,14 +1420,20 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.2.0"/>
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-10-19T16:17:18+00:00"/>
+        <date value="2023-10-19T17:05:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="https://www.iso.org/obp/ui/fr/"/>
+            <code value="iso:code:3166:FR"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:96cb9822-b0eb-4b50-be1a-817834daef5f"/>
-          <timestamp value="2023-10-19T16:18:10+00:00"/>
+          <identifier value="urn:uuid:4b35b299-2c34-40ca-904b-bb3d1da13ca4"/>
+          <timestamp value="2023-10-19T17:05:53+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1399,7 +1441,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system|0.1.1"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system|0.2.0"/>
           </parameter>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system"/>
@@ -1459,7 +1501,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 13 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-eclaire-study-title-type-code-system.html">codesystem Définition des types de titre pour l'essai v0.1.1 (CodeSystem)</a>
+              <a href="CodeSystem-eclaire-study-title-type-code-system.html">codesystem Définition des types de titre pour l'essai v0.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1662,14 +1704,20 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.2.0"/>
         <name value="EclaireStudyTitleTypetVS"/>
         <title value="Type de titre Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-19T16:17:18+00:00"/>
+        <date value="2023-10-19T17:05:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="https://www.iso.org/obp/ui/fr/"/>
+            <code value="iso:code:3166:FR"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d87bac4c-6390-4121-9b8e-edcd7375b586"/>
-          <timestamp value="2023-10-19T16:18:10+00:00"/>
+          <identifier value="urn:uuid:c7c8adcf-9c6a-48eb-9c9c-994c4b732371"/>
+          <timestamp value="2023-10-19T17:05:53+00:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1677,7 +1725,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system|0.1.1"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system|0.2.0"/>
           </parameter>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"/>
@@ -1757,7 +1805,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-eclaire-type-contact-code-system.html">codesystem Type de contact v0.1.1 (CodeSystem)</a>
+              <a href="CodeSystem-eclaire-type-contact-code-system.html">codesystem Type de contact v0.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1791,14 +1839,20 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-type-contact-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.2.0"/>
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-10-19T16:17:18+00:00"/>
+        <date value="2023-10-19T17:05:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="https://www.iso.org/obp/ui/fr/"/>
+            <code value="iso:code:3166:FR"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1cec2a34-c796-4d68-b147-21bb6c645eb9"/>
-          <timestamp value="2023-10-19T16:18:10+00:00"/>
+          <identifier value="urn:uuid:f285524c-7ec8-43db-96f4-f5f5fabe27a8"/>
+          <timestamp value="2023-10-19T17:05:53+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1806,7 +1860,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system|0.1.1"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system|0.2.0"/>
           </parameter>
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system"/>
