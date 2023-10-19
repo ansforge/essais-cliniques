@@ -1,10 +1,9 @@
 
 Alias: $mdr = http://terminology.hl7.org/CodeSystem/mdr
-Alias: $loc = http://hl7.org/fhir/ValueSet/jurisdiction
 Alias: $reasonstop = http://terminology.hl7.org/CodeSystem/research-study-reason-stopped
 Alias: $primpurp = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type
-Alias: $phase = eclaire-study-phase-vs
-Alias: $category = eclaire-category-vs
+Alias: $phase = http://terminology.hl7.org/CodeSystem/research-study-phase
+Alias: $category = eclaire-reglementation-precision-code-system
 Alias: $contact = eclaire-type-contact-code-system
 
 
@@ -43,7 +42,7 @@ Usage: #example
     * version = "4.0.1"
   * text = "Zebra treatment"
 * phase
-  * coding = $phase#phase-3-phase-4 "Phase 3 et 4"
+  * coding = $phase#phase-3
   * text = "Research Study Phase"
 * category
   * coding = $category#IC-Cas-1 "Hilarious Elephant"
