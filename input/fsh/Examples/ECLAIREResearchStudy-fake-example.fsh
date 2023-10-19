@@ -19,7 +19,8 @@ Usage: #example
 * extension[+]
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-therapeutic-area"
   * valueString = "domaine thérapeutique z"
-* extension[+].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period"
+* extension[+]
+  * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period"
   * valuePeriod.start = "2022-06-30T00:00:00.000Z"
 * extension[+]
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor"
