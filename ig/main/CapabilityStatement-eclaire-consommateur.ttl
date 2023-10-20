@@ -31,7 +31,8 @@
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "FR" ]
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
      ] )
   ] ) ; # 
   fhir:kind [ fhir:v "requirements"] ; # 
