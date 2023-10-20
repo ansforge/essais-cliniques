@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EclaireTypeContactVS"] ; # 
   fhir:title [ fhir:v "Type Contact Value Set"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-20T10:14:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-20T10:34:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -29,8 +29,8 @@
   fhir:description [ fhir:v "Type de contact pour les essais cliniques Value Set."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "https://www.iso.org/obp/ui/fr/"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "iso:code:3166:FR" ]
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ]
      ] )
   ] ) ; # 
   fhir:compose [

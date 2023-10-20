@@ -30,8 +30,8 @@
   fhir:description [ fhir:v "Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "https://www.iso.org/obp/ui/fr/"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "iso:code:3166:FR" ]
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ]
      ] )
   ] ) ; # 
   fhir:kind [ fhir:v "requirements"] ; # 
