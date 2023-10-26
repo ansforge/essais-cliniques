@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ImplementationGuide/ans.fhir.fr.eclaire"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2023-10-24T08:15:22+00:00"/>
+  <date value="2023-10-26T14:31:05+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -61,7 +61,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="trial-use"/>
+        <valueString value="ci-build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -272,7 +272,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="trial-use"/>
+        <valueString value="ci-build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
