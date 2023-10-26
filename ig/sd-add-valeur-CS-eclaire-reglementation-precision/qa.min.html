@@ -36,18 +36,46 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ECLAIRE</h1>
- <p>Generated Wed Oct 25 16:10:32 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.2.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Thu Oct 26 13:47:12 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.2.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.4.16</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.0</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.eclaire, Canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li>Version 0.2.0 has already been published <img src="icon-warning.png" height="16px" width="16px"/></li>
-<li>Publication Request is for version v0.2.0 which is already published <img src="icon-error.gif" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><table class="grid">
+ <tr><td>package-id</d><td>ans.fhir.fr.eclaire</td></tr>
+ <tr><td>version</d><td>0.2.1</td></tr>
+ <tr><td>path</d><td>https://interop.esante.gouv.fr/ig/fhir/eclaire/0.2.1</td></tr>
+ <tr><td>Pub-Mode</d><td>working release</td></tr>
+ <tr><td>status</d><td>trial-use</td></tr>
+ <tr><td>sequence</d><td>ci-build</td></tr>
+ <tr><td>desc</d><td>Implementation Guide de l'API FHIR pour le projet ECLAIRE. L'objectif de cet Implementation Guide est de définir les spécifications de l’API REST (FHIR) pour interroger la base de données ECLAIRE qui recensera les essais cliniques.</td></tr>
+ <tr><td>descmd</d><td><p>Release en trial use de l'Implementation Guide FHIR pour le MVP ECLAIRE.</p>
+<ul>
+<li>[narratif] ajout du lien vers le Swagger <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/71">[Narratif]ajout lien vers swagger #71</a></li>
+<li>[Narratif] ajout du 2eme flux <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/62">[Narratif]Ajout du flux 2 :recherche sur critères #62</a></li>
+<li>[RC] Création de nouveaux CodeSystems <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/59">[RC]Création de code systems pour certains CodeableConcept #59</a></li>
+<li>[RC] Création de ConceptMap pour phase de l'essai <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/48">[RC]Création de ConceptMap pour phase de l'essai #48</a></li>
+<li>[RC] Correction ECLAIREReviewDate en instant <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/45">[RC]Correction ECLAIREReviewDate en instant #45</a></li>
+<li>[RC] Création CodeSystem et ValueSet title-type <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/44">[RC]Page title-type retourne une 404 #44</a></li>
+<li>[Exemple] Suppression de l'exemple existant et création de fake-study-example <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/38">[Exemple]revoir l'exemple #38</a></li>
+<li>[RC] Suppression de l'extension eclaire-condition-details et création de la slice condition <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/51">[RC]Supprimer l'extension eclaire-condition-details #51</a></li>
+<li>[RC] Création des extensions ECLAIREContactAddress, ECLAIREContactAffiliation et ECLAIREContactName <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/32">[RC]Informations manquantes sur les contacts #32</a></li>
+<li>[Narratif] Mise à jour du mapping <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/34">[Narratif]Représentation des extensions sur le mapping #34</a></li>
+</ul>
+</td></tr>
+</table>
+<ul><li>Proposed path for this publication should usually be the canonical with the version or sequence appended and then some kind of label (typically '-snapshot') <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>This release is not labelled as a milestone or technical correction, so should have a patch version (0.2.1) <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>descmd cannot contain a ' <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request category found (not allowed after first publication <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request title found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request introduction found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request ci-build found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td><a href="#suppressed">19 Suppressed Issues</a>
 </td></tr>
- <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ans.fhir.fr.eclaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/fhir/eclaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ans.fhir.fr.eclaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.2.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/fhir/eclaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.3.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 </table><para>Templates: fhir.base.template#0.2.2. Tools: current</para></div></td></tr>
@@ -77,17 +105,16 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (7 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a>
- (13 uses),     <a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (14 uses),     <a href="http://hl7.org/fhir/R4/activitydefinition.html">ActivityDefinition</a>
  (6 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-mode.html">LocationMode</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-hierarchy.html">hierarchy</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-hierarchy.html">hierarchy</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/researchstudy.html">ResearchStudy</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html">ResearchStudyPrimaryPurposeType</a>
@@ -110,7 +137,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> </td></tr>
+ <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v0.2.0/index.html">Comparison with version 0.2.0</a></td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>Summary:</td><td> errors = 31, warn = 49, info = 9, broken links = 7</td></tr>
 </table>
@@ -243,7 +270,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c4625)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+     <td><b>CodeSystem (l1/c4819)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -383,43 +410,43 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.target[0] (l1&#8203;/c7775)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.code (l1&#8203;/c4902)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.code (l1&#8203;/c4902)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.code (l1&#8203;/c5131)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.code (l1&#8203;/c5131)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.code (l1&#8203;/c5376)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.code (l1&#8203;/c5376)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.code (l1&#8203;/c5606)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.code (l1&#8203;/c5606)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.code (l1&#8203;/c5827)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.code (l1&#8203;/c5827)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.code (l1&#8203;/c6057)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.code (l1&#8203;/c6057)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.code (l1&#8203;/c6304)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-first-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.code (l1&#8203;/c6304)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-first-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.code (l1&#8203;/c6536)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.code (l1&#8203;/c6536)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.code (l1&#8203;/c6760)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-II' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.code (l1&#8203;/c6760)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-II' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.code (l1&#8203;/c6990)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-II-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.code (l1&#8203;/c6990)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-II-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[10]&#8203;.code (l1&#8203;/c7225)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[10]&#8203;.code (l1&#8203;/c7225)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.code (l1&#8203;/c7562)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-III-IV' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.code (l1&#8203;/c7562)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-III-IV' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.target[0]&#8203;.code (l1&#8203;/c7747)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-3-phase-4' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.target[0]&#8203;.code (l1&#8203;/c7747)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-3-phase-4' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs|0.2.1</b></td>
    </tr>
 </table>
 <hr/>
@@ -462,34 +489,34 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.target[0] (l1&#8203;/c5850)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.code (l1&#8203;/c3506)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'a-demarrer' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.code (l1&#8203;/c3506)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'a-demarrer' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.code (l1&#8203;/c3733)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'en-cours' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.code (l1&#8203;/c3733)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'en-cours' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.code (l1&#8203;/c3959)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.code (l1&#8203;/c3959)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.code (l1&#8203;/c4208)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.code (l1&#8203;/c4208)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.code (l1&#8203;/c4473)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'prorogee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.code (l1&#8203;/c4473)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'prorogee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.code (l1&#8203;/c4699)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'expiree' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.code (l1&#8203;/c4699)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'expiree' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.code (l1&#8203;/c4926)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'terminee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.code (l1&#8203;/c4926)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'terminee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.code (l1&#8203;/c5168)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'terminee-fin-anticipee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.code (l1&#8203;/c5168)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'terminee-fin-anticipee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.code (l1&#8203;/c5413)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'archivee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.code (l1&#8203;/c5413)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'archivee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.code (l1&#8203;/c5643)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'abandonnee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.code (l1&#8203;/c5643)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'abandonnee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
 </table>
 <hr/>
@@ -502,10 +529,10 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">ResearchStudy.condition[0] (l139/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.0</b> <span id="sl64" class="flip" onclick="flip('l64')">Show Reasoning</span><div id="l64" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.0<ul></ul></div></td>
+     <td><b><a href="">ResearchStudy.condition[0] (l139/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1</b> <span id="sl64" class="flip" onclick="flip('l64')">Show Reasoning</span><div id="l64" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1<ul></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">ResearchStudy.condition[1] (l142/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.0</b> <span id="sl65" class="flip" onclick="flip('l65')">Show Reasoning</span><div id="l65" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.0<ul></ul></div></td>
+     <td><b><a href="">ResearchStudy.condition[1] (l142/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1</b> <span id="sl65" class="flip" onclick="flip('l65')">Show Reasoning</span><div id="l65" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1<ul></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>ResearchStudy&#8203;.extension[3]&#8203;.value&#8203;.ofType(Reference) (l26&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Organization/2'</b></td>
@@ -548,10 +575,10 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c50938)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c50941)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c61680)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c61686)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-group')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
@@ -583,19 +610,19 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c108485)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c108490)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c123788)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c123796)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.slicing&#8203;.description (l1&#8203;/c140105)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. '</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.slicing&#8203;.description (l1&#8203;/c140107)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. '</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[73]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c186817)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.slicing&#8203;.description (l1&#8203;/c220235)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. '</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.slicing&#8203;.description (l1&#8203;/c220229)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. '</b></td>
    </tr>
 </table>
 <hr/>
@@ -801,73 +828,73 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 <h2>CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-II-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-II-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-II-first-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-II-first-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-II-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-I-II-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-II' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-II' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-II-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-II-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-III-IV' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-III-IV' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-3-phase-4' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-3-phase-4' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'a-demarrer' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'a-demarrer' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'en-cours' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'en-cours' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'prorogee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'prorogee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'expiree' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'expiree' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'terminee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'terminee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'terminee-fin-anticipee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'terminee-fin-anticipee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'archivee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'archivee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'abandonnee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.0</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'abandonnee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.2.1</b></td>
    </tr>
 </table>
 <hr/>
