@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2023-10-27T16:41:15+00:00",
+  "date" : "2023-10-27T17:23:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -714,18 +714,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/eclaire-study-title-type-code-system"
-      },
-      "name" : "Définition des types de titre pour l'essai",
-      "description" : "Définition des types de titre pour l'essai (Code System inspiré de R5 : https://hl7.org/fhir/codesystem-title-type.html)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -793,18 +781,6 @@
       },
       "name" : "ECLAIREGroup",
       "description" : "Profil de Group pour le projet ECLAIRE",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/eclaire-label"
-      },
-      "name" : "ECLAIRELabel",
-      "description" : "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de plusieurs titres pour l'essai",
       "exampleBoolean" : false
     },
     {
@@ -973,18 +949,6 @@
       },
       "name" : "Type de contact",
       "description" : "Type de contact pour les essais cliniques",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/eclaire-study-title-type-vs"
-      },
-      "name" : "Type de titre Value Set",
-      "description" : "Type de titre pour les essais cliniques Value Set (inspiré du Value Set de R5 : https://hl7.org/fhir/valueset-title-type.html)",
       "exampleBoolean" : false
     },
     {
