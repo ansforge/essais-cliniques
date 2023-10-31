@@ -6,7 +6,7 @@ Alias: $phase = http://terminology.hl7.org/CodeSystem/research-study-phase
 Alias: $telecom = http://hl7.org/fhir/contact-point-system
 Alias: $category = eclaire-reglementation-precision-code-system
 Alias: $contact = eclaire-type-contact-code-system
-Alias: $title-type = http://hl7.org/fhir/ValueSet/title-type
+Alias: $title-type = eclaire-study-title-type-code-system
 
 
 Instance: fake-study-example
