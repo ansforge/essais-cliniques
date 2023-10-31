@@ -11,6 +11,6 @@ Description: "Extension créée dans le cadre du projet API ECLAIRE afin de perm
 
 * extension[type].value[x] only CodeableConcept
 * extension[type] ^short = "primary | official | plain-language | subtitle | short-title | acronym | earlier-title | language | auto-translated | human-use | machine-use"
-* extension[type].valueCodeableConcept from from eclaire-study-title-type-vs (extensible)
+* extension[type].valueCodeableConcept from eclaire-study-title-type-vs (extensible)
 
 * extension[value].value[x] only string
