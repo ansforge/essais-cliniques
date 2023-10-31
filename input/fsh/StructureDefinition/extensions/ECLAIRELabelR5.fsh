@@ -1,6 +1,6 @@
 Extension: ECLAIRELabelR5
 Id: eclaire-label-r5
-Description: "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de plusieurs titres pour l'essai"
+Description: "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de plusieurs titres pour l'essai. Cette extension implemente l'élément label de R5 https://hl7.org/fhir/researchstudy-definitions.html#ResearchStudy.label ."
 //* ^context.type = #element
 //* ^context.expression = "ResearchStudy"
 * ^url = $label-r5
