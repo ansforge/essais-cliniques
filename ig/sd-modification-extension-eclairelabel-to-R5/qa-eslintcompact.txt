@@ -67,8 +67,7 @@
 /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-group.json: line 1, col 61686, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
 /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-group.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label-r5.json: line 0, col 0, Error - Conformance resource /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label-r5.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label-r5) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label) (INVALID)
-/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label-r5.json: line 1, col 40232, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
-/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label-r5.json: line 0, col 0, Warning - Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
+/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label-r5.json: line 1, col 40238, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
 /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label-r5.json: line 0, col 0, Error - URL Mismatch https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label-r5 vs http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label (BUSINESSRULE)
 /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location.json: line 1, col 50497, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
 /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
@@ -93,6 +92,6 @@
 ECLAIRE : Validation Results
 =========================================
 
-err = 34, warn = 51, info = 9
-IG Publisher Version: 1.5.0
-Generated Tue Oct 31 17:26:50 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.2.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+err = 34, warn = 50, info = 9
+IG Publisher Version: 1.5.0 Out of date - current version is 1.5.1
+Generated Tue Oct 31 17:42:49 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.2.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)

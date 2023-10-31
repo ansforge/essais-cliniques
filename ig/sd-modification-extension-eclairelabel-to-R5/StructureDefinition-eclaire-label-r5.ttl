@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.2.1"] ; # 
   fhir:name [ fhir:v "ECLAIRELabelR5"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-31T17:23:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-31T17:39:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -43,7 +43,7 @@
   fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:context ( [
      fhir:type [ fhir:v "element" ] ;
-     fhir:expression [ fhir:v "Element" ]
+     fhir:expression [ fhir:v "ResearchStudy" ]
   ] ) ; # 
   fhir:type [ fhir:v "Extension"^^xsd:anyURI] ; # 
   fhir:baseDefinition [
