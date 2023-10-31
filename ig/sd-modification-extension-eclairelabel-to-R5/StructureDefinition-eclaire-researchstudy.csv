@@ -49,7 +49,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchStudy.extension:eclaire-label-r5","ResearchStudy.extension","eclaire-label-r5","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label]]} {[]}
-","autres titres et acronyme / Additional names for the study","Cette extension implemente l'élément label de R5. elle permet l'ajout de plusieurs titres pour l'essai","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","autres titres et acronyme / Additional names for the study. Implémentation de lélément label de R5 ","Cette extension implemente l'élément label de R5. elle permet l'ajout de plusieurs titres pour l'essai","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchStudy.modifierExtension","ResearchStudy.modifierExtension","","extensions
