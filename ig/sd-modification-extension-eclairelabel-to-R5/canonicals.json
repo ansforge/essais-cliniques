@@ -1,5 +1,12 @@
 [
   {
+    "id" : "eclaire-label-r5",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label",
+    "version" : "0.2.1",
+    "name" : "ECLAIRELabelR5"
+  },
+  {
     "id" : "eclaire-consommateur",
     "type" : "CapabilityStatement",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CapabilityStatement/eclaire-consommateur",
@@ -47,6 +54,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system",
     "version" : "0.2.1",
     "name" : "EclaireStudyStatusCS"
+  },
+  {
+    "id" : "eclaire-study-title-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system",
+    "version" : "0.2.1",
+    "name" : "EclaireStudyTitleTypeCS"
   },
   {
     "id" : "eclaire-type-contact-code-system",
@@ -208,6 +222,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs",
     "version" : "0.2.1",
     "name" : "EclaireStudyStatusVS"
+  },
+  {
+    "id" : "eclaire-study-title-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs",
+    "version" : "0.2.1",
+    "name" : "EclaireStudyTitleTypetVS"
   },
   {
     "id" : "eclaire-type-contact-vs",

@@ -78,8 +78,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-eclaire-researchstudy.html" : "ECLAIREResearchStudy",
-      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping"
+      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping",
+      "StructureDefinition-eclaire-researchstudy.html" : "ECLAIREResearchStudy"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-population-vs",
@@ -108,6 +108,20 @@
       "uses" : {
       },
       "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-title-type-vs",
+      "version" : "0.2.1",
+      "status" : "draft",
+      "name" : "EclaireStudyTitleTypetVS",
+      "title" : "Type de titre Value Set",
+      "description" : "Type de titre pour les essais cliniques Value Set (inspiré du Value Set de R5 : https://hl7.org/fhir/valueset-title-type.html)",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-eclaire-label-r5.html" : "ECLAIRELabelR5"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-type-contact-vs",
