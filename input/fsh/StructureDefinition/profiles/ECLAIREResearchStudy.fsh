@@ -62,7 +62,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
     ECLAIRETherapeuticArea named eclaire-therapeutic-area 0..1 MS and
     ECLAIRERecruitmentPeriod named eclaire-recruitment-period 0..1 MS and
     ECLAIRESecondarySponsor named eclaire-secondary-sponsor 0..* MS and
-    $label-r5 named eclaire-label-r5 0..* MS // extension label inspiré de R5
+    ECLAIRELabelR5 named eclaire-label-r5 0..* MS // extension label inspiré de R5
 * extension[eclaire-review-date] ^short = "Date de dernière modification substancielle"
 * extension[eclaire-label-r5] ^short = "autres titres et acronyme / Additional names for the study"
 * extension[eclaire-label-r5] ^definition = "Cette extension implemente l'élément label de R5. elle permet l'ajout de plusieurs titres pour l'essai"
