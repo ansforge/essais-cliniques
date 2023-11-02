@@ -1,4 +1,4 @@
-<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; max-width: 790px">
+<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>Brief description of this Implementation Guide</b><br>
 As part of the "Innovation santé 2030" plan, a new information system is going to be created to list clinical trials in France. The aim is to provide the general public with access to all authorized clinical trials, whether ongoing or planned, in order to help recruitment and promote awareness of clinical trials. For more information, click <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">here</a>. The aim of this implementation guide is to define the specifications of the REST API (FHIR), enabling to query the database listing clinical trials.
 </p>
