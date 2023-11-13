@@ -26,17 +26,17 @@ Usage: #example
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor"
   * valueReference = Reference(Organization/2) "Energetic Dog"
 * extension[+].extension[0].valueString = "INDISPONIBLE"
-* extension[=].extension[=].url = "labelValue"
+* extension[=].extension[=].url = "value"
 * extension[=].extension[+].valueCodeableConcept.coding = $title-type#human-use
-* extension[=].extension[=].valueCodeableConcept.text = "Label Type"
-* extension[=].extension[=].url = "labelType"
-* extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label"
+* extension[=].extension[=].valueCodeableConcept.text = "type"
+* extension[=].extension[=].url = "type"
+* extension[=].url = $label-r5
 * extension[+].extension[0].valueString = "INDISPONIBLE"
-* extension[=].extension[=].url = "labelValue"
+* extension[=].extension[=].url = "value"
 * extension[=].extension[+].valueCodeableConcept.coding = $title-type#acronym
-* extension[=].extension[=].valueCodeableConcept.text = "Label Type"
-* extension[=].extension[=].url = "labelType"
-* extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label"
+* extension[=].extension[=].valueCodeableConcept.text = "type"
+* extension[=].extension[=].url = "type"
+* extension[=].url = $label-r5
 * identifier[0]
   * use = #official
   * type

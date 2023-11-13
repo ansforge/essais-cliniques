@@ -45,7 +45,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * identifier[idSecondary] ^short = "identifiants secondaires / Secondary Identifying Numbers (e.g., protocol number) if available.  Also include other trial registries that have issued an identifying number to this trial. There is no limit on the number of Secondary identifying numbers that can be provided."
 
 * condition ^slicing.rules = #open
-* condition ^slicing.description = "Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. "
+* condition ^slicing.description = "Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre."
 * condition contains
     medDRACondition 0..* MS and
     diseaseCondition 0..* MS
@@ -62,9 +62,10 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
     ECLAIRETherapeuticArea named eclaire-therapeutic-area 0..1 MS and
     ECLAIRERecruitmentPeriod named eclaire-recruitment-period 0..1 MS and
     ECLAIRESecondarySponsor named eclaire-secondary-sponsor 0..* MS and
-    ECLAIRELabel named eclaire-label 0..* MS // extension label inspiré de R5
+    ECLAIRELabelR5 named eclaire-label-r5 0..* MS // extension label inspiré de R5
 * extension[eclaire-review-date] ^short = "Date de dernière modification substancielle"
-* extension[eclaire-label] ^short = "autres titres et acronyme / Additional names for the study"
+* extension[eclaire-label-r5] ^short = "autres titres et acronyme / Additional names for the study. Implémentation de l'élément label de R5"
+* extension[eclaire-label-r5] ^definition = "Cette extension implemente l'élément label de R5. elle permet l'ajout de plusieurs titres pour l'essai"
 * extension[eclaire-therapeutic-area] ^short = "Domaine thérapeutique concerné"
 * extension[eclaire-recruitment-period] ^short = "Période prévisionnelle de recrutement"   
 * extension[eclaire-secondary-sponsor] ^short = "Promoteur(s) secondaire(s) / Secondary Sponsor(s)"
