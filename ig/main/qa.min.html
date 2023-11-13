@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 7, errors = 31, warn = 49, info = 9-->
+<!-- broken links = 9, errors = 34, warn = 46, info = 9-->
 <head>
   <title>ECLAIRE : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,9 +36,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ECLAIRE</h1>
- <p>Generated Mon Nov 06 08:05:20 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.2.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Mon Nov 13 14:30:10 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.2.1 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.1</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.3</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.eclaire, Canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Publication Request:</td><td><table class="grid">
@@ -80,7 +80,7 @@
  <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
  <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
- <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>R5 Dependencies:</td><td><ul><li><a href="http://build.fhir.org/researchstudy.html">http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label</a></li></ul></td></tr>
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
@@ -92,13 +92,12 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (40 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
  (4 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice.html">bestpractice</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice-explanation.html">bestpractice-explanation</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-standards-status.html">standards-status</a>
- (119 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-normative-version.html">normative-version</a>
- (119 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bindingname.html">bindingName</a>
- (28 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-iscommonbinding.html">isCommonBinding</a>
- (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-group-type.html">GroupType</a>
+ (28 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-standards-status.html">standards-status</a>
+ (20 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-normative-version.html">normative-version</a>
+ (20 uses),     <a href="http://hl7.org/fhir/R4/valueset-group-type.html">GroupType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
  (7 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
@@ -138,14 +137,14 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v0.2.0/index.html">Comparison with version 0.2.0</a></td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 31, warn = 49, info = 9, broken links = 7</td></tr>
+ <tr><td>Summary:</td><td> errors = 34, warn = 46, info = 9, broken links = 9</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>7</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>9</b></td><td><b>3</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_CodeSystem-eclaire-reglementation-precision-code-system"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-reglementation-precision-code-system</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -183,11 +182,11 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-group"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-group</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-location"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-label-r5"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label-r5</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-researchstudy"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>3</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-location"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-site-contact-name"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-site-contact-name</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -226,34 +225,37 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
    <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-eclaire-consommateur.html#l445">output&#8203;/CapabilityStatement-eclaire-consommateur&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 283, column 735</a></b></td><td><b>error</b></td><td><b>The link 'ImplementationGuide-ans.fhir.fr.eclaire.html' for &quot;https://interop.esante.gouv.fr/ig/fhir/eclaire/ImplementationGuide/ans.fhir.fr.eclaire&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-eclaire-consommateur.json.html#l381">output&#8203;/CapabilityStatement-eclaire-consommateur&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/pre&#8203;/code&#8203;/a at Line 293, column 7</a></b></td><td><b>error</b></td><td><b>The link 'ImplementationGuide-ans.fhir.fr.eclaire.html' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="ResearchStudy-fake-study-example.html#l389">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 734</a></b></td><td><b>error</b></td><td><b>The link 'Organization/2' for &quot;Organization/2: Energetic Dog&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l461">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 1871</a></b></td><td><b>error</b></td><td><b>The link 'PlanDefinition/3' for &quot;PlanDefinition/3: Energetic plan&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l461">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 1843</a></b></td><td><b>error</b></td><td><b>The link 'PlanDefinition/3' for &quot;PlanDefinition/3: Energetic plan&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l530">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 3704</a></b></td><td><b>error</b></td><td><b>The link 'Group/6' for &quot;Group/6: Fast Zebra&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l530">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 3676</a></b></td><td><b>error</b></td><td><b>The link 'Group/6' for &quot;Group/6: Fast Zebra&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l536">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 3768</a></b></td><td><b>error</b></td><td><b>The link 'Organization:4' for &quot;Organization:4: Big boss&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l536">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 3740</a></b></td><td><b>error</b></td><td><b>The link 'Organization:4' for &quot;Organization:4: Big boss&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l542">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 3858</a></b></td><td><b>error</b></td><td><b>The link 'Practitioner:5' for &quot;Practitioner:5: Docteur Super&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l542">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 3830</a></b></td><td><b>error</b></td><td><b>The link 'Practitioner:5' for &quot;Practitioner:5: Docteur Super&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l548">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 3936</a></b></td><td><b>error</b></td><td><b>The link 'Location/8' for &quot;Location/8: Rainbow&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l548">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 3908</a></b></td><td><b>error</b></td><td><b>The link 'Location/8' for &quot;Location/8: Rainbow&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#l450">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 275, column 195</a></b></td><td><b>error</b></td><td><b>The link 'construction_des_flux.html' for &quot;construction des flux&quot; cannot be resolved</b></td>
+     <td><b><a href="index.html#l454">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 276, column 195</a></b></td><td><b>error</b></td><td><b>The link 'construction_des_flux.html' for &quot;construction des flux&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
@@ -528,10 +530,10 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">ResearchStudy.condition[0] (l139/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1</b> <span id="sl64" class="flip" onclick="flip('l64')">Show Reasoning</span><div id="l64" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1<ul></ul></div></td>
+     <td><b><a href="">ResearchStudy.condition[0] (l139/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl65" class="flip" onclick="flip('l65')">Show Reasoning</span><div id="l65" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">ResearchStudy.condition[1] (l142/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1</b> <span id="sl65" class="flip" onclick="flip('l65')">Show Reasoning</span><div id="l65" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1<ul></ul></div></td>
+     <td><b><a href="">ResearchStudy.condition[1] (l142/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl66" class="flip" onclick="flip('l66')">Show Reasoning</span><div id="l66" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.2.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>ResearchStudy&#8203;.extension[3]&#8203;.value&#8203;.ofType(Reference) (l26&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Organization/2'</b></td>
@@ -574,34 +576,37 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c50942)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c46877)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c61688)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c56691)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-group')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-location"> </a>
-<h2><a href="StructureDefinition-eclaire-location.html">fsh-generated/resources/StructureDefinition-eclaire-location.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+<a name="_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-label-r5"> </a>
+<h2><a href="StructureDefinition-eclaire-label-r5.html">fsh-generated/resources/StructureDefinition-eclaire-label-r5.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c50497)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/5&#8203;.0&#8203;/StructureDefinition&#8203;/extension-ResearchStudy&#8203;.label')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label-r5.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label-r5) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label)</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-location')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition (l1/c40238)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-eclaire-label-r5</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label-r5 vs http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-researchstudy"> </a>
-<h2><a href="StructureDefinition-eclaire-researchstudy.html">fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+<a name="_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_fsh-generated_resources_StructureDefinition-eclaire-location"> </a>
+<h2><a href="StructureDefinition-eclaire-location.html">fsh-generated/resources/StructureDefinition-eclaire-location.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -609,19 +614,10 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c108485)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c123792)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c46199)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.slicing&#8203;.description (l1&#8203;/c140121)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. '</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[73]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c186837)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.slicing&#8203;.description (l1&#8203;/c220267)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. '</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-location')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -968,6 +964,14 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
    </tr>
 </table>
 <hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-eclaire-label-r5.html">fsh-generated/resources/StructureDefinition-eclaire-label-r5.json</a></td><td><b>Conformance resource /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-label-r5.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label-r5) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label)</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Reference_REF_CantResolve"> </a>
 <h2>Reference_REF_CantResolve</h2>
  <table class="grid">
@@ -1036,14 +1040,11 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="Type_Specific_Checks_DT_String_WS"> </a>
-<h2>Type_Specific_Checks_DT_String_WS</h2>
+<a name="VALIDATION_HL7_WG_NEEDED"> </a>
+<h2>VALIDATION_HL7_WG_NEEDED</h2>
  <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-eclaire-researchstudy.html">fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json</a></td><td><b>value should not start or finish with whitespace 'Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. '</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-eclaire-researchstudy.html">fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json</a></td><td><b>value should not start or finish with whitespace 'Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.\nAinsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. '</b></td>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-eclaire-label-r5.html">fsh-generated/resources/StructureDefinition-eclaire-label-r5.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
    </tr>
 </table>
 <hr/>

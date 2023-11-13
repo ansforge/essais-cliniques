@@ -1,5 +1,12 @@
 [
   {
+    "id" : "eclaire-label-r5",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label",
+    "version" : "0.2.1",
+    "name" : "ECLAIRELabelR5"
+  },
+  {
     "id" : "eclaire-consommateur",
     "type" : "CapabilityStatement",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CapabilityStatement/eclaire-consommateur",
@@ -117,13 +124,6 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-group",
     "version" : "0.2.1",
     "name" : "ECLAIREGroup"
-  },
-  {
-    "id" : "eclaire-label",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label",
-    "version" : "0.2.1",
-    "name" : "ECLAIRELabel"
   },
   {
     "id" : "eclaire-location",

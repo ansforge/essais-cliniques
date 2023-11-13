@@ -9,7 +9,7 @@
   "version" : "0.2.1",
   "name" : "ECLAIREGroup",
   "status" : "draft",
-  "date" : "2023-11-06T08:01:54+00:00",
+  "date" : "2023-11-13T14:27:10+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -145,14 +145,6 @@
     },
     {
       "id" : "Group.meta",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.meta",
       "short" : "Metadata about the resource",
       "definition" : "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.",
@@ -187,14 +179,6 @@
     },
     {
       "id" : "Group.implicitRules",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.implicitRules",
       "short" : "A set of rules under which this content was created",
       "definition" : "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.",
@@ -228,14 +212,6 @@
     },
     {
       "id" : "Group.language",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.language",
       "short" : "Language of the resource content",
       "definition" : "The base language in which the resource is written.",
@@ -267,10 +243,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -283,14 +255,6 @@
     },
     {
       "id" : "Group.text",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.text",
       "short" : "Text summary of the resource, for human interpretation",
       "definition" : "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
@@ -484,14 +448,6 @@
     },
     {
       "id" : "Group.identifier",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.identifier",
       "short" : "Unique id",
       "definition" : "A unique business identifier for this group.",
@@ -543,14 +499,6 @@
     },
     {
       "id" : "Group.active",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.active",
       "short" : "Whether this group's record is in active use",
       "definition" : "Indicates whether the record for the group is available for use or is merely being retained for historical purposes.",
@@ -591,14 +539,6 @@
     },
     {
       "id" : "Group.type",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.type",
       "short" : "person | animal | practitioner | device | medication | substance",
       "definition" : "Identifies the broad classification of the kind of resources the group includes.",
@@ -648,14 +588,6 @@
     },
     {
       "id" : "Group.actual",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.actual",
       "short" : "Descriptive or actual",
       "definition" : "If true, indicates that the resource refers to a specific group of real individuals.  If false, the group defines a set of intended individuals.",
@@ -696,14 +628,6 @@
     },
     {
       "id" : "Group.code",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.code",
       "short" : "Kind of Group members",
       "definition" : "Provides a specific type of resource the group includes; e.g. \"cow\", \"syringe\", etc.",
@@ -763,14 +687,6 @@
     },
     {
       "id" : "Group.name",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.name",
       "short" : "Label for Group",
       "definition" : "A label assigned to the group for human identification and communication.",
@@ -807,14 +723,6 @@
     },
     {
       "id" : "Group.quantity",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.quantity",
       "short" : "Number of members",
       "definition" : "A count of the number of resource instances that are part of the group.",
@@ -851,14 +759,6 @@
     },
     {
       "id" : "Group.managingEntity",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.managingEntity",
       "short" : "Entity that is the custodian of the Group's definition",
       "definition" : "Entity responsible for defining and maintaining Group characteristics and/or registered members.",
@@ -906,14 +806,6 @@
     },
     {
       "id" : "Group.characteristic",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.characteristic",
       "short" : "Include / Exclude group members by Trait",
       "definition" : "Identifies traits whose presence r absence is shared by members of the group.",
@@ -1034,14 +926,6 @@
     },
     {
       "id" : "Group.characteristic.modifierExtension",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.characteristic.modifierExtension",
       "short" : "Extensions that cannot be ignored even if unrecognized",
       "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
@@ -1142,14 +1026,6 @@
     },
     {
       "id" : "Group.characteristic.value[x]",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.characteristic.value[x]",
       "short" : "Value held by characteristic",
       "definition" : "The value of the trait that holds (or does not hold - see 'exclude') for members of the group.",
@@ -1205,14 +1081,6 @@
     },
     {
       "id" : "Group.characteristic.exclude",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.characteristic.exclude",
       "short" : "Group includes or excludes",
       "definition" : "If true, indicates the characteristic is one that is NOT held by members of the group.",
@@ -1248,14 +1116,6 @@
     },
     {
       "id" : "Group.characteristic.period",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.characteristic.period",
       "short" : "Period over which characteristic is tested",
       "definition" : "The period over which the characteristic is tested; e.g. the patient had an operation during the month of June.",
@@ -1302,14 +1162,6 @@
     },
     {
       "id" : "Group.member",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.member",
       "short" : "Who or what is in group",
       "definition" : "Identifies the resource instances that are members of the group.",
@@ -1430,14 +1282,6 @@
     },
     {
       "id" : "Group.member.modifierExtension",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.member.modifierExtension",
       "short" : "Extensions that cannot be ignored even if unrecognized",
       "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
@@ -1487,14 +1331,6 @@
     },
     {
       "id" : "Group.member.entity",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.member.entity",
       "short" : "Reference to the group member",
       "definition" : "A reference to the entity that is a member of the group. Must be consistent with Group.type. If the entity is another group, then the type must be the same.",
@@ -1544,14 +1380,6 @@
     },
     {
       "id" : "Group.member.period",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.member.period",
       "short" : "Period member belonged to the group",
       "definition" : "The period that the member was in the group, if known.",
@@ -1600,14 +1428,6 @@
     },
     {
       "id" : "Group.member.inactive",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Group.member.inactive",
       "short" : "If member is no longer in group",
       "definition" : "A flag to indicate that the member is no longer in the group, but previously may have been a member.",

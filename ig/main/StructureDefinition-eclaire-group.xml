@@ -12,7 +12,7 @@
   <version value="0.2.1"/>
   <name value="ECLAIREGroup"/>
   <status value="draft"/>
-  <date value="2023-11-06T08:01:54+00:00"/>
+  <date value="2023-11-13T14:27:10+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -142,12 +142,6 @@
       <isSummary value="true"/>
     </element>
     <element id="Group.meta">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.meta"/>
       <short value="Metadata about the resource"/>
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource."/>
@@ -181,12 +175,6 @@
       </mapping>
     </element>
     <element id="Group.implicitRules">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.implicitRules"/>
       <short value="A set of rules under which this content was created"/>
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc."/>
@@ -219,12 +207,6 @@
       </mapping>
     </element>
     <element id="Group.language">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.language"/>
       <short value="Language of the resource content"/>
       <definition value="The base language in which the resource is written."/>
@@ -255,9 +237,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
-        </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
@@ -268,12 +247,6 @@
       </mapping>
     </element>
     <element id="Group.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.text"/>
       <short value="Text summary of the resource, for human interpretation"/>
       <definition value="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
@@ -459,12 +432,6 @@
       </mapping>
     </element>
     <element id="Group.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.identifier"/>
       <short value="Unique id"/>
       <definition value="A unique business identifier for this group."/>
@@ -515,12 +482,6 @@
       </mapping>
     </element>
     <element id="Group.active">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.active"/>
       <short value="Whether this group's record is in active use"/>
       <definition value="Indicates whether the record for the group is available for use or is merely being retained for historical purposes."/>
@@ -560,12 +521,6 @@
       </mapping>
     </element>
     <element id="Group.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.type"/>
       <short value="person | animal | practitioner | device | medication | substance"/>
       <definition value="Identifies the broad classification of the kind of resources the group includes."/>
@@ -613,12 +568,6 @@
       </mapping>
     </element>
     <element id="Group.actual">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.actual"/>
       <short value="Descriptive or actual"/>
       <definition value="If true, indicates that the resource refers to a specific group of real individuals.  If false, the group defines a set of intended individuals."/>
@@ -658,12 +607,6 @@
       </mapping>
     </element>
     <element id="Group.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.code"/>
       <short value="Kind of Group members"/>
       <definition value="Provides a specific type of resource the group includes; e.g. &quot;cow&quot;, &quot;syringe&quot;, etc."/>
@@ -721,12 +664,6 @@
       </mapping>
     </element>
     <element id="Group.name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.name"/>
       <short value="Label for Group"/>
       <definition value="A label assigned to the group for human identification and communication."/>
@@ -762,12 +699,6 @@
       </mapping>
     </element>
     <element id="Group.quantity">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.quantity"/>
       <short value="Number of members"/>
       <definition value="A count of the number of resource instances that are part of the group."/>
@@ -803,12 +734,6 @@
       </mapping>
     </element>
     <element id="Group.managingEntity">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.managingEntity"/>
       <short value="Entity that is the custodian of the Group's definition"/>
       <definition value="Entity responsible for defining and maintaining Group characteristics and/or registered members."/>
@@ -855,12 +780,6 @@
       </mapping>
     </element>
     <element id="Group.characteristic">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.characteristic"/>
       <short value="Include / Exclude group members by Trait"/>
       <definition value="Identifies traits whose presence r absence is shared by members of the group."/>
@@ -975,12 +894,6 @@
       </mapping>
     </element>
     <element id="Group.characteristic.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.characteristic.modifierExtension"/>
       <short value="Extensions that cannot be ignored even if unrecognized"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
@@ -1079,12 +992,6 @@
       </mapping>
     </element>
     <element id="Group.characteristic.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.characteristic.value[x]"/>
       <short value="Value held by characteristic"/>
       <definition value="The value of the trait that holds (or does not hold - see 'exclude') for members of the group."/>
@@ -1138,12 +1045,6 @@
       </mapping>
     </element>
     <element id="Group.characteristic.exclude">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.characteristic.exclude"/>
       <short value="Group includes or excludes"/>
       <definition value="If true, indicates the characteristic is one that is NOT held by members of the group."/>
@@ -1178,12 +1079,6 @@
       </mapping>
     </element>
     <element id="Group.characteristic.period">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.characteristic.period"/>
       <short value="Period over which characteristic is tested"/>
       <definition value="The period over which the characteristic is tested; e.g. the patient had an operation during the month of June."/>
@@ -1229,12 +1124,6 @@
       </mapping>
     </element>
     <element id="Group.member">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.member"/>
       <short value="Who or what is in group"/>
       <definition value="Identifies the resource instances that are members of the group."/>
@@ -1349,12 +1238,6 @@
       </mapping>
     </element>
     <element id="Group.member.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.member.modifierExtension"/>
       <short value="Extensions that cannot be ignored even if unrecognized"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
@@ -1403,12 +1286,6 @@
       </mapping>
     </element>
     <element id="Group.member.entity">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.member.entity"/>
       <short value="Reference to the group member"/>
       <definition value="A reference to the entity that is a member of the group. Must be consistent with Group.type. If the entity is another group, then the type must be the same."/>
@@ -1457,12 +1334,6 @@
       </mapping>
     </element>
     <element id="Group.member.period">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.member.period"/>
       <short value="Period member belonged to the group"/>
       <definition value="The period that the member was in the group, if known."/>
@@ -1510,12 +1381,6 @@
       </mapping>
     </element>
     <element id="Group.member.inactive">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Group.member.inactive"/>
       <short value="If member is no longer in group"/>
       <definition value="A flag to indicate that the member is no longer in the group, but previously may have been a member."/>

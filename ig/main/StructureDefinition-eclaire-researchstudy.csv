@@ -48,8 +48,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Promoteur(s) secondaire(s) / Secondary Sponsor(s)","Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ResearchStudy.extension:eclaire-label","ResearchStudy.extension","eclaire-label","","",0,*,"Y","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-label]]} {[]}
-","autres titres et acronyme / Additional names for the study","Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de plusieurs titres pour l'essai","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"ResearchStudy.extension:eclaire-label-r5","ResearchStudy.extension","eclaire-label-r5","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label]]} {[]}
+","autres titres et acronyme / Additional names for the study. Implémentation de l'élément label de R5","Cette extension implemente l'élément label de R5. elle permet l'ajout de plusieurs titres pour l'essai","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchStudy.modifierExtension","ResearchStudy.modifierExtension","","extensions
@@ -176,7 +176,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","InterventionalStudyProtocol.interventionTypeCode","CE/CNE/CWE","n/a","CD","Focus of Study","FiveWs.what[x]"
 "ResearchStudy.condition","ResearchStudy.condition","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
 ","Sujet concerné /  Problem(s) Studied exemple code MedDRA","The condition that is the focus of the study.  For example, In a study to examine risk factors for Lupus, might have as an inclusion criterion ""healthy volunteer"", but the target condition code would be a Lupus SNOMED code.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"example","Identification of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-code","","","Slicing pour apporter des précisions sur le sujet / Health Condition(s) or Problem(s) Studied. Dans le CTIS, il y a un champ texte ouvert (obligatoire) pour indiquer la pathologie et éventuellement des précisons. Un code MedDRA peut-être ajouté mais il est optionnel.
-Ainsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre. ",,"open","ResearchStudy.condition",0,*,"ele-1
+Ainsi la slice medDRACondition contient un code meddra, la slice diseaseCondition contient un texte libre.",,"open","ResearchStudy.condition",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","StudyCondition.code","CE/CNE/CWE","n/a","CD","Conditions","FiveWs.what[x]"
 "ResearchStudy.condition:medDRACondition","ResearchStudy.condition","medDRACondition","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
