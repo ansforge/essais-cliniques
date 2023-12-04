@@ -206,4 +206,5 @@ GET [BASE]/ResearchStudy?_lastUpdated=ge2022-11-06T15:00 # Critère de recherche
 &_include=ResearchStudy:sponsor # Inclus les Organization référencées par ResearchStudy
 &_include=ResearchStudy:enrollment # Inclus les Group référencées par ResearchStudy
 ```
-
+**Exemple de résultat de requête :**
+[Bundle](Bundle-ECLAIRE-bundle-example-lastupdated.json.html)
