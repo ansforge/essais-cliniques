@@ -1,0 +1,351 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/eclaire/ResearchStudy/ECLAIREResearchStudy-example-2022-500014-26-00> a fhir:ResearchStudy ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ECLAIREResearchStudy-example-2022-500014-26-00"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2023-04-12T00:00:00.000Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchStudy</b><a name=\"ECLAIREResearchStudy-example-2022-500014-26-00\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchStudy &quot;ECLAIREResearchStudy-example-2022-500014-26-00&quot; Updated &quot;2023-04-12 00:00:00+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eclaire-researchstudy.html\">ECLAIREResearchStudy</a></p></div><p><b>ECLAIRESecondarySponsor</b>: <a href=\"Organization/2022-500014-26-00-secondary-sponsor\">Organization/2022-500014-26-00-secondary-sponsor: Reference to secondary sponsor</a></p><p><b>ECLAIRETherapeuticArea</b>: Diseases [C] - Neoplasms [C04]</p><blockquote><p><b>ECLAIRELabelR5</b></p><blockquote><p><b>url</b></p><code>value</code></blockquote><p><b>value</b>: INDISPONIBLE</p><blockquote><p><b>url</b></p><code>type</code></blockquote><p><b>value</b>: Label Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-eclaire-study-title-type-code-system.html\">Définition des types de titre pour l'essai[0.2.0]</a>#human-use &quot;Human use&quot;)</span></p></blockquote><blockquote><p><b>ECLAIRELabelR5</b></p><blockquote><p><b>url</b></p><code>value</code></blockquote><p><b>value</b>: INDISPONIBLE</p><blockquote><p><b>url</b></p><code>type</code></blockquote><p><b>value</b>: Label Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-eclaire-study-title-type-code-system.html\">Définition des types de titre pour l'essai[0.2.0]</a>#acronym &quot;Acronym&quot;)</span></p></blockquote><p><b>ECLAIRERecruitmentPeriod</b>: 2022-06-30 00:00:00+0000 --&gt; (ongoing)</p><p><b>ECLAIREReviewDate</b>: Apr 12, 2023, 12:00:00 AM</p><p><b>identifier</b>: id: INDISPONIBLE (use: OFFICIAL), id: 2022-500014-26-00 (use: SECONDARY)</p><p><b>title</b>: A PHASE III, RANDOMIZED, OPEN-LABEL STUDY EVALUATING THE EFFICACY AND SAFETY OF GIREDESTRANT IN COMBINATION WITH PHESGO VERSUS PHESGO AFTER INDUCTION THERAPY WITH PHESGO+TAXANE IN PATIENTS WITH PREVIOUSLY UNTREATED HER2-POSITIVE, ESTROGEN RECEPTOR-POSITIVE LOCALLY-ADVANCED OR METASTATIC BREAST CANCER</p><p><b>status</b>: active</p><p><b>phase</b>: Research Study Phase <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ResearchStudyPhase[4.0.1]#phase-3 &quot;Phase 3&quot;)</span></p><p><b>category</b>: Regulation Code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-eclaire-regulation-code-code-system.html\">Code de régulation de l'essai[0.2.0]</a>#REG536 &quot;REG536 (CTIS)&quot;)</span>, Reglementation Precision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-eclaire-reglementation-precision-code-system.html\">Précision sur la réglementation concernant l'essai[0.2.0]</a>#study-ctis &quot;un essai clinique (CTIS)&quot;)</span></p><p><b>condition</b>: diseaseCondition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated] &quot;Locally-Advanced or Metastatic breast cancer (MBC)&quot;)</span>, medDRACondition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (mdr[2.0.1]#10070575 &quot;Cancer du sein à récepteurs aux oestrogènes positifs&quot;)</span>, medDRACondition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (mdr[2.0.1]#10065430 &quot;Cancer du sein HER2 positif&quot;)</span></p><p><b>contact</b>: ph: 0041616881111(WORK),<a href=\"mailto:global.rochegenentechtrials@roche.com\">global.rochegenentechtrials@roche.com</a>, ph: INDISPONIBLE(WORK),<a href=\"mailto:INDISPONIBLE\">INDISPONIBLE</a>, ph: INDISPONIBLE(WORK),<a href=\"mailto:INDISPONIBLE\">INDISPONIBLE</a></p><p><b>location</b>: Countries of recruitment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code[4.0.1]#BE &quot;Belgium&quot;)</span>, Countries of recruitment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code[4.0.1]#DE &quot;Germany&quot;)</span>, Countries of recruitment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code[4.0.1]#ES &quot;Spain&quot;)</span>, Countries of recruitment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code[4.0.1]#FR &quot;France&quot;)</span>, Countries of recruitment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code[4.0.1]#HU &quot;Hungary&quot;)</span>, Countries of recruitment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code[4.0.1]#IT &quot;Italy&quot;)</span>, Countries of recruitment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code[4.0.1]#PL &quot;Poland&quot;)</span>, Countries of recruitment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code[4.0.1]#PT &quot;Portugal&quot;)</span></p><p><b>description</b>: INDISPONIBLE</p><p><b>enrollment</b>: <a href=\"Group/2022-500014-26-00-enrollment-group\">Group/2022-500014-26-00-enrollment-group: Reference to group detailing study characteristics</a></p><p><b>sponsor</b>: <a href=\"Organization/2022-500014-26-00-primary-sponsor\">Organization/2022-500014-26-00-primary-sponsor: Reference to primary sponsor</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/Organization/2022-500014-26-00-secondary-sponsor> ;
+       fhir:reference [ fhir:v "Organization/2022-500014-26-00-secondary-sponsor" ] ;
+       fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Reference to secondary sponsor" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-therapeutic-area"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Diseases [C] - Neoplasms [C04]" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "INDISPONIBLE" ]
+     ] [
+       fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "0.2.0" ] ;
+           fhir:code [ fhir:v "human-use" ] ;
+           fhir:display [ fhir:v "Human use" ]
+         ] ) ;
+         fhir:text [ fhir:v "Label Type" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "INDISPONIBLE" ]
+     ] [
+       fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "0.2.0" ] ;
+           fhir:code [ fhir:v "acronym" ] ;
+           fhir:display [ fhir:v "Acronym" ]
+         ] ) ;
+         fhir:text [ fhir:v "Label Type" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Period ;
+       fhir:start [ fhir:v "2022-06-30T00:00:00.000Z"^^xsd:dateTime ]
+     ]
+  ] [
+     fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-review-date"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-04-12T00:00:00.000Z"^^xsd:dateTime ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:value [ fhir:v "INDISPONIBLE" ] ;
+     fhir:assigner [
+       fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Reference to primary assigner" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "secondary" ] ;
+     fhir:value [ fhir:v "2022-500014-26-00" ] ;
+     fhir:assigner [
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/Organization/ctis> ;
+       fhir:reference [ fhir:v "Organization/ctis" ] ;
+       fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Reference to secondary assigner" ]
+     ]
+  ] ) ; # 
+  fhir:title [ fhir:v "A PHASE III, RANDOMIZED, OPEN-LABEL STUDY EVALUATING THE EFFICACY AND SAFETY OF GIREDESTRANT IN COMBINATION WITH PHESGO VERSUS PHESGO AFTER INDUCTION THERAPY WITH PHESGO+TAXANE IN PATIENTS WITH PREVIOUSLY UNTREATED HER2-POSITIVE, ESTROGEN RECEPTOR-POSITIVE LOCALLY-ADVANCED OR METASTATIC BREAST CANCER"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:phase [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-phase"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "phase-3" ] ;
+       fhir:display [ fhir:v "Phase 3" ]
+     ] ) ;
+     fhir:text [ fhir:v "Research Study Phase" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "0.2.0" ] ;
+       fhir:code [ fhir:v "REG536" ] ;
+       fhir:display [ fhir:v "REG536 (CTIS)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Regulation Code" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "0.2.0" ] ;
+       fhir:code [ fhir:v "study-ctis" ] ;
+       fhir:display [ fhir:v "un essai clinique (CTIS)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Reglementation Precision" ]
+  ] ) ; # 
+  fhir:condition ( [
+     fhir:coding ( [
+       fhir:display [ fhir:v "Locally-Advanced or Metastatic breast cancer (MBC)" ]
+     ] ) ;
+     fhir:text [ fhir:v "diseaseCondition" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/mdr"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2.0.1" ] ;
+       fhir:code [ fhir:v "10070575" ] ;
+       fhir:display [ fhir:v "Cancer du sein à récepteurs aux oestrogènes positifs" ]
+     ] ) ;
+     fhir:text [ fhir:v "medDRACondition" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/mdr"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2.0.1" ] ;
+       fhir:code [ fhir:v "10065430" ] ;
+       fhir:display [ fhir:v "Cancer du sein HER2 positif" ]
+     ] ) ;
+     fhir:text [ fhir:v "medDRACondition" ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:HumanName ;
+         fhir:use [ fhir:v "official" ] ;
+         fhir:family [ fhir:v "Trial Information Support Line-TISL, Switzerland" ] ;
+         fhir:given ( [ fhir:v "Head of EU" ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Address ;
+         fhir:use [ fhir:v "work" ] ;
+         fhir:type [ fhir:v "physical" ] ;
+         fhir:line ( [ fhir:v "INDISPONIBLE" ] ) ;
+         fhir:city [ fhir:v "INDISPONIBLE" ] ;
+         fhir:postalCode [ fhir:v "INDISPONIBLE" ] ;
+         fhir:country [ fhir:v "INDISPONIBLE" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "INDISPONIBLE" ]
+     ] ) ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "0041616881111" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "global.rochegenentechtrials@roche.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:HumanName ;
+         fhir:use [ fhir:v "official" ] ;
+         fhir:family [ fhir:v "INDISPONIBLE" ] ;
+         fhir:given ( [ fhir:v "INDISPONIBLE" ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Address ;
+         fhir:use [ fhir:v "work" ] ;
+         fhir:type [ fhir:v "physical" ] ;
+         fhir:line ( [ fhir:v "INDISPONIBLE" ] ) ;
+         fhir:city [ fhir:v "INDISPONIBLE" ] ;
+         fhir:postalCode [ fhir:v "INDISPONIBLE" ] ;
+         fhir:country [ fhir:v "INDISPONIBLE" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "INDISPONIBLE" ]
+     ] [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "0.1.0" ] ;
+           fhir:code [ fhir:v "SCI" ] ;
+           fhir:display [ fhir:v "Scientifique / Scientific" ]
+         ] ) ;
+         fhir:text [ fhir:v "Contact Type" ]
+       ]
+     ] ) ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "INDISPONIBLE" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "INDISPONIBLE" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:HumanName ;
+         fhir:use [ fhir:v "official" ] ;
+         fhir:family [ fhir:v "INDISPONIBLE" ] ;
+         fhir:given ( [ fhir:v "INDISPONIBLE" ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Address ;
+         fhir:use [ fhir:v "work" ] ;
+         fhir:type [ fhir:v "physical" ] ;
+         fhir:line ( [ fhir:v "INDISPONIBLE" ] ) ;
+         fhir:city [ fhir:v "INDISPONIBLE" ] ;
+         fhir:postalCode [ fhir:v "INDISPONIBLE" ] ;
+         fhir:country [ fhir:v "INDISPONIBLE" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "INDISPONIBLE" ]
+     ] [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "0.1.0" ] ;
+           fhir:code [ fhir:v "PUB" ] ;
+           fhir:display [ fhir:v "Publique / Public" ]
+         ] ) ;
+         fhir:text [ fhir:v "Contact Type" ]
+       ]
+     ] ) ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "INDISPONIBLE" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "INDISPONIBLE" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:location ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] ) ;
+     fhir:text [ fhir:v "Countries of recruitment" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "DE" ] ;
+       fhir:display [ fhir:v "Germany" ]
+     ] ) ;
+     fhir:text [ fhir:v "Countries of recruitment" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "ES" ] ;
+       fhir:display [ fhir:v "Spain" ]
+     ] ) ;
+     fhir:text [ fhir:v "Countries of recruitment" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] ) ;
+     fhir:text [ fhir:v "Countries of recruitment" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "HU" ] ;
+       fhir:display [ fhir:v "Hungary" ]
+     ] ) ;
+     fhir:text [ fhir:v "Countries of recruitment" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "IT" ] ;
+       fhir:display [ fhir:v "Italy" ]
+     ] ) ;
+     fhir:text [ fhir:v "Countries of recruitment" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "PL" ] ;
+       fhir:display [ fhir:v "Poland" ]
+     ] ) ;
+     fhir:text [ fhir:v "Countries of recruitment" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] ) ;
+     fhir:text [ fhir:v "Countries of recruitment" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "INDISPONIBLE"] ; # 
+  fhir:enrollment ( [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/Group/2022-500014-26-00-enrollment-group> ;
+     fhir:reference [ fhir:v "Group/2022-500014-26-00-enrollment-group" ] ;
+     fhir:type [ fhir:v "Group"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Reference to group detailing study characteristics" ]
+  ] ) ; # 
+  fhir:sponsor [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/Organization/2022-500014-26-00-primary-sponsor> ;
+     fhir:reference [ fhir:v "Organization/2022-500014-26-00-primary-sponsor" ] ;
+     fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Reference to primary sponsor" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
