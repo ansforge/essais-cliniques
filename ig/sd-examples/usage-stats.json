@@ -151,6 +151,7 @@
       "ConceptMap.group.element.target"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label": [
+      "Bundle.entry.resource",
       "ResearchStudy"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -198,30 +199,38 @@
       "ImplementationGuide.definition.resource"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address": [
+      "Bundle.entry.resource.contact",
       "ResearchStudy.contact"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-affiliation": [
+      "Bundle.entry.resource.contact",
       "ResearchStudy.contact"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-name": [
+      "Bundle.entry.resource.contact",
       "ResearchStudy.contact"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-type": [
+      "Bundle.entry.resource.contact",
       "ResearchStudy.contact"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period": [
+      "Bundle.entry.resource",
       "ResearchStudy"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-review-date": [
+      "Bundle.entry.resource",
       "ResearchStudy"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor": [
+      "Bundle.entry.resource",
       "ResearchStudy"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-site-contact-name": [
       "Location.telecom"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-therapeutic-area": [
+      "Bundle.entry.resource",
       "ResearchStudy"
     ]
   }
