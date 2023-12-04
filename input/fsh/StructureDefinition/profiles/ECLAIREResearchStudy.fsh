@@ -31,6 +31,10 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * location ^short = "Pays de recrutement / Countries of Recruitment"
 * location MS
 
+/* Références*/
+* enrollment Reference(ECLAIREGroup)
+* site Reference(ECLAIRELocation)
+
 /*slice*/
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
