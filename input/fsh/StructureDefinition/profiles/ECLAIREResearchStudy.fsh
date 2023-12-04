@@ -32,8 +32,8 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * location MS
 
 /* Références*/
-* enrollment Reference(ECLAIREGroup)
-* site Reference(ECLAIRELocation)
+* enrollment only Reference(ECLAIREGroup)
+* site only Reference(ECLAIRELocation)
 
 /*slice*/
 * identifier ^slicing.discriminator.type = #value
