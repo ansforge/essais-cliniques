@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "019ace75-c556-4db3-a64e-f17e07e8221d-48",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/019ace75-c556-4db3-a64e-f17e07e8221d-48",
+  "id" : "a15fd08d-8eb4-4bbe-a0f6-17bb3fe6a3fe-48",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a15fd08d-8eb4-4bbe-a0f6-17bb3fe6a3fe-48",
   "name" : "IntersectionECLAIREResearchStudyAndECLAIREResearchStudy",
   "title" : "Intersection of null And null",
   "status" : "draft",
-  "date" : "2023-11-13T14:27:23+00:00",
+  "date" : "2023-12-23T14:24:16+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1263,7 +1263,7 @@
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Group"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-group"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1468,7 +1468,7 @@
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-location"]
       }],
       "constraint" : [{
         "extension" : [{

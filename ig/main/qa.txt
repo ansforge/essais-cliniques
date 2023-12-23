@@ -2,8 +2,8 @@
 =========================================
 
 err = 34, warn = 46, info = 9
-IG Publisher Version: 1.5.3
-Generated Mon Nov 13 14:30:11 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.2.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+IG Publisher Version: 1.5.8
+Generated Sat Dec 23 14:26:56 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.2.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 9 / 3 / 0
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-reglementation-precision-code-system : 0 / 1 / 1
@@ -127,7 +127,7 @@ WARNING: ResearchStudy/fake-study-example: ResearchStudy.identifier[0].type: No 
 ERROR: ResearchStudy/fake-study-example: ResearchStudy.identifier[0].assigner: Unable to resolve resource with reference 'Organization/1'
 ERROR: ResearchStudy/fake-study-example: ResearchStudy.identifier[1].assigner: Unable to resolve resource with reference 'Organization/ctis'
 ERROR: ResearchStudy/fake-study-example: ResearchStudy.protocol[0]: Unable to resolve resource with reference 'PlanDefinition/3'
-INFORMATION: ResearchStudy/fake-study-example: ResearchStudy.condition[1].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
+INFORMATION: ResearchStudy/fake-study-example: ResearchStudy.condition[1].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' could not be found so the code cannot be validated
 ERROR: ResearchStudy/fake-study-example: ResearchStudy.enrollment[0]: Unable to resolve resource with reference 'Group/6'
 ERROR: ResearchStudy/fake-study-example: ResearchStudy.sponsor: Unable to resolve resource with reference 'Organization:4'
 ERROR: ResearchStudy/fake-study-example: ResearchStudy.principalInvestigator: Unable to resolve resource with reference 'Practitioner:5'
