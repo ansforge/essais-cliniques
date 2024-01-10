@@ -1,11 +1,12 @@
 ﻿ECLAIRE : Validation Results
 =========================================
 
-err = 34, warn = 46, info = 9
-IG Publisher Version: 1.5.5
-Generated Mon Dec 11 15:52:37 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.2.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+err = 34, warn = 48, info = 9
+IG Publisher Version: 1.5.8
+Generated Wed Jan 10 17:44:32 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.2.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 9 / 3 / 0
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-group-characteristic-kind-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-reglementation-precision-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-regulation-code-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
@@ -32,6 +33,7 @@ Generated Mon Dec 11 15:52:37 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-site-contact-name : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-therapeutic-area : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-category-vs : 0 / 1 / 1
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-group-characteristic-kind-vs : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-reglementation-precision-vs : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-regulation-code-vs : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-study-phase-source-vs : 0 / 1 / 1
@@ -55,6 +57,8 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-eclaire-consommateur.json ==
+== fsh-generated/resources/CodeSystem-eclaire-group-characteristic-kind-code-system.json ==
+WARNING: CodeSystem/eclaire-group-characteristic-kind-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-eclaire-reglementation-precision-code-system.json ==
 WARNING: CodeSystem/eclaire-reglementation-precision-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-eclaire-regulation-code-code-system.json ==
@@ -159,6 +163,8 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-eclaire-therapeutic-area.json ==
 == fsh-generated/resources/ValueSet-eclaire-category-vs.json ==
 WARNING: ValueSet/eclaire-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-eclaire-group-characteristic-kind-vs.json ==
+WARNING: ValueSet/eclaire-group-characteristic-kind-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-eclaire-reglementation-precision-vs.json ==
 WARNING: ValueSet/eclaire-reglementation-precision-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-eclaire-regulation-code-vs.json ==

@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2023-12-11T15:49:53+00:00"/>
+  <date value="2024-01-10T17:41:42+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -516,6 +516,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/eclaire-group-characteristic-kind-code-system"/>
+      </reference>
+      <name value="Codes pour le type de caractéristique du groupe"/>
+      <description value="Codes pour le type de caractéristique du groupe de l'étude"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/eclaire-study-phase-source-code-system"/>
       </reference>
       <name value="Définition des phase de l'essai utilisés dans la base de données ECLAIRE"/>
@@ -773,6 +784,17 @@
       </reference>
       <name value="Type Contact Value Set"/>
       <description value="Type de contact pour les essais cliniques Value Set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eclaire-group-characteristic-kind-vs"/>
+      </reference>
+      <name value="Type de caractéristique Value Set"/>
+      <description value="Value Set du type de caractéristique pour le groupe de la population."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
