@@ -30,6 +30,8 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * sponsor MS
 * location ^short = "Pays de recrutement / Countries of Recruitment"
 * location MS
+* relatedArtifact ^short = "Publications et réumé des résultats / Publications about the study and Summary results"
+* relatedArtifact MS
 
 /* Références*/
 * enrollment only Reference(ECLAIREGroup)
