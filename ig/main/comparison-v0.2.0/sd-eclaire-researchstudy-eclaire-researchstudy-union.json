@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "dd02886a-34b1-4f59-bfc8-bd7330ffee0e-50",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/dd02886a-34b1-4f59-bfc8-bd7330ffee0e-50",
+  "id" : "7d756bbb-6721-4259-9219-6414594027de-50",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7d756bbb-6721-4259-9219-6414594027de-50",
   "name" : "UnionECLAIREResearchStudyAndECLAIREResearchStudy",
   "title" : "Union of null And null",
   "status" : "draft",
-  "date" : "2024-01-11T09:08:54+00:00",
+  "date" : "2024-01-11T11:17:24+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1054,7 +1054,7 @@
     },
     {
       "path" : "ResearchStudy.relatedArtifact",
-      "short" : "References and dependencies",
+      "short" : "left: References and dependencies; right: Publications et résumé des résultats / Publications about the study and Summary results",
       "definition" : "Citations, references and other related documents.",
       "comment" : "Each related artifact is either an attachment, or a reference to another knowledge resource, but not both.",
       "min" : 0,
@@ -1073,7 +1073,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
