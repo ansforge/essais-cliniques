@@ -284,7 +284,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}","XTN","n/a","TEL"
 "ResearchStudy.relatedArtifact","ResearchStudy.relatedArtifact","","","",0,*,"Y","","","RelatedArtifact {[]} {[]}
-","Publications et réumé des résultats / Publications about the study and Summary results","Citations, references and other related documents.","Each related artifact is either an attachment, or a reference to another knowledge resource, but not both.","","","","","","","","",,,,,"",,,,"ResearchStudy.relatedArtifact",0,*,"ele-1
+","Publications et résumé des résultats / Publications about the study and Summary results","Citations, references and other related documents.","Each related artifact is either an attachment, or a reference to another knowledge resource, but not both.","","","","","","","","",,,,,"",,,,"ResearchStudy.relatedArtifact",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","StudyProtocolDocument, StudyProtocolDocumentVersion","n/a","Citations, Links, Available Study Data/Documents"
 "ResearchStudy.keyword","ResearchStudy.keyword","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
