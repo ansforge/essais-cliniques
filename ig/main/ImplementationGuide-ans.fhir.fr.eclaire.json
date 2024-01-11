@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2023-12-23T14:24:05+00:00",
+  "date" : "2024-01-11T09:08:43+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -339,7 +339,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     },
     {
       "extension" : [{
@@ -681,6 +681,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/eclaire-group-characteristic-kind-code-system"
+      },
+      "name" : "Codes pour le type de caractéristique du groupe",
+      "description" : "Codes pour le type de caractéristique du groupe de l'étude",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/eclaire-study-phase-source-code-system"
       },
       "name" : "Définition des phase de l'essai utilisés dans la base de données ECLAIRE",
@@ -961,6 +973,18 @@
       },
       "name" : "Type Contact Value Set",
       "description" : "Type de contact pour les essais cliniques Value Set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-group-characteristic-kind-vs"
+      },
+      "name" : "Type de caractéristique Value Set",
+      "description" : "Value Set du type de caractéristique pour le groupe de la population.",
       "exampleBoolean" : false
     },
     {

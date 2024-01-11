@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="43f6013b-2294-4582-98ae-f2afba3d2218"/>
+  <id value="d62badc0-68a7-4632-bb81-342afeaddfa7"/>
   <meta>
-    <lastUpdated value="2023-12-23T14:24:05.116+00:00"/>
+    <lastUpdated value="2024-01-11T09:08:43.079+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -213,7 +213,7 @@
         <name value="EclaireCategoryVS"/>
         <title value="Value Set type pour spécifier la catégorie l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-12-23T14:24:05+00:00"/>
+        <date value="2024-01-11T09:08:43+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -222,8 +222,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5581fd45-7a3a-460f-8ca8-5f386c77adc4"/>
-          <timestamp value="2023-12-23T14:24:31+00:00"/>
+          <identifier value="urn:uuid:b60ba8ba-c4b6-4a72-bc74-de63900351ff"/>
+          <timestamp value="2024-01-11T09:09:08+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -341,6 +341,126 @@
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
             <code value="JARDE"/>
             <display value="JARDE (Jarde)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-group-characteristic-kind-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-eclaire-group-characteristic-kind-code-system.html">codesystem Codes pour le type de caractéristique du groupe v0.2.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-group-characteristic-kind-code-system-grp-gender"> </a>  
+                  <a href="CodeSystem-eclaire-group-characteristic-kind-code-system.html#eclaire-group-characteristic-kind-code-system-grp-gender">grp-gender</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system</td>
+                <td>Gender (Genre)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-group-characteristic-kind-code-system-grp-studypop"> </a>  
+                  <a href="CodeSystem-eclaire-group-characteristic-kind-code-system.html#eclaire-group-characteristic-kind-code-system-grp-studypop">grp-studypop</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system</td>
+                <td>Study Population (Population de l'étude)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-group-characteristic-kind-code-system-grp-category"> </a>  
+                  <a href="CodeSystem-eclaire-group-characteristic-kind-code-system.html#eclaire-group-characteristic-kind-code-system-grp-category">grp-category</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system</td>
+                <td>Research Study Group Category (Catégorie du groupe d'étude)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-group-characteristic-kind-code-system-grp-age"> </a>  
+                  <a href="CodeSystem-eclaire-group-characteristic-kind-code-system.html#eclaire-group-characteristic-kind-code-system-grp-age">grp-age</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system</td>
+                <td>Age (Age)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-group-characteristic-kind-code-system-grp-other"> </a>  
+                  <a href="CodeSystem-eclaire-group-characteristic-kind-code-system.html#eclaire-group-characteristic-kind-code-system-grp-other">grp-other</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system</td>
+                <td>Other (Autre)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-group-characteristic-kind-vs"/>
+        <version value="0.2.1"/>
+        <name value="EclaireGroupCharacteristicKindVS"/>
+        <title value="Type de caractéristique Value Set"/>
+        <status value="draft"/>
+        <date value="2024-01-11T09:08:43+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="FRANCE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:892bd7ba-5502-45c0-85ac-62d633354938"/>
+          <timestamp value="2024-01-11T09:09:08+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system|0.2.1"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system"/>
+            <code value="grp-gender"/>
+            <display value="Gender (Genre)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system"/>
+            <code value="grp-studypop"/>
+            <display value="Study Population (Population de l'étude)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system"/>
+            <code value="grp-category"/>
+            <display value="Research Study Group Category (Catégorie du groupe d'étude)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system"/>
+            <code value="grp-age"/>
+            <display value="Age (Age)"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system"/>
+            <code value="grp-other"/>
+            <display value="Other (Autre)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -513,7 +633,7 @@
         <name value="EclaireReglementationPrecisionVS"/>
         <title value="Précision sur la réglementation concernant l'essai Value Set"/>
         <status value="draft"/>
-        <date value="2023-12-23T14:24:05+00:00"/>
+        <date value="2024-01-11T09:08:43+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -522,8 +642,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6729d8a4-dee7-4f54-8910-cb02fcdcc02a"/>
-          <timestamp value="2023-12-23T14:24:31+00:00"/>
+          <identifier value="urn:uuid:7739ce3b-a098-4ca1-89a3-0490a7260499"/>
+          <timestamp value="2024-01-11T09:09:08+00:00"/>
           <total value="17"/>
           <parameter>
             <name value="excludeNested"/>
@@ -685,7 +805,7 @@
         <name value="EclaireRegulationCodeVS"/>
         <title value="Code de régulation Value Set"/>
         <status value="draft"/>
-        <date value="2023-12-23T14:24:05+00:00"/>
+        <date value="2024-01-11T09:08:43+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -694,8 +814,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bb15827c-505d-4f11-b5f5-368fe0a0c6f5"/>
-          <timestamp value="2023-12-23T14:24:31+00:00"/>
+          <identifier value="urn:uuid:4411dccf-f57b-47cb-8c26-0adfd4fdc076"/>
+          <timestamp value="2024-01-11T09:09:08+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -856,7 +976,7 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2023-12-23T14:24:05+00:00"/>
+        <date value="2024-01-11T09:08:43+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -865,8 +985,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:07b8ec7d-e54b-4866-a5c6-b2dfdc9b8f77"/>
-          <timestamp value="2023-12-23T14:24:31+00:00"/>
+          <identifier value="urn:uuid:d27c18d4-6c4e-4317-aabd-91950644a306"/>
+          <timestamp value="2024-01-11T09:09:08+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1108,7 +1228,7 @@
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2023-12-23T14:24:05+00:00"/>
+        <date value="2024-01-11T09:08:43+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1117,8 +1237,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9f9487b3-4e04-4f20-8195-6c60914d31cb"/>
-          <timestamp value="2023-12-23T14:24:31+00:00"/>
+          <identifier value="urn:uuid:4f569464-0623-4d6f-b59c-94ac0c4d5277"/>
+          <timestamp value="2024-01-11T09:09:08+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1284,7 +1404,7 @@
         <name value="EclaireStudyPopulationVS"/>
         <title value="Caractérisation de la population Value Set"/>
         <status value="draft"/>
-        <date value="2023-12-23T14:24:05+00:00"/>
+        <date value="2024-01-11T09:08:43+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1293,8 +1413,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3b5c1b25-ee7f-4139-b2be-f8552c6f3df7"/>
-          <timestamp value="2023-12-23T14:24:31+00:00"/>
+          <identifier value="urn:uuid:f13c2b0e-0465-435d-8179-cc5019afbddb"/>
+          <timestamp value="2024-01-11T09:09:08+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1456,7 +1576,7 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2023-12-23T14:24:05+00:00"/>
+        <date value="2024-01-11T09:08:43+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1465,8 +1585,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dfbe5bc5-1ac4-46dc-9210-d0fac4862a8c"/>
-          <timestamp value="2023-12-23T14:24:31+00:00"/>
+          <identifier value="urn:uuid:0f6bcded-af43-4b43-8f4d-0637ad636aa2"/>
+          <timestamp value="2024-01-11T09:09:08+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1741,7 +1861,7 @@
         <name value="EclaireStudyTitleTypetVS"/>
         <title value="Type de titre Value Set"/>
         <status value="draft"/>
-        <date value="2023-12-23T14:24:05+00:00"/>
+        <date value="2024-01-11T09:08:43+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1750,8 +1870,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fc2c5523-62d8-4a16-8dd4-41baf101abd9"/>
-          <timestamp value="2023-12-23T14:24:31+00:00"/>
+          <identifier value="urn:uuid:f0d1fa1f-faf5-415e-abc5-48823df7510f"/>
+          <timestamp value="2024-01-11T09:09:08+00:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1877,7 +1997,7 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2023-12-23T14:24:05+00:00"/>
+        <date value="2024-01-11T09:08:43+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1886,8 +2006,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1f586fc8-a5c5-4a39-b730-737b4b5ca11f"/>
-          <timestamp value="2023-12-23T14:24:31+00:00"/>
+          <identifier value="urn:uuid:af362164-cf9a-41ee-b9e5-eb9abd37aa04"/>
+          <timestamp value="2024-01-11T09:09:08+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>

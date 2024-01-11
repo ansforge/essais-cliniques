@@ -30,6 +30,20 @@
       "StructureDefinition-eclaire-researchstudy.html" : "ECLAIREResearchStudy"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-group-characteristic-kind-vs",
+      "version" : "0.2.1",
+      "status" : "draft",
+      "name" : "EclaireGroupCharacteristicKindVS",
+      "title" : "Type de caractéristique Value Set",
+      "description" : "Value Set du type de caractéristique pour le groupe de la population.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-eclaire-group.html" : "ECLAIREGroup"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-reglementation-precision-vs",
       "version" : "0.2.1",
       "status" : "draft",
@@ -78,8 +92,8 @@
       ],
       "uses" : {
       },
-      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping",
-      "StructureDefinition-eclaire-researchstudy.html" : "ECLAIREResearchStudy"
+      "StructureDefinition-eclaire-researchstudy.html" : "ECLAIREResearchStudy",
+      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-population-vs",

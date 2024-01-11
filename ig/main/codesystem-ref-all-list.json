@@ -94,8 +94,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.820"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-research-study-status.html" : "ResearchStudyStatus",
-      "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping"
+      "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping",
+      "http://hl7.org/fhir/R4/valueset-research-study-status.html" : "ResearchStudyStatus"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -143,8 +143,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1247"],
       "uses" : {
       },
-      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping",
-      "ValueSet-eclaire-study-phase-vs.html" : "Value Set type de phase de l'essai clinique"
+      "ValueSet-eclaire-study-phase-vs.html" : "Value Set type de phase de l'essai clinique",
+      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type",
@@ -207,6 +207,17 @@
       "http://terminology.hl7.org/5.3.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system",
+      "version" : "0.2.1",
+      "status" : "draft",
+      "name" : "EclaireGroupCharacteristicKindCS",
+      "title" : "Codes pour le type de caractéristique du groupe",
+      "description" : "Codes pour le type de caractéristique du groupe de l'étude",
+      "uses" : {
+      },
+      "ValueSet-eclaire-group-characteristic-kind-vs.html" : "Type de caractéristique Value Set"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system",
       "version" : "0.2.1",
       "status" : "draft",
@@ -239,8 +250,8 @@
       "description" : "type de phase de l'essai clinique",
       "uses" : {
       },
-      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping",
-      "ValueSet-eclaire-study-phase-vs.html" : "Value Set type de phase de l'essai clinique"
+      "ValueSet-eclaire-study-phase-vs.html" : "Value Set type de phase de l'essai clinique",
+      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system",
@@ -274,8 +285,8 @@
       "description" : "Statut de l'essai clinique utilisé dans la base de données ECLAIRE",
       "uses" : {
       },
-      "ValueSet-eclaire-study-status-vs.html" : "Value Set Statut Eclaire de l'essai",
-      "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping"
+      "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping",
+      "ValueSet-eclaire-study-status-vs.html" : "Value Set Statut Eclaire de l'essai"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system",
