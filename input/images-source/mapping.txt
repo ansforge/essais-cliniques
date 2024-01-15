@@ -82,6 +82,7 @@ map "EssaiClinique : ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;li
     Pays de recrutement (Countries of Recruitment) => location : CodeableConcept [0..*]
     Promoteur principal (Primary sponsor) => sponsor : Reference(Organization) [0..1]  
     Promoteur secondaire (Secondary Sponsor(s)) => <&plus> ECLAIRESecondarySponsor  : Reference(Organization) [0..*]  
+    Publications et résumé des résultats (Publications about the study and Summary results) => relatedArtifact : RelatedArtifact [0..*]
 }
 
 
