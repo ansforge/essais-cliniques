@@ -533,8 +533,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Promoteur(s) secondaire(s) / Secondary Sponsor(s)","Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"eclaire-researchstudy","ResearchStudy.extension:eclaire-description-summary-r5","ResearchStudy.extension","eclaire-description-summary-r5","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.descriptionSummary]]} {[]}
+","Texte bref décrivant l'essai / Brief text explaining the study.","Cette extension implemente l'élément descriptionSummary de R5. elle permet l'ajout d'un texte bref décrivant l'essai","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "eclaire-researchstudy","ResearchStudy.extension:eclaire-label-r5","ResearchStudy.extension","eclaire-label-r5","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label]]} {[]}
-","autres titres et acronyme / Additional names for the study. Implémentation de l'élément label de R5","Cette extension implemente l'élément label de R5. elle permet l'ajout de plusieurs titres pour l'essai","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Autres titres et acronyme / Additional names for the study. Implémentation de l'élément label de R5","Cette extension implemente l'élément label de R5. elle permet l'ajout de plusieurs titres pour l'essai","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "eclaire-researchstudy","ResearchStudy.modifierExtension","ResearchStudy.modifierExtension","","extensions
