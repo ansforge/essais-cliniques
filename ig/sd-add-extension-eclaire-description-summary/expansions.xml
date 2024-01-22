@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1a64e4d0-0b53-415c-9ef5-e8f5f00fcb9d"/>
+  <id value="9d63d46a-38dd-4ccb-8687-3bdde598fef7"/>
   <meta>
-    <lastUpdated value="2024-01-15T16:45:58.024+00:00"/>
+    <lastUpdated value="2024-01-22T13:43:32.344+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -24,7 +24,7 @@
                 </li>
               </ul>
             </div>
-            <p>This value set contains 21 concepts</p>
+            <p>This value set contains 21 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -213,7 +213,7 @@
         <name value="EclaireCategoryVS"/>
         <title value="Value Set type pour spécifier la catégorie l'essai clinique"/>
         <status value="draft"/>
-        <date value="2024-01-15T16:45:58+00:00"/>
+        <date value="2024-01-22T13:43:32+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -222,9 +222,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9d62b57-5010-4411-ac35-8a025032782a"/>
-          <timestamp value="2024-01-15T16:46:25+00:00"/>
+          <identifier value="urn:uuid:a54316f2-b0e8-4a8b-91af-526c2dbca9fe"/>
+          <timestamp value="2024-01-22T13:43:58+00:00"/>
           <total value="21"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -356,7 +365,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-eclaire-group-characteristic-kind-code-system.html">codesystem Codes pour le type de caractéristique du groupe v0.2.1 (CodeSystem)</a>
             </p>
-            <p>This value set contains 5 concepts</p>
+            <p>This value set contains 5 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -417,7 +426,7 @@
         <name value="EclaireGroupCharacteristicKindVS"/>
         <title value="Type de caractéristique Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-15T16:45:58+00:00"/>
+        <date value="2024-01-22T13:43:32+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -426,9 +435,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7dba7f1d-fdde-4014-9d6d-1d500832eb96"/>
-          <timestamp value="2024-01-15T16:46:25+00:00"/>
+          <identifier value="urn:uuid:957bb50f-0c10-489e-ad60-ba7037884eab"/>
+          <timestamp value="2024-01-22T13:43:58+00:00"/>
           <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -476,7 +494,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-eclaire-reglementation-precision-code-system.html">codesystem Précision sur la réglementation concernant l'essai v0.2.1 (CodeSystem)</a>
             </p>
-            <p>This value set contains 17 concepts</p>
+            <p>This value set contains 17 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -633,7 +651,7 @@
         <name value="EclaireReglementationPrecisionVS"/>
         <title value="Précision sur la réglementation concernant l'essai Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-15T16:45:58+00:00"/>
+        <date value="2024-01-22T13:43:32+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -642,9 +660,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a7cfd706-843f-427a-bb8d-ce2abbde2fac"/>
-          <timestamp value="2024-01-15T16:46:25+00:00"/>
+          <identifier value="urn:uuid:9203ca60-7fdb-44bf-8b31-c1347a8d8b3b"/>
+          <timestamp value="2024-01-22T13:43:58+00:00"/>
           <total value="17"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -752,7 +779,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-eclaire-regulation-code-code-system.html">codesystem Code de régulation de l'essai v0.2.1 (CodeSystem)</a>
             </p>
-            <p>This value set contains 4 concepts</p>
+            <p>This value set contains 4 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -805,7 +832,7 @@
         <name value="EclaireRegulationCodeVS"/>
         <title value="Code de régulation Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-15T16:45:58+00:00"/>
+        <date value="2024-01-22T13:43:32+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -814,9 +841,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b92c3d14-0e52-4b9e-9bcf-c6e0d539169c"/>
-          <timestamp value="2024-01-15T16:46:25+00:00"/>
+          <identifier value="urn:uuid:22278c9e-dcfd-4734-9f95-e8a3c10b97f7"/>
+          <timestamp value="2024-01-22T13:43:58+00:00"/>
           <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -859,7 +895,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-eclaire-study-phase-source-code-system.html">codesystem Définition des phase de l'essai utilisés dans la base de données ECLAIRE v0.2.1 (CodeSystem)</a>
             </p>
-            <p>This value set contains 12 concepts</p>
+            <p>This value set contains 12 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -976,7 +1012,7 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2024-01-15T16:45:58+00:00"/>
+        <date value="2024-01-22T13:43:32+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -985,9 +1021,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:30f974fa-21e5-4ba0-85ec-19128299fbc8"/>
-          <timestamp value="2024-01-15T16:46:25+00:00"/>
+          <identifier value="urn:uuid:3a1a4763-a5ed-428c-b571-7f4452c61a2a"/>
+          <timestamp value="2024-01-22T13:43:58+00:00"/>
           <total value="12"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1078,7 +1123,7 @@
                 </li>
               </ul>
             </div>
-            <p>This value set contains 9 concepts</p>
+            <p>This value set contains 9 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -1228,7 +1273,7 @@
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2024-01-15T16:45:58+00:00"/>
+        <date value="2024-01-22T13:43:32+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1237,9 +1282,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0c15513c-8a1a-4a48-a770-336363b2f8dc"/>
-          <timestamp value="2024-01-15T16:46:25+00:00"/>
+          <identifier value="urn:uuid:1c6ae8b9-1398-4845-b342-5a73e259746f"/>
+          <timestamp value="2024-01-22T13:43:58+00:00"/>
           <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1311,7 +1365,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-eclaire-study-population-code-system.html">codesystem Codes pour caractériser la population de l'étude v0.2.1 (CodeSystem)</a>
             </p>
-            <p>This value set contains 9 concepts</p>
+            <p>This value set contains 9 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -1404,7 +1458,7 @@
         <name value="EclaireStudyPopulationVS"/>
         <title value="Caractérisation de la population Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-15T16:45:58+00:00"/>
+        <date value="2024-01-22T13:43:32+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1413,9 +1467,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9f018a65-f861-4ba1-a37b-17af619baaaa"/>
-          <timestamp value="2024-01-15T16:46:25+00:00"/>
+          <identifier value="urn:uuid:7406225f-a288-4f5b-8ff5-6bb948452621"/>
+          <timestamp value="2024-01-22T13:43:58+00:00"/>
           <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1483,7 +1546,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-eclaire-study-status-code-system.html">codesystem Définition des statuts de l'essai utilisés dans la base de données ECLAIRE v0.2.1 (CodeSystem)</a>
             </p>
-            <p>This value set contains 9 concepts</p>
+            <p>This value set contains 9 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -1576,7 +1639,7 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2024-01-15T16:45:58+00:00"/>
+        <date value="2024-01-22T13:43:32+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1585,9 +1648,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c792a8a9-9b80-4938-81e5-33fecfb0f4dd"/>
-          <timestamp value="2024-01-15T16:46:25+00:00"/>
+          <identifier value="urn:uuid:21b7928c-228b-4af4-a5b5-02bd130e3d05"/>
+          <timestamp value="2024-01-22T13:43:58+00:00"/>
           <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1655,7 +1727,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-eclaire-study-title-type-code-system.html">codesystem Définition des types de titre pour l'essai v0.2.1 (CodeSystem)</a>
             </p>
-            <p>This value set contains 13 concepts</p>
+            <p>This value set contains 13 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -1861,7 +1933,7 @@
         <name value="EclaireStudyTitleTypetVS"/>
         <title value="Type de titre Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-15T16:45:58+00:00"/>
+        <date value="2024-01-22T13:43:32+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1870,9 +1942,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:76a4ec9a-2b54-4f39-b37b-5900be76d706"/>
-          <timestamp value="2024-01-15T16:46:25+00:00"/>
+          <identifier value="urn:uuid:83df81a8-0b12-45d7-8447-8603abcf99ee"/>
+          <timestamp value="2024-01-22T13:43:58+00:00"/>
           <total value="13"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1960,7 +2041,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-eclaire-type-contact-code-system.html">codesystem Type de contact v0.2.1 (CodeSystem)</a>
             </p>
-            <p>This value set contains 2 concepts</p>
+            <p>This value set contains 2 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -1997,7 +2078,7 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-15T16:45:58+00:00"/>
+        <date value="2024-01-22T13:43:32+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2006,9 +2087,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a0e27688-9873-4a6c-8622-9575673eab70"/>
-          <timestamp value="2024-01-15T16:46:25+00:00"/>
+          <identifier value="urn:uuid:7916864d-c506-4268-9b13-72907a260f8f"/>
+          <timestamp value="2024-01-22T13:43:58+00:00"/>
           <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
