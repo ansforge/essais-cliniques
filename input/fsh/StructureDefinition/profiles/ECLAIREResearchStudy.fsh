@@ -32,6 +32,8 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * location MS
 * relatedArtifact ^short = "Publications et résumé des résultats / Publications about the study and Summary results"
 * relatedArtifact MS
+* period.end ^short = "Date à laquelle l'essai se termine (la date initiale est prévisionnelle) / Completion date"
+* period.end MS
 
 /* Références*/
 * enrollment only Reference(ECLAIREGroup)
