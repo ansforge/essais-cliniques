@@ -79,7 +79,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * extension[eclaire-description-summary-r5]
   * ^short = "Texte bref décrivant l'essai / Brief text explaining the study."
   * ^definition = "Cette extension implemente l'élément descriptionSummary de R5. elle permet l'ajout d'un texte bref décrivant l'essai."
-  *  valueReference 1..1
+  *  valueMarkdown 0..1
 
 * extension[eclaire-label-r5] ^short = "Autres titres et acronyme / Additional names for the study. Implémentation de l'élément label de R5"
 * extension[eclaire-label-r5] ^definition = "Cette extension implemente l'élément label de R5. elle permet l'ajout de plusieurs titres pour l'essai"
