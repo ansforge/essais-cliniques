@@ -73,7 +73,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * extension[eclaire-review-date] ^short = "Date de dernière modification substancielle"
 * extension[eclaire-description-summary-r5] ^short = "Texte bref décrivant l'essai / Brief text explaining the study."
 * extension[eclaire-description-summary-r5] ^definition = "Cette extension implemente l'élément descriptionSummary de R5. elle permet l'ajout d'un texte bref décrivant l'essai"
-* extension[eclaire-description-summary-r5].valueMarkdown
+* extension[eclaire-description-summary-r5].valueMarkdown 0..1
 * extension[eclaire-description-summary-r5].value[x] only markdown
 
 * extension[eclaire-label-r5] ^short = "Autres titres et acronyme / Additional names for the study. Implémentation de l'élément label de R5"
