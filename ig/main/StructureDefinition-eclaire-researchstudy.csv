@@ -116,6 +116,22 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Period is not used for a duration (a measure of elapsed time). See [Duration](http://hl7.org/fhir/R4/datatypes.html#Duration).","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 per-1:If present, start SHALL have a lower value than end {start.hasValue().not() or end.hasValue().not() or (start <= end)}","DR","CX.7 + CX.8","n/a","IVL<TS>[lowClosed=""true"" and highClosed=""true""] or URG<TS>[lowClosed=""true"" and highClosed=""true""]","Role.effectiveTime or implied by context"
+"ResearchStudy.identifier:idPrimary.period.id","ResearchStudy.identifier.period.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"ResearchStudy.identifier:idPrimary.period.extension","ResearchStudy.identifier.period.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"ResearchStudy.identifier:idPrimary.period.start","ResearchStudy.identifier.period.start","","","",0,1,"","","Y","dateTime {[]} {[]}
+","Date d'inscription au registre principal / Date of Registration in Primary Registry","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"ele-1
+per-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","DR.1","n/a","./low"
+"ResearchStudy.identifier:idPrimary.period.end","ResearchStudy.identifier.period.end","","","",0,1,"","","Y","dateTime {[]} {[]}
+","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"ele-1
+per-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","DR.2","n/a","./high"
 "ResearchStudy.identifier:idPrimary.assigner","ResearchStudy.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

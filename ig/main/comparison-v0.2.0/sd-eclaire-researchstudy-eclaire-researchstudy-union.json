@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "d4cd2dd1-0d43-4765-881e-9a53ae73a59a-50",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d4cd2dd1-0d43-4765-881e-9a53ae73a59a-50",
+  "id" : "794d5a5f-73a2-4e15-9b1c-c4595281ac6e-50",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/794d5a5f-73a2-4e15-9b1c-c4595281ac6e-50",
   "name" : "UnionECLAIREResearchStudyAndECLAIREResearchStudy",
   "title" : "Union of null And null",
   "status" : "draft",
-  "date" : "2024-01-24T10:06:37+00:00",
+  "date" : "2024-01-24T12:52:39+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1418,7 +1418,7 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mapping" : [{
         "identity" : "rim",
