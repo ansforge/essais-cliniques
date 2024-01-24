@@ -49,6 +49,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
     idSecondary 0..* MS
 * identifier[idPrimary].use = #official
 * identifier[idPrimary] ^short = "Identifiant primaire de l'essai clinique / Primary Registry and Trial Identifying Number"
+* identifier[idPrimary].period.start ^short = "Date d'inscription au registre principal / Date of Registration in Primary Registry"
 * identifier[idSecondary].use = #secondary
 * identifier[idSecondary] ^short = "identifiants secondaires / Secondary Identifying Numbers (e.g., protocol number) if available.  Also include other trial registries that have issued an identifying number to this trial. There is no limit on the number of Secondary identifying numbers that can be provided."
 
