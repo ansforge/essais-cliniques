@@ -813,6 +813,22 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 Period is not used for a duration (a measure of elapsed time). See [Duration](http://hl7.org/fhir/R4/datatypes.html#Duration).","","","","","","","","",,,,,"",,,,"ResearchStudy.period",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 per-1:If present, start SHALL have a lower value than end {start.hasValue().not() or end.hasValue().not() or (start <= end)}"
+"eclaire-researchstudy","ResearchStudy.period.id","ResearchStudy.period.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"eclaire-researchstudy","ResearchStudy.period.extension","ResearchStudy.period.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"eclaire-researchstudy","ResearchStudy.period.start","ResearchStudy.period.start","","","",0,1,"","","Y","dateTime {[]} {[]}
+","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"ele-1
+per-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"eclaire-researchstudy","ResearchStudy.period.end","ResearchStudy.period.end","","","",0,1,"Y","","Y","dateTime {[]} {[]}
+","Date à laquelle l'essai se termine (la date initiale est prévisionnelle) / Completion date","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"ele-1
+per-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "eclaire-researchstudy","ResearchStudy.sponsor","ResearchStudy.sponsor","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Promoteur / primary Sponsor","An organization that initiates the investigation and is legally responsible for the study.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","","","","","","","","",,,,,"",,,,"ResearchStudy.sponsor",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
