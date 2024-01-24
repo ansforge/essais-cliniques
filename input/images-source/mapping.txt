@@ -75,6 +75,7 @@ map "EssaiClinique : ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;li
     Sujet concerné (Health Condition(s) or Problem(s) Studied) => <&layers> condition : CodeableConcept [0..*] (MeDRA) 
     Domaine thérapeutique* => <&plus> ECLAIRETherapeuticArea : string [0..1] 
     Résumé de l'essai => description : markdown [0..1] 
+    Texte bref décrivant l'essai (Brief summary) => <&plus> R5 ECLAIREDescriptionSummary : Extension R5 ResearchStudy.descriptionSummary [0..1]
     Période prévisionnelle de recrutement => <&plus> ECLAIRERecruitmentPeriod : period [0..1]  
     Date prévisionnelle de fin de l'essai (Completion date) => period.end : dateTime [0..1]
     Contact (Contact for public / scientific queries) => contact : ContactDetail [0..*] 
