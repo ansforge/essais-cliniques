@@ -41,9 +41,7 @@ En FHIR, la ressource principale permettant de décrire un essai clinique est <a
 - Les informations sur l'effectif à recruter et les critères d'inclusion et d'exclusion grâce à la ressource <a href="https://hl7.org/fhir/R4/group.html">Group</a>
 
 
-<p style="text-align:center">
-<object data="vueGlobale.svg" type="image/svg+xml"></object>
-</p>
+<div>{%include vueGlobale.svg%}</div>
 
 ### Swagger API FHIR ECLAIRE
 
