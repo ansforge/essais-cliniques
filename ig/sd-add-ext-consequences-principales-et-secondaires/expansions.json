@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8f860f05-8b76-4e59-aaa4-d1fd27edeaa3",
+  "id" : "7ea88c35-27a6-4940-b930-f1deefa0368c",
   "meta" : {
-    "lastUpdated" : "2024-02-09T15:05:55.572+00:00"
+    "lastUpdated" : "2024-02-09T16:27:19.773+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "name" : "EclaireCategoryVS",
       "title" : "Value Set type pour spécifier la catégorie l'essai clinique",
       "status" : "draft",
-      "date" : "2024-02-09T15:05:55+00:00",
+      "date" : "2024-02-09T16:27:19+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:22650532-45db-41d1-ab15-def6514e5f9e",
-        "timestamp" : "2024-02-09T15:06:18+00:00",
+        "identifier" : "urn:uuid:a6ad9e3b-ea40-466f-af2d-b9d8da4b206f",
+        "timestamp" : "2024-02-09T16:27:45+00:00",
         "total" : 21,
         "offset" : 0,
         "parameter" : [{
@@ -172,7 +172,7 @@
       "name" : "EclaireGroupCharacteristicKindVS",
       "title" : "Type de caractéristique Value Set",
       "status" : "draft",
-      "date" : "2024-02-09T15:05:55+00:00",
+      "date" : "2024-02-09T16:27:19+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -181,8 +181,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1813851d-5d47-4993-8141-1bf81631905e",
-        "timestamp" : "2024-02-09T15:06:18+00:00",
+        "identifier" : "urn:uuid:61f87d7a-8079-4192-9e33-9c7ac36ea3b7",
+        "timestamp" : "2024-02-09T16:27:45+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -242,7 +242,7 @@
       "name" : "EclaireReglementationPrecisionVS",
       "title" : "Précision sur la réglementation concernant l'essai Value Set",
       "status" : "draft",
-      "date" : "2024-02-09T15:05:55+00:00",
+      "date" : "2024-02-09T16:27:19+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -251,8 +251,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4038864a-1f97-47ea-a456-5fd3d38955e4",
-        "timestamp" : "2024-02-09T15:06:18+00:00",
+        "identifier" : "urn:uuid:fdfb299e-cccb-447f-b90b-bce21d836e3a",
+        "timestamp" : "2024-02-09T16:27:45+00:00",
         "total" : 17,
         "offset" : 0,
         "parameter" : [{
@@ -372,7 +372,7 @@
       "name" : "EclaireRegulationCodeVS",
       "title" : "Code de régulation Value Set",
       "status" : "draft",
-      "date" : "2024-02-09T15:05:55+00:00",
+      "date" : "2024-02-09T16:27:19+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -381,8 +381,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:54f3a5a6-786b-4b74-9481-2337873fa6df",
-        "timestamp" : "2024-02-09T15:06:18+00:00",
+        "identifier" : "urn:uuid:1e0c0153-888b-4ee4-9430-95a6a2e2eea3",
+        "timestamp" : "2024-02-09T16:27:45+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -425,6 +425,61 @@
     }
   },
   {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-outcome-type-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-eclaire-study-outcome-type-code-system.html\">codesystem Définition des types de conséquence pour l'essai v0.3.0 (CodeSystem)</a></p><p>This value set contains 2 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-outcome-type-code-system-primary\"> </a>\u00a0\u00a0<a href=\"CodeSystem-eclaire-study-outcome-type-code-system.html#eclaire-study-outcome-type-code-system-primary\">primary</a></td><td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system</td><td>Conséquences principales (primary outcomes)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-study-outcome-type-code-system-secondary\"> </a>\u00a0\u00a0<a href=\"CodeSystem-eclaire-study-outcome-type-code-system.html#eclaire-study-outcome-type-code-system-secondary\">secondary</a></td><td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system</td><td>Conséquences secondaires (secondary outcomes)</td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-outcome-type-vs",
+      "version" : "0.3.0",
+      "name" : "EclaireStudyOutcomeTypeVS",
+      "title" : "Type de conséquence Value Set",
+      "status" : "draft",
+      "date" : "2024-02-09T16:27:19+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "FRANCE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:71a43962-3c62-4077-8784-b40ab6c90a05",
+        "timestamp" : "2024-02-09T16:27:45+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system|0.3.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system",
+          "code" : "primary",
+          "display" : "Conséquences principales (primary outcomes)"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system",
+          "code" : "secondary",
+          "display" : "Conséquences secondaires (secondary outcomes)"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -437,7 +492,7 @@
       "name" : "EclaireStudyPhaseSourceVS",
       "title" : "Value Set de la phase de l'essai tel que définie dans la base ECLAIRE",
       "status" : "draft",
-      "date" : "2024-02-09T15:05:55+00:00",
+      "date" : "2024-02-09T16:27:19+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -446,8 +501,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9deffe35-d848-4047-94bb-ffbf5b2e879b",
-        "timestamp" : "2024-02-09T15:06:18+00:00",
+        "identifier" : "urn:uuid:1572efde-f899-424a-93fc-3f811cfc4d2b",
+        "timestamp" : "2024-02-09T16:27:45+00:00",
         "total" : 12,
         "offset" : 0,
         "parameter" : [{
@@ -542,7 +597,7 @@
       "name" : "EclaireStudyPhaseVS",
       "title" : "Value Set type de phase de l'essai clinique",
       "status" : "draft",
-      "date" : "2024-02-09T15:05:55+00:00",
+      "date" : "2024-02-09T16:27:19+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -551,8 +606,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:90095bb2-5ef4-435e-b15e-d5987638ff85",
-        "timestamp" : "2024-02-09T15:06:18+00:00",
+        "identifier" : "urn:uuid:39e37280-7d77-4910-bd0d-dbdff8289ad3",
+        "timestamp" : "2024-02-09T16:27:45+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -636,7 +691,7 @@
       "name" : "EclaireStudyPopulationVS",
       "title" : "Caractérisation de la population Value Set",
       "status" : "draft",
-      "date" : "2024-02-09T15:05:55+00:00",
+      "date" : "2024-02-09T16:27:19+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -645,8 +700,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f78b4844-7149-4cb9-9edf-dd1e1c42ed9e",
-        "timestamp" : "2024-02-09T15:06:18+00:00",
+        "identifier" : "urn:uuid:ae447cdd-3ce7-4670-8d94-85dbc501694a",
+        "timestamp" : "2024-02-09T16:27:45+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -726,7 +781,7 @@
       "name" : "EclaireStudyStatusVS",
       "title" : "Value Set Statut Eclaire de l'essai",
       "status" : "draft",
-      "date" : "2024-02-09T15:05:55+00:00",
+      "date" : "2024-02-09T16:27:19+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -735,8 +790,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f3bed289-77f1-47db-aa20-f86ae53806f6",
-        "timestamp" : "2024-02-09T15:06:18+00:00",
+        "identifier" : "urn:uuid:4355f574-632c-4f23-88b8-384fa32b8ee3",
+        "timestamp" : "2024-02-09T16:27:46+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -816,7 +871,7 @@
       "name" : "EclaireStudyTitleTypetVS",
       "title" : "Type de titre Value Set",
       "status" : "draft",
-      "date" : "2024-02-09T15:05:55+00:00",
+      "date" : "2024-02-09T16:27:19+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -825,8 +880,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ad737a73-9db6-4b2c-9a40-07a95197b5da",
-        "timestamp" : "2024-02-09T15:06:18+00:00",
+        "identifier" : "urn:uuid:327d8944-09fa-4002-b4d5-2de3480bd717",
+        "timestamp" : "2024-02-09T16:27:46+00:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{
@@ -926,7 +981,7 @@
       "name" : "EclaireTypeContactVS",
       "title" : "Type Contact Value Set",
       "status" : "draft",
-      "date" : "2024-02-09T15:05:55+00:00",
+      "date" : "2024-02-09T16:27:19+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -935,8 +990,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:37d4739d-9f90-4890-b9c0-0b5eda9fac38",
-        "timestamp" : "2024-02-09T15:06:18+00:00",
+        "identifier" : "urn:uuid:76b6e963-9aed-4d4a-9dc4-1388d373013b",
+        "timestamp" : "2024-02-09T16:27:46+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{

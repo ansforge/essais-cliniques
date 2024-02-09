@@ -10,8 +10,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.820"],
       "uses" : {
       },
-      "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping",
-      "http://hl7.org/fhir/R4/valueset-research-study-status.html" : "ResearchStudyStatus"
+      "http://hl7.org/fhir/R4/valueset-research-study-status.html" : "ResearchStudyStatus",
+      "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/research-study-phase",
@@ -62,6 +62,17 @@
       "ValueSet-eclaire-category-vs.html" : "Value Set type pour spécifier la catégorie l'essai clinique"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "EclaireStudyOutcomeTypeCS",
+      "title" : "Définition des types de conséquence pour l'essai",
+      "description" : "Définition des types de conséquence pour l'essai (Code System inspiré de R5 : https://hl7.org/fhir/R5/codesystem-research-study-objective-type.html)",
+      "uses" : {
+      },
+      "ValueSet-eclaire-study-outcome-type-vs.html" : "Type de conséquence Value Set"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system",
       "version" : "0.3.0",
       "status" : "draft",
@@ -82,8 +93,8 @@
       "description" : "Définition des phases de l'essai utilisées dans la base de données ECLAIRE",
       "uses" : {
       },
-      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping",
-      "ValueSet-eclaire-study-phase-source-vs.html" : "Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"
+      "ValueSet-eclaire-study-phase-source-vs.html" : "Value Set de la phase de l'essai tel que définie dans la base ECLAIRE",
+      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-population-code-system",

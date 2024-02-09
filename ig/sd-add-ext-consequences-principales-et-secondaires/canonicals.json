@@ -7,6 +7,13 @@
     "name" : "ECLAIRELabelR5"
   },
   {
+    "id" : "eclaire-outcome-measure-r5",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure",
+    "version" : "0.3.0",
+    "name" : "ECLAIREoutcomeMeasureR5"
+  },
+  {
     "id" : "eclaire-consommateur",
     "type" : "CapabilityStatement",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CapabilityStatement/eclaire-consommateur",
@@ -33,6 +40,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system",
     "version" : "0.3.0",
     "name" : "EclaireRegulationCodeCS"
+  },
+  {
+    "id" : "eclaire-study-outcome-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system",
+    "version" : "0.3.0",
+    "name" : "EclaireStudyOutcomeTypeCS"
   },
   {
     "id" : "eclaire-study-phase-code-system",
@@ -208,6 +222,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-regulation-code-vs",
     "version" : "0.3.0",
     "name" : "EclaireRegulationCodeVS"
+  },
+  {
+    "id" : "eclaire-study-outcome-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-outcome-type-vs",
+    "version" : "0.3.0",
+    "name" : "EclaireStudyOutcomeTypeVS"
   },
   {
     "id" : "eclaire-study-phase-source-vs",

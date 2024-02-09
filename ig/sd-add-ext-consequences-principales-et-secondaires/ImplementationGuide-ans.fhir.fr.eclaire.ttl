@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-09T15:05:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-09T16:27:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -637,6 +637,18 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/eclaire-study-outcome-type-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Définition des types de conséquence pour l'essai" ] ;
+       fhir:description [ fhir:v "Définition des types de conséquence pour l'essai (Code System inspiré de R5 : https://hl7.org/fhir/R5/codesystem-research-study-objective-type.html)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system> ;
          fhir:reference [ fhir:v "CodeSystem/eclaire-study-title-type-code-system" ]
        ] ;
@@ -738,6 +750,18 @@
        ] ;
        fhir:name [ fhir:v "ECLAIRELocation" ] ;
        fhir:description [ fhir:v "Profil de Location pour le projet ECLAIRE" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-outcome-measure-r5> ;
+         fhir:reference [ fhir:v "StructureDefinition/eclaire-outcome-measure-r5" ]
+       ] ;
+       fhir:name [ fhir:v "ECLAIREoutcomeMeasureR5" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de plusieurs titres pour l'essai. Cette extension implemente l'élément label de R5 https://hl7.org/fhir/researchstudy-definitions.html#ResearchStudy.label ." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -897,6 +921,18 @@
        ] ;
        fhir:name [ fhir:v "Type de caractéristique Value Set" ] ;
        fhir:description [ fhir:v "Value Set du type de caractéristique pour le groupe de la population." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-outcome-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/eclaire-study-outcome-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Type de conséquence Value Set" ] ;
+       fhir:description [ fhir:v "Type de conséquence Value Set (inspiré du Value Set de R5 : https://hl7.org/fhir/R5/valueset-research-study-objective-type.html)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
