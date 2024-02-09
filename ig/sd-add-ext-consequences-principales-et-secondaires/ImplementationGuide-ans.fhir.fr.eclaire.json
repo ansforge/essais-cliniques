@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2024-02-09T16:27:19+00:00",
+  "date" : "2024-02-09T16:53:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -852,7 +852,7 @@
         "reference" : "StructureDefinition/eclaire-outcome-measure-r5"
       },
       "name" : "ECLAIREoutcomeMeasureR5",
-      "description" : "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout de plusieurs titres pour l'essai. Cette extension implemente l'élément label de R5 https://hl7.org/fhir/researchstudy-definitions.html#ResearchStudy.label .",
+      "description" : "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout ette extension implemente l'élément outcomeMeasure de R5. elle permet l'ajout des conséquences principales et secondaires de l'essai. Cette extension implemente l’élément outcomeMeasure de R5 http://hl7.org/fhir/R5/researchstudy-definitions.html#ResearchStudy.outcomeMeasure",
       "exampleBoolean" : false
     },
     {
