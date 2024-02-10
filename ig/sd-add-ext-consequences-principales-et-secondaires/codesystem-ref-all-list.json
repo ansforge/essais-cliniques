@@ -94,8 +94,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.820"],
       "uses" : {
       },
-      "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping",
-      "http://hl7.org/fhir/R4/valueset-research-study-status.html" : "ResearchStudyStatus"
+      "http://hl7.org/fhir/R4/valueset-research-study-status.html" : "ResearchStudyStatus",
+      "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -131,7 +131,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1248"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-research-study-objective-type.html" : "ResearchStudyObjectiveType"
+      "http://hl7.org/fhir/R4/valueset-research-study-objective-type.html" : "ResearchStudyObjectiveType",
+      "ValueSet-eclaire-study-outcome-type-vs.html" : "Type de conséquence Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/research-study-phase",
@@ -238,19 +239,8 @@
       "description" : "Code de régulation de l'essai",
       "uses" : {
       },
-      "ValueSet-eclaire-regulation-code-vs.html" : "Code de régulation Value Set",
-      "ValueSet-eclaire-category-vs.html" : "Value Set type pour spécifier la catégorie l'essai clinique"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system",
-      "version" : "0.3.0",
-      "status" : "draft",
-      "name" : "EclaireStudyOutcomeTypeCS",
-      "title" : "Définition des types de conséquence pour l'essai",
-      "description" : "Définition des types de conséquence pour l'essai (Code System inspiré de R5 : https://hl7.org/fhir/R5/codesystem-research-study-objective-type.html)",
-      "uses" : {
-      },
-      "ValueSet-eclaire-study-outcome-type-vs.html" : "Type de conséquence Value Set"
+      "ValueSet-eclaire-category-vs.html" : "Value Set type pour spécifier la catégorie l'essai clinique",
+      "ValueSet-eclaire-regulation-code-vs.html" : "Code de régulation Value Set"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system",

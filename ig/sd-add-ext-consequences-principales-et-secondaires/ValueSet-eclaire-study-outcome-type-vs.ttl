@@ -9,15 +9,15 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "eclaire-study-outcome-type-vs"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-eclaire-study-outcome-type-code-system.html\"><code>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system</code></a></li></ul></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-research-study-objective-type.html\"><code>http://terminology.hl7.org/CodeSystem/research-study-objective-type</code></a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-research-study-objective-type.html\"><code>http://terminology.hl7.org/CodeSystem/research-study-objective-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-research-study-objective-type.html#research-study-objective-type-exploratory\">exploratory</a></td><td style=\"color: #cccccc\">Exploratory</td><td>Exploratory questions to be answered in the study.</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-outcome-type-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.3.0"] ; # 
   fhir:name [ fhir:v "EclaireStudyOutcomeTypeVS"] ; # 
   fhir:title [ fhir:v "Type de conséquence Value Set"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-09T16:53:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-10T11:32:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://esante.gouv.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Type de conséquence Value Set (inspiré du Value Set de R5 : https://hl7.org/fhir/R5/valueset-research-study-objective-type.html)"] ; # 
+  fhir:description [ fhir:v "Type de conséquence Value Set"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
@@ -36,7 +36,13 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-outcome-type-code-system"^^xsd:anyURI ]
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ]
+     ] ) ;
+     fhir:exclude ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "exploratory" ]
+       ] )
      ] )
   ] . # 
 

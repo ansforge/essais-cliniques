@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2024-02-09T16:53:12+00:00"/>
+  <date value="2024-02-10T11:32:40+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -560,17 +560,6 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/eclaire-study-outcome-type-code-system"/>
-      </reference>
-      <name value="Définition des types de conséquence pour l'essai"/>
-      <description value="Définition des types de conséquence pour l'essai (Code System inspiré de R5 : https://hl7.org/fhir/R5/codesystem-research-study-objective-type.html)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
         <reference value="CodeSystem/eclaire-study-title-type-code-system"/>
       </reference>
       <name value="Définition des types de titre pour l'essai"/>
@@ -827,7 +816,7 @@
         <reference value="ValueSet/eclaire-study-outcome-type-vs"/>
       </reference>
       <name value="Type de conséquence Value Set"/>
-      <description value="Type de conséquence Value Set (inspiré du Value Set de R5 : https://hl7.org/fhir/R5/valueset-research-study-objective-type.html)"/>
+      <description value="Type de conséquence Value Set"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

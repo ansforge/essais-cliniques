@@ -1,15 +1,14 @@
 ECLAIRE : Validation Results
 =========================================
 
-err = 37, warn = 51, info = 14
+err = 37, warn = 50, info = 14
 IG Publisher Version: 1.5.16
-Generated Fri Feb 09 16:56:05 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Sat Feb 10 11:35:29 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 9 / 3 / 0
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-group-characteristic-kind-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-reglementation-precision-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-regulation-code-code-system : 0 / 1 / 1
- /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-outcome-type-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-source-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-population-code-system : 0 / 1 / 1
@@ -66,8 +65,6 @@ WARNING: CodeSystem/eclaire-group-characteristic-kind-code-system: CodeSystem: P
 WARNING: CodeSystem/eclaire-reglementation-precision-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-eclaire-regulation-code-code-system.json ==
 WARNING: CodeSystem/eclaire-regulation-code-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-== fsh-generated/resources/CodeSystem-eclaire-study-outcome-type-code-system.json ==
-WARNING: CodeSystem/eclaire-study-outcome-type-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system.json ==
 WARNING: CodeSystem/eclaire-study-phase-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-eclaire-study-phase-source-code-system.json ==
