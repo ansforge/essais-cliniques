@@ -1,6 +1,6 @@
 Extension: ECLAIREoutcomeMeasureR5
 Id: eclaire-outcome-measure-r5
-Description: "Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout ette extension implemente l'élément outcomeMeasure de R5. elle permet l'ajout des conséquences principales et secondaires de l'essai. Cette extension implemente l’élément outcomeMeasure de R5 http://hl7.org/fhir/R5/researchstudy-definitions.html#ResearchStudy.outcomeMeasure"
+Description: "Extension créée dans le cadre du projet API ECLAIRE, afin de permettre l'ajout des conséquences principales et secondaires de l'essai. Cette extension implemente l’élément outcomeMeasure de R5 http://hl7.org/fhir/R5/researchstudy-definitions.html#ResearchStudy.outcomeMeasure"
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
 * ^url = $outcome-measure-r5
