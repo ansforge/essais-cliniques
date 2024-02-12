@@ -63,6 +63,66 @@
       ]
     },
     {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure",
+      "title": "ECLAIREoutcomeMeasureR5",
+      "types": [
+        "string",
+        "CodeableConcept",
+        "markdown",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-contact-address",
       "title": "ECLAIREContactAddress",
       "types": [
@@ -154,6 +214,9 @@
       "ResearchStudy"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label": [
+      "ResearchStudy"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure": [
       "ResearchStudy"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
