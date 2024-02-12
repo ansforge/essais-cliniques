@@ -25,5 +25,5 @@ Description: "Extension créée dans le cadre du projet API ECLAIRE, afin de per
 * extension[classifier] ^short = "government | nonprofit | academic | industry"
 * extension[classifier].valueCodeableConcept from eclaire-study-party-organization-type-vs (extensible)
 
-* extension[party].value[x] only Reference(Practioner or PractionerRole or Organization)
+* extension[party].value[x] only Reference(Practitioner or PractitionerRole or Organization)
 * extension[party] ^short = "Structured outcome definition / Individual or organization associated with study (use practitionerRole to specify their organisation)"

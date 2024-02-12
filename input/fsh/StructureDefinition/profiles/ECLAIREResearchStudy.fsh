@@ -68,7 +68,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 /*Extensions*/
 * extension contains 
     ECLAIREReviewDate named eclaire-review-date 0..1 MS and
-    ECLAIREApprovalDate named eclaire-approval-date 0..1 MS
+    ECLAIREApprovalDate named eclaire-approval-date 0..1 MS and
     ECLAIRETherapeuticArea named eclaire-therapeutic-area 0..1 MS and
     ECLAIRERecruitmentPeriod named eclaire-recruitment-period 0..1 MS and
     $description-summary-r5 named eclaire-description-summary-r5 0..1 MS and
