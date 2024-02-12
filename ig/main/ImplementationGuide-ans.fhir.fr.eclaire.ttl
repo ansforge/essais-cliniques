@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-24T17:10:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-12T09:57:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -745,6 +745,18 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-outcome-measure-r5> ;
+         fhir:reference [ fhir:v "StructureDefinition/eclaire-outcome-measure-r5" ]
+       ] ;
+       fhir:name [ fhir:v "ECLAIREoutcomeMeasureR5" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du projet API ECLAIRE, afin de permettre l'ajout des conséquences principales et secondaires de l'essai. Cette extension implemente l’élément outcomeMeasure de R5 http://hl7.org/fhir/R5/researchstudy-definitions.html#ResearchStudy.outcomeMeasure" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period> ;
          fhir:reference [ fhir:v "StructureDefinition/eclaire-recruitment-period" ]
        ] ;
@@ -897,6 +909,18 @@
        ] ;
        fhir:name [ fhir:v "Type de caractéristique Value Set" ] ;
        fhir:description [ fhir:v "Value Set du type de caractéristique pour le groupe de la population." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-outcome-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/eclaire-study-outcome-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Type de conséquence Value Set" ] ;
+       fhir:description [ fhir:v "Type de conséquence Value Set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

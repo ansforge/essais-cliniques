@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2024-01-24T17:10:03+00:00",
+  "date" : "2024-02-12T09:57:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -837,6 +837,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/eclaire-outcome-measure-r5"
+      },
+      "name" : "ECLAIREoutcomeMeasureR5",
+      "description" : "Extension créée dans le cadre du projet API ECLAIRE, afin de permettre l'ajout des conséquences principales et secondaires de l'essai. Cette extension implemente l’élément outcomeMeasure de R5 http://hl7.org/fhir/R5/researchstudy-definitions.html#ResearchStudy.outcomeMeasure",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/eclaire-recruitment-period"
       },
       "name" : "ECLAIRERecruitmentPeriod",
@@ -985,6 +997,18 @@
       },
       "name" : "Type de caractéristique Value Set",
       "description" : "Value Set du type de caractéristique pour le groupe de la population.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-study-outcome-type-vs"
+      },
+      "name" : "Type de conséquence Value Set",
+      "description" : "Type de conséquence Value Set",
       "exampleBoolean" : false
     },
     {

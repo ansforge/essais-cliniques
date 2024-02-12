@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="42b882c7-c1bb-4493-a5f7-75ab7d40708e"/>
+  <id value="364ac27a-0874-43a3-b3a6-4054bbfc45dc"/>
   <meta>
-    <lastUpdated value="2024-01-24T17:10:03.110+00:00"/>
+    <lastUpdated value="2024-02-12T09:57:27.340+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -213,7 +213,7 @@
         <name value="EclaireCategoryVS"/>
         <title value="Value Set type pour spécifier la catégorie l'essai clinique"/>
         <status value="draft"/>
-        <date value="2024-01-24T17:10:03+00:00"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -222,8 +222,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0607ca4d-8b5d-45f9-bc7d-1d200256d763"/>
-          <timestamp value="2024-01-24T17:10:27+00:00"/>
+          <identifier value="urn:uuid:2a938f62-5438-4fdb-ad5d-7a15199f8d84"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -426,7 +426,7 @@
         <name value="EclaireGroupCharacteristicKindVS"/>
         <title value="Type de caractéristique Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-24T17:10:03+00:00"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -435,8 +435,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8b33f280-0640-4823-b7c3-e963ebc8fdab"/>
-          <timestamp value="2024-01-24T17:10:27+00:00"/>
+          <identifier value="urn:uuid:cccad0af-5753-40e1-ae92-da14458a7640"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -651,7 +651,7 @@
         <name value="EclaireReglementationPrecisionVS"/>
         <title value="Précision sur la réglementation concernant l'essai Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-24T17:10:03+00:00"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -660,8 +660,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0d61be90-e063-40e5-bed1-932968d90e77"/>
-          <timestamp value="2024-01-24T17:10:27+00:00"/>
+          <identifier value="urn:uuid:0e90dd62-48d6-4b7e-b5a7-5e3f1110bea7"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
           <total value="17"/>
           <offset value="0"/>
           <parameter>
@@ -832,7 +832,7 @@
         <name value="EclaireRegulationCodeVS"/>
         <title value="Code de régulation Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-24T17:10:03+00:00"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -841,8 +841,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0f1efff0-affc-4ce8-918f-fe1ce0279b19"/>
-          <timestamp value="2024-01-24T17:10:27+00:00"/>
+          <identifier value="urn:uuid:99dfba0e-f0b3-4080-bbde-08634f47be25"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -880,6 +880,111 @@
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
             <code value="JARDE"/>
             <display value="JARDE (Jarde)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-outcome-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/5.3.0/CodeSystem-research-study-objective-type.html">codesystem ResearchStudyObjectiveType v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-research-study-objective-type-primary"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-research-study-objective-type.html#research-study-objective-type-primary">primary</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/research-study-objective-type</td>
+                <td>Primary</td>
+                <td>
+                  <div>
+                    <p>The main question to be answered, and the one that drives any statistical planning for the study—e.g., calculation of the sample size to provide the appropriate power for statistical testing.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-research-study-objective-type-secondary"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-research-study-objective-type.html#research-study-objective-type-secondary">secondary</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/research-study-objective-type</td>
+                <td>Secondary</td>
+                <td>
+                  <div>
+                    <p>Question to be answered in the study that is of lesser importance than the primary objective.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-outcome-type-vs"/>
+        <version value="0.3.0"/>
+        <name value="EclaireStudyOutcomeTypeVS"/>
+        <title value="Type de conséquence Value Set"/>
+        <status value="draft"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="FRANCE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ab8b9c8d-97ff-40d0-a463-3836c5655d4e"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/research-study-objective-type|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/research-study-objective-type"/>
+            <code value="primary"/>
+            <display value="Primary"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/research-study-objective-type"/>
+            <code value="secondary"/>
+            <display value="Secondary"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1012,7 +1117,7 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2024-01-24T17:10:03+00:00"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1021,8 +1126,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3809771c-d21a-404d-bc2c-0c2608a9283b"/>
-          <timestamp value="2024-01-24T17:10:27+00:00"/>
+          <identifier value="urn:uuid:55d8f029-2221-45e7-a9d2-e4560ed70f9c"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -1273,7 +1378,7 @@
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2024-01-24T17:10:03+00:00"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1282,8 +1387,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:937143a0-b4c3-4545-b186-227ab1ad4c48"/>
-          <timestamp value="2024-01-24T17:10:27+00:00"/>
+          <identifier value="urn:uuid:0337c7ca-5c3a-437f-b526-a908cf468aa6"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -1458,7 +1563,7 @@
         <name value="EclaireStudyPopulationVS"/>
         <title value="Caractérisation de la population Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-24T17:10:03+00:00"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1467,8 +1572,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a5bed4e5-4764-4d51-a3bf-004f7d890b00"/>
-          <timestamp value="2024-01-24T17:10:27+00:00"/>
+          <identifier value="urn:uuid:c4277eb1-0a5f-443a-a354-11b2b462eb43"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -1639,7 +1744,7 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2024-01-24T17:10:03+00:00"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1648,8 +1753,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a8b71d85-014f-44ae-93c1-d3f77b3592ab"/>
-          <timestamp value="2024-01-24T17:10:27+00:00"/>
+          <identifier value="urn:uuid:f71c04b4-0302-41d5-a06e-b4b12ed83bcb"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -1933,7 +2038,7 @@
         <name value="EclaireStudyTitleTypetVS"/>
         <title value="Type de titre Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-24T17:10:03+00:00"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1942,8 +2047,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ac2ec92-a6a5-4ae9-80a5-31414884bba1"/>
-          <timestamp value="2024-01-24T17:10:27+00:00"/>
+          <identifier value="urn:uuid:7c1ee406-d5f6-48b7-b780-8f858b835f89"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -2078,7 +2183,7 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2024-01-24T17:10:03+00:00"/>
+        <date value="2024-02-12T09:57:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2087,8 +2192,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a9f4539d-31e4-44bd-a5e4-18a37a020d06"/>
-          <timestamp value="2024-01-24T17:10:27+00:00"/>
+          <identifier value="urn:uuid:344e0b4f-0b86-449a-a24f-b452af9fa09b"/>
+          <timestamp value="2024-02-12T09:57:51+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
