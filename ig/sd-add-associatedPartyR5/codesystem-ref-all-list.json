@@ -243,6 +243,28 @@
       "ValueSet-eclaire-category-vs.html" : "Value Set type pour spécifier la catégorie l'essai clinique"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-party-organization-type-code-system",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "EclaireStudyPartyOrganizationTypeCS",
+      "title" : "Définition des différents types d'organisation des parties prenantes inspiré de https://hl7.org/fhir/codesystem-research-study-party-organization-type.html",
+      "description" : "Différents rôles des parties impliqués dans l'essai",
+      "uses" : {
+      },
+      "ValueSet-eclaire-study-party-organization-type-vs.html" : "Value Set Eclaire pour les types de parties"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-party-role-code-system",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "EclaireStudyPartyRoleCS",
+      "title" : "Définition des rôles des parties prenantes inspiré de https://hl7.org/fhir/codesystem-research-study-party-role.html",
+      "description" : "Différents rôles des parties impliqué dans l'essai",
+      "uses" : {
+      },
+      "ValueSet-eclaire-study-party-role-vs.html" : "Value Set Eclaire pour les différents rôles des parties impliqués dans l'essai"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system",
       "version" : "0.3.0",
       "status" : "draft",
@@ -263,8 +285,8 @@
       "description" : "Définition des phases de l'essai utilisées dans la base de données ECLAIRE",
       "uses" : {
       },
-      "ValueSet-eclaire-study-phase-source-vs.html" : "Value Set de la phase de l'essai tel que définie dans la base ECLAIRE",
-      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping"
+      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping",
+      "ValueSet-eclaire-study-phase-source-vs.html" : "Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-population-code-system",

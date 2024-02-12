@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e1091820-8ed4-4c02-b0a2-17e095c4e7be-51",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e1091820-8ed4-4c02-b0a2-17e095c4e7be-51",
+  "id" : "ba0f411c-2fab-40ac-a2b7-45510ac7cc86-51",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ba0f411c-2fab-40ac-a2b7-45510ac7cc86-51",
   "name" : "IntersectionECLAIREResearchStudyAndECLAIREResearchStudy",
   "title" : "Intersection of null And null",
   "status" : "draft",
-  "date" : "2024-02-12T10:28:59+00:00",
+  "date" : "2024-02-12T15:35:35+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1364,11 +1364,11 @@
     },
     {
       "path" : "ResearchStudy.sponsor",
-      "short" : "Promoteur / primary Sponsor",
+      "short" : "left: Promoteur / primary Sponsor; right: Organization that initiates and is legally responsible for the study",
       "definition" : "An organization that initiates the investigation and is legally responsible for the study.",
       "comment" : "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.",
       "min" : 0,
-      "max" : "1",
+      "max" : "0",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
@@ -1418,7 +1418,7 @@
       "definition" : "A researcher in a study who oversees multiple aspects of the study, such as concept development, protocol writing, protocol submission for IRB approval, participant recruitment, informed consent, data collection, analysis, interpretation and presentation.",
       "comment" : "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.",
       "min" : 0,
-      "max" : "1",
+      "max" : "0",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
