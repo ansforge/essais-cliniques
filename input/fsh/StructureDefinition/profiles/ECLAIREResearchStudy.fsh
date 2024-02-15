@@ -18,7 +18,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * category from eclaire-category-vs (extensible)
 * condition ^short = "Sujet concerné /  Problem(s) Studied exemple code MedDRA"
 * condition MS
-* description ^short = "Résumé de l'essai / Summary Results"
+* description ^short = "Résumé de l'essai (description, durée de participation à l'essai clinique,etc) / Summary Results"
 * description MS
 * contact ^short = "Contact (Contact for public / scientific queries)"
 * contact MS
