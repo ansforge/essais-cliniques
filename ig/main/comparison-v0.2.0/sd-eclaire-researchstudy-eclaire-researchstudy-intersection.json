@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "66a08426-431a-41fc-83ce-3c0754e0181e-51",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/66a08426-431a-41fc-83ce-3c0754e0181e-51",
+  "id" : "907c34f9-5080-4e7a-9d34-19b5276eb874-51",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/907c34f9-5080-4e7a-9d34-19b5276eb874-51",
   "name" : "IntersectionECLAIREResearchStudyAndECLAIREResearchStudy",
   "title" : "Intersection of null And null",
   "status" : "draft",
-  "date" : "2024-02-15T16:44:04+00:00",
+  "date" : "2024-02-15T17:28:29+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -622,7 +622,7 @@
     },
     {
       "path" : "ResearchStudy.primaryPurposeType",
-      "short" : "treatment | prevention | diagnostic | supportive-care | screening | health-services-research | basic-science | device-feasibility",
+      "short" : "left: treatment | prevention | diagnostic | supportive-care | screening | health-services-research | basic-science | device-feasibility; right: Objectif principal / Primary purpose",
       "definition" : "The type of study based upon the intent of the study's activities. A classification of the intent of the study.",
       "comment" : "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
       "min" : 0,
@@ -641,7 +641,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
