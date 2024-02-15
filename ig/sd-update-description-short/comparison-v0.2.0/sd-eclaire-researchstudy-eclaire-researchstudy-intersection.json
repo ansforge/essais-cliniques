@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "59bedced-633b-4884-ba6d-95e3369f8746-51",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/59bedced-633b-4884-ba6d-95e3369f8746-51",
+  "id" : "983bcb6b-bc8a-4eab-9fe1-a1980d88fb9e-51",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/983bcb6b-bc8a-4eab-9fe1-a1980d88fb9e-51",
   "name" : "IntersectionECLAIREResearchStudyAndECLAIREResearchStudy",
   "title" : "Intersection of null And null",
   "status" : "draft",
-  "date" : "2024-02-15T14:33:37+00:00",
+  "date" : "2024-02-15T14:37:41+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1218,7 +1218,7 @@
     },
     {
       "path" : "ResearchStudy.description",
-      "short" : "Résumé de l'essai / Summary Results",
+      "short" : "left: Résumé de l'essai / Summary Results; right: Résumé de l'essai (description, durée de participation à l'essai clinique,etc) / Summary Results",
       "definition" : "A full description of how the study is being conducted.",
       "comment" : "Systems are not required to have markdown support, so the text should be readable without markdown processing. The markdown syntax is GFM - see https://github.github.com/gfm/",
       "min" : 0,
