@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2024-02-15T16:46:08+00:00",
+  "date" : "2024-02-15T17:22:07+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -745,6 +745,18 @@
       },
       "name" : "Eclaire",
       "description" : "Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eclaire-arm-intervention"
+      },
+      "name" : "ECLAIREArmIntervention",
+      "description" : "Extension créée dans le cadre du projet ECLAIRE pour indiquer les 'Interventions' dans les cohortes",
       "exampleBoolean" : false
     },
     {

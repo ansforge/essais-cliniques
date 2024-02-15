@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2024-02-15T16:46:08+00:00"/>
+  <date value="2024-02-15T17:22:07+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -575,6 +575,17 @@
       </reference>
       <name value="Eclaire"/>
       <description value="Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-arm-intervention"/>
+      </reference>
+      <name value="ECLAIREArmIntervention"/>
+      <description value="Extension créée dans le cadre du projet ECLAIRE pour indiquer les 'Interventions' dans les cohortes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
