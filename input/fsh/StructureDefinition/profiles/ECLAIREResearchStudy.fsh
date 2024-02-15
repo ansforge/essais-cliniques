@@ -98,3 +98,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * contact.extension[eclaire-contact-address] ^short = "Adresse du contact"
 * contact.extension[eclaire-contact-affiliation] ^short = "Affiliation du contact"
 * contact.extension[eclaire-contact-name] ^short = "Nom du contact"
+
+* arm.extension contains
+    ECLAIREArmIntervention named eclaire-arm-intervention 0..* MS //création d'extension car en R5 arm disparait au profit de comparisonGroup et pour intervention intendedExposure est utilisé en R5 (reference EvidenceVariable).
+* arm.extension[eclaire-arm-intervention] ^short = "Intervention / For each arm of the trial record a brief intervention name plus an intervention description."
