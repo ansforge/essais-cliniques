@@ -92,8 +92,11 @@ map "EssaiClinique : ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;li
     Participants (Key Inclusion and Exclusion Criteria, Sample size) => enrollment : Reference(Group) [0..*] 
     Lieux => site : Reference(Location) [0..*] 
     Pays de recrutement (Countries of Recruitment) => location : CodeableConcept [0..*]
-    Promoteur principal (Primary sponsor) => sponsor : Reference(Organization) [0..1]  
-    Promoteur secondaire (Secondary Sponsor(s)) => <&plus> ECLAIRESecondarySponsor  : Reference(Organization) [0..*]  
+    Promoteur principal (Primary sponsor) => <&plus> ECLAIREassociatedPartyR5 : Extension R5 ResearchStudy.associatedParty [0..*] 
+    Promoteur secondaire (Secondary Sponsor(s)) => <&plus> ECLAIREassociatedPartyR5  : Extension R5 ResearchStudy.associatedParty [0..*]  
+    Source de financement (Source(s) of Monetary or Material Support) => <&plus> ECLAIREassociatedPartyR5  : Extension R5 ResearchStudy.associatedParty [0..*]
+    Comité éthique (Ethics Review Board) => <&plus> ECLAIREassociatedPartyR5  : Extension R5 ResearchStudy.associatedParty [0..*]
+    Date d'approbation du comité éthique => <&plus> ECLAIREApprovalDate : instant [0..1] 
     Publications et résumé des résultats (Publications about the study and Summary results) => relatedArtifact : RelatedArtifact [0..*]
     Conséquences principales (Primary outcomes) et secondaires (Secondary outcomes)  => <&plus> ECLAIREoutcomeMeasureR5 : Extension R5 ResearchStudy.outcomeMeasure [0..*] 
 }
