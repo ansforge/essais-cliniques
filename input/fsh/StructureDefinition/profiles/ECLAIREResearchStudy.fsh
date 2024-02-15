@@ -71,7 +71,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
     ECLAIRETherapeuticArea named eclaire-therapeutic-area 0..1 MS and
     ECLAIRERecruitmentPeriod named eclaire-recruitment-period 0..1 MS and
     ECLAIRESecondarySponsor named eclaire-secondary-sponsor 0..* MS and
-    ECLAIRERecruitmentStatus named eclaire-recruitment-status 0..1 MS and // en R5 le ProgressStatus inclut le status R4 fonctionnelemnt. Nous sommes donc obligé de faire cette extension en R4 pour répondre au besoin
+    ECLAIRERecruitmentStatus named eclaire-recruitment-status 0..1 MS and // en R5 le ProgressStatus inclut fonctionnelement le status de R4. Nous sommes donc obligés de faire cette extension en R4 pour répondre au besoin
     $description-summary-r5 named eclaire-description-summary-r5 0..1 MS and
     ECLAIREoutcomeMeasureR5 named eclaire-outcome-measure-r5 0..* MS and // extension outcomeMeasure inspirée de R5
     ECLAIRELabelR5 named eclaire-label-r5 0..* MS // extension label inspirée de R5
@@ -87,7 +87,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * extension[eclaire-label-r5] ^definition = "Cette extension implemente l'élément label de R5. elle permet l'ajout de plusieurs titres pour l'essai"
 * extension[eclaire-therapeutic-area] ^short = "Domaine thérapeutique concerné"
 * extension[eclaire-recruitment-period] ^short = "Période prévisionnelle de recrutement"
-* extension[eclaire-recruitment-status] ^short = "Statut du recrutement /Recruitment status"     
+* extension[eclaire-recruitment-status] ^short = "Statut du recrutement / Recruitment status"     
 * extension[eclaire-secondary-sponsor] ^short = "Promoteur(s) secondaire(s) / Secondary Sponsor(s)"
 * contact.extension contains
     ECLAIREContactType named eclaire-contact-type 0..1 MS and
