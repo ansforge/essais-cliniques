@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-15T16:42:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-15T16:43:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -766,6 +766,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/eclaire-recruitment-status" ]
+       ] ;
+       fhir:name [ fhir:v "ECLAIRERecruitmentStatus" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du projet ECLAIRE pour indiquer le statut du recrutement" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -885,6 +897,30 @@
        ] ;
        fhir:name [ fhir:v "Précision sur la réglementation concernant l'essai Value Set" ] ;
        fhir:description [ fhir:v "Précision sur la réglementation concernant l'essai Value Set." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-status-recruitment-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/eclaire-status-recruitment-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Statut de recrutement" ] ;
+       fhir:description [ fhir:v "Les différents statuts de recrutement pour les essais cliniques" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-status-recruitment-vs> ;
+         fhir:reference [ fhir:v "ValueSet/eclaire-status-recruitment-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Statut de recrutement Value Set" ] ;
+       fhir:description [ fhir:v "Les différents statuts de recrutement pour les essais cliniques Value Set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

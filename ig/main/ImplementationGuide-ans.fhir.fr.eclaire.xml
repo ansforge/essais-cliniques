@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2024-02-15T16:42:49+00:00"/>
+  <date value="2024-02-15T16:43:54+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -678,6 +678,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-recruitment-status"/>
+      </reference>
+      <name value="ECLAIRERecruitmentStatus"/>
+      <description value="Extension créée dans le cadre du projet ECLAIRE pour indiquer le statut du recrutement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -784,6 +795,28 @@
       </reference>
       <name value="Précision sur la réglementation concernant l'essai Value Set"/>
       <description value="Précision sur la réglementation concernant l'essai Value Set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/eclaire-status-recruitment-code-system"/>
+      </reference>
+      <name value="Statut de recrutement"/>
+      <description value="Les différents statuts de recrutement pour les essais cliniques"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eclaire-status-recruitment-vs"/>
+      </reference>
+      <name value="Statut de recrutement Value Set"/>
+      <description value="Les différents statuts de recrutement pour les essais cliniques Value Set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
