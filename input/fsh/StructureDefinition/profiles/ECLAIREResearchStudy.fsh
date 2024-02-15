@@ -10,6 +10,8 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * title MS
 * status ^short = "Statut de l'essai / Study Status"
 * status MS
+* primaryPurposeType ^short = "Objectif principal / Primary purpose"
+* primaryPurposeType MS
 * phase ^short = "Phase de l'essai / Study type : phase"
 * phase MS
 * phase from eclaire-study-phase-vs (extensible)
