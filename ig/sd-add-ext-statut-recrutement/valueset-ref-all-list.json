@@ -128,9 +128,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-eclaire-researchstudy.html" : "ECLAIREResearchStudy",
+      "StructureDefinition-eclaire-location.html" : "ECLAIRELocation",
       "StructureDefinition-eclaire-group.html" : "ECLAIREGroup",
-      "StructureDefinition-eclaire-location.html" : "ECLAIRELocation"
+      "StructureDefinition-eclaire-researchstudy.html" : "ECLAIREResearchStudy"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -317,6 +317,20 @@
       "systems" : [
         "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"
       ]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-status-recruitment-vs",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "EclaireStatusRecruitementVS",
+      "title" : "Statut de recrutement Value Set",
+      "description" : "Les différents statuts de recrutement pour les essais cliniques Value Set.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-status-recruitment-code-system"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-eclaire-recruitment-status.html" : "ECLAIRERecruitmentStatus"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-outcome-type-vs",

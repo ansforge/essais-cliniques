@@ -1,14 +1,15 @@
 ECLAIRE : Validation Results
 =========================================
 
-err = 37, warn = 50, info = 14
+err = 37, warn = 54, info = 14
 IG Publisher Version: 1.5.16
-Generated Thu Feb 15 14:44:42 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
+Generated Thu Feb 15 15:18:13 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.3.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire)
  Build Errors : 9 / 3 / 0
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CapabilityStatement-eclaire-consommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-group-characteristic-kind-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-reglementation-precision-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-regulation-code-code-system : 0 / 1 / 1
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-status-recruitment-code-system : 0 / 2 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-phase-source-code-system : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/CodeSystem-eclaire-study-population-code-system : 0 / 1 / 1
@@ -28,6 +29,7 @@ Generated Thu Feb 15 14:44:42 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-location : 0 / 1 / 2
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-outcome-measure-r5 : 3 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-recruitment-period : 0 / 0 / 1
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-recruitment-status : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-researchstudy : 0 / 0 / 4
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-review-date : 0 / 0 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor : 0 / 0 / 1
@@ -37,6 +39,7 @@ Generated Thu Feb 15 14:44:42 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.eclai
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-group-characteristic-kind-vs : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-reglementation-precision-vs : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-regulation-code-vs : 0 / 1 / 1
+ /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-status-recruitment-vs : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-study-outcome-type-vs : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-study-phase-source-vs : 0 / 1 / 1
  /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/ValueSet-eclaire-study-phase-vs : 0 / 1 / 1
@@ -65,6 +68,9 @@ WARNING: CodeSystem/eclaire-group-characteristic-kind-code-system: CodeSystem: P
 WARNING: CodeSystem/eclaire-reglementation-precision-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-eclaire-regulation-code-code-system.json ==
 WARNING: CodeSystem/eclaire-regulation-code-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-eclaire-status-recruitment-code-system.json ==
+WARNING: CodeSystem/eclaire-status-recruitment-code-system: CodeSystem.concept[1].display: value should not start or finish with whitespace 'Terminé / completed '
+WARNING: CodeSystem/eclaire-status-recruitment-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-eclaire-study-phase-code-system.json ==
 WARNING: CodeSystem/eclaire-study-phase-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-eclaire-study-phase-source-code-system.json ==
@@ -164,10 +170,12 @@ ERROR: StructureDefinition/eclaire-outcome-measure-r5: StructureDefinition: When
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure'): The Implementation Guide contains no examples for this extension
 ERROR: /home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/fsh-generated/resources/StructureDefinition-eclaire-outcome-measure-r5: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-outcome-measure-r5 vs http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure
 == fsh-generated/resources/StructureDefinition-eclaire-recruitment-period.json ==
+== fsh-generated/resources/StructureDefinition-eclaire-recruitment-status.json ==
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-status'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-eclaire-researchstudy.json ==
-INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[28].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[41].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[83].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[29].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[42].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/eclaire-researchstudy: StructureDefinition.snapshot.element[84].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated/resources/StructureDefinition-eclaire-review-date.json ==
 == fsh-generated/resources/StructureDefinition-eclaire-secondary-sponsor.json ==
 == fsh-generated/resources/StructureDefinition-eclaire-site-contact-name.json ==
@@ -181,6 +189,8 @@ WARNING: ValueSet/eclaire-group-characteristic-kind-vs: ValueSet: Published valu
 WARNING: ValueSet/eclaire-reglementation-precision-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-eclaire-regulation-code-vs.json ==
 WARNING: ValueSet/eclaire-regulation-code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-eclaire-status-recruitment-vs.json ==
+WARNING: ValueSet/eclaire-status-recruitment-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-eclaire-study-outcome-type-vs.json ==
 WARNING: ValueSet/eclaire-study-outcome-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-eclaire-study-phase-source-vs.json ==

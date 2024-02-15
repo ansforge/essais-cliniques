@@ -42,6 +42,13 @@
     "name" : "EclaireRegulationCodeCS"
   },
   {
+    "id" : "eclaire-status-recruitment-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-status-recruitment-code-system",
+    "version" : "0.3.0",
+    "name" : "EclaireStatusRecruitmentCS"
+  },
+  {
     "id" : "eclaire-study-phase-code-system",
     "type" : "CodeSystem",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system",
@@ -154,6 +161,13 @@
     "name" : "ECLAIRERecruitmentPeriod"
   },
   {
+    "id" : "eclaire-recruitment-status",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-status",
+    "version" : "0.3.0",
+    "name" : "ECLAIRERecruitmentStatus"
+  },
+  {
     "id" : "eclaire-researchstudy",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy",
@@ -215,6 +229,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-regulation-code-vs",
     "version" : "0.3.0",
     "name" : "EclaireRegulationCodeVS"
+  },
+  {
+    "id" : "eclaire-status-recruitment-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-status-recruitment-vs",
+    "version" : "0.3.0",
+    "name" : "EclaireStatusRecruitementVS"
   },
   {
     "id" : "eclaire-study-outcome-type-vs",
