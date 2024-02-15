@@ -904,7 +904,7 @@ cpt-2:A system is required if a value is provided. {value.empty() or system.exis
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "eclaire-researchstudy","ResearchStudy.description","ResearchStudy.description","","","",0,1,"Y","","","markdown {[]} {[]}
-","Résumé de l'essai / Summary Results","A full description of how the study is being conducted.","Systems are not required to have markdown support, so the text should be readable without markdown processing. The markdown syntax is GFM - see https://github.github.com/gfm/","","","","","","","","",,,,,"",,,,"ResearchStudy.description",0,1,"ele-1
+","Résumé de l'essai (description, durée de participation à l'essai clinique,etc) / Summary Results","A full description of how the study is being conducted.","Systems are not required to have markdown support, so the text should be readable without markdown processing. The markdown syntax is GFM - see https://github.github.com/gfm/","","","","","","","","",,,,,"",,,,"ResearchStudy.description",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "eclaire-researchstudy","ResearchStudy.enrollment","ResearchStudy.enrollment","","patient
