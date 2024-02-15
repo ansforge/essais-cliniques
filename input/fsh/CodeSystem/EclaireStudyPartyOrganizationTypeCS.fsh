@@ -1,6 +1,6 @@
 CodeSystem: EclaireStudyPartyOrganizationTypeCS
 Id: eclaire-study-party-organization-type-code-system
-Title: "Définition des différents types d'organisation des parties prenantes inspiré de https://hl7.org/fhir/codesystem-research-study-party-organization-type.html"
+Title: "Définition des différents types d'organisation des parties prenantes inspiré de http://hl7.org/fhir/research-study-party-organization-type"
 Description: "Différents rôles des parties impliqués dans l'essai"
 * ^caseSensitive = true
 * #government "Gouvernemental / Government"
