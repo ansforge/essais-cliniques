@@ -10,6 +10,8 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * title MS
 * status ^short = "Statut de l'essai / Study Status"
 * status MS
+* primaryPurposeType ^short = "Objectif principal / Primary purpose"
+* primaryPurposeType MS
 * phase ^short = "Phase de l'essai / Study type : phase"
 * phase MS
 * phase from eclaire-study-phase-vs (extensible)
@@ -18,7 +20,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * category from eclaire-category-vs (extensible)
 * condition ^short = "Sujet concerné /  Problem(s) Studied exemple code MedDRA"
 * condition MS
-* description ^short = "Résumé de l'essai / Summary Results"
+* description ^short = "Résumé de l'essai (description, durée de participation à l'essai clinique,etc) / Summary Results"
 * description MS
 * contact ^short = "Contact (Contact for public / scientific queries)"
 * contact MS
@@ -71,6 +73,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
     ECLAIREApprovalDate named eclaire-approval-date 0..1 MS and
     ECLAIRETherapeuticArea named eclaire-therapeutic-area 0..1 MS and
     ECLAIRERecruitmentPeriod named eclaire-recruitment-period 0..1 MS and
+    ECLAIRERecruitmentStatus named eclaire-recruitment-status 0..1 MS and // en R5 le ProgressStatus inclut fonctionnelement le status de R4. Nous sommes donc obligés de faire cette extension en R4 pour répondre au besoin
     $description-summary-r5 named eclaire-description-summary-r5 0..1 MS and
     ECLAIREoutcomeMeasureR5 named eclaire-outcome-measure-r5 0..* MS and // extension outcomeMeasure inspirée de R5
     ECLAIREassociatedPartyR5 named eclaire-associated-party-r5 0..* MS and // extension associatedParty inspirée de R5
@@ -90,6 +93,8 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * extension[eclaire-label-r5] ^definition = "Cette extension implemente l'élément label de R5. elle permet l'ajout de plusieurs titres pour l'essai"
 * extension[eclaire-therapeutic-area] ^short = "Domaine thérapeutique concerné"
 * extension[eclaire-recruitment-period] ^short = "Période prévisionnelle de recrutement"
+* extension[eclaire-recruitment-status] ^short = "Statut du recrutement / Recruitment status"    
+
 * contact.extension contains
     ECLAIREContactType named eclaire-contact-type 0..1 MS and
     ECLAIREContactAddress named eclaire-contact-address 0..1 MS and
@@ -99,3 +104,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
 * contact.extension[eclaire-contact-address] ^short = "Adresse du contact"
 * contact.extension[eclaire-contact-affiliation] ^short = "Affiliation du contact"
 * contact.extension[eclaire-contact-name] ^short = "Nom du contact"
+
+* arm.extension contains
+    ECLAIREArmIntervention named eclaire-arm-intervention 0..* MS //création d'extension car en R5 arm disparait au profit de comparisonGroup et pour intervention intendedExposure est utilisé en R5 (reference EvidenceVariable).
+* arm.extension[eclaire-arm-intervention] ^short = "Intervention / For each arm of the trial record a brief intervention name plus an intervention description."
