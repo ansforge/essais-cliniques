@@ -12,7 +12,7 @@ Description: "Extension créée dans le cadre du projet API ECLAIRE, afin de per
     classifier 0..* and
     party 0..1
 * extension[name].value[x] only string
-* extension[name] ^short = "Nom du partie prenante / Name of associated party"
+* extension[name] ^short = "Nom de la partie prenante / Name of associated party"
 
 * extension[role].value[x] only CodeableConcept
 * extension[role] ^short = "sponsor | lead-sponsor | sponsor-investigator | primary-investigator | collaborator | funding-source | general-contact | recruitment-contact | sub-investigator | study-director | study-chair"
@@ -26,4 +26,4 @@ Description: "Extension créée dans le cadre du projet API ECLAIRE, afin de per
 * extension[classifier].valueCodeableConcept from eclaire-study-party-organization-type-vs (extensible)
 
 * extension[party].value[x] only Reference(Practitioner or PractitionerRole or Organization)
-* extension[party] ^short = "Structured outcome definition / Individual or organization associated with study (use practitionerRole to specify their organisation)"
+* extension[party] ^short = "Structure de la partie prenante / Structured outcome definition Individual or organization associated with study (use practitionerRole to specify their organisation)"
