@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2024-02-16T09:13:22+00:00"/>
+  <date value="2024-02-16T15:07:04+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -530,7 +530,7 @@
         <reference value="CodeSystem/eclaire-study-party-organization-type-code-system"/>
       </reference>
       <name value="Définition des différents types d'organisation des parties prenantes inspiré de http://hl7.org/fhir/research-study-party-organization-type"/>
-      <description value="Différents rôles des parties impliqués dans l'essai"/>
+      <description value="Différents rôles des parties impliquées dans l'essai"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -936,8 +936,8 @@
       <reference>
         <reference value="ValueSet/eclaire-study-party-role-vs"/>
       </reference>
-      <name value="Value Set Eclaire pour les différents rôles des parties impliqués dans l'essai"/>
-      <description value="Value Set Eclaire pour les différents rôles des parties impliqués dans l'essai cliniques (sponsor, collaborateur, etc)."/>
+      <name value="Value Set Eclaire pour les différents rôles des parties impliquées dans l'essai"/>
+      <description value="Value Set Eclaire pour les différents rôles des parties impliquées dans l'essai cliniques (sponsor, collaborateur, etc)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -948,7 +948,7 @@
         <reference value="ValueSet/eclaire-study-party-organization-type-vs"/>
       </reference>
       <name value="Value Set Eclaire pour les types de parties"/>
-      <description value="Value Set Eclaire pour les types de parties impliqués dans l'essai."/>
+      <description value="Value Set Eclaire pour les types de parties impliquées dans l'essai."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

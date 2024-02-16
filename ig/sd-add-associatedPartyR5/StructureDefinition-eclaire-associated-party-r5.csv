@@ -11,7 +11,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:name","Extension.extension","name","","",0,1,"","","","Extension {[]} {[]}
-","Nom du partie prenante / Name of associated party","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Nom de la partie prenante / Name of associated party","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:name.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -79,7 +79,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","N/A"
 "Extension.extension:party","Extension.extension","party","","",0,1,"","","","Extension {[]} {[]}
-","Structured outcome definition / Individual or organization associated with study (use practitionerRole to specify their organisation)","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Structure de la partie prenante / Structured outcome definition Individual or organization associated with study (use practitionerRole to specify their organisation)","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:party.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
