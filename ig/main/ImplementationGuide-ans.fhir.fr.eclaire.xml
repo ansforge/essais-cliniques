@@ -11,7 +11,7 @@
   <name value="ECLAIRE"/>
   <title value="Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"/>
   <status value="draft"/>
-  <date value="2024-02-16T08:51:01+00:00"/>
+  <date value="2024-02-16T15:42:28+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -527,10 +527,32 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/eclaire-study-party-organization-type-code-system"/>
+      </reference>
+      <name value="Définition des différents types d'organisation des parties prenantes inspiré de http://hl7.org/fhir/research-study-party-organization-type"/>
+      <description value="Différents rôles des parties impliquées dans l'essai"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/eclaire-study-phase-source-code-system"/>
       </reference>
       <name value="Définition des phase de l'essai utilisés dans la base de données ECLAIRE"/>
       <description value="Définition des phases de l'essai utilisées dans la base de données ECLAIRE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/eclaire-study-party-role-code-system"/>
+      </reference>
+      <name value="Définition des rôles des parties prenantes inspiré de http://hl7.org/fhir/research-study-party-role"/>
+      <description value="Différents rôles des parties impliqué dans l'essai"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -582,10 +604,32 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/eclaire-approval-date"/>
+      </reference>
+      <name value="ECLAIREApprovalDate"/>
+      <description value="Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout la date d'approbation du comité éthique"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/eclaire-arm-intervention"/>
       </reference>
       <name value="ECLAIREArmIntervention"/>
       <description value="Extension créée dans le cadre du projet ECLAIRE pour indiquer les 'Interventions' dans les cohortes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eclaire-associated-party-r5"/>
+      </reference>
+      <name value="ECLAIREassociatedPartyR5"/>
+      <description value="Extension créée dans le cadre du projet API ECLAIRE, afin de permettre l'ajout des Sponsors, collaborateurs et autres parties concernés par l'essai. Cette extension implemente l’élément associatedParty de R5 http://hl7.org/fhir/R5/researchstudy-definitions.html#ResearchStudy.associatedParty"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -718,17 +762,6 @@
       </reference>
       <name value="ECLAIREReviewDate"/>
       <description value="Extension créée dans le cadre du projet API ECLAIRE afin de permettre l'ajout d'une date de révision fonctionnelle lorque que l'on souhaite indiquer la date de la dernière modification substancielle"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/eclaire-secondary-sponsor"/>
-      </reference>
-      <name value="ECLAIRESecondarySponsor"/>
-      <description value="Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -894,6 +927,28 @@
       </reference>
       <name value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
       <description value="Value Set de la phase de l'essai clinique tel qu'il est défini dans la base ECLAIRE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eclaire-study-party-role-vs"/>
+      </reference>
+      <name value="Value Set Eclaire pour les différents rôles des parties impliquées dans l'essai"/>
+      <description value="Value Set Eclaire pour les différents rôles des parties impliquées dans l'essai cliniques (sponsor, collaborateur, etc)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eclaire-study-party-organization-type-vs"/>
+      </reference>
+      <name value="Value Set Eclaire pour les types de parties"/>
+      <description value="Value Set Eclaire pour les types de parties impliquées dans l'essai."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

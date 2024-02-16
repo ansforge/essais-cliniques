@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "ea7c6522-22ff-4661-b1c1-1c9c8af9e73d-50",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ea7c6522-22ff-4661-b1c1-1c9c8af9e73d-50",
+  "id" : "1ac110d7-0fcf-4c86-8539-e5bf779d3673-50",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1ac110d7-0fcf-4c86-8539-e5bf779d3673-50",
   "name" : "UnionECLAIREResearchStudyAndECLAIREResearchStudy",
   "title" : "Union of null And null",
   "status" : "draft",
-  "date" : "2024-02-16T08:51:12+00:00",
+  "date" : "2024-02-16T15:42:39+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1519,7 +1519,7 @@
     },
     {
       "path" : "ResearchStudy.sponsor",
-      "short" : "Promoteur / primary Sponsor",
+      "short" : "left: Promoteur / primary Sponsor; right: Organization that initiates and is legally responsible for the study",
       "definition" : "An organization that initiates the investigation and is legally responsible for the study.",
       "comment" : "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.",
       "min" : 0,

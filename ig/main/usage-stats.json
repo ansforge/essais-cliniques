@@ -5,6 +5,67 @@
   "jurisdiction": "FR",
   "extensions": [
     {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.associatedParty",
+      "title": "ECLAIREassociatedPartyR5",
+      "types": [
+        "string",
+        "CodeableConcept",
+        "Period",
+        "CodeableConcept",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label",
       "title": "ECLAIRELabelR5",
       "types": [
@@ -123,6 +184,13 @@
       ]
     },
     {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-approval-date",
+      "title": "ECLAIREApprovalDate",
+      "types": [
+        "instant"
+      ]
+    },
+    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-arm-intervention",
       "title": "ECLAIREArmIntervention",
       "types": [
@@ -230,13 +298,6 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor",
-      "title": "ECLAIRESecondarySponsor",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-site-contact-name",
       "title": "ECLAIRESiteContactName",
       "types": [
@@ -274,6 +335,9 @@
   "usage": {
     "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence": [
       "ConceptMap.group.element.target"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.associatedParty": [
+      "ResearchStudy"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.descriptionSummary": [
       "ResearchStudy"
@@ -327,6 +391,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-approval-date": [
+      "ResearchStudy"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-arm-intervention": [
       "ResearchStudy.arm"

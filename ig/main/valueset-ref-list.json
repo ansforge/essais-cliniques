@@ -94,6 +94,34 @@
       "StructureDefinition-eclaire-outcome-measure-r5.html" : "ECLAIREoutcomeMeasureR5"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-party-organization-type-vs",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "EclaireStudyPartyOrganizationTypeVS",
+      "title" : "Value Set Eclaire pour les types de parties",
+      "description" : "Value Set Eclaire pour les types de parties impliquées dans l'essai.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-party-organization-type-code-system"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-eclaire-associated-party-r5.html" : "ECLAIREassociatedPartyR5"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-party-role-vs",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "EclaireStudyPartyRoleVS",
+      "title" : "Value Set Eclaire pour les différents rôles des parties impliquées dans l'essai",
+      "description" : "Value Set Eclaire pour les différents rôles des parties impliquées dans l'essai cliniques (sponsor, collaborateur, etc).",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-party-role-code-system"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-eclaire-associated-party-r5.html" : "ECLAIREassociatedPartyR5"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs",
       "version" : "0.3.0",
       "status" : "draft",
@@ -120,8 +148,8 @@
       ],
       "uses" : {
       },
-      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping",
-      "StructureDefinition-eclaire-researchstudy.html" : "ECLAIREResearchStudy"
+      "StructureDefinition-eclaire-researchstudy.html" : "ECLAIREResearchStudy",
+      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-population-vs",

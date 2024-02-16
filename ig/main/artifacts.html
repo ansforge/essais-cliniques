@@ -288,6 +288,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-eclaire-approval-date.html"
+                     title="StructureDefinition/eclaire-approval-date">ECLAIREApprovalDate</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du projet API ECLAIRE afin de permettre l’ajout la date d’approbation du comité éthique</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-eclaire-arm-intervention.html"
                      title="StructureDefinition/eclaire-arm-intervention">ECLAIREArmIntervention</a>
                </td>
@@ -369,15 +378,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-eclaire-secondary-sponsor.html"
-                     title="StructureDefinition/eclaire-secondary-sponsor">ECLAIRESecondarySponsor</a>
-               </td>
-               <td>
-<p>Extension créée dans le cadre du projet API ECLAIRE afin de pouvoir renseigner le(s) promoteur(s) secondaire(s)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-eclaire-site-contact-name.html"
                      title="StructureDefinition/eclaire-site-contact-name">ECLAIRESiteContactName</a>
                </td>
@@ -392,6 +392,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Extension créée dans le cadre du projet API ECLAIRE afin de permettre l’ajout du domaine thérapeutique concerné par l’essai</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-eclaire-associated-party-r5.html"
+                     title="StructureDefinition/eclaire-associated-party-r5">ECLAIREassociatedPartyR5</a>
+               </td>
+               <td>
+<p>Extension créée dans le cadre du projet API ECLAIRE, afin de permettre l’ajout des Sponsors, collaborateurs et autres parties concernés par l’essai. Cette extension implemente l’élément associatedParty de R5 http://hl7.org/fhir/R5/researchstudy-definitions.html#ResearchStudy.associatedParty</p>
 </td>
             </tr>
             <tr>
@@ -489,6 +498,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-eclaire-study-party-role-vs.html"
+                     title="ValueSet/eclaire-study-party-role-vs">Value Set Eclaire pour les différents rôles des parties impliquées dans l'essai</a>
+               </td>
+               <td>
+<p>Value Set Eclaire pour les différents rôles des parties impliquées dans l’essai cliniques (sponsor, collaborateur, etc).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eclaire-study-party-organization-type-vs.html"
+                     title="ValueSet/eclaire-study-party-organization-type-vs">Value Set Eclaire pour les types de parties</a>
+               </td>
+               <td>
+<p>Value Set Eclaire pour les types de parties impliquées dans l’essai.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-eclaire-study-status-vs.html"
                      title="ValueSet/eclaire-study-status-vs">Value Set Statut Eclaire de l'essai</a>
                </td>
@@ -564,11 +591,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-eclaire-study-party-organization-type-code-system.html"
+                     title="CodeSystem/eclaire-study-party-organization-type-code-system">Définition des différents types d'organisation des parties prenantes inspiré de http://hl7.org/fhir/research-study-party-organization-type</a>
+               </td>
+               <td>
+<p>Différents rôles des parties impliquées dans l’essai</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-eclaire-study-phase-source-code-system.html"
                      title="CodeSystem/eclaire-study-phase-source-code-system">Définition des phase de l'essai utilisés dans la base de données ECLAIRE</a>
                </td>
                <td>
 <p>Définition des phases de l’essai utilisées dans la base de données ECLAIRE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-eclaire-study-party-role-code-system.html"
+                     title="CodeSystem/eclaire-study-party-role-code-system">Définition des rôles des parties prenantes inspiré de http://hl7.org/fhir/research-study-party-role</a>
+               </td>
+               <td>
+<p>Différents rôles des parties impliqué dans l’essai</p>
 </td>
             </tr>
             <tr>
@@ -725,7 +770,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 16, 2024 08:51+0000">2024-02-16</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.eclaire#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 16, 2024 15:42+0000">2024-02-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
