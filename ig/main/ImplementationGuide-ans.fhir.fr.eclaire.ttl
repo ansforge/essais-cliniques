@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ECLAIRE"] ; # 
   fhir:title [ fhir:v "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-15T17:28:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-16T08:51:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -654,6 +654,18 @@
        ] ;
        fhir:name [ fhir:v "Eclaire" ] ;
        fhir:description [ fhir:v "Système ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-arm-intervention> ;
+         fhir:reference [ fhir:v "StructureDefinition/eclaire-arm-intervention" ]
+       ] ;
+       fhir:name [ fhir:v "ECLAIREArmIntervention" ] ;
+       fhir:description [ fhir:v "Extension créée dans le cadre du projet ECLAIRE pour indiquer les 'Interventions' dans les cohortes" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
