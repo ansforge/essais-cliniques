@@ -72,6 +72,13 @@ map "<&plus> ECLAIREoutcomeMeasureR5" as OM #back:AliceBlue;header:LightSkyBlue;
     Référence => reference : Reference(EvidenceVariable) [0..1]
 }
 
+map arm #back:AliceBlue;header:LightSkyBlue;line:blue {
+    Nom => name :  string [1..1] 
+    Type => type :  CodeableConcept [0..1] 
+    Description => description :  string [0..1]
+    Intervention => <&plus> ECLAIREArmIntervention [0..*]
+}
+
 map "EssaiClinique : ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;line:blue {
     Identifiant (Primary and Secondary Identifying Numbers) => <&layers> identifier : Identifier [0..*]
     Date d'inscription au registre principal (Date of registration in primary registry) => identifier[idPrimary].period.start : dateTime [0..1]  
@@ -98,6 +105,7 @@ map "EssaiClinique : ResearchStudy" as RS #back:AliceBlue;header:LightSkyBlue;li
     Promoteur secondaire (Secondary Sponsor(s)) => <&plus> ECLAIRESecondarySponsor  : Reference(Organization) [0..*]  
     Publications et résumé des résultats (Publications about the study and Summary results) => relatedArtifact : RelatedArtifact [0..*]
     Conséquences principales (Primary outcomes) et secondaires (Secondary outcomes)  => <&plus> ECLAIREoutcomeMeasureR5 : Extension R5 ResearchStudy.outcomeMeasure [0..*] 
+    Cohorte => arm : BackboneElement [0..*]
 }
 
 
@@ -111,6 +119,7 @@ Contact --[#lightBlue,thickness=2] RS
 label --[#lightBlue,thickness=2] RS
 slice_name --[#lightBlue,thickness=2] Contact
 OM --[#lightBlue,thickness=2] RS
+arm --[#lightBlue,thickness=2] RS
 
 Group -[hidden] Organization
 
