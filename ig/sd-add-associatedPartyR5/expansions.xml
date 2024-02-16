@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="174f9440-8405-43e1-9d35-9363c0d01a5e"/>
+  <id value="f2364a4a-40a0-4574-b1ce-6be16b559cdf"/>
   <meta>
-    <lastUpdated value="2024-02-15T16:54:08.253+00:00"/>
+    <lastUpdated value="2024-02-16T09:13:22.187+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -213,7 +213,7 @@
         <name value="EclaireCategoryVS"/>
         <title value="Value Set type pour spécifier la catégorie l'essai clinique"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -222,8 +222,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9cb815b6-597f-4652-967f-2ff7fb8df2e9"/>
-          <timestamp value="2024-02-15T16:54:33+00:00"/>
+          <identifier value="urn:uuid:8976e04b-37d5-4675-9af6-e0d734e8f281"/>
+          <timestamp value="2024-02-16T09:13:50+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -426,7 +426,7 @@
         <name value="EclaireGroupCharacteristicKindVS"/>
         <title value="Type de caractéristique Value Set"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -435,8 +435,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1f638874-960c-49db-b68e-2a49d5258832"/>
-          <timestamp value="2024-02-15T16:54:33+00:00"/>
+          <identifier value="urn:uuid:984bbde4-e98b-49c5-918f-004c41ebc223"/>
+          <timestamp value="2024-02-16T09:13:50+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -651,7 +651,7 @@
         <name value="EclaireReglementationPrecisionVS"/>
         <title value="Précision sur la réglementation concernant l'essai Value Set"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -660,8 +660,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:de49913d-0ba6-4921-a20e-6c2eddcbd2ac"/>
-          <timestamp value="2024-02-15T16:54:33+00:00"/>
+          <identifier value="urn:uuid:1bb73501-281a-4609-b6a9-cfe467b0a2fe"/>
+          <timestamp value="2024-02-16T09:13:50+00:00"/>
           <total value="17"/>
           <offset value="0"/>
           <parameter>
@@ -832,7 +832,7 @@
         <name value="EclaireRegulationCodeVS"/>
         <title value="Code de régulation Value Set"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -841,8 +841,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:424f5415-76a6-4c15-8764-dd7fb8736951"/>
-          <timestamp value="2024-02-15T16:54:33+00:00"/>
+          <identifier value="urn:uuid:5766aa71-8b89-4c97-bab7-1e71ad4552f2"/>
+          <timestamp value="2024-02-16T09:13:50+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -880,6 +880,111 @@
             <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system"/>
             <code value="JARDE"/>
             <display value="JARDE (Jarde)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-status-recruitment-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-eclaire-status-recruitment-code-system.html">codesystem Statut de recrutement v0.3.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-status-recruitment-code-system-recruiting"> </a>  
+                  <a href="CodeSystem-eclaire-status-recruitment-code-system.html#eclaire-status-recruitment-code-system-recruiting">recruiting</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-status-recruitment-code-system</td>
+                <td>Actif / active</td>
+                <td>
+                  <div>
+                    <p>Recrutement actif</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---interop.esante.gouv.fr-ig-fhir-eclaire-CodeSystem-eclaire-status-recruitment-code-system-completed-recruiting"> </a>  
+                  <a href="CodeSystem-eclaire-status-recruitment-code-system.html#eclaire-status-recruitment-code-system-completed-recruiting">completed-recruiting</a>
+                </td>
+                <td>https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-status-recruitment-code-system</td>
+                <td>Terminé / completed </td>
+                <td>
+                  <div>
+                    <p>Recrutement terminé</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-status-recruitment-vs"/>
+        <version value="0.3.0"/>
+        <name value="EclaireStatusRecruitementVS"/>
+        <title value="Statut de recrutement Value Set"/>
+        <status value="draft"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="FRANCE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c83fa78b-6788-426e-9559-31b8225dd742"/>
+          <timestamp value="2024-02-16T09:13:50+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-status-recruitment-code-system|0.3.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-status-recruitment-code-system"/>
+            <code value="recruiting"/>
+            <display value="Actif / active"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-status-recruitment-code-system"/>
+            <code value="completed-recruiting"/>
+            <display value="Terminé / completed "/>
           </contains>
         </expansion>
       </ValueSet>
@@ -947,7 +1052,7 @@
         <name value="EclaireStudyOutcomeTypeVS"/>
         <title value="Type de conséquence Value Set"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -956,8 +1061,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f4558d4c-9b1c-40bc-8360-d126b10a595d"/>
-          <timestamp value="2024-02-15T16:54:33+00:00"/>
+          <identifier value="urn:uuid:27a101d7-c7f0-48b3-99ce-e03fad3ac1de"/>
+          <timestamp value="2024-02-16T09:13:50+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1053,7 +1158,7 @@
         <name value="EclaireStudyPartyOrganizationTypeVS"/>
         <title value="Value Set Eclaire pour les types de parties"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1062,8 +1167,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:312d4149-6bcb-4e31-aa6e-4b3694c19817"/>
-          <timestamp value="2024-02-15T16:54:33+00:00"/>
+          <identifier value="urn:uuid:204839f8-df62-464c-866f-828f9626f34e"/>
+          <timestamp value="2024-02-16T09:13:50+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1308,7 +1413,7 @@
         <name value="EclaireStudyPartyRoleVS"/>
         <title value="Value Set Eclaire pour les différents rôles des parties impliqués dans l'essai"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1317,8 +1422,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:25774d25-59b2-4b06-945f-fd403048bf19"/>
-          <timestamp value="2024-02-15T16:54:33+00:00"/>
+          <identifier value="urn:uuid:597a82a6-6b6b-4810-8118-7ca21a89ee74"/>
+          <timestamp value="2024-02-16T09:13:50+00:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -1528,7 +1633,7 @@
         <name value="EclaireStudyPhaseSourceVS"/>
         <title value="Value Set de la phase de l'essai tel que définie dans la base ECLAIRE"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1537,8 +1642,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:032b7ca5-2568-40d5-b37b-d83452e262e5"/>
-          <timestamp value="2024-02-15T16:54:33+00:00"/>
+          <identifier value="urn:uuid:1fbf42f9-87e3-4514-a0ee-665c313b1f37"/>
+          <timestamp value="2024-02-16T09:13:50+00:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -1789,7 +1894,7 @@
         <name value="EclaireStudyPhaseVS"/>
         <title value="Value Set type de phase de l'essai clinique"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1798,8 +1903,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f917eb36-676a-434e-afbf-0c23f76483a0"/>
-          <timestamp value="2024-02-15T16:54:33+00:00"/>
+          <identifier value="urn:uuid:f5e60470-764a-463f-b790-f918d8278364"/>
+          <timestamp value="2024-02-16T09:13:50+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -1974,7 +2079,7 @@
         <name value="EclaireStudyPopulationVS"/>
         <title value="Caractérisation de la population Value Set"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1983,8 +2088,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e6cba4a6-40ca-47ab-9318-f9dc0a29538f"/>
-          <timestamp value="2024-02-15T16:54:33+00:00"/>
+          <identifier value="urn:uuid:0553909f-f956-4cf1-b942-33e17f7c9f22"/>
+          <timestamp value="2024-02-16T09:13:51+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -2155,7 +2260,7 @@
         <name value="EclaireStudyStatusVS"/>
         <title value="Value Set Statut Eclaire de l'essai"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2164,8 +2269,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bc83a831-bbbe-491b-bc32-3dc48b72eb4b"/>
-          <timestamp value="2024-02-15T16:54:34+00:00"/>
+          <identifier value="urn:uuid:c694abf7-9c24-4f35-97b1-4f5f41b84f8d"/>
+          <timestamp value="2024-02-16T09:13:51+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -2449,7 +2554,7 @@
         <name value="EclaireStudyTitleTypetVS"/>
         <title value="Type de titre Value Set"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2458,8 +2563,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b4b79d82-6fec-4358-906f-b3418b13083a"/>
-          <timestamp value="2024-02-15T16:54:34+00:00"/>
+          <identifier value="urn:uuid:541ddb35-bb88-4b87-821b-c820d63f95b4"/>
+          <timestamp value="2024-02-16T09:13:51+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -2594,7 +2699,7 @@
         <name value="EclaireTypeContactVS"/>
         <title value="Type Contact Value Set"/>
         <status value="draft"/>
-        <date value="2024-02-15T16:54:08+00:00"/>
+        <date value="2024-02-16T09:13:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2603,8 +2708,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7e4e0da5-5796-449b-9b71-dd2628536dc4"/>
-          <timestamp value="2024-02-15T16:54:34+00:00"/>
+          <identifier value="urn:uuid:342d46ab-1dfa-45f7-83ac-3a8c5d27b635"/>
+          <timestamp value="2024-02-16T09:13:51+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

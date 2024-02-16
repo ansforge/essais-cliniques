@@ -10,7 +10,7 @@
   "name" : "ECLAIRE",
   "title" : "Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l'Ecosystème",
   "status" : "draft",
-  "date" : "2024-02-15T16:54:08+00:00",
+  "date" : "2024-02-16T09:13:22+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -789,6 +789,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/eclaire-arm-intervention"
+      },
+      "name" : "ECLAIREArmIntervention",
+      "description" : "Extension créée dans le cadre du projet ECLAIRE pour indiquer les 'Interventions' dans les cohortes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/eclaire-associated-party-r5"
       },
       "name" : "ECLAIREassociatedPartyR5",
@@ -906,6 +918,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eclaire-recruitment-status"
+      },
+      "name" : "ECLAIRERecruitmentStatus",
+      "description" : "Extension créée dans le cadre du projet ECLAIRE pour indiquer le statut du recrutement",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1009,6 +1033,30 @@
       },
       "name" : "Précision sur la réglementation concernant l'essai Value Set",
       "description" : "Précision sur la réglementation concernant l'essai Value Set.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eclaire-status-recruitment-code-system"
+      },
+      "name" : "Statut de recrutement",
+      "description" : "Les différents statuts de recrutement pour les essais cliniques",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/eclaire-status-recruitment-vs"
+      },
+      "name" : "Statut de recrutement Value Set",
+      "description" : "Les différents statuts de recrutement pour les essais cliniques Value Set.",
       "exampleBoolean" : false
     },
     {

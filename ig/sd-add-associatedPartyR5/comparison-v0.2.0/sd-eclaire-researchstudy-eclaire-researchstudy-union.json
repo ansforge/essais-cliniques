@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "69a25f8d-2c21-4156-8f20-963a65a6268f-50",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/69a25f8d-2c21-4156-8f20-963a65a6268f-50",
+  "id" : "2dceb96e-eea2-4ed8-becc-015ae01a42b1-50",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/2dceb96e-eea2-4ed8-becc-015ae01a42b1-50",
   "name" : "UnionECLAIREResearchStudyAndECLAIREResearchStudy",
   "title" : "Union of null And null",
   "status" : "draft",
-  "date" : "2024-02-15T16:54:18+00:00",
+  "date" : "2024-02-16T09:13:33+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -610,7 +610,7 @@
     },
     {
       "path" : "ResearchStudy.primaryPurposeType",
-      "short" : "treatment | prevention | diagnostic | supportive-care | screening | health-services-research | basic-science | device-feasibility",
+      "short" : "left: treatment | prevention | diagnostic | supportive-care | screening | health-services-research | basic-science | device-feasibility; right: Objectif principal / Primary purpose",
       "definition" : "The type of study based upon the intent of the study's activities. A classification of the intent of the study.",
       "comment" : "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
       "min" : 0,
@@ -629,7 +629,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
@@ -1194,7 +1194,7 @@
     },
     {
       "path" : "ResearchStudy.description",
-      "short" : "Résumé de l'essai / Summary Results",
+      "short" : "left: Résumé de l'essai / Summary Results; right: Résumé de l'essai (description, durée de participation à l'essai clinique,etc) / Summary Results",
       "definition" : "A full description of how the study is being conducted.",
       "comment" : "Systems are not required to have markdown support, so the text should be readable without markdown processing. The markdown syntax is GFM - see https://github.github.com/gfm/",
       "min" : 0,
