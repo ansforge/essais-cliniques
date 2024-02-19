@@ -99,7 +99,7 @@ Description: "Profil de ResearchStudy pour le projet ECLAIRE"
     ECLAIREContactType named eclaire-contact-type 0..1 MS and
     ECLAIREContactAddress named eclaire-contact-address 0..1 MS and
     ECLAIREContactAffiliation named eclaire-contact-affiliation 0..1 MS and
-    ECLAIREContactName named eclaire-contact-name 0..1
+    ECLAIREContactName named eclaire-contact-name 0..1 MS
 * contact.extension[eclaire-contact-type] ^short = "Type de contact : Public ou Scientific"
 * contact.extension[eclaire-contact-address] ^short = "Adresse du contact"
 * contact.extension[eclaire-contact-affiliation] ^short = "Affiliation du contact"
