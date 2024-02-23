@@ -7,6 +7,9 @@ Alias: $telecom = http://hl7.org/fhir/contact-point-system
 Alias: $category = eclaire-reglementation-precision-code-system
 Alias: $contact = eclaire-type-contact-code-system
 Alias: $title-type = eclaire-study-title-type-code-system
+Alias: $eclaire-status-recruitment = eclaire-status-recruitment-code-system
+Alias: $eclaire-study-party-role = eclaire-study-party-role-code-system
+Alias: $eclaire-study-party-organization-type = eclaire-study-party-organization-type-code-system
 
 
 Instance: fake-study-example
@@ -17,14 +20,53 @@ Usage: #example
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-review-date"
   * valueInstant = "2023-01-06T00:00:00Z"
 * extension[+]
+  * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-approval-date"
+  * valueInstant = "2023-03-06T00:00:00Z"
+* extension[+]
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-therapeutic-area"
   * valueString = "domaine thérapeutique z"
 * extension[+]
   * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-period"
   * valuePeriod.start = "2022-06-30T00:00:00.000Z"
 * extension[+]
-  * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-secondary-sponsor"
-  * valueReference = Reference(Organization/2) "Energetic Dog"
+  * url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-recruitment-status"
+  * valueCodeableConcept.coding = $eclaire-status-recruitment#recruiting
+* extension[+]
+  * url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.descriptionSummary"
+  * valueMarkdown = "Ceci est un test de ressource pour Eclaire"
+* extension[+].extension[0].valueString = "Nom de la conséquence primaire"
+* extension[=].extension[=].url = "value"
+* extension[=].extension[+].valueCodeableConcept.coding = $outcome-type#primary
+* extension[=].extension[=].valueCodeableConcept.text = "primaire"
+* extension[=].extension[=].url = "type"
+* extension[=].extension[+].valueMarkdown = "Description de la conséquence primaire"
+* extension[=].extension[=].url = "description"
+* extension[=].extension[+].valueReference = Reference(EvidenceVariable/1) "Aïe!"
+* extension[=].extension[=].url = "description"
+* extension[=].url = $outcome-measure-r5
+* extension[+].extension[0].valueString = "Nom de la conséquence secondaire"
+* extension[=].extension[=].url = "value"
+* extension[=].extension[+].valueCodeableConcept.coding = $outcome-type#secondary
+* extension[=].extension[=].valueCodeableConcept.text = "secondaire"
+* extension[=].extension[=].url = "type"
+* extension[=].extension[+].valueMarkdown = "Description de la conséquence secondaire"
+* extension[=].extension[=].url = "description"
+* extension[=].extension[+].valueReference = Reference(EvidenceVariable/1) "Ouille!"
+* extension[=].extension[=].url = "description"
+* extension[=].url = $outcome-measure-r5
+* extension[+].extension[0].valueString = "THE sponsor"
+* extension[=].extension[=].url = "name"
+* extension[=].extension[+].valueCodeableConcept.coding = $eclaire-study-party-role#lead-sponsor
+* extension[=].extension[=].valueCodeableConcept.text = "Sponsor principal"
+* extension[=].extension[=].url = "role"
+* extension[=].extension[+].valuePeriod.start = "2022-06-30T00:00:00.000Z"
+* extension[=].extension[=].url = "period"
+* extension[=].extension[+].valueCodeableConcept.coding = $eclaire-study-party-organization-type#academic
+* extension[=].extension[=].valueCodeableConcept.text = "academic"
+* extension[=].extension[=].url = "classifier"
+* extension[=].extension[+].valueReference = Reference(Organization/2) "Etablissement du sponsor"
+* extension[=].extension[=].url = "party"
+* extension[=].url = $associated-party-r5
 * extension[+].extension[0].valueString = "INDISPONIBLE"
 * extension[=].extension[=].url = "value"
 * extension[=].extension[+].valueCodeableConcept.coding = $title-type#human-use
@@ -113,8 +155,8 @@ Usage: #example
   * text = "Countries of recruitment"
 * description = "This is a fake research study"
 * enrollment = Reference(Group/6) "Fast Zebra"
-* sponsor = Reference(Organization:4) "Big boss"
-* principalInvestigator = Reference(Practitioner:5) "Docteur Super"
+//* sponsor = Reference(Organization:4) "Big boss"
+//* principalInvestigator = Reference(Practitioner:5) "Docteur Super"
 * site = Reference(Location/8) "Rainbow"
 * reasonStopped
   * coding = $reasonstop#closed-due-to-toxicity
@@ -123,5 +165,10 @@ Usage: #example
 * arm
   * name = "Slow Elephant"
   * description = "Hilarious Badger"
+  * extension[+].extension[0].valueString = "Nom de l'intervention"
+  * extension[=].extension[=].url = "name"
+  * extension[+].extension[0].valueString = "Description de l'intervention"
+  * extension[=].extension[=].url = "description"
+  * extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-arm-intervention"
 * objective
   * name = "Inventive Mouse"
