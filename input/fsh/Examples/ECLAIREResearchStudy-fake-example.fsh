@@ -155,8 +155,6 @@ Usage: #example
   * text = "Countries of recruitment"
 * description = "This is a fake research study"
 * enrollment = Reference(Group/6) "Fast Zebra"
-//* sponsor = Reference(Organization:4) "Big boss"
-//* principalInvestigator = Reference(Practitioner:5) "Docteur Super"
 * site = Reference(Location/8) "Rainbow"
 * reasonStopped
   * coding = $reasonstop#closed-due-to-toxicity
