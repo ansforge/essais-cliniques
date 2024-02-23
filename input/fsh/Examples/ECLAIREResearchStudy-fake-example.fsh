@@ -165,7 +165,7 @@ Usage: #example
 * arm
   * name = "Slow Elephant"
   * description = "Hilarious Badger"
-  * extension[+].extension[0].valueString = "Nom de l'intervention"
+  * extension[0].extension[0].valueString = "Nom de l'intervention"
   * extension[=].extension[=].url = "name"
   * extension[+].extension[+].valueString = "Description de l'intervention"
   * extension[=].extension[=].url = "description"
