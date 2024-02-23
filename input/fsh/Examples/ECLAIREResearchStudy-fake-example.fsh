@@ -167,7 +167,7 @@ Usage: #example
   * description = "Hilarious Badger"
   * extension[+].extension[0].valueString = "Nom de l'intervention"
   * extension[=].extension[=].url = "name"
-  * extension[+].extension[0].valueString = "Description de l'intervention"
+  * extension[+].extension[+].valueString = "Description de l'intervention"
   * extension[=].extension[=].url = "description"
   * extension[=].url = "https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-arm-intervention"
 * objective
