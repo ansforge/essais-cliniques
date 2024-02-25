@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ECLAIRE</h1>
- <p>Generated Sun Feb 25 14:24:03 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.3.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Sun Feb 25 15:44:41 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.3.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.16</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.eclaire, Canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire</td></tr>
@@ -46,21 +46,28 @@
  <tr><td>version</d><td>0.3.0</td></tr>
  <tr><td>path</d><td>https://interop.esante.gouv.fr/ig/fhir/eclaire/0.3.0</td></tr>
  <tr><td>Pub-Mode</d><td>milestone</td></tr>
- <tr><td>status</d><td>trial-use</td></tr>
- <tr><td>sequence</d><td>ci-build</td></tr>
+ <tr><td>status</d><td>release</td></tr>
+ <tr><td>sequence</d><td>trial-use</td></tr>
  <tr><td>desc</d><td>Implementation Guide de l'API FHIR pour le projet ECLAIRE. L'objectif de cet Implementation Guide est de définir les spécifications de l’API REST (FHIR) pour interroger la base de données ECLAIRE qui recensera les essais cliniques.</td></tr>
  <tr><td>descmd</d><td><p>Release en trial use de l'Implementation Guide FHIR pour le MVP ECLAIRE.</p>
 <ul>
-<li>[narratif] ajout du lien vers le Swagger <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/71">[Narratif]ajout lien vers swagger #71</a></li>
-<li>[Narratif] ajout du 2eme flux <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/62">[Narratif]Ajout du flux 2 :recherche sur critères #62</a></li>
-<li>[RC] Création de nouveaux CodeSystems <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/59">[RC]Création de code systems pour certains CodeableConcept #59</a></li>
-<li>[RC] Création de ConceptMap pour phase de l'essai <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/48">[RC]Création de ConceptMap pour phase de l'essai #48</a></li>
-<li>[RC] Correction ECLAIREReviewDate en instant <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/45">[RC]Correction ECLAIREReviewDate en instant #45</a></li>
-<li>[RC] Création CodeSystem et ValueSet title-type <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/44">[RC]Page title-type retourne une 404 #44</a></li>
-<li>[Exemple] Suppression de l'exemple existant et création de fake-study-example <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/38">[Exemple]revoir l'exemple #38</a></li>
-<li>[RC] Suppression de l'extension eclaire-condition-details et création de la slice condition <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/51">[RC]Supprimer l'extension eclaire-condition-details #51</a></li>
-<li>[RC] Création des extensions ECLAIREContactAddress, ECLAIREContactAffiliation et ECLAIREContactName <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/32">[RC]Informations manquantes sur les contacts #32</a></li>
-<li>[Narratif] Mise à jour du mapping <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/34">[Narratif]Représentation des extensions sur le mapping #34</a></li>
+<li>Ajout valeur dans le code system eclaire-reglementation-precision-code-system <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/86">Ajouter une valeur dans le code system eclaire-reglementation-precision-code-system #86</a></li>
+<li>Modification de l'extension EclaireLabel pour correspondre à label de R5 <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/94">extension eclaire-label-r5</a></li>
+<li>Modification des références pour correspondre aux profils ECLAIRE <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/98">Références vers profils ECLAIRE</a></li>
+<li>Ajout de completion date <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/99">Précision dans le mapping et le short de ResearchStudy.period.end</a></li>
+<li>Ajout de la durée de participation à l'essai <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/100">Précision dans le short de description</a></li>
+<li>Group.characteristic - Alignement des ValueSet <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/102">Group.characteristic - Alignement des ValueSet</a></li>
+<li>Ajout de la date d'inscription au registre principal <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/105">ajout description et mapping pour la date d'inscription au registre principal</a></li>
+<li>Ajout de Intervention <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/107">add extension eclaire-arm-intervention</a></li>
+<li>Ajout de la description et du mapping sur primaryPurpose <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/108">Ajout de la description short et du mapping sur primaryPurpose</a></li>
+<li>Ajout de Brief summary <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/109">add extension eclaire-description-summary-r5</a></li>
+<li>Ajout du Statut du recrutement <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/110">add extension eclaire-recruitment-status</a></li>
+<li>Ajout de Publications about the study + Summary results <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/111">add short relatedArtifact</a></li>
+<li>Ajout de Conséquences principales et secondaires <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/112">add extension eclaire-outcome-measure-r5</a></li>
+<li>Ajout de Intégration associatedParty présent en R5 <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/113">add extension eclaire-associated-party-r5</a></li>
+<li>Revue de l'IG pour ajouter les MS manquants <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/120">add MS</a></li>
+<li>Modification de l'exemple pour intéger les modifications <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/128">exemple 0.3.0</a></li>
+<li>[Narratif]correction mise en page index <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/82">Correction index.md</a></li>
 </ul>
 </td></tr>
 </table>
