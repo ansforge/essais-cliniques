@@ -6,6 +6,6 @@
 
 ## Preview
 
-https://ansforge.github.io/IG-fhir-essais-cliniques/ig/[ajouter_nom_de_la_branche] 
+https://ansforge.github.io/IG-fhir-essais-cliniques/[ajouter_nom_de_la_branche]/ig/ 
 
 ## Impact API ECLAIRE
