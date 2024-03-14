@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 9, errors = 50, warn = 58, info = 21-->
+<!-- broken links = 9, errors = 57, warn = 58, info = 21-->
 <head>
   <title>ECLAIRE : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,52 +36,19 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ECLAIRE</h1>
- <p>Generated Mon Feb 26 13:29:13 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.3.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Thu Mar 14 10:02:02 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.eclaire#0.3.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/eclaire">https://interop.esante.gouv.fr/ig/fhir/eclaire</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/eclaire/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.16</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.1</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.eclaire, Canonical = https://interop.esante.gouv.fr/ig/fhir/eclaire</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><table class="grid">
- <tr><td>package-id</d><td>ans.fhir.fr.eclaire</td></tr>
- <tr><td>version</d><td>0.3.0</td></tr>
- <tr><td>path</d><td>https://interop.esante.gouv.fr/ig/fhir/eclaire/0.3.0</td></tr>
- <tr><td>Pub-Mode</d><td>milestone</td></tr>
- <tr><td>status</d><td>release</td></tr>
- <tr><td>sequence</d><td>trial-use</td></tr>
- <tr><td>desc</d><td>Implementation Guide de l'API FHIR pour le projet ECLAIRE. L'objectif de cet Implementation Guide est de définir les spécifications de l’API REST (FHIR) pour interroger la base de données ECLAIRE qui recensera les essais cliniques.</td></tr>
- <tr><td>descmd</d><td><p>Release en trial use de l'Implementation Guide FHIR pour le MVP ECLAIRE.</p>
-<ul>
-<li>Ajout valeur dans le code system eclaire-reglementation-precision-code-system <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/86">Ajouter une valeur dans le code system eclaire-reglementation-precision-code-system #86</a></li>
-<li>Modification de l'extension EclaireLabel pour correspondre à label de R5 <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/94">extension eclaire-label-r5</a></li>
-<li>Modification des références pour correspondre aux profils ECLAIRE <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/98">Références vers profils ECLAIRE</a></li>
-<li>Ajout de completion date <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/99">Précision dans le mapping et le short de ResearchStudy.period.end</a></li>
-<li>Ajout de la durée de participation à l'essai <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/100">Précision dans le short de description</a></li>
-<li>Group.characteristic - Alignement des ValueSet <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/102">Group.characteristic - Alignement des ValueSet</a></li>
-<li>Ajout de la date d'inscription au registre principal <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/105">ajout description et mapping pour la date d'inscription au registre principal</a></li>
-<li>Ajout de Intervention <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/107">add extension eclaire-arm-intervention</a></li>
-<li>Ajout de la description et du mapping sur primaryPurpose <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/108">Ajout de la description short et du mapping sur primaryPurpose</a></li>
-<li>Ajout de Brief summary <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/109">add extension eclaire-description-summary-r5</a></li>
-<li>Ajout du Statut du recrutement <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/110">add extension eclaire-recruitment-status</a></li>
-<li>Ajout de Publications about the study + Summary results <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/111">add short relatedArtifact</a></li>
-<li>Ajout de Conséquences principales et secondaires <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/112">add extension eclaire-outcome-measure-r5</a></li>
-<li>Ajout de Intégration associatedParty présent en R5 <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/113">add extension eclaire-associated-party-r5</a></li>
-<li>Revue de l'IG pour ajouter les MS manquants <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/120">add MS</a></li>
-<li>Modification de l'exemple pour intéger les modifications <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/128">exemple 0.3.0</a></li>
-<li>[Narratif]correction mise en page index <a href="https://github.com/ansforge/IG-fhir-essais-cliniques/issues/82">Correction index.md</a></li>
-</ul>
-</td></tr>
-</table>
-<ul><li>descmd cannot contain a ' <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>Publication request category found (not allowed after first publication <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>Publication request title found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>Publication request introduction found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li>Publication request ci-build found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><ul><li>Version 0.3.0 has already been published <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>Publication Request is for version v0.3.0 which is already published <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td><a href="#suppressed">19 Suppressed Issues</a>
 </td></tr>
- <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ans.fhir.fr.eclaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.3.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/fhir/eclaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.3.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.4.0</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ans.fhir.fr.eclaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.3.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/fhir/eclaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.3.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.5.0</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 </table><para>Templates: fhir.base.template#0.2.2. Tools: 0.1.0</para></div></td></tr>
  <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
@@ -110,14 +77,16 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (28 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-group-type.html">GroupType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/effectevidencesynthesis.html">EffectEvidenceSynthesis</a>
- (19 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-mode.html">LocationMode</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/subscription.html">Subscription</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-hierarchy.html">hierarchy</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/evidencevariable.html">EvidenceVariable</a>
@@ -144,10 +113,10 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v0.2.0/index.html">Comparison with version 0.2.0</a></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> </td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 50, warn = 58, info = 21, broken links = 9</td></tr>
+ <tr><td>Summary:</td><td> errors = 57, warn = 58, info = 21, broken links = 9</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -156,8 +125,8 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
    <tr style="background-color: #ffcccc">
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>9</b></td><td><b>3</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_igSource_fsh-generated_resources_CapabilityStatement-eclaire-consommateur"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/fsh-generated/resources/CapabilityStatement-eclaire-consommateur</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_igSource_fsh-generated_resources_CapabilityStatement-eclaire-consommateur"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/fsh-generated/resources/CapabilityStatement-eclaire-consommateur</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_igSource_fsh-generated_resources_CodeSystem-eclaire-group-characteristic-kind-code-system"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/fsh-generated/resources/CodeSystem-eclaire-group-characteristic-kind-code-system</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -205,7 +174,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_igSource_fsh-generated_resources_ImplementationGuide-ans.fhir.fr.eclaire"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.eclaire</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_igSource_fsh-generated_resources_ResearchStudy-fake-study-example"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/fsh-generated/resources/ResearchStudy-fake-study-example</b></a></td><td><b>18</b></td><td><b>1</b></td><td><b>15</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_igSource_fsh-generated_resources_ResearchStudy-fake-study-example"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/fsh-generated/resources/ResearchStudy-fake-study-example</b></a></td><td><b>24</b></td><td><b>1</b></td><td><b>15</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-essais-cliniques_IG-fhir-essais-cliniques_igSource_fsh-generated_resources_StructureDefinition-eclaire-approval-date"><b>/home/runner/work/IG-fhir-essais-cliniques/IG-fhir-essais-cliniques/igSource/fsh-generated/resources/StructureDefinition-eclaire-approval-date</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -313,22 +282,22 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b><a href="CapabilityStatement-eclaire-consommateur.json.html#l381">output&#8203;/CapabilityStatement-eclaire-consommateur&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/pre&#8203;/code&#8203;/a at Line 293, column 7</a></b></td><td><b>error</b></td><td><b>The link 'ImplementationGuide-ans.fhir.fr.eclaire.html' for &quot;🔗&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l451">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/blockquote&#8203;/p&#8203;/a at Line 232, column 1819</a></b></td><td><b>error</b></td><td><b>The link 'EvidenceVariable/1' for &quot;EvidenceVariable/1: Aïe!&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l453">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/blockquote&#8203;/p&#8203;/a at Line 232, column 1855</a></b></td><td><b>error</b></td><td><b>The link 'EvidenceVariable/1' for &quot;EvidenceVariable/1: Aïe!&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l502">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/blockquote&#8203;/p&#8203;/a at Line 232, column 2580</a></b></td><td><b>error</b></td><td><b>The link 'EvidenceVariable/1' for &quot;EvidenceVariable/1: Ouille!&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l504">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/blockquote&#8203;/p&#8203;/a at Line 232, column 2616</a></b></td><td><b>error</b></td><td><b>The link 'EvidenceVariable/1' for &quot;EvidenceVariable/1: Ouille!&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l568">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/blockquote&#8203;/p&#8203;/a at Line 232, column 3787</a></b></td><td><b>error</b></td><td><b>The link 'Organization/2' for &quot;Organization/2: Etablissement du sponsor&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l570">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/blockquote&#8203;/p&#8203;/a at Line 232, column 3823</a></b></td><td><b>error</b></td><td><b>The link 'Organization/2' for &quot;Organization/2: Etablissement du sponsor&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l640">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 4915</a></b></td><td><b>error</b></td><td><b>The link 'PlanDefinition/3' for &quot;PlanDefinition/3: Energetic plan&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l642">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 4951</a></b></td><td><b>error</b></td><td><b>The link 'PlanDefinition/3' for &quot;PlanDefinition/3: Energetic plan&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l709">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 6748</a></b></td><td><b>error</b></td><td><b>The link 'Group/6' for &quot;Group/6: Fast Zebra&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l711">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 6784</a></b></td><td><b>error</b></td><td><b>The link 'Group/6' for &quot;Group/6: Fast Zebra&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ResearchStudy-fake-study-example.html#l715">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 6809</a></b></td><td><b>error</b></td><td><b>The link 'Location/8' for &quot;Location/8: Rainbow&quot; cannot be resolved</b></td>
+     <td><b><a href="ResearchStudy-fake-study-example.html#l717">output&#8203;/ResearchStudy-fake-study-example&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 6845</a></b></td><td><b>error</b></td><td><b>The link 'Location/8' for &quot;Location/8: Rainbow&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="index.html#l454">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 276, column 195</a></b></td><td><b>error</b></td><td><b>The link 'construction_des_flux.html' for &quot;construction des flux&quot; cannot be resolved</b></td>
@@ -350,7 +319,10 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'ImplementationGuide-ans.fhir.fr.eclaire.html' at 'div/ul/li/a' for 'https://interop.esante.gouv.fr/ig/fhir/eclaire/ImplementationGuide/ans.fhir.fr.eclaire' does not resolve</b></td>
    </tr>
 </table>
 <hr/>
@@ -522,79 +494,79 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.target[0] (l1&#8203;/c5107)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.target[0] (l1&#8203;/c5629)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.target[0] (l1&#8203;/c5344)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.target[0] (l1&#8203;/c5866)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.target[0] (l1&#8203;/c5571)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.target[0] (l1&#8203;/c6093)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.target[0] (l1&#8203;/c5801)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.target[0] (l1&#8203;/c6323)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.target[0] (l1&#8203;/c6022)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.target[0] (l1&#8203;/c6544)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.target[0] (l1&#8203;/c6260)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.target[0] (l1&#8203;/c6782)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.target[0] (l1&#8203;/c6507)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.target[0] (l1&#8203;/c7029)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.target[0] (l1&#8203;/c6739)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.target[0] (l1&#8203;/c7261)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.target[0] (l1&#8203;/c6965)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.target[0] (l1&#8203;/c7487)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.target[0] (l1&#8203;/c7203)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.target[0] (l1&#8203;/c7725)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[10]&#8203;.target[0] (l1&#8203;/c7430)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[10]&#8203;.target[0] (l1&#8203;/c7952)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.target[0] (l1&#8203;/c7775)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.target[0] (l1&#8203;/c8297)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.code (l1&#8203;/c4902)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.code (l1&#8203;/c5424)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.code (l1&#8203;/c5131)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.code (l1&#8203;/c5653)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'jarde-early' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.code (l1&#8203;/c5376)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.code (l1&#8203;/c5898)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.code (l1&#8203;/c5606)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.code (l1&#8203;/c6128)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.code (l1&#8203;/c5827)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.code (l1&#8203;/c6349)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.code (l1&#8203;/c6057)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.code (l1&#8203;/c6579)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-first-admin' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.code (l1&#8203;/c6304)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-first-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.code (l1&#8203;/c6826)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-first-bioequivalence' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.code (l1&#8203;/c6536)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.code (l1&#8203;/c7058)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-I-II-other' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.code (l1&#8203;/c6760)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-II' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.code (l1&#8203;/c7282)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-II' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.code (l1&#8203;/c6990)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-II-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.code (l1&#8203;/c7512)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-II-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[10]&#8203;.code (l1&#8203;/c7225)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[10]&#8203;.code (l1&#8203;/c7747)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-III' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.code (l1&#8203;/c7562)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-III-IV' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.code (l1&#8203;/c8084)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-III-IV' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.target[0]&#8203;.code (l1&#8203;/c7747)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'phase-3-phase-4' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[1]&#8203;.element[0]&#8203;.target[0]&#8203;.code (l1&#8203;/c8269)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_TARGET_CODE_INVALID_VS"><b>The target code 'phase-3-phase-4' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs|0.3.0</b></td>
    </tr>
 </table>
 <hr/>
@@ -607,64 +579,64 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.target[0] (l1&#8203;/c3712)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.target[0] (l1&#8203;/c4172)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.target[0] (l1&#8203;/c3937)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.target[0] (l1&#8203;/c4397)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.target[0] (l1&#8203;/c4186)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.target[0] (l1&#8203;/c4646)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.target[0] (l1&#8203;/c4452)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.target[0] (l1&#8203;/c4912)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.target[0] (l1&#8203;/c4679)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.target[0] (l1&#8203;/c5139)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.target[0] (l1&#8203;/c4905)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.target[0] (l1&#8203;/c5365)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.target[0] (l1&#8203;/c5133)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.target[0] (l1&#8203;/c5593)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.target[0] (l1&#8203;/c5392)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.target[0] (l1&#8203;/c5852)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.target[0] (l1&#8203;/c5620)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.target[0] (l1&#8203;/c6080)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.target[0] (l1&#8203;/c5850)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.target[0] (l1&#8203;/c6310)</b></td><td><b>warning</b></td><td title="EXTENSION_EXTM_CONTEXT_WRONG_XVER"><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.code (l1&#8203;/c3506)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'a-demarrer' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[0]&#8203;.code (l1&#8203;/c3966)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'a-demarrer' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.code (l1&#8203;/c3733)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'en-cours' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[1]&#8203;.code (l1&#8203;/c4193)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'en-cours' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.code (l1&#8203;/c3959)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[2]&#8203;.code (l1&#8203;/c4419)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.code (l1&#8203;/c4208)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[3]&#8203;.code (l1&#8203;/c4668)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'suspendue' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.code (l1&#8203;/c4473)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'prorogee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[4]&#8203;.code (l1&#8203;/c4933)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'prorogee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.code (l1&#8203;/c4699)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'expiree' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[5]&#8203;.code (l1&#8203;/c5159)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'expiree' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.code (l1&#8203;/c4926)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'terminee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[6]&#8203;.code (l1&#8203;/c5386)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'terminee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.code (l1&#8203;/c5168)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'terminee-fin-anticipee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[7]&#8203;.code (l1&#8203;/c5628)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'terminee-fin-anticipee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.code (l1&#8203;/c5413)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'archivee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[8]&#8203;.code (l1&#8203;/c5873)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'archivee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.code (l1&#8203;/c5643)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'abandonnee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
+     <td><b>ConceptMap&#8203;.group[0]&#8203;.element[9]&#8203;.code (l1&#8203;/c6103)</b></td><td><b>error</b></td><td title="CONCEPTMAP_GROUP_SOURCE_CODE_INVALID_VS"><b>The source code 'abandonnee' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
 </table>
 <hr/>
@@ -687,16 +659,16 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">ResearchStudy.condition[0] (l261/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl70" class="flip" onclick="flip('l70')">Show Reasoning</span><div id="l70" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul></ul></div></td>
+     <td><b><a href="">ResearchStudy.condition[0] (l261/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl71" class="flip" onclick="flip('l71')">Show Reasoning</span><div id="l71" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">ResearchStudy.condition[1] (l264/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl71" class="flip" onclick="flip('l71')">Show Reasoning</span><div id="l71" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul></ul></div></td>
+     <td><b><a href="">ResearchStudy.condition[1] (l264/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl72" class="flip" onclick="flip('l72')">Show Reasoning</span><div id="l72" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://interop.esante.gouv.fr/ig/fhir/eclaire/StructureDefinition/eclaire-researchstudy|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>ResearchStudy&#8203;.extension[4]&#8203;.value&#8203;.ofType(CodeableConcept) (l30&#8203;/c8)</b></td><td><b>information</b></td><td title=""><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-status-recruitment-code-system|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">ResearchStudy&#8203;.extension[6]&#8203;.extension[0] (l45&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl73" class="flip" onclick="flip('l73')">Show Reasoning</span><div id="l73" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>ResearchStudy.extension[6].extension[0]: discriminator = true and ('name' in url)</li>, <li>ResearchStudy.extension[6].extension[0]: discriminator = true and ('type' in url)</li>, <li>ResearchStudy.extension[6].extension[0]: discriminator = true and ('description' in url)</li>, <li>ResearchStudy.extension[6].extension[0]: discriminator = true and ('reference' in url)</li></ul></div></td>
+     <td><b><a href="">ResearchStudy&#8203;.extension[6]&#8203;.extension[0] (l45&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl74" class="flip" onclick="flip('l74')">Show Reasoning</span><div id="l74" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>ResearchStudy.extension[6].extension[0]: discriminator = true and ('name' in url)</li>, <li>ResearchStudy.extension[6].extension[0]: discriminator = true and ('type' in url)</li>, <li>ResearchStudy.extension[6].extension[0]: discriminator = true and ('description' in url)</li>, <li>ResearchStudy.extension[6].extension[0]: discriminator = true and ('reference' in url)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>ResearchStudy.extension[6] (l43/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Extension.extension:description: max allowed = 1, but found 2 (from http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure|0.3.0)</b></td>
@@ -720,7 +692,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>ResearchStudy&#8203;.extension[6]&#8203;.extension[3]&#8203;.value&#8203;.ofType(Reference)&#8203;.display (l68&#8203;/c30)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/markdown|4.0.1</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">ResearchStudy&#8203;.extension[7]&#8203;.extension[0] (l77&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl81" class="flip" onclick="flip('l81')">Show Reasoning</span><div id="l81" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>ResearchStudy.extension[7].extension[0]: discriminator = true and ('name' in url)</li>, <li>ResearchStudy.extension[7].extension[0]: discriminator = true and ('type' in url)</li>, <li>ResearchStudy.extension[7].extension[0]: discriminator = true and ('description' in url)</li>, <li>ResearchStudy.extension[7].extension[0]: discriminator = true and ('reference' in url)</li></ul></div></td>
+     <td><b><a href="">ResearchStudy&#8203;.extension[7]&#8203;.extension[0] (l77&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl82" class="flip" onclick="flip('l82')">Show Reasoning</span><div id="l82" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure|0.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>ResearchStudy.extension[7].extension[0]: discriminator = true and ('name' in url)</li>, <li>ResearchStudy.extension[7].extension[0]: discriminator = true and ('type' in url)</li>, <li>ResearchStudy.extension[7].extension[0]: discriminator = true and ('description' in url)</li>, <li>ResearchStudy.extension[7].extension[0]: discriminator = true and ('reference' in url)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>ResearchStudy.extension[7] (l75/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Extension.extension:description: max allowed = 1, but found 2 (from http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.outcomeMeasure|0.3.0)</b></td>
@@ -787,6 +759,24 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>ResearchStudy.reasonStopped (l373/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/research-study-reason-stopped|4.0.1</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ResearchStudy.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'EvidenceVariable/1' at 'div/blockquote/p/a' for 'EvidenceVariable/1: Aïe!' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ResearchStudy.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'EvidenceVariable/1' at 'div/blockquote/p/a' for 'EvidenceVariable/1: Ouille!' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ResearchStudy.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Organization/2' at 'div/blockquote/p/a' for 'Organization/2: Etablissement du sponsor' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ResearchStudy.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'PlanDefinition/3' at 'div/p/a' for 'PlanDefinition/3: Energetic plan' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ResearchStudy.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Group/6' at 'div/p/a' for 'Group/6: Fast Zebra' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ResearchStudy.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'Location/8' at 'div/p/a' for 'Location/8: Rainbow' does not resolve</b></td>
    </tr>
 </table>
 <hr/>
@@ -878,10 +868,10 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c53945)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c53923)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c63776)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c63732)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-group')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
@@ -916,7 +906,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c46209)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c46103)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/eclaire&#8203;/StructureDefinition&#8203;/eclaire-location')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
@@ -971,19 +961,19 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.short (l1&#8203;/c122702)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sponsor, collaborateurs et autres parties / Sponsors, collaborators, and other parties '</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.short (l1&#8203;/c121455)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sponsor, collaborateurs et autres parties / Sponsors, collaborators, and other parties '</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c141306)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c140044)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c160034)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c158750)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[85]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c219199)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[85]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c217871)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.short (l1&#8203;/c254690)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sponsor, collaborateurs et autres parties / Sponsors, collaborators, and other parties '</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.short (l1&#8203;/c253341)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sponsor, collaborateurs et autres parties / Sponsors, collaborators, and other parties '</b></td>
    </tr>
 </table>
 <hr/>
@@ -1029,7 +1019,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1548)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1548)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1042,7 +1032,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1088)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1088)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1055,7 +1045,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1102)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1102)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1068,7 +1058,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c984)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c984)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1081,7 +1071,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1051)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1051)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1094,7 +1084,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1863)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1863)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1107,7 +1097,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1120)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1120)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1120,7 +1110,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1131)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1131)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1133,7 +1123,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1096)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1096)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1146,7 +1136,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1331)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1331)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1159,7 +1149,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1018)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1018)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1172,7 +1162,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c989)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c989)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1185,7 +1175,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1082)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1082)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
@@ -1198,7 +1188,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c983)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c983)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -1322,9 +1312,6 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-III-IV' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-source-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The source code 'phase-3-phase-4' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs|0.3.0</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
      <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The source code 'a-demarrer' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-status-vs|0.3.0</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
@@ -1356,74 +1343,82 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
    </tr>
 </table>
 <hr/>
+<a name="CONCEPTMAP_GROUP_TARGET_CODE_INVALID_VS"> </a>
+<h2>CONCEPTMAP_GROUP_TARGET_CODE_INVALID_VS</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The target code 'phase-3-phase-4' is not valid in the value set https://interop.esante.gouv.fr/ig/fhir/eclaire/ValueSet/eclaire-study-phase-vs|0.3.0</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="EXTENSION_EXTM_CONTEXT_WRONG_XVER"> </a>
 <h2>EXTENSION_EXTM_CONTEXT_WRONG_XVER</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-phase-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-phase-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
+     <td><a href="ConceptMap-eclaire-study-status-concept-map.html">fsh-generated/resources/ConceptMap-eclaire-study-status-concept-map.json</a></td><td><b>The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)</b></td>
    </tr>
 </table>
 <hr/>
@@ -1548,53 +1543,6 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-eclaire-outcome-measure-r5.html">fsh-generated/resources/StructureDefinition-eclaire-outcome-measure-r5.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="VALUESET_SHAREABLE_MISSING"> </a>
-<h2>VALUESET_SHAREABLE_MISSING</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-category-vs.html">fsh-generated/resources/ValueSet-eclaire-category-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-group-characteristic-kind-vs.html">fsh-generated/resources/ValueSet-eclaire-group-characteristic-kind-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-reglementation-precision-vs.html">fsh-generated/resources/ValueSet-eclaire-reglementation-precision-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-regulation-code-vs.html">fsh-generated/resources/ValueSet-eclaire-regulation-code-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-status-recruitment-vs.html">fsh-generated/resources/ValueSet-eclaire-status-recruitment-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-study-outcome-type-vs.html">fsh-generated/resources/ValueSet-eclaire-study-outcome-type-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-study-party-organization-type-vs.html">fsh-generated/resources/ValueSet-eclaire-study-party-organization-type-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-study-party-role-vs.html">fsh-generated/resources/ValueSet-eclaire-study-party-role-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-study-phase-source-vs.html">fsh-generated/resources/ValueSet-eclaire-study-phase-source-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-study-phase-vs.html">fsh-generated/resources/ValueSet-eclaire-study-phase-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-study-population-vs.html">fsh-generated/resources/ValueSet-eclaire-study-population-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-study-status-vs.html">fsh-generated/resources/ValueSet-eclaire-study-status-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-study-title-type-vs.html">fsh-generated/resources/ValueSet-eclaire-study-title-type-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="ValueSet-eclaire-type-contact-vs.html">fsh-generated/resources/ValueSet-eclaire-type-contact-vs.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <hr/>
