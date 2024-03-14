@@ -1,6 +1,6 @@
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>Brief description of this Implementation Guide</b><br>
-As part of the "Innovation santé 2030" plan, a new information system is going to be created to list clinical trials in France. The aim is to provide the general public with access to all authorized clinical trials, whether ongoing or planned, in order to help recruitment and promote awareness of clinical trials. For more information, click <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">here</a>. The aim of this implementation guide is to define the specifications of the REST API (FHIR), enabling to query the database listing clinical trials.
+ECLAIRE is a copy of an existing information system for the management of clinical trials in France which will provide an API open to all actors of the health research ecosystem. The aim is to open access to an up-to-date database on clinical trials, in order to help recruitment into open trials in France and to promote awareness on the subject matter. A more detailed press article is available <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">here</a>. This implementation guide seeks to define the specifications of the REST API (Representational State Transfer Application Program Interface) FHIR, enabling to query the database listing clinical trials.
 </p>
 
 ### Contexte
@@ -8,21 +8,20 @@ As part of the "Innovation santé 2030" plan, a new information system is going 
 <p>
   <b>Attention !</b>
   <br>
- Cet Implementation Guide est construit dans le cadre de l'élaboration d'un MVP (minimum viable product).
+ Ce guide d'implémentation est construit dans le cadre de l'élaboration d'un MVP (produit minimum viable).
 </p>
 </blockquote>
-La France, en tête des pays européens dans le domaine de la recherche clinique, doit néanmoins renforcer la visibilité des essais cliniques en cours et faciliter l'accès au recrutement. C'est dans ce contexte et dans le cadre du plan Innovation santé 2030 que s'inscrit le projet de création d’une plateforme nationale référençant les essais cliniques.
-
+La France souhaite renforcer la visibilité des essais cliniques en cours sur le terrain et faciliter l’accès au recrutement pour les volontaires. Le projet de base nationale des essais cliniques s’inscrit pleinement dans les objectifs du volet santé de France 2030 « Plan innovation santé 2030 », conduit par la DNS en lien avec la DGS et la direction du numérique (DNUM) des ministères sociaux.
 Le MVP de cette base nationale s’intitulera ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l’Ecosystème).
+L’objectif est de construire une base nationale des essais cliniques ouverte à l’écosystème public et privé.
 
-L'objectif est de construire une base nationale des essais cliniques ouverte à l'écosystème public et privé. 
 Elle doit permettre, à terme, de :
 - Proposer une base exhaustive d’informations sur les essais cliniques issues des registres de référence ;
 - Mettre à disposition des résultats simplifiés en langue française via un moteur de recherche facile d’utilisation ;
 - Offrir un portail d’information simplifié sur la recherche clinique ;
 - Donner accès aux contacts et informations sur les centres investigateurs.
 
-Pour plus d’information consultez : <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">le communiqué de presse "Mise en œuvre d'une base nationale des essais clinique"</a>.
+Pour plus d’information vous pouvez consulter <a href="https://esante.gouv.fr/espace-presse/mise-en-oeuvre-dune-base-nationale-des-essais-cliniques">le communiqué de presse "Mise en œuvre d'une base nationale des essais clinique"</a>.
 
 ### Flux
 Un flux est un échange entre deux systèmes. Des flux ont été identifiés lors d'études métiers et définis, avec partage de ressources FHIR. Pour en savoir davantage, rendez-vous sur la page  <a href="construction_des_flux.html">construction des flux</a>.
