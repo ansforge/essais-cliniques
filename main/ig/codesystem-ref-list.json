@@ -35,12 +35,12 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1247"],
       "uses" : {
       },
-      "ValueSet-eclaire-study-phase-vs.html" : "Value Set type de phase de l'essai clinique",
-      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping"
+      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping",
+      "ValueSet-eclaire-study-phase-vs.html" : "Value Set type de phase de l'essai clinique"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireGroupCharacteristicKindCS",
       "title" : "Codes pour le type de caractéristique du groupe",
@@ -51,31 +51,31 @@
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-reglementation-precision-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireReglementationPrecisionCS",
       "title" : "Précision sur la réglementation concernant l'essai",
       "description" : "Précision sur la réglementation concernant l'essai",
       "uses" : {
       },
-      "ValueSet-eclaire-reglementation-precision-vs.html" : "Précision sur la réglementation concernant l'essai Value Set",
-      "ValueSet-eclaire-category-vs.html" : "Value Set type pour spécifier la catégorie l'essai clinique"
+      "ValueSet-eclaire-category-vs.html" : "Value Set type pour spécifier la catégorie l'essai clinique",
+      "ValueSet-eclaire-reglementation-precision-vs.html" : "Précision sur la réglementation concernant l'essai Value Set"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-regulation-code-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireRegulationCodeCS",
       "title" : "Code de régulation de l'essai",
       "description" : "Code de régulation de l'essai",
       "uses" : {
       },
-      "ValueSet-eclaire-regulation-code-vs.html" : "Code de régulation Value Set",
-      "ValueSet-eclaire-category-vs.html" : "Value Set type pour spécifier la catégorie l'essai clinique"
+      "ValueSet-eclaire-category-vs.html" : "Value Set type pour spécifier la catégorie l'essai clinique",
+      "ValueSet-eclaire-regulation-code-vs.html" : "Code de régulation Value Set"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-status-recruitment-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireStatusRecruitmentCS",
       "title" : "Statut de recrutement",
@@ -86,7 +86,7 @@
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-party-organization-type-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireStudyPartyOrganizationTypeCS",
       "title" : "Définition des différents types d'organisation des parties prenantes inspiré de http://hl7.org/fhir/research-study-party-organization-type",
@@ -97,7 +97,7 @@
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-party-role-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireStudyPartyRoleCS",
       "title" : "Définition des rôles des parties prenantes inspiré de http://hl7.org/fhir/research-study-party-role",
@@ -108,19 +108,19 @@
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireStudyPhaseCS",
       "title" : "Définition des type de phase de l'essai cliniques incluant https://hl7.org/fhir/R4/valueset-research-study-phase.html",
       "description" : "type de phase de l'essai clinique",
       "uses" : {
       },
-      "ValueSet-eclaire-study-phase-vs.html" : "Value Set type de phase de l'essai clinique",
-      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping"
+      "ConceptMap-eclaire-study-phase-concept-map.html" : "FHIR/Eclaire ResearchStudy phase Use Mapping",
+      "ValueSet-eclaire-study-phase-vs.html" : "Value Set type de phase de l'essai clinique"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-phase-source-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireStudyPhaseSourceCS",
       "title" : "Définition des phase de l'essai utilisés dans la base de données ECLAIRE",
@@ -132,7 +132,7 @@
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-population-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireStudyPopulationCS",
       "title" : "Codes pour caractériser la population de l'étude",
@@ -143,19 +143,19 @@
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-status-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireStudyStatusCS",
       "title" : "Définition des statuts de l'essai utilisés dans la base de données ECLAIRE",
       "description" : "Statut de l'essai clinique utilisé dans la base de données ECLAIRE",
       "uses" : {
       },
-      "ValueSet-eclaire-study-status-vs.html" : "Value Set Statut Eclaire de l'essai",
-      "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping"
+      "ConceptMap-eclaire-study-status-concept-map.html" : "FHIR/Eclaire ResearchStudy status Use Mapping",
+      "ValueSet-eclaire-study-status-vs.html" : "Value Set Statut Eclaire de l'essai"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-study-title-type-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireStudyTitleTypeCS",
       "title" : "Définition des types de titre pour l'essai",
@@ -166,7 +166,7 @@
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-type-contact-code-system",
-      "version" : "0.3.0",
+      "version" : "0.3.1",
       "status" : "draft",
       "name" : "EclaireTypeContactCS",
       "title" : "Type de contact",

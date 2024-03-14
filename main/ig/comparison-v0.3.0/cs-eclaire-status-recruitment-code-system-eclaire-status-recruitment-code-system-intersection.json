@@ -1,0 +1,26 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "9edb6d27-ec7e-4055-a9f6-3341eec102e7-12",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/9edb6d27-ec7e-4055-a9f6-3341eec102e7-12",
+  "name" : "IntersectionEclaireStatusRecruitmentCSAndEclaireStatusRecruitmentCS",
+  "title" : "Intersection of Statut de recrutement And Statut de recrutement",
+  "status" : "draft",
+  "date" : "2024-03-14T13:53:20+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "concept" : [{
+    "code" : "recruiting",
+    "display" : "Actif / active",
+    "definition" : "Recrutement actif"
+  },
+  {
+    "code" : "completed-recruiting",
+    "display" : "Terminé / completed ",
+    "definition" : "Recrutement terminé"
+  }]
+}
