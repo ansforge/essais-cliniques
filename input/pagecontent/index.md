@@ -11,7 +11,7 @@ ECLAIRE is a copy of an existing information system for the management of clinic
  Ce guide d'implémentation est construit dans le cadre de l'élaboration d'un MVP (produit minimum viable).
 </p>
 </blockquote>
-a France souhaite renforcer la visibilité des essais cliniques en cours sur le terrain et faciliter l’accès au recrutement pour les volontaires. Le projet de base nationale des essais cliniques s’inscrit pleinement dans les objectifs du volet santé de France 2030 « Plan innovation santé 2030 », conduit par la DNS en lien avec la DGS et la direction du numérique (DNUM) des ministères sociaux.
+La France souhaite renforcer la visibilité des essais cliniques en cours sur le terrain et faciliter l’accès au recrutement pour les volontaires. Le projet de base nationale des essais cliniques s’inscrit pleinement dans les objectifs du volet santé de France 2030 « Plan innovation santé 2030 », conduit par la DNS en lien avec la DGS et la direction du numérique (DNUM) des ministères sociaux.
 Le MVP de cette base nationale s’intitulera ECLAIRE (Essais CLiniques Accessibles Interconnectés pour la Recherche ouverts à l’Ecosystème).
 L’objectif est de construire une base nationale des essais cliniques ouverte à l’écosystème public et privé.
 
