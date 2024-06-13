@@ -111,7 +111,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
-      "version" : "1.0.0",
+      "version" : "2.0.0",
       "status" : "draft",
       "name" : "LocationType",
       "title" : "Location type",
@@ -123,7 +123,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/research-study-objective-type",
-      "version" : "0.1.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "ResearchStudyObjectiveType",
       "title" : "ResearchStudyObjectiveType",
@@ -131,12 +131,12 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1248"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-research-study-objective-type.html" : "ResearchStudyObjectiveType",
-      "ValueSet-eclaire-study-outcome-type-vs.html" : "Type de conséquence Value Set"
+      "ValueSet-eclaire-study-outcome-type-vs.html" : "Type de conséquence Value Set",
+      "http://hl7.org/fhir/R4/valueset-research-study-objective-type.html" : "ResearchStudyObjectiveType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/research-study-phase",
-      "version" : "0.1.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "ResearchStudyPhase",
       "title" : "ResearchStudyPhase",
@@ -149,7 +149,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type",
-      "version" : "0.1.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "ResearchStudyPrimaryPurposeType",
       "title" : "ResearchStudyPrimaryPurposeType",
@@ -161,7 +161,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/research-study-reason-stopped",
-      "version" : "0.1.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "ResearchStudyReasonStopped",
       "title" : "ResearchStudyReasonStopped",
@@ -173,7 +173,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0116",
-      "version" : "2.2.0",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "BedStatus",
       "title" : "bedStatus",
@@ -181,11 +181,11 @@
       "oids" : ["2.16.840.1.113883.18.47"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.3.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-      "version" : "3.0.0",
+      "version" : "4.0.0",
       "status" : "active",
       "name" : "IdentifierType",
       "title" : "identifierType",
@@ -197,7 +197,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-      "version" : "2.2.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "RoleCode",
       "title" : "RoleCode",
@@ -205,7 +205,7 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.3.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/eclaire/CodeSystem/eclaire-group-characteristic-kind-code-system",
@@ -358,7 +358,7 @@
     },
     {
       "url" : "urn:iso:std:iso:3166",
-      "version" : "1.0.0",
+      "version" : "1.0.1",
       "status" : "active",
       "name" : "ISO3166Part1",
       "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
